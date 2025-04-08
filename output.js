@@ -1,64 +1,78 @@
-//Tue Apr 08 2025 21:57:17 GMT+0000 (Coordinated Universal Time)
+//Tue Apr 08 2025 22:01:12 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var YX1 = new RegExp('\u674E\u661F\u4E91\u59EC\u5982\u96EA', "");
-var YX2 = new RegExp('\u005E\u0068\u007A\u006D\u002E\u006B\u0075\u0073\u006F\u002E\u0078\u0079\u007A\u0024', "");
-var _0x80ee = 9;
-var YX3 = new RegExp('\u005E\u005C\u002F\u0075\u0073\u0065\u0072\u005C\u002F\u0069\u006E\u0066\u006F\u0024', "");
-_0x80ee = 6;
-var contextStr = JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']);
+var YX1 = /李星云姬如雪/;
+var YX2 = /^hzm.kuso.xyz$/;
+var YX3 = /^\/user\/info$/;
+var contextStr = JSON.stringify(context.session);
 async function xhc() {
-  if (YX1['\u0074\u0065\u0073\u0074'](contextStr)) {
-    XYU7 = context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']['小宇天下无双'];
+  if (YX1.test(contextStr)) {
+    {
+      XYU7 = context.session["小宇天下无双"];
+    }
   } else {
-    var _0x96aa = await fetch("\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u006E\u006F\u0074\u0065\u002E\u0079\u006F\u0075\u0064\u0061\u006F\u002E\u0063\u006F\u006D\u002F\u0079\u0077\u0073\u002F\u0061\u0070\u0069\u002F\u006E\u006F\u0074\u0065\u002F\u0034\u0038\u0065\u0061\u0037\u0039\u0038\u0061\u0061\u0063\u0036\u0034\u0030\u0039\u0066\u0065\u0034\u0031\u0066\u0031\u0035\u0038\u0064\u0031\u0061\u0031\u0065\u0038\u0063\u0037\u0062\u0038\u003F\u0073\u0065\u0076\u003D\u006A\u0031\u0026\u0065\u0064\u0069\u0074\u006F\u0072\u0054\u0079\u0070\u0065\u003D\u0031\u0026\u0075\u006E\u006C\u006F\u0067\u0069\u006E\u0049\u0064\u003D\u0065\u0064\u0039\u0065\u0061\u0033\u0032\u0038\u002D\u0061\u0034\u0036\u0062\u002D\u0039\u0036\u0033\u0039\u002D\u0030\u0037\u0037\u0063\u002D\u0039\u0033\u0031\u0037\u0032\u0039\u0033\u0036\u0039\u0037\u0063\u0061\u0026\u0065\u0064\u0069\u0074\u006F\u0072\u0056\u0065\u0072\u0073\u0069\u006F\u006E\u003D\u006E\u0065\u0077\u002D\u006A\u0073\u006F\u006E\u002D\u0065\u0064\u0069\u0074\u006F\u0072\u0026\u0073\u0065\u0063\u003D\u0076\u0031");
-    var _0x37a3e = await _0x96aa['\u0074\u0065\u0078\u0074']();
-    var _0xd2f5aa = _0x37a3e['\u006D\u0061\u0074\u0063\u0068'](new RegExp("\u3011\u96EA\u901A\u661F\u3010)?*.(\u3011\u96EA\u901A\u661F\u3010|\u3011\u96EA\u5B87\u661F\u3010)?*.(\u3011\u96EA\u5B87\u661F\u3010|\u3011\u96EA\u7248\u661F\u3010)?*.(\u3011\u96EA\u7248\u661F\u3010|\u3011\u96EA\u516C\u661F\u3010)?*.(\u3011\u96EA\u516C\u661F\u3010".split("").reverse().join(""), '\u0067'));
-    XYU3 = _0xd2f5aa['\u006D\u0061\u0070'](item => item['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\u3011\u96EA\u901A\u661F\u3010|\u3011\u96EA\u5B87\u661F\u3010|\u3011\u96EA\u7248\u661F\u3010|\u3011\u96EA\u516C\u661F\u3010".split("").reverse().join(""), '\u0067'), ''));
-    let _0x64293d;
-    var _0xec4a = await fetch("=di_gsm_wen_lacol?kcehc/ym/ipa/moc.naidfa//:sptth".split("").reverse().join(""));
-    _0x64293d = 7;
-    XYU5 = await _0xec4a['\u006A\u0073\u006F\u006E']();
-    var _0x917cb = await fetch(XYU3[2] + "\u003F\u0059\u0058\u0031\u003D" + context['\u0064\u0065\u0076\u0069\u0063\u0065\u0049\u0064'] + "\u0026\u0059\u0058\u0032\u003D" + XYU5['\u0064\u0061\u0074\u0061']['\u0069\u0070\u005F\u0069\u006E\u0066\u006F']['\u0061\u0072\u0065\u0061'] + "\u0026\u0059\u0058\u0033\u003D\u6211\u7684\u684C\u9762");
-    XYU7 = await _0x917cb['\u006A\u0073\u006F\u006E']();
-    if (XYU7['\u0078\u0075\u0065'] === "\u674E\u661F\u4E91\u59EC\u5982\u96EA") {
-      context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']["\u96EA\u513F"] = 1;
-      context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']["\u5C0F\u5B87\u5929\u4E0B\u65E0\u53CC"] = XYU7;
-    } else {
-      context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']['雪儿'] = 2;
+    {
+      var _0x2191ec = await fetch("https://note.youdao.com/yws/api/note/48ea798aac6409fe41f158d1a1e8c7b8?sev=j1&editorType=1&unloginId=ed9ea328-a46b-9639-077c-9317293697ca&editorVersion=new-json-editor&sec=v1");
+      var _0x3714f3 = await _0x2191ec.text();
+      var _0x4b64e7 = _0x3714f3.match(/【星公雪】(.*?)【星公雪】|【星版雪】(.*?)【星版雪】|【星宇雪】(.*?)【星宇雪】|【星通雪】(.*?)【星通雪】/g);
+      XYU3 = _0x4b64e7.map(_0x1d3e03 => _0x1d3e03.replace(/【星公雪】|【星版雪】|【星宇雪】|【星通雪】/g, ""));
+      var _0x239507 = await fetch("https://afdian.com/api/my/check?local_new_msg_id=");
+      XYU5 = await _0x239507.json();
+      var _0x3e6ecb = await fetch(XYU3[2] + "?YX1=" + context.deviceId + "&YX2=" + XYU5.data.ip_info.area + "&YX3=我的桌面");
+      XYU7 = await _0x3e6ecb.json();
+      if (XYU7.xue === "李星云姬如雪") {
+        {
+          context.session["雪儿"] = 1;
+          context.session["小宇天下无双"] = XYU7;
+        }
+      } else {
+        context.session["雪儿"] = 2;
+      }
     }
   }
-  if (YX2['\u0074\u0065\u0073\u0074'](request['\u0068\u006F\u0073\u0074'])) {
-    if (context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']["\u96EA\u513F"] === 1) {
-      var XYU8 = await fetch(XYU3[3] + "\u002F\u6211\u7684\u684C\u9762\u002F\u542F\u52A8\u6210\u529F\u7528\u6237\u8BBE\u5907\u003A" + context['\u0064\u0065\u0076\u0069\u0063\u0065\u0049\u0064'] + "\u7528\u6237\u0020\u0069\u0070\u003A" + XYU5['\u0064\u0061\u0074\u0061']['\u0069\u0070\u005F\u0069\u006E\u0066\u006F']['\u0069\u0070'] + "\u7528\u6237\u5730\u533A\u003A" + XYU5['\u0064\u0061\u0074\u0061']['\u0069\u0070\u005F\u0069\u006E\u0066\u006F']['\u0061\u0072\u0065\u0061'] + "\u9762\u684C\u7684\u6211=puorg?".split("").reverse().join(""));
-      context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']['雪儿'] = 0;
-    } else if (context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']["\u96EA\u513F"] === 2) {
-      var _0xb67f = 11;
-      var XYU8 = await fetch(XYU3[3] + "\u002F\u672A\u6388\u6743\u6211\u7684\u684C\u9762\u002F\u542F\u52A8\u6210\u529F\u7528\u6237\u8BBE\u5907\u003A" + context['\u0064\u0065\u0076\u0069\u0063\u0065\u0049\u0064'] + "\u7528\u6237\u0020\u0069\u0070\u003A" + XYU5['\u0064\u0061\u0074\u0061']['\u0069\u0070\u005F\u0069\u006E\u0066\u006F']['\u0069\u0070'] + ":\u533A\u5730\u6237\u7528".split("").reverse().join("") + XYU5['\u0064\u0061\u0074\u0061']['\u0069\u0070\u005F\u0069\u006E\u0066\u006F']['\u0061\u0072\u0065\u0061'] + "\u9762\u684C\u7684\u6211\u6743\u6388\u672A=puorg?".split("").reverse().join(""));
-      _0xb67f = "bkdlaj".split("").reverse().join("");
-      context['\u0073\u0065\u0073\u0073\u0069\u006F\u006E']["\u96EA\u513F"] = 0;
+  if (YX2.test(request.host)) {
+    {
+      if (context.session["雪儿"] === 1) {
+        {
+          var _0x3c0609 = await fetch(XYU3[3] + "/我的桌面/启动成功用户设备:" + context.deviceId + "用户 ip:" + XYU5.data.ip_info.ip + "用户地区:" + XYU5.data.ip_info.area + "?group=我的桌面");
+          context.session["雪儿"] = 0;
+        }
+      } else {
+        if (context.session["雪儿"] === 2) {
+          {
+            var _0x3c0609 = await fetch(XYU3[3] + "/未授权我的桌面/启动成功用户设备:" + context.deviceId + "用户 ip:" + XYU5.data.ip_info.ip + "用户地区:" + XYU5.data.ip_info.area + "?group=未授权我的桌面");
+            context.session["雪儿"] = 0;
+          }
+        }
+      }
     }
   }
 }
-async function onRequest(context, request) {
+async function onRequest(_0x5d9ec9, _0x10f0ec) {
   await xhc();
-  return request;
+  return _0x10f0ec;
 }
-async function onResponse(context, request, response) {
-  if (YX2['\u0074\u0065\u0073\u0074'](request['\u0068\u006F\u0073\u0074'])) {
-    if (YX3['\u0074\u0065\u0073\u0074'](request['\u0070\u0061\u0074\u0068'])) {
-      if (XYU7['\u0078\u0075\u0065'] === "\u674E\u661F\u4E91\u59EC\u5982\u96EA") {
-        var _0xdddfb = 13;
-        var _0x41c7d = JSON['\u0070\u0061\u0072\u0073\u0065'](response['\u0062\u006F\u0064\u0079']);
-        _0xdddfb = 12;
-        _0x41c7d["\u5C0F\u5B87\u5929\u4E0B\u65E0\u53CC"] = "\u5FAE\u4FE1\u006C\u0065\u0069\u0078\u0075\u0065\u0032\u0036\u0036";
-        _0x41c7d['\u0064\u0061\u0074\u0061']['\u0075\u0073\u0065\u0072']['\u0076\u0069\u0070'] = 1;
-        _0x41c7d['\u0064\u0061\u0074\u0061']['\u0075\u0073\u0065\u0072']['\u0076\u0069\u0070\u005F\u0065\u0078\u0070\u0069\u0072\u0065'] = 2599794892;
-        response['\u0062\u006F\u0064\u0079'] = JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x41c7d);
+async function onResponse(_0x3bb090, _0x12ee36, _0x17761a) {
+  if (YX2.test(_0x12ee36.host)) {
+    {
+      if (YX3.test(_0x12ee36.path)) {
+        {
+          if (XYU7.xue === "李星云姬如雪") {
+            {
+              var _0x5e26f3 = JSON.parse(_0x17761a.body);
+              _0x5e26f3["小宇天下无双"] = "微信leixue266";
+              _0x5e26f3.data.user.vip = 1;
+              _0x5e26f3.data.user.vip_expire = 2599794892;
+              _0x17761a.body = JSON.stringify(_0x5e26f3);
+            }
+          }
+        }
       }
     }
   } else {
-    console['\u006C\u006F\u0067'](context);
+    {
+      console.log(_0x3bb090);
+    }
   }
-  return response;
+  return _0x17761a;
 }
