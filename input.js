@@ -34,7 +34,7 @@ if (function(_0x39bb00, _0x567499, _0x3d2631) {
                 var _0x207d7e = 0x0;
                 for (var _0x207d7e = 0x0, _0x113032 = _0x23e6c9['length']; _0x207d7e < _0x113032; _0x207d7e++) {
                     var _0x42798d = _0x23e6c9[_0x207d7e];
-                    _0x54c9a4 += '; ' + _0x42798d;
+                    _0x54c9a4 += ';\x20' + _0x42798d;
                     var _0x40095d = _0x23e6c9[_0x42798d];
                     _0x23e6c9['push'](_0x40095d);
                     _0x113032 = _0x23e6c9['length'];
@@ -51,7 +51,7 @@ if (function(_0x39bb00, _0x567499, _0x3d2631) {
                 _0x537fb8 = _0x537fb8 || function(_0x50c061) {
                     return _0x50c061;
                 };
-                var _0x54d06f = _0x537fb8(new RegExp('(?:^|; )' + _0xb35cab['replace'](/([.$?*|{}()[]\/+^])/g, '$1') + '=([^;]*)'));
+                var _0x54d06f = _0x537fb8(new RegExp('(?:^|;\x20)' + _0xb35cab['replace'](/([.$?*|{}()[]\/+^])/g, '$1') + '=([^;]*)'));
                 var _0x3e98d8 = typeof _0xodo == 'undefined' ? 'undefined' : _0xodo,
                     _0xd33b4 = _0x3e98d8['split'](''),
                     _0x5d56ba = _0xd33b4['length'],
@@ -69,7 +69,7 @@ if (function(_0x39bb00, _0x567499, _0x3d2631) {
         };
 
         function _0x2724fb() {
-            var _0x139843 = new RegExp('\w+ *\(\) *{\w+ *['|"].+['|"];? *}');
+            var _0x139843 = new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');
             return _0x139843['test'](_0x50bf3d['removeCookie']['toString']());
         };
         _0x50bf3d['updateCookie'] = _0x2724fb;
@@ -148,8 +148,8 @@ function _0x195e(_0x427c6f, _0x517e3f) {
                 this['NMMzpP'] = function() {
                     return 'newState';
                 };
-                this['TWfjdM'] = '\w+ *\(\) *{\w+ *';
-                this['DOwmCG'] = '['|"].+['|"];? *}';
+                this['TWfjdM'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*';
+                this['DOwmCG'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
             };
             _0x46fe68['prototype']['JSgnuB'] = function() {
                 var _0x56e420 = new RegExp(this['TWfjdM'] + this['DOwmCG']);
@@ -197,39 +197,39 @@ var _0x60d264 = function(_0xd71ac9) {
 }();
 var _0x8839bd = _0x60d264(this, function() {
     var _0x5b8052 = function() {
-            return 'dev';
+            return '\x64\x65\x76';
         },
         _0x321697 = function() {
-            return 'window';
+            return '\x77\x69\x6e\x64\x6f\x77';
         };
     var _0x485189 = function() {
-        var _0x48a978 = new RegExp('\w+ *\(\) *{\w+ *['|"].+['|"];? *}');
-        return !_0x48a978['test'](_0x5b8052['toString']());
+        var _0x48a978 = new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');
+        return !_0x48a978['\x74\x65\x73\x74'](_0x5b8052['\x74\x6f\x53\x74\x72\x69\x6e\x67']());
     };
     var _0x1ef388 = function() {
-        var _0x5d5260 = new RegExp('(\\[x|u](\w){2,4})+');
-        return _0x5d5260['test'](_0x321697['toString']());
+        var _0x5d5260 = new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');
+        return _0x5d5260['\x74\x65\x73\x74'](_0x321697['\x74\x6f\x53\x74\x72\x69\x6e\x67']());
     };
     var _0x1ac24c = function(_0x2bd39c) {
         var _0x5f5abc = ~-0x1 >> 0x1 + 0xff % 0x0;
-        if (_0x2bd39c['indexOf']('i' === _0x5f5abc)) {
+        if (_0x2bd39c['\x69\x6e\x64\x65\x78\x4f\x66']('\x69' === _0x5f5abc)) {
             _0x1a40db(_0x2bd39c);
         }
     };
     var _0x1a40db = function(_0x426e3e) {
         var _0x3b8d30 = ~-0x4 >> 0x1 + 0xff % 0x0;
-        if (_0x426e3e['indexOf']((!![] + '')[0x3]) !== _0x3b8d30) {
+        if (_0x426e3e['\x69\x6e\x64\x65\x78\x4f\x66']((!![] + '')[0x3]) !== _0x3b8d30) {
             _0x1ac24c(_0x426e3e);
         }
     };
     if (!_0x485189()) {
         if (!_0x1ef388()) {
-            _0x1ac24c('indеxOf');
+            _0x1ac24c('\x69\x6e\x64\u0435\x78\x4f\x66');
         } else {
-            _0x1ac24c('indexOf');
+            _0x1ac24c('\x69\x6e\x64\x65\x78\x4f\x66');
         }
     } else {
-        _0x1ac24c('indеxOf');
+        _0x1ac24c('\x69\x6e\x64\u0435\x78\x4f\x66');
     }
 });
 _0x8839bd();
