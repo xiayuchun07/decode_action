@@ -1,4 +1,4 @@
-//Mon Apr 14 2025 20:05:17 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 14 2025 20:06:24 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 var visitors = {
@@ -75,7 +75,7 @@ function _0x4aaea() {
       "color": "#ffffff",
       "o": 1,
       "presets": [JSON.parse(_0x5dfd5c(_0x454a[6]))],
-      "colors": [JSON.parse(_0x5dfd5c(_0x454a[7])), JSON.parse(_0x5dfd5c(_0x454a[8])), JSON.parse(_0x5dfd5c(_0x454a[9])), JSON.parse(_0x5dfd5c(_0x454a[10])), JSON.parse("}\n\"dcafff#\" :\"v\"  \n,\"黄油奶 ��\" :\"n\"  \n{".split("").reverse().join("")), JSON.parse(_0x5dfd5c(_0x454a[11]))]
+      "colors": [JSON.parse(_0x5dfd5c(_0x454a[7])), JSON.parse(_0x5dfd5c(_0x454a[8])), JSON.parse(_0x5dfd5c(_0x454a[9])), JSON.parse(_0x5dfd5c(_0x454a[10])), JSON.parse("}\n\"dcafff#\" :\"v\"  \n,\"黄油奶 \uDC9B\uD83D\" :\"n\"  \n{".split("").reverse().join("")), JSON.parse(_0x5dfd5c(_0x454a[11]))]
     }
   };
   _0x87g5f = function () {
