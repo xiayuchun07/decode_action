@@ -1,10 +1,157 @@
-//Mon Apr 21 2025 11:09:41 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 21 2025 15:43:18 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var u = [`\u004a\u0061\u0076\u0061\u002e\u006f\u0070\u0065\u006e\u0043\u006c\u0061\u0073\u0073\u0046\u0069\u006c\u0065\u0028\u0022\u002f\u0064\u0061\u0074\u0061\u002f\u006c\u006f\u0063\u0061\u006c\u002f\u0074\u006d\u0070\u002f\u83dc\u5c31\u591a\u7ec3\u0022\u0029\u002e\u006c\u006f\u0061\u0064\u0028\u0029\u003b`, `\u0076\u0061\u0072`, `\u005f\u0030\u0078\u0034\u0062\u0066\u0035\u0032\u0037`, `\u004a\u0061\u0076\u0061\u002e\u0075\u0073\u0065\u0028\u0022\u006f\u0072\u0067\u002e\u0065\u006e\u0073\u0068\u0069\u006e\u0065\u002e\u0069\u006e\u006e\u0065\u0072\u005f\u0068\u0065\u006c\u0070\u0065\u0072\u002e\u0075\u0074\u0069\u006c\u0073\u002e\u0041\u0064\u0062\u0053\u0068\u0065\u006c\u006c\u0022\u0029\u002c`, `\u005f\u0030\u0078\u0035\u0032\u0062\u0062\u0034\u0066`, `\u005f\u0030\u0078\u0034\u0062\u0066\u0035\u0032\u0037\u002e\u0065\u0078\u0065\u0063\u0075\u0074\u0065\u0028\u0022\u0063\u0075\u0072\u006c`, `\u0067\u0065\u0074`, `\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0031\u0032\u0035\u002e\u0032\u0030\u0038\u002e\u0032\u0032\u002e\u0032\u0035\u0030\u003a\u0038\u0038\u0038\u0038\u002f\u0074\u0065\u006d\u0070\u006f\u0072\u0061\u0072\u0079\u0022\u0029\u003b`, `\u0028\u005f\u0030\u0078\u0035\u0032\u0062\u0062\u0034\u0066\u002e\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073\u0028\u0022\u0074\u0072\u0075\u0065\u0022\u0029\u0029`, `\u004a\u0061\u0076\u0061\u002e\u0070\u0065\u0072\u0066\u006f\u0072\u006d\u0028\u0066\u0075\u006e\u0063\u0074\u0069\u006f\u006e`, `\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u0031\u0031\u0031\u0029\u003b`, `\u007d\u0029\u003b`, `\u0065\u006c\u0073\u0065`, `\u0063\u006f\u006e\u0073\u006f\u006c\u0065\u002e\u006c\u006f\u0067\u0028\u0032\u0032\u0032\u0029\u003b`];
-var u2 = [0, 1, 2, 4, 5, 7, 8, 9, 11, 13, 16, 17, 19, 21];
-var u3 = `u6[0]u6[1] u6[2] = u6[4]u6[5] = u6[7] u6[8] u6[9]if u6[11] {u6[13] () {u6[16]u6[17]} u6[19] {u6[21]}`;
-for (u5 = 0; u5 < u.length; u5++) {
-  u3 = u3.replace(new RegExp("u6\\[" + u2[u5] + "\\]", "g"), u[u5].replace("`", "").replace("`", ""));
-}
-window[14 .toString(32) + 31 .toString(32) + 10 .toString(32) + 21 .toString(32)](u3);
+let QQ = "";
+let index = 0;
+let AUTO_MSG = [];
+setData = function (_0x1f4e07, _0x43bf65, ..._0x406748) {
+  QQ = _0x1f4e07;
+  index = _0x43bf65;
+  AUTO_MSG = _0x406748;
+};
+setData("123456789", 0, "hello");
+MainFunc = () => {
+  function _0x1a8d9a() {
+    function _0x3c78a2(_0x569d39, _0xed9fe9 = "ok") {
+      vue.toasted.show(_0x569d39, {
+        action: {
+          text: _0xed9fe9,
+          onClick: (_0x35b2d0, _0x1419a8) => {
+            _0x1419a8.goAway(0);
+          }
+        }
+      });
+    }
+    function _0x43a392(_0x48cb1b) {
+      chatPage.msgInput = _0x48cb1b;
+      chatPage.msgSend();
+    }
+    function _0x233162() {
+      chatPage.sockets.emit("syscmd", {
+        msg: "end",
+        countReceive: false,
+        chatId: chatPage.chatId,
+        countTalked: false
+      });
+      chatPage.chatState = "SELF_LEFT";
+    }
+    function _0x5607fd() {
+      chatPage.sockets.emit("syscmd", {
+        msg: "new",
+        gender: chatPage.gender,
+        vipCode: chatPage.vipCode,
+        age: store.get("ageNew"),
+        ageWant: store.get("ageWant"),
+        secretCode: chatPage.secretCode,
+        province: chatPage.province,
+        provinceWant: store.get("provinceWant"),
+        savedId: chatPage.usrId,
+        isShowLocation: false,
+        fp: chatPage.fingerPrints,
+        phoneNumber: store.get(chatPage.Config.STORE_PHONE_NUMBER),
+        userPwdEncrypted: store.get(chatPage.Config.STORE_PASSWORD_ENCRYPTED)
+      });
+    }
+    justonce = true;
+    chatPage.scriptIsRun = false;
+    setInterval(function () {
+      {
+        if (!chatPage.scriptIsRun) {
+          return;
+        }
+        switch (chatPage.chatState) {
+          case "REPAIRED":
+          case "PAIRED":
+            {
+              var _0x563b95 = chatPage.partner.strGender;
+              if (_0x563b95 == chatPage.MatchWho) {
+                if (justonce) {
+                  try {
+                    let _0xc6c72d = AUTO_MSG.length;
+                    if (_0xc6c72d > 0) {
+                      {
+                        let _0x5842c0 = AUTO_MSG[index];
+                        _0x43a392(_0x5842c0);
+                      }
+                    }
+                  } catch {}
+                  $.toast("已匹配到" + chatPage.MatchWho + "并发送信息！", 800);
+                  justonce = false;
+                }
+                break;
+              }
+              _0x233162();
+              _0x5607fd();
+              justonce = true;
+              break;
+            }
+          case "SELF_LEFT":
+          case "PARTNER_LEFT":
+            _0x5607fd();
+            justonce = true;
+            break;
+        }
+      }
+    }, 450);
+    var _0x11bfb3 = $("<div class=\"list-block\"><ul><li>                        <div class=\"item-content\"><div class=\"item-inner\"><div class=\"item-title label\">脚本启动</div><div class=\"item-input\"><label class=\"label-switch\"><input tabindex=\"-1\" type=\"checkbox\" id=\"ckb_script\"><div class=\"checkbox\"></div></label></div></div></div>                        <div class=\"item-content\"><div class=\"item-inner\"><div class=\"item-title label\" id=\"txt_match\">仅女生</div><div class=\"item-input\"><label class=\"label-switch\"><input tabindex=\"-1\" type=\"checkbox\" id=\"ckb_match\"><div class=\"checkbox\"></div></label></div></div></div>                        <div class=\"item-content\"><div class=\"item-inner\"><div class=\"item-title label\">发送QQ<br></div><div style=\"width: 100%; text-align: left;\" id=\"btn_sendqq\">发送</div></div></div>                        </li></ul></div>");
+    $("#panelLeft .content-block").eq(1).before(_0x11bfb3);
+    let _0x75500f = false;
+    let _0x33308c = false;
+    function _0x5f4ff5() {
+      {
+        _0x75500f = !_0x75500f;
+        chatPage.scriptIsRun = _0x75500f;
+        _0x3c78a2(chatPage.scriptIsRun ? "脚本已启动！" : "脚本已停止！");
+      }
+    }
+    function _0x59c9af() {
+      _0x33308c = !_0x33308c;
+      var _0x2c6dec = _0x33308c;
+      chatPage.MatchWho = _0x2c6dec ? "女生" : "男生";
+      $("#txt_match")[0].innerText = "仅" + chatPage.MatchWho;
+    }
+    function _0x38eb20() {
+      try {
+        var _0x145855 = QQ.length;
+        _0x145855 > 6 && _0x145855 <= 10 && (setTimeout(function () {
+          _0x43a392(QQ.substr(0, 3));
+        }, 1000), setTimeout(function () {
+          _0x43a392(QQ.substr(3, 3));
+        }, 2000), _0x145855 == 10 ? (setTimeout(function () {
+          {
+            _0x43a392(QQ.substr(6, 3));
+          }
+        }, 3000), setTimeout(function () {
+          {
+            _0x43a392(QQ.substr(9));
+          }
+        }, 3500)) : setTimeout(function () {
+          {
+            _0x43a392(QQ.substr(6));
+          }
+        }, 3000));
+      } catch (_0x2bb7b2) {}
+    }
+    $("#ckb_script")[0].onclick = _0x5f4ff5;
+    $("#ckb_match")[0].onclick = _0x59c9af;
+    $("#btn_sendqq")[0].onclick = _0x38eb20;
+    setTimeout(() => {
+      {
+        $("#panelLeft .content-block").eq(1).remove();
+        $("#panelLeft .content-block").eq(1).remove();
+        $(".button.button-link.button-nav.pull-right").remove();
+        $(".button.button-link.button-nav.pull-right").remove();
+        $("#ckb_match").click();
+        chatPage.MatchWho = "女生";
+        _0x3c78a2("听说内群专属，电报频道@bdsm368\r\n从倒卖者处获取插件导致无法使用我们概不负责");
+      }
+    }, 3);
+  }
+  try {
+    initialized && console.log("已初始化！");
+  } catch {
+    initialized = true;
+    _0x1a8d9a();
+  }
+};
+MainFunc();
