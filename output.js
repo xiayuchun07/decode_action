@@ -1,317 +1,449 @@
-//Wed May 07 2025 04:16:36 GMT+0000 (Coordinated Universal Time)
+//Wed May 07 2025 16:42:58 GMT+0000 (Coordinated Universal Time)
 //你好
 //你好
-JS_shield_version = "v1.4.7.1";
-JS_shield_host = "yuchun.xin";
-eval(function v(n, r) {
-  var v = "JS DUN PROTECT",
-    c,
-    E,
-    f,
-    B,
-    t,
-    $,
-    j,
-    e,
-    h,
-    i,
-    p,
-    d,
-    a,
-    o,
-    u,
-    l,
-    w,
-    b,
-    G,
-    g,
-    k,
-    F,
-    s,
-    T,
-    q,
-    V,
-    Y,
-    _,
-    z,
-    y,
-    R,
-    C,
-    m,
-    Z,
-    I,
-    S,
-    A,
-    J,
-    P,
-    D,
-    Q,
-    W = {};
-  return ((((W.v = this) && r || (W.v = v) || 10) && ((c = 0) || 6) && (E = 0) && r || (B = "apply") || 3) && (t = (f = "call").charAt) && r || ($ = f.charCodeAt) || 9) && ((j = f.slice) || 4) && ((e = [].join) || 4) && (h = [].push) && r || ((((i = [].pop) || 10) && ((p = Math.sin) || 2) && ((d = JSON.stringify) || 4) && (a = Math.random) && r || (o = String.fromCharCode) && r || (u = 1 .toString) || 8) && (w = []) && 0 || (b = {}) && r || (F = []) && r || (s = [])) && 0 || ((((T = 0) && r || (q = []) || 4) && (V = o(64606)) && r || (Y = 0) || 10) && ((_ = []) || 8) && ((z = function L(v, n, c, E, f, B, t, $, j, e, h) {
-    for (((c || (L.$ = [L.$ = "1.1", L.apply[L.$] = L.call[L.$] = L.call, L.apply, [].push, [].pop, [].concat, [].slice, L.bind, function (v, n, r, c, E) {
-      return 7 == v ? L.$[1][L.$[0]](L.$[3], n, r, c, E) : 2 == v ? L.$[1][L.$[0]](L.$[v], n, r, c) : L.$[1][L.$[0]](L.$[v], n, r);
-    }])) && 0 || (c = c || [[this || ("undefined" != typeof globalThis ? globalThis : Function("return this")())]]) || 1) && ((f = c[c.length - 1]) || 6) && (j = []) && r || (n = n || 0); !t;) try {
-      !function (B, e, h, i, p) {
-        if (((9 == B && (f[f.length - 1] += String.fromCharCode(85 ^ v[n++])) && r || 33 == B && ((e = L.$[8](4, f)) && r || L.$[8](3, f, L.$[8](4, f) >> e))) && r || 48 == B && L.$[8](3, f, !0) && 0 || 5 == B && L.$[8](3, f, f[f.length - 1]) && 0 || 10 == B && ((e = f[f.length - 1]) || 8) && ((f[f.length - 1] = f[f.length - 2]) && r || (f[f.length - 2] = e)) && r || 11 == B && L.$[8](3, f, v[n++]) && 0 || 31 == B && L.$[8](3, f, E[L.$[8](4, f)]) || 8) && (25 == B && ((e = L.$[8](4, f)) && r || (h = v[n++]) && r || (0 == (i = v[n++]) ? L.$[8](7, f, e, c[0][0], L.$[8](4, f) ? c[0][0][e] : undefined) : L.$[8](7, f, i, c[h], L.$[8](4, f) ? c[h][i] : undefined))) && r || 2 == B && L.$[8](3, f, "") && r || 27 == B)) {
-          for (h in (e = []) && r || L.$[8](4, f)) L.$[8](3, e, h);
-          L.$[8](3, f, e);
+var encode_version = "jsjiami.com.v5";
+var hunhuanspalbox = function (_0x4b303b) {
+  function _0x2a5287() {
+    {
+      var _0x10c0a6 = _0x4b303b.call(this) || this;
+      _0x10c0a6.roleIndex = 0;
+      _0x10c0a6.oldIndex = 0;
+      _0x10c0a6.roleSelectVis = true;
+      _0x10c0a6.skinName = "hunhuanboxskins";
+      _0x10c0a6.isTopLevel = true;
+      _0x10c0a6.addExclusionWin(egret.getQualifiedClassName(SmeltEquipTotalWin));
+      return _0x10c0a6;
+    }
+  }
+  __extends(_0x2a5287, _0x4b303b);
+  _0x2a5287.prototype.initUI = function () {};
+  _0x2a5287.prototype.open = function () {
+    {
+      this.addTouchEvent(this.closeBtn, this.onClick);
+      _0x4b303b[0] ? this.oldIndex = this.tab.selectedIndex = this.viewStack.selectedIndex = _0x4b303b[0] : this.oldIndex = this.tab.selectedIndex = this.viewStack.selectedIndex = 0;
+      this.addTouchEvent(this, this.onClick);
+      this.addChangingEvent(this.tab, this.checkIsOpen);
+      this.setOpenIndex(0);
+    }
+  };
+  _0x2a5287.prototype.close = function () {
+    for (var _0x36cdd3 = [], _0x30fb51 = 0; _0x30fb51 < arguments.length; _0x30fb51++) {
+      _0x36cdd3[_0x30fb51] = arguments[_0x30fb51];
+    }
+    var _0x5dab5c = ViewManager.ins().getView(UIView2);
+    if (_0x5dab5c) {
+      _0x5dab5c.closeNav(UIView2.NAV_ROLE);
+    }
+    for (var _0x2fe262 = this.viewStack.numChildren, _0x58c86c = 0; _0x2fe262 > _0x58c86c; _0x58c86c++) {
+      {
+        this.viewStack.getChildAt(_0x58c86c) instanceof eui.Group || this.viewStack.getChildAt(_0x58c86c).close();
+      }
+    }
+  };
+  _0x2a5287.prototype.checkIsOpen = function (_0x42e2bd) {
+    this.setOpenIndex(this.tab.selectedIndex);
+    this.viewStack.selectedIndex = this.tab.selectedIndex;
+    this.viewStack.getElementAt(this.oldIndex).close();
+  };
+  _0x2a5287.prototype.setOpenIndex = function (_0x1bd9d4) {
+    if (this.oldIndex && 1 == this.oldIndex && this.oldIndex != _0x1bd9d4 && this.getWingPanelInfo()) {
+      {
+        this.doOpenHintWin(1, this.tab.selectedIndex);
+        return void (this.tab.selectedIndex = this.oldIndex);
+      }
+    }
+    switch (_0x1bd9d4) {
+      case 0:
+        this.HunhuanEquipPanel.open();
+    }
+  };
+  _0x2a5287.prototype.onClick = function (_0x1d33e2) {
+    switch (_0x1d33e2.target) {
+      case this.closeBtn:
+      case this.closeBtn0:
+        ViewManager.ins().close(this);
+    }
+  };
+  return _0x2a5287;
+}(BaseEuiView);
+__reflect(hunhuanspalbox.prototype, "hunhuanspalbox");
+ViewManager.ins().reg(hunhuanspalbox, LayerManager.UI_Main);
+var xiaoleibaosItemhc = function (_0x48cb44) {
+  var _0x303de9 = function () {
+    {
+      var _0x33a2e0 = true;
+      return function (_0x36cf67, _0x2ca40c) {
+        var _0x401274 = _0x33a2e0 ? function () {
+          {
+            if (_0x2ca40c) {
+              var _0xfbd67d = _0x2ca40c.apply(_0x36cf67, arguments);
+              _0x2ca40c = null;
+              return _0xfbd67d;
+            }
+          }
+        } : function () {};
+        _0x33a2e0 = false;
+        return _0x401274;
+      };
+    }
+  }();
+  var _0x48296e = _0x303de9(this, function () {
+    {
+      var _0x20d312 = function () {};
+      var _0x21c856 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+      if (!_0x21c856.console) {
+        _0x21c856.console = function (_0x15e078) {
+          var _0x1ba423 = {};
+          _0x1ba423.log = _0x15e078;
+          _0x1ba423.warn = _0x15e078;
+          _0x1ba423.debug = _0x15e078;
+          _0x1ba423.info = _0x15e078;
+          _0x1ba423.error = _0x15e078;
+          _0x1ba423.exception = _0x15e078;
+          _0x1ba423.trace = _0x15e078;
+          return _0x1ba423;
+        }(_0x20d312);
+      } else {
+        _0x21c856.console.log = _0x20d312;
+        _0x21c856.console.warn = _0x20d312;
+        _0x21c856.console.debug = _0x20d312;
+        _0x21c856.console.info = _0x20d312;
+        _0x21c856.console.error = _0x20d312;
+        _0x21c856.console.exception = _0x20d312;
+        _0x21c856.console.trace = _0x20d312;
+      }
+    }
+  });
+  _0x48296e();
+  function _0x429c94() {
+    var _0x333142 = _0x48cb44.call(this) || this;
+    _0x333142.touchEnabled = true;
+    _0x333142.touchChildren = false;
+    return _0x333142;
+  }
+  __extends(_0x429c94, _0x48cb44);
+  _0x429c94.prototype.dataChanged = function () {
+    this.lv.text = this.data.posn.name;
+    this.chosen.visible = this.data.menu;
+  };
+  return _0x429c94;
+}(BaseItemRender);
+__reflect(xiaoleibaosItemhc.prototype, "xiaoleibaosItemhc");
+var hunhuanItemhc = function (_0x1b1f53) {
+  function _0x570642() {
+    {
+      var _0x1161f7 = _0x1b1f53.call(this) || this;
+      _0x1161f7.touchEnabled = true;
+      _0x1161f7.touchChildren = false;
+      return _0x1161f7;
+    }
+  }
+  __extends(_0x570642, _0x1b1f53);
+  _0x570642.prototype.dataChanged = function () {
+    this.hunhuanName.text = this.data.name;
+    this.Icon.source = this.data.Icon;
+  };
+  return _0x570642;
+}(BaseItemRender);
+__reflect(hunhuanItemhc.prototype, "hunhuanItemhc");
+var HunhuanEquipPanel = function (_0x56d72a) {
+  function _0x57475f() {
+    var _0x52a930 = _0x56d72a.call(this) || this;
+    _0x52a930._cost = 0;
+    _0x52a930.isTopLevel = true;
+    _0x52a930.skinName = "HunhuanEquipSkin";
+    return _0x52a930;
+  }
+  __extends(_0x57475f, _0x56d72a);
+  _0x57475f.prototype.init = function () {
+    {}
+  };
+  _0x57475f.prototype.open = function () {
+    {
+      this.ringEff || (this.ringEff = new MovieClip());
+      this.roleSelect.setCurRole(this.curRole);
+      this.addChangeEvent(this.roleSelect, this.sonChange);
+      this.roleSelect.parent.touchEnabled = true;
+      SubRoles.ins().getSubRoleByIndex(0);
+      this.roleSelect.setCurRole(0);
+      this.observe(Dress.ins().postDressInfo, this.edata);
+      this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
+      this.observe(UserBag.ins().postItemAdd, this.edata);
+      this.observe(UserBag.ins().postItemDel, this.edata);
+      this.observe(UserBag.ins().postItemCountChange, this.edata);
+      this.observe(matrix.ins().postMatrixData, this.edata);
+      this.observe(matrix.ins().postMatrixStockingData, this.edata);
+      this.observe(matrix.ins().postMatrixQianNengData, this.edata);
+      this.observe(matrix.ins().postMatrixTeZhiData, this.edata);
+      this.observe(matrix.ins().postMatrixHhuaData, this.edata);
+      this.observe(GameLogic.ins().postSubRoleChange, this.getpassInfo);
+      this.addTouchEvent(this.item0, this.onlikes);
+      this.addTouchEvent(this.item1, this.onlikes);
+      this.addTouchEvent(this.item2, this.onlikes);
+      this.addTouchEvent(this.item3, this.onlikes);
+      this.addTouchEvent(this.item4, this.onlikes);
+      this.addTouchEvent(this.item5, this.onlikes);
+      this.addTouchEvent(this.upGradeBtn, this.closeMenu);
+      this._curRole = 0;
+      this._indexid = 0;
+      this.edata();
+    }
+  };
+  _0x57475f.prototype.close = function (_0x2ea022) {};
+  _0x57475f.prototype.sonChange = function (_0x494f98) {
+    {
+      this._curRole = this.roleSelect.getCurRole();
+      this.edata();
+    }
+  };
+  _0x57475f.prototype.Bsdate = function () {
+    this.curRole = this.roleSelect.getCurRole();
+    var _0xcef147 = Dress.ins();
+    this.listInfo = [];
+    for (var _0x3bc0e3 in ConfgMgr.Hunhuanconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.Hunhuanconfig[_0x3bc0e3].roletype) {
+      var _0x53d12e = new DressItemInfo();
+      var _0x36a610 = ConfgMgr.Hunhuanconfig[_0x3bc0e3];
+      var _0x40788d = _0x36a610.id;
+      if (_0xcef147.timeInfo[_0x40788d]) {
+        {
+          _0x53d12e.lv = _0xcef147.timeInfo[_0x40788d].lv;
         }
-        if ((((39 == B && ((e = L.$[8](4, f)) && 0 || 1) && ((h = L.$[8](4, f)) || 5) && 1 && L.$[8](7, f, h, e, L.$[8](4, f) ? e[h] : undefined) && r || 29 == B && ((e = L.$[8](4, f)) && r || (h = L.$[8](4, f)) && r || 1) && ((i = L.$[8](4, f)) && 0 || 1) && L.$[8](3, f, function d() {
-          var n,
-            f,
-            B = [this || c[0][0], arguments, d];
-          for ((B.length = i + 3) && r || ((n = B[1].length) < h ? n = n : n = h) && r || (f = 0); f < n; f++) B[f + 3] = B[1][f];
-          return L(v, e, L.$[8](5, c, [B]), E);
-        }) && r || 17 == B && (f[f.length - 2 - L.$[8](4, f)] = L.$[8](4, f)) || 9) && (46 == B && L.$[8](4, j) || 1) && (14 == B && L.$[8](3, f, f[L.$[8](4, f)]) || 8) && 28 == B && (E = []) && r || 51 == B && L.$[8](3, f, f[f.length - 2 - L.$[8](4, f)]) || 5) && (47 == B && ((e = L.$[8](4, f)) || 8) && 1 && L.$[8](3, f, L.$[8](4, f) > e) || 2) && (19 == B && ((e = L.$[8](4, f)) && r || L.$[8](3, f, L.$[8](4, f) >= e)) && r || 41 == B && L.$[8](3, f, -L.$[8](4, f)) || 6) && 1 == B && L.$[8](3, j, v[n++]) || 1) && (((22 == B && ((e = L.$[8](4, f)) && r || 1) && L.$[8](3, f, L.$[8](4, f) - e) && r || 40 == B && ((e = L.$[8](4, f)) && r || L.$[8](3, f, L.$[8](4, f) | e))) && 0 || 23 == B && L.$[8](3, f[f.length - 2], L.$[8](4, f)) && r || 49 == B && ((e = L.$[8](4, f)) && r || L.$[8](3, f, L.$[8](4, f) < e)) || 6) && (15 == B && L.$[8](3, f, undefined) && r || 53 == B && L.$[8](3, f, !L.$[8](4, f)) || 9) && 37 == B && ((e = L.$[8](4, f)) && r || 1) && ((h = L.$[8](4, f)) && r || 1) && ((i = L.$[8](4, f)) && 0 || 1) && ((L.$[8](4, f)[L.$[8](4, f)] = h) && 0 || 1) && (e ? L.$[8](3, f, h) : L.$[8](3, f, i)) && r || 38 == B && (t = !0) || 1) && (21 == B && L.$[8](3, f, +L.$[8](4, f)) && r || (((4 == B && ((v = L.$[8](6, v, n)) || 9) && (n = 0) || 9) && (7 == B && ((e = L.$[8](4, f)) && 0 || L.$[8](3, f, L.$[8](4, f) + e)) && r || 45 == B && ((e = L.$[8](4, f)) && 0 || 1) && L.$[8](3, f, L.$[8](4, f) == e)) && r || 8 == B && ((e = L.$[8](4, f)) && 0 || 1) && L.$[8](3, f, L.$[8](4, f) % e) || 5) && 18 == B && ((e = L.$[8](4, f)) && 0 || 1) && ((h = L.$[8](4, f)) && 0 || 1) && (-1 != c.indexOf(e) ? L.$[8](3, f, !1) : L.$[8](3, f, delete e[h])) && r || 36 == B && L.$[8](3, E, L.$[8](4, f)) && r || 30 == B && L.$[8](3, f, []) || 6) && (3 == B && ((e = L.$[8](4, f)) && 0 || 1) && L.$[8](3, f, L.$[8](4, f) ^ e) || 4) && 34 == B && ((e = L.$[8](4, f)) || 5) && L.$[8](3, f, L.$[8](4, f)[L.$[8](4, f)] = e) && 0 || 42 == B && (((e = L.$[8](4, f)) || 8) && (e ? h = L.$[8](6, f, -e) : h = []) && r || 1) && ((f.length -= e) || 5) && 1 && (L.$[8](4, f) ? L.$[8](3, f, L.$[2][L.$[0]](L.$[8](4, f), L.$[8](4, f), h)) : L.$[8](3, f, L.$[2][L.$[0]](L.$[8](4, f), c[0][0], h))) && r || ((13 == B && L.$[8](3, f, typeof L.$[8](4, f)) && r || 32 == B && ((e = L.$[8](4, f)) && 0 || 1) && L.$[8](3, f, L.$[8](4, f) === e) && r || 0 == B && ((e = L.$[8](4, f)) && r || (0 == (h = v[n++]) ? c[0][0][e] = L.$[8](4, f) : f[h] = L.$[8](4, f)))) && r || (50 == B && ((e = L.$[8](4, f)) && r || L.$[8](3, f, L.$[8](4, f) << e)) && r || 26 == B && L.$[8](3, f, L.$[8](4, f)[L.$[8](4, f)])) && r || 52 == B && ((e = L.$[8](4, f)) && r || 1) && ((h = v[n++]) || 1) && 1 && (0 == (i = v[n++]) ? L.$[8](3, f, c[h][0][e]) : L.$[8](3, f, c[h][i])) && r || 20 == B && L.$[8](3, f, {}) || 6) && (6 == B && ((e = L.$[8](4, f)) || 3) && 1 && L.$[8](3, f, L.$[8](4, f) & e) || 2) && (12 == B && ((e = L.$[8](4, f)) || 1) && 1 && L.$[8](3, f, L.$[8](4, f) * e) || 2) && 43 == B && ($ = f[f.length - 1]) && r || 0 || (16 == B && ((e = v[n++]) && r || 1) && ((h = L.$[8](4, f)) || (n = e)) && r || 54 == B && (n = v[n++]) || 10) && 35 == B)) {
-          if (((e = L.$[8](4, f)) || 1) && ((h = L.$[8](4, f)) || 7) && L.bind) {
-            L.$[8](3, f, new (L.$[8](2, L.bind, h, L.$[8](5, [null], e)))());
-          } else {
-            for ((i = []) && r || (p = 0); p < e.length || L.$[8](3, f, h.constructor("F,a", "return new F(" + i.join(",") + ")")(h, e)) && r || 0; p++) i[p] = "a[" + p + "]";
+      } else {
+        _0x53d12e.lv = 0;
+      }
+      _0x53d12e.id = _0x40788d;
+      _0x53d12e.job = _0x36a610.roletype;
+      this.listInfo.push(_0x53d12e);
+    }
+    return this.listInfo;
+  };
+  _0x57475f.prototype.getpassInfo = function () {};
+  _0x57475f.prototype.openeff = function (_0x132ed2) {
+    this.removeMc(this.ringEff);
+    this.ringEff.scaleX = this.ringEff.scaleY = 1.2;
+    this.ringEff.x = 250;
+    this.ringEff.y = -100;
+    egret.Tween.removeTweens(this.ringEff);
+    egret.Tween.get(this.ringEff, {
+      loop: true
+    }).to({
+      y: 0
+    }, 2000).to({
+      y: 0
+    }, 2000);
+    this.HHEff.parent && this.HHEff.parent.addChild(this.ringEff);
+    this.ringEff.playFile(RES_DIR_EFF + "heunhuans00" + (_0x132ed2 + 1), -1);
+  };
+  _0x57475f.prototype.removeMc = function (_0x35100f) {
+    if (_0x35100f) {
+      {
+        _0x35100f.dispose();
+        DisplayUtils.removeFromParent(_0x35100f);
+      }
+    }
+  };
+  _0x57475f.prototype.edata = function (_0x1b5633) {
+    var _0x58428c = this.Bsdate();
+    var _0x166458 = ConfgMgr.Hunhuanupconfig;
+    for (x = 0; x < _0x58428c.length; x++) {
+      this._delv = _0x58428c[x].lv;
+      this._deid = _0x58428c[x].id;
+      var _0x115e8d = _0x58428c[x].lv;
+      this["item" + x].Icon.source = "hunhuan_e" + [x + 1] + "_png";
+      this["item" + x].level.text = "Lv: " + _0x115e8d;
+      this["item" + x].isSelected.visible = 0;
+      if (x == this._indexid) {
+        this["item" + x].isSelected.visible = 1;
+        var _0x153d2f = _0x166458[x + 1][_0x115e8d];
+        var _0x81a372 = _0x166458[x + 1][_0x115e8d + 1];
+        var _0x2924a3 = parseInt(_0x2924a3) + UserBag.getAttrPower(AttributeData.transformAttr(_0x166458[x + 1][_0x115e8d].attr));
+        this.attr0.text = this.getattrlv(_0x153d2f.attr);
+        if (_0x81a372) {
+          this.addAttr0.text = this.getattrlv(_0x81a372.attr);
+          this.addAttr0.visible = 1;
+          this.upGradeBtn.visible = this.costGroup.visible = 1;
+          this.nexmanlv.visible = 0;
+          this._lv = _0x115e8d;
+          this._item = _0x81a372.itemid;
+          this._count = _0x81a372.count;
+          this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
+          this.icon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
+          this.countLabel.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
+          this._openid = _0x58428c[x].id;
+          _0x115e8d < 1 ? this.upGradeBtn.label = "激  活" : this.upGradeBtn.label = "升  级";
+          this._num < this._count ? this.countLabel.textColor = "0xd1c28f" : this.countLabel.textColor = "0xff0012";
+        } else {
+          this.upGradeBtn.visible = this.costGroup.visible = this.addAttr0.visible = 0;
+          this.nexmanlv.visible = 1;
+        }
+        this.openeff(x);
+        this.powerPanel.setPower(_0x2924a3);
+      }
+    }
+  };
+  _0x57475f.prototype.getattrlv = function (_0x43c1b7) {
+    var _0x5d123a = AttributeData.getAttStr(AttributeData.transformAttr(_0x43c1b7), 0, 1, ": ");
+    return _0x5d123a;
+  };
+  _0x57475f.prototype.getattrnexlv = function (_0x4f3ce6, _0xb5d97c) {
+    {
+      var _0x485164 = 0;
+      if (_0x4f3ce6[_0x485164].type == _0xb5d97c[_0x485164].type && _0x4f3ce6[_0x485164].value != _0xb5d97c[_0x485164].value) {
+        var _0x46086b = _0x4f3ce6[_0x485164].value;
+        var _0x450575 = _0xb5d97c[_0x485164].value;
+        var _0x510400 = _0x450575 - _0x46086b;
+        var _0x2229e4 = _0x4f3ce6[_0x485164].type;
+        var _0x1de112 = this.Getattrsuanshu(_0x510400, _0x2229e4);
+        return _0x1de112;
+      } else {
+        {
+          return 0;
+        }
+      }
+    }
+  };
+  _0x57475f.prototype.Getattrsuanshu = function (_0x4f71bc, _0x1058f5) {
+    if (_0x1058f5 == 7) {
+      {
+        var _0x1d8d2f = _0x4f71bc / 100 + "%";
+      }
+    } else {
+      {
+        if (_0x1058f5 == 20) {
+          var _0x8813f4 = _0x4f71bc / 100;
+          var _0x63377f = _0x8813f4.toFixed(1) + "%";
+        } else {
+          {
+            var _0x63377f = _0x4f71bc;
           }
         }
-        24 == B && L.$[8](4, f) && r || 44 == B && ((e = L.$[8](4, f)) && r || 1) && L.$[8](3, f, L.$[8](4, f) / e);
-      }(v[n++]);
-    } catch (i) {
-      if (!j.length) {
-        throw i;
-      }
-      if ((e = L.$[8](4, j)) || 5) {
-        (h = L.$[8](4, j)) ? (L.$[8](3, f, i) || 6) && (n = h) : e && (n = e);
       }
     }
-    return $;
-  }(function (r) {
-    for (var n = "length", o = function (r) {
-        for (var o = [], t = 33; t < 127; t++) if (34 != t && 39 != t && 92 != t) {
-          o[o[n]] = String.fromCharCode(t);
-        }
-        var a = [];
-        for (t = 0; t < r[n]; t++) a[a[n]] = o.indexOf(r.charAt(t));
-        return a;
-      }, t = [], a = 0; a < r[n]; a++) {
-      "string" == typeof r[a] && (r[a] = o(r[a]));
-      t.push.apply(t, r[a]);
-    }
-    return t;
-  }(["?$,FG$,Y,^,_,D,S,_,D,$,`,_,T,^,EG$,Y,W,],]G$,B,),", [117], ",4,!,>,", [117], ",(,*,=,#,3,9,#G$,`,_,T,S,P,=,VG$,J,S,[,^,F,S,9,a,`,],TG$,E,`,_,T,^,EG$,Z,S,V,^,J,S,C,_,],^,W,TG$,T,^,Y,C,[,S,_,DG$,`,I,>,W,>G$,", [119], ",", [121], "G$,`,V,J,W,[,SG$,D,^,),D,J,`,_,UG$,", [127], "G$,HG$,Y,a,W,J,9,^,T,S,7,DG$,QG$,,,C,", [101], ",", [101], ",", [98], ",", [99], "G$,H,J,^,D,^,D,O,H,SG$,H,C,I,aG$,W,T,T,3,F,S,_,D,<,`,I,D,S,_,S,JG$,W,H,H,S,_,T,9,a,`,],TG$,", [117], "G$,],^,Y,W,],),D,^,J,W,U,SG$,I,H,],`,DG$,V,W,b,SG$,H,^,HG$,S,F,W,]G$G$,],S,_,U,D,aG$,1,F,+G$,T,^,Y,C,[,S,_,D,3,],S,[,S,_,DG$,", [95], "G$,6,C,_,Y,D,`,^,_G$,4,W,D,SG$,Y,J,S,W,D,S,3,],S,[,S,_,DG$,c,^,`,_G$,PG$,", [119], "G$,]G&Y", [5141], "YF.!.@B.!B$W#0==.!B$W#0=J;$W$%E;I.#.#.&@$!;Y", [469], ".!$!&.#$<$&(.#*.!H.(T3~.!$<$%;.EBW!!AF8E;YW.EBW!!AF$W$%9.-T3", [124], ".#$<$&(.#*.!H;Y~$W#,.!.!M.", [67108864], "/.!%.", [66846720], ".EBW!!AF8.", [1000], "/.", [255], ").-U*$W$&$W#D*.", [255], ").$U*)$!(.!$!).!$!*A$!+.", [98], "$!,.!$!-$W$-$W$,T3", [274], "$W$+(.6B-=.#$W#,.!.!M.#M;.#$<$)$W$-$W$+=*E;.#$<$-(.#*.!H;Y", [204], ".!$<$);$W$)$W$,OE;.!$!-$W$-.@B$W$+=T3", [366], ".#$<$*$W$-$W$+=$W$)9$W$-$W$+=$W$)9/*E;.#$<$-(.#*.!H;Y", [297], ".!$<$*;$W$*$W$,OE;$W$&.2P3", [404], ".!$<$*;.!E;.#$<$($W$).", [0.67], "T(3", [428], ";$W$).", [0.32], "R$W$*.", [0.14], "T(3", [446], ";$W$*.", [0.03], "R**E;Y", [459], "$W$(NII.+.!.", [452], "@NII.+.!.R@$!<Y", [835], ".EBW!!AF8$!%Y", [496], "I.!.!.", [495], "@$!&.!$<$(;.)B.!1=E(3", [541], ";.!$<$(;.+B$W$(=E(3", [553], ";.FB$W$(=(3", [573], ";.!$<$);.BB$W$(=E(3", [592], ";.8B$W$)=0$W$&0P(3", [611], ";.(B$W$)=0$W$&0P3", [694], "$W$)(.8B-=.#.!$<$(;.+BW!!(.FB-=.#..B.#ME.#M;.DB.#B$W$(==$!*$W$)(.(B-=.#$W$(.#M;Y", [703], ".DBW!!$!*.EBW!!AF8$W$%9.", [3000], "T3", [830], ".!$<$(;$W$*E(3", [754], ";.!$<$(;.5B$W$(=E(3", [774], ";.!$<$(;./B$W$(=E3", [828], ".!$<$(;$W$((.$B-=.#$W$&.#ME;.@B$W$((.;B-=.#.CB.#M=NIY", [834], ".!NII.(.!.", [481], "@$!=Y", [1264], "Y", [1000], ".", [1e-7], "$!&.!$<%%;$W%%$W%%.", [6.283185307], "O.!%.", [6.283185307], "/9E;$W%%$!($W%%$!).#$!*.!$<%(;$W%(L$W%%/$W%%/$W%*.#*$W%*.$*/OE;.#$<%*.$*E;.#$<%)$W%(*E;$W%(.!R3", [979], "$W%(Y", [984], "$W%(L$W%&63", [993], "Y", [900], "$W%)NII.(.#.", [849], "@$!(Y", [1051], "$W%%$W%&$W$(.!$W%%.#M/*$W#I.!.!M.", [67108864], "O*NII.$.$.", [1012], "@$!)Y", [1086], "$W%%.!R3", [1078], "$W%%Y", [1083], "$W%%LNII.#.#.", [1063], "@$!*$W$&.!$W$%.#M.", [100000], "O$!+$W$*.!$W$+$W$).!$W$%.", [0.7], ".$M9.#M.", [0.001], "T(X3", [1184], ";$W$*.!$W$+$W$).!$W$%.", [1.7], ".$M9.#M.", [0.001], "T(X3", [1221], ";$W$*.!$W$+$W$).!$W$%.", [2.7], ".$M9.#M.", [0.001], "T3", [1229], "$W$&NIY", [1254], "$W#K.!.!M$W%%/.", [10000], "/.!%NII.#.#.", [1231], "@NII.).$.", [847], "@$!>Y", [1651], "Y", [1322], "Y", [1312], ".!$<%%;$W%%.", [9301], "/.", [49297], "*.", [233280], "+E;$W%%.", [233280], "ONII.#.!.", [1280], "@NII.#.#.", [1278], "@.!$W#I.!.!M.#M$!(A$!).!$!*$W$*.@B$W$%=T3", [1406], "$W$)(.6B-=.#$W$*.#M;.#$<$*(.#*.!H;Y", [1355], ".!$!*$W$*.@B$W$)=T3", [1519], "$W$*$W$)=$!+$W$(.!.!M.@B$W$)=/.!%$!,.!$W$*$W$)J;$W$,$W$)=E;.!$W$,$W$)J;$W$+E;.#$<$*(.#*.!H;Y", [1411], "$W$&.!$W$%.#M$!-.!$!*$W$*.@B$W$)=T3", [1644], "$W$*$W$)=$W$-.!$W$*.#MPX3", [1628], "Y", [1619], "Y", [1609], ".@B$W%%=$W#,.!.!M/.!%NII.#.#.", [1585], "@NII.#.#.", [1583], "@NI.#$<$*(.#*.!H;Y", [1540], "$W$&NII.+.$.", [1276], "@$!?Y", [1784], "$W$%.!.0BS.$M$W#I.!.!M.", [65535], ").", [32779], "K.0/.#K$W#I.!.!M.", [65535], ").", [32779], "K.8//.", [262144], "+P(3", [1763], ";$W$%.!.*.#M(.2B-=.#.!.#M.d.", [1000], "/.", [506], "*.", [100], "*.!9P3", [1771], "$W$%NIY", [1774], "I.!.!.", [1773], "@NII.#.#.", [1663], "@$!@Y", [1958], ".#.AU$!&$W#,.!.!M$W$&/.!%$!(.!$!).#3", [1930], "$W#O(.&B-=.#$W$(.#M.#LP3", [1882], ".!.@B$W#O=$W#OJ;$W$(E;Y", [1930], ".!$<$(;$W#,.!.!M$W$&/.!%E;.#$<$)(.#*.!H.*R3", [1928], "Y", [1930], "Y", [1829], ".!.AB$W$(*.!1J;$W$%E;$W$(NII.&.#.", [1796], "@$!AY", [3002], "Y", [2042], ".!$!($W%(.@B$W%&=T3", [2035], ".!.@B$W%%=$W%%J;$W%($W%&=E;.#$<%((.#*.!H;Y", [1977], "$W%%NII.%.$.", [1972], "@$!%Y", [2081], "$W%%.#$<$2(.#*.#H.*/*.", [256], "+NII.#.#.", [2054], "@$!&$W#,.!.!M$!(.!$!).!$!*$W$*.%T3", [2165], "$W$($W#,.!.!MP3", [2149], ".#$<$).#*E;.#$<$*(.#*.!H;Y", [2113], "$W$).%P3", [2203], ".EBW!!AF8$!+A.!$<$+;.!E:$!,Y", [2313], ".EBW!!AF8$!+$W$+$!-A$!,$W$-.#63", [2281], ".!.@B$W$,=$W$,J;$W$-.!%.", [255], ")E;.!$<$-;$W$-.", [256], "OE;Y", [2226], ".!$<$,;$W$%.!A.@B$W$,=:$W$,.$ME;.!.@B.HB$W#4==.HB$W#4=J;$W$+.", [252], ").%*E;.!.@B.HB$W#4==.HB$W#4=J;$W$+.", [64512], ").+D.#*E;.!$!..!$!/.!$!0.!$!*$W$*.@B$W$,=T3", [2499], ".#$<$.$W$*$W$,=*E;.#$<$/$W$*$W$,=.%/*E;.#$<$0$W$*$W$,=.*/*E;.#$<$*(.#*.!H;Y", [2408], "A$!1.!$!2.!$!*$W$*.%T3", [2580], ".!.@B$W$1=$W$1J;$W$&.!$W#,.!.!M.", [256], "/.!%.#ME;.#$<$*(.#*.!H;Y", [2513], ".!$!*$W$*.@B$W$,=T3", [2658], ".!$W$*$W$,J;$W$*.@B$W$1=+$W$1=$W$*$W$,=%E;.#$<$*(.#*.!H;Y", [2585], "$W$%.!$W$1$W$,.$M$!3.@B$W$3=$!4.!$!*$W$*.0$W$49T3", [2766], ".!.@B$W$3=$W$3J;$W$&.!$W#,.!.!M.", [256], "/.!%.#ME;.#$<$*(.#*.!H;Y", [2694], ".!$!*$W$*.@B$W$3=T3", [2825], ".!$W$*$W$3J;$W$*$W$3=E;.#$<$*(.#*.!H;Y", [2771], ".!$<$.;.d$W$..3+*E;.!$<$/;$W$/.", [256], "+E;.!$<$0;.", [128], "$W$0.d+*E;A.!$W$3=:.#$W$3=:.$$W$3=:.%$W$3=:.&$W$3=:.($W$3=:$W$.:$W$/:$W$0:.)$W$3=:.*$W$3=:.+$W$3=:.,$W$3=:.-$W$3=:..$W$3=:./$W$3=:NII.2.!.", [1970], "@$!B.!.!B$W#0J;AE;.%B$!C.@B$W#C=3", [3061], "$W#C.!B$W#%=PX3", [3061], "2NI.*$!D.:B.!1=$!E$W#E3", [3262], ".?B$!F.!$!G$W#G.-T3", [3130], ".#$<#F.9B*E;.#$<#G(.#*.!H;Y", [3093], "$W#F$W#E=$!H$W#H3", [3204], ".!$<#D;$W#H8E;.,BW!!.!$W#D.#M3", [3190], ".!$<#D;.*E;.#$W#F$W#EJ;5;.7B.!1=3", [3262], ".!1(.7B-=.#.*BY", [3251], ".!$W#F$W#EJ;$W#D.#*E;I.#.#.", [3229], "@.$M;.!1>($,],S,_,U,D,a-=-.!-.#V.%V6X3", [3330], "(.$V-=$!G.#$<#D(.#*.!H;.#V.#*.$4Y", [3286], ";;;$W#<.!.!M$!I.!$!JY", [3440], "Y", [3430], "$W#J.", [100], "T(X3", [3385], ";.#$<#J(.#*.#H.[+.!P3", [3418], ".!$<$%;$W$%.", [9301], "/.", [49297], "*.", [233280], "+E;$W$%.", [233280], "ONI$W#,.!.!MNII.W.!.", [3354], "@NII.#.#.", [3352], "@.!$W#I.!.!M.#M$!K$W#=.!.!M.#PX3", [3515], ".!$<#I;Y", [3506], "$W#,.!.!M.", [67108864], "/.!%NII.W.!.", [3488], "@E;$W#).!$W#I.!.!M$W#I.!.!M.", [67108864], "O.$M$!L$W#*.!$W#K.#M$!M$W#(.!$W#I.!.!M.", [65535], ").", [32779], "K.#M$!NA$!O.!.1B$W#4J;AE;.!.HB$W#4J;AE;.!.@B.HB$W#4==.HB$W#4=J;$W#,.!.!M.", [250], "/.!%.#*E;.!.@B.HB$W#4==.HB$W#4=J;$W#,.!.!M.", [250], "/.!%.$*E;.!.@B.HB$W#4==.HB$W#4=J;$W#,.!.!M.", [250], "/.!%.%*E;$W#B.!.!M$!P.!.JB$W#4J;.@B.HB$W#4==E;$W#A.!.1B$W#4=.#M.", [1052929], "%$!QY", [4464], "AY", [3838], ".!$<%%;.", [999], "E;$W%%NII.$.!.", [3820], "@:$!%.!$!&$W$&.@B$W$%=T3", [3952], "$W#/(.6B-=.#Y", [3911], "Y", [3901], "$W#A.!$W%%.#MNII.W.!.", [3885], "@NII.#.#.", [3883], "@.!$W$&$W$%=.#M.#M;.#$<$&(.#*.!H;Y", [3854], "AY", [3962], "$W#QNII.#.!.", [3955], "@:Y", [3982], ".!$W#P=NII.#.!.", [3972], "@:Y", [4002], ".#$W#P=NII.#.!.", [3992], "@:Y", [4022], ".$$W#P=NII.#.!.", [4012], "@:Y", [4042], ".%$W#P=NII.#.!.", [4032], "@:Y", [4062], ".&$W#P=NII.#.!.", [4052], "@:Y", [4082], ".($W#P=NII.#.!.", [4072], "@:Y", [4102], ".)$W#P=NII.#.!.", [4092], "@:Y", [4122], ".*$W#P=NII.#.!.", [4112], "@:Y", [4142], ".+$W#P=NII.#.!.", [4132], "@:Y", [4162], ".,$W#P=NII.#.!.", [4152], "@:Y", [4182], ".-$W#P=NII.#.!.", [4172], "@:Y", [4202], "..$W#P=NII.#.!.", [4192], "@:Y", [4222], "./$W#P=NII.#.!.", [4212], "@:Y", [4242], ".0$W#P=NII.#.!.", [4232], "@:Y", [4262], ".1$W#P=NII.#.!.", [4252], "@:Y", [4282], ".2$W#P=NII.#.!.", [4272], "@:Y", [4306], ".!.HB$W#4==NII.#.!.", [4292], "@:Y", [4330], ".#.HB$W#4==NII.#.!.", [4316], "@:Y", [4354], ".$.HB$W#4==NII.#.!.", [4340], "@:Y", [4391], ".@B$W#R=3", [4385], "$W#R.#*NIY", [4390], ".?BNII.#.!.", [4364], "@:$!(.!$!&$W$&.@B$W$(=T3", [4463], "$W#.(.6B-=.#$W$&$W$(=.#M;.#$<$&(.#*.!H;Y", [4407], "I.%.!.", [3817], "@.!.!M;.IB$W#-.!.", [8232], ".#M*.-B*$!R$W#-.!.", [8232], ".#M$!S$W#-.!.", [64606], ".#M$!T$W#R3", [4611], "#", [4565], "#!.>BW!!.!.IB$W#S*.IB*.#M;QQY", [4611], "$!:.!$<#R;$W#R(.;B-=.#$W#S.#M(.GB-=.#$W#T.#ME;.!.@B$W#1=$W#1J;A.", [118], ":E;$W#+.!.!.#.$M$!U$W#U.#$W#2=C(3", [4673], ";$W#U.4BC3", [4693], "$W#1(.=B-=.#.!M;Y", [4769], "$W#U.!$W#2=C(3", [4717], ";$W#U.!BC3", [4737], "$W#1(.=B-=.#.!M;Y", [4769], ".!$<#+;Y", [4760], ".<BW!!$W$%*NII.%.%.", [4746], "@E;.?B$!V$W#&.!$W#V.!.$M$!WA$W#W.!7.!.!.!.!.!.!.!.!.$.!..M:$W#W.!7.!.!.!.!.!.!.!.!.$.!..M:$W#W.!7.!.!.!.!.!.!.!.!.$.!..M:$W#W.!7.!.!.!.!.!.!.!.!.$.!..M:$!X.!$W#X=.%$W#X=P(3", [4956], ";.!$W#X=.3B$W#V*P(3", [4975], ";.#$W#X=.$$W#X=P(3", [4990], ";.#$W#X=.3BPX3", [5012], ".!$<#W;Y", [5003], "I.!.!.", [5002], "@E;A$W#@.!$W#N.#M:$W#?.!A.#:.$:.%:.&:.(:.):.*:$W#M.$M:$W#>.!.", [0.9], "$W#L.$M:$W#+:$W#R:$W#W:$W#3.!$W#M.#M:$W#5:$W#6:$W#7.!.!M:$W#8:$W#9:NII.W.7.$@NII"]))) || 2) && (y = 0) && 0 || (m = z(W, function (v, n) {
-    return function c(E, B, $, e, h, i, p, d, a, o, u) {
-      var l,
-        b,
-        g,
-        k,
-        F,
-        s,
-        q,
-        V,
-        Y,
-        _,
-        z,
-        R = o / 2 ^ 0;
-      return R + u > a && 1 == o ? "" : R ? ((n++ % 3 == 0 ? l = "{" + v : l = "{") || 10) && (0 === i ? l : (((g = c(E, b = T++, $, e, h, i, p, d, a, R, u + 0)) || 9) && (k = E[b]) && r || (F = c(E, b = T++, $, e, h, i, p, d, a, R, u + R)) || 9) && (s = E[b]) && 0 || (g || F ? F ? ((q = m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(R + u)) || A) && G) + "]") || 5) && ((u + R > a && 1 == o ? g = "" : g = g) || 3) && ((u + R > a && 1 == o ? F = "" : F = F) || 7) && ((1 == k && 1 == s ? E[B] = 1 : E[B] = 0) && g && F ? p + "<" + q + "?" + g + ":" + F : "if(" + p + "<" + q + ")" + (k ? g + ";" : l + g + "}") + "else" + (s ? " " + F + ";" : l + F + "}")) : ((E[B] = k) || 2) && (u + R > a && 1 == o ? "" : g) : "")) : i[u] ? i[u][2] ? ((E[B] = 1) || 6) && "(" + i[u][4] + ")?" + ($(i[u][2][0]) - $(i[u][0]) > 0 ? p + "+=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][2][0]) - $(i[u][0])) || A) && G) + "]" : p + "-=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][0]) - $(i[u][2][0])) || A) && G) + "]") + ":" + ($(i[u][2][1]) - $(i[u][0]) > 0 ? p + "+=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][2][1]) - $(i[u][0])) || A) && G) + "]" : p + "-=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][0]) - $(i[u][2][1])) || A) && G) + "]") : i[u][4] && "break" !== i[u][4] && "continue" !== i[u][4] ? "v v v" === i[u][4] ? (E[B] = 2) && 0 || (h ? "break" : "return") : "return " == j[f](i[u][4], 0, 7) ? ((E[B] = 2) || 9) && (";" == t[f](i[u][4], i[u][4].length - 1) ? j[f](i[u][4], 0, -1) : i[u][4]) : i[u][3] && ((V = i[u][3][0]) || 4) && ((Y = i[u][3][1]) || 9) && ((_ = m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(d[V][Y] + .1)) || A) && G) + "]") || 1) && (i[u][4] = j[f](i[u][4], 0, -1) + _ + ")") && r || ((E[B] = i[u][5] || 0) ? ((z = i[u][4]) || 5) && (";" == t[f](z, z.length - 1) && (z = j[f](z, 0, -1)) || 5) && "((" + z + ")||1)&&(" + ($(i[u][1]) - $(i[u][0]) > 0 ? p + "+=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][1]) - $(i[u][0])) || A) && G) + "]" : p + "-=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][0]) - $(i[u][1])) || A) && G) + "]") + ")" : i[u][4] + ";" + ($(i[u][1]) - $(i[u][0]) > 0 ? p + "+=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][1]) - $(i[u][0])) || A) && G) + "]" : p + "-=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][0]) - $(i[u][1])) || A) && G) + "]")) : ((E[B] = 1) || 5) && ($(i[u][1]) - $(i[u][0]) > 0 ? p + "+=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][1]) - $(i[u][0])) || A) && G) + "]" : p + "-=" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $(i[u][0]) - $(i[u][1])) || A) && G) + "]") : (E[B] = 0) && r || "";
-    };
-  }, function (v) {
-    var n = 0,
-      r = {};
-    return function (c, E, f) {
-      if (c) {
-        return r[c] ? r[c] : ((f = (13 * v | 1) * (n++ + 21 * v) % 262144) || 6) && (E ? r[c] = f : r[c] = V + f);
+    return _0x1ec796;
+  };
+  _0x57475f.prototype.getattrnewnum = function (_0x3ac4c7) {};
+  _0x57475f.prototype.closeMenu = function (_0x1e9454) {
+    if (this._num < this._count) {
+      {
+        return void UserTips.ins().showTips("|C:0xFFFF00&T:  道具不足|");
       }
-    };
-  }, function (v, n) {
-    return function (r) {
-      return 1e5 * (r + (3.7 + (-4 | ~v)) * p(r) + n) ^ 0;
-    };
-  }, function (v) {
-    return function (n, c) {
-      var E,
-        B,
-        t,
-        $ = [];
-      for (((c ? c = n : c = n.length) || 8) && (E = 0); E < c; E++) h[f]($, E);
-      for (E = 0; E < $.length; E++) (B = $[E]) && r || (t = v() * $.length ^ 0) && r || ($[E] = $[t]) && r || ($[t] = B);
-      return function (v) {
-        return v >= 0 ? $[v] : v;
-      };
-    };
-  }, function (v, n, c, E) {
-    var t, $, j;
-    if ((E = v + (n ? R.length : 0)) in C) {
-      t = C[E];
+    }
+    if (this._lv < 1) {
+      {
+        Dress.ins().JiezhikongjianUserReq(this._openid, 21);
+      }
     } else {
-      if (n) {
-        for ((t = "") && r || ($ = 0); $ < R[v].length; $++) t += "\\u" + (1 == (j = u[f](R[v][$], 16)).length ? "000" + j : 2 == j.length ? "00" + j : 3 == j.length ? "0" + j : j);
-        t = C[E] = t;
+      {
+        Dress.ins().JiezhikongjianLevelUp(this._openid);
+      }
+    }
+  };
+  _0x57475f.prototype.getBaolv = function (_0x5f1032) {
+    var _0x34cbd1 = this.Bsdate();
+    var _0x439e32 = _0x34cbd1[_0x5f1032].lv;
+    return _0x439e32;
+  };
+  _0x57475f.prototype.onlikes = function (_0x24f284) {
+    {
+      SoundManager.ins().playEffect(SoundUtil.WINDOW);
+      switch (_0x24f284.currentTarget) {
+        case this.item0:
+          this._indexid = 0;
+          this.edata();
+          break;
+        case this.item1:
+          this._indexid = 1;
+          this.edata();
+          break;
+        case this.item2:
+          this._indexid = 2;
+          this.edata();
+          break;
+        case this.item3:
+          this._indexid = 3;
+          this.edata();
+          break;
+        case this.item4:
+          this._indexid = 4;
+          this.edata();
+          break;
+        case this.item5:
+          this._indexid = 5;
+          this.edata();
+      }
+    }
+  };
+  _0x57475f.prototype.closeMenus = function (_0x25e552) {
+    ViewManager.ins().close(this);
+    SoundManager.ins().playEffect(SoundUtil.WINDOW);
+  };
+  return _0x57475f;
+}(BaseView);
+__reflect(HunhuanEquipPanel.prototype, "HunhuanEquipPanel");
+(function (_0x2f6718, _0x2d485a, _0x303df6) {
+  var _0x2cd463 = function () {
+    var _0x1ab5bb = true;
+    return function (_0x5b1af2, _0xd282a1) {
+      var _0x2cfb91 = _0x1ab5bb ? function () {
+        if (_0xd282a1) {
+          var _0x1885ee = _0xd282a1.apply(_0x5b1af2, arguments);
+          _0xd282a1 = null;
+          return _0x1885ee;
+        }
+      } : function () {};
+      _0x1ab5bb = false;
+      return _0x2cfb91;
+    };
+  }();
+  var _0x9f08a7 = _0x2cd463(this, function () {
+    var _0xc1c37e = function () {
+      return "dev";
+    };
+    var _0xd53c6e = function () {
+      return "window";
+    };
+    var _0x2b4ee7 = function () {
+      var _0x2e063e = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
+      return !_0x2e063e.test(_0xc1c37e.toString());
+    };
+    var _0x13f2d2 = function () {
+      var _0x4d1344 = new RegExp("(\\\\[x|u](\\w){2,4})+");
+      return _0x4d1344.test(_0xd53c6e.toString());
+    };
+    var _0x1933e9 = function (_0x52ca83) {
+      var _0x3886b0 = 0 >> 1 + NaN;
+      if (_0x52ca83.indexOf("i" === _0x3886b0)) {
+        _0x1899cc(_0x52ca83);
+      }
+    };
+    var _0x1899cc = function (_0x437847) {
+      var _0x5495b9 = 3 >> 1 + NaN;
+      if (_0x437847.indexOf("true"[3]) !== _0x5495b9) {
+        _0x1933e9(_0x437847);
+      }
+    };
+    if (!_0x2b4ee7()) {
+      if (!_0x13f2d2()) {
+        _0x1933e9("indеxOf");
       } else {
-        t = C[E] = o[B](null, R[v]);
+        _0x1933e9("indexOf");
       }
+    } else {
+      _0x1933e9("indеxOf");
     }
-    return c ? "'" + t + "'" : t;
-  }, a, o, s, F, {}, R = [], C = {}, function (v) {
-    return function (n) {
-      return ((D = v(+n[0], !0)) || 10) && ((Q = function (v) {
-        var n,
-          r = [];
-        for (n = 0; n < v.length; n++) r[D(n)] = v[n];
-        return r;
-      }) || 2) && !0;
-    };
-  }, b, function (v, n) {
-    var r,
-      c = [];
-    for (r = 0; r < n.length; r++) h[f](c, $[f](n, r) ^ v);
-    return c;
-  }, function () {
-    var v,
-      r = [],
-      E = $[f](n, c++) - 1;
-    for (v = 0; v < E; v++) h[f](r, J());
-    return r;
-  }, function () {
-    var v, n;
-    function c() {
-      var c,
-        E = [];
-      for (c = 0; c < 16; c++) E[c] = c;
-      (v = function () {
-        var v, c, E;
-        for (v = 0; v < this.length; v++) if ((c = this[v]) && r || (E = a() * this.length ^ 0) && r || (this[v] = this[E]) || 6) {
-          this[E] = c;
-        }
-        for (v = 0; v < this.length; v++) this[v] += n;
-        return this;
-      }[f](E)) && r || (n += E.length);
+  });
+  _0x9f08a7();
+  _0x303df6 = "al";
+  try {
+    _0x303df6 += "ert";
+    _0x2d485a = encode_version;
+    if (!(typeof _0x2d485a !== "undefined" && _0x2d485a === "jsjiami.com.v5")) {
+      _0x2f6718[_0x303df6]("删除版本号，js会定期弹窗，还请支持我们的工作");
     }
-    return ((n = 0) && r || c() || 1) && function () {
-      return (v.length || c()) && r || i[f](v);
-    };
-  }, function (v) {
-    return "\u0130" == (v = t[f](n, c++)) ? (R = S()) && J() : "\f" == v ? I($[f](n, c++) - 1, ((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) : "a" == v ? m[6](S()) && J() : "\x1D" == v ? D(+J()) : "C" == v ? "[" + Q(S()).join(",") + "]" : "@" == v ? ((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l) : "'" == v ? e[f](S(), ";") : "G" == v ? $[f](n, c++) - 1 ? "(" + ($[f](n, c++) - 1 ? "async " : "") + ($[f](n, c++) - 1 ? "function* " : "function ") + J() + "(" + e[f](S(), ",") + ")" + J() + ")" : ($[f](n, c++) - 1 ? "async " : "") + ($[f](n, c++) - 1 ? "function* " : "function ") + J() + "(" + e[f](S(), ",") + ")" + J() : "[" == v ? m[0]($[f](n, c++) - 1) || m[3]($[f](n, c++) - 1) : "w" == v ? $[f](n, c++) - 1 ? P(n, m[0], W, J, m[1], m[2], 12, 117) : "{" + e[f](S(), ";") + "}" : "k" == v ? (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + " " + e[f](S(), ",") : "p" == v ? J() + ($[f](n, c++) - 1 ? "=" + J() : "") : "f" == v ? $[f](n, c++) - 1 ? "({" + e[f](S(), ",") + "})" : "{" + e[f](S(), ",") + "}" : ">" == v ? "v v v" : "\x03" == v ? "return " + J() + ";" : "j" == v ? $[f](n, c++) - 1 ? "(" + J() + "(" + e[f](S(), ",") + "))" : J() + "(" + e[f](S(), ",") + ")" : "\b" == v ? m[3]($[f](n, c++) - 1, 1, 1) : "v" == v ? m[3]($[f](n, c++) - 1) : "\x1B" == v ? (g = m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = $[f](n, c++) - 1) || A) && G) + "]") && ((k = b.p.length + b.l ^ b.x[b.p.length % b.l] * G) || 1) && b.p.push(k) && ((w[G] ^= k) || 1) && g : "%" == v ? $[f](n, c++) - 1 ? "(" + (J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J()) + ")" : J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : "\x0E" == v ? J() + ";" : "<" == v ? $[f](n, c++) - 1 ? "(" + ((((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J()) + ")" : (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : "6" == v ? $[f](n, c++) - 1 ? "(" + ($[f](n, c++) - 1 ? J() + (y++ % 4 == 0 ? "[" + m[4] : "[") + J() + "]" : J() + " ." + J()) + ")" : $[f](n, c++) - 1 ? J() + (y++ % 4 == 0 ? "[" + m[4] : "[") + J() + "]" : J() + " ." + J() : "\x01" == v ? $[f](n, c++) - 1 ? "(" + (J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J()) + ")" : J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : "\x0F" == v ? $[f](n, c++) - 1 ? "(" + ($[f](n, c++) - 1 ? (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l))) + ")" : $[f](n, c++) - 1 ? (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) : "]" == v ? "[" + e[f](S(), ",") + "]" : "B" == v ? "" : "m" == v ? $[f](n, c++) - 1 ? "(new " + J() + "(" + e[f](S(), ",") + "))" : "new " + J() + "(" + e[f](S(), ",") + ")" : "\x7F" == v ? $[f](n, c++) - 1 ? "(" + (J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J()) + ")" : J() + (((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l)) + J() : "_" == v ? "throw " + J() : "W" == v ? "this" : "V" == v ? "null" : "\x02" == v ? ((l = $[f](n, c++) - 1) || n) && j[f](n, c, c += l) : "z" == v ? $[f](n, c++) - 1 ? "(" + J() + "?" + J() + ":" + J() + ")" : J() + "?" + J() + ":" + J() : "*" == v ? m[0](78) + "(" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = F[$[f](n, c++) - 1]()) || A) && G) + "])" : "/" == v ? s[$[f](n, c++) - 1]() : "\x19" == v ? d(w) : 0;
-  }, function (v, n, B, t, j, e, i, p) {
-    var d,
-      a,
-      o,
-      u,
-      l,
-      b,
-      g,
-      k,
-      F,
-      s,
-      V,
-      z,
-      R,
-      C,
-      I,
-      S,
-      J,
-      P = Y++;
-    if (((_[P] = n(-++E)) || 5) && ((a = "") || 3) && $[f](v, c++) - 1) {
-      for (((o = $[f](v, c++) - 1) && r || (u = $[f](v, c++) - 1) || 5) && ((l = []) || 1) && (d = 0); d < u; d++) h[f](l, $[f](v, c++) - 1);
-      B[o] = l;
-    }
-    for (((b = $[f](v, c++) - 1) && 0 || (g = $[f](v, c++) - 1) && 0 || (k = $[f](v, c++) - 1) || 9) && (F = $[f](v, c++) - 1) && r || (s = []) && r || (d = 0); d < F; d++) if ((((V = $[f](v, c++) - 1) || 10) && ((z = {})[0] = $[f](v, c++) - 1 - 1) && r || 1 & V && (z[1] = $[f](v, c++) - 1 - 1) && r || 2 & V && (z[2] = [$[f](v, c++) - 1 - 1, $[f](v, c++) - 1 - 1]) || 4) && (4 & V && (z[3] = [$[f](v, c++) - 1, $[f](v, c++) - 1]) || 2) && (8 & V && (z[5] = $[f](v, c++) - 1) || 7) && ((z[4] = t()) || 6)) {
-      h[f](s, z);
-    }
-    for ((R = F) && r || (C = 0); F > 1 << C;) C++;
-    for (((I = n(k ? -++E : i)) && r || (b = (S = j(s))(b)) || 6) && (d = 0); d < s.length; d++) if ((s[d][0] = S(s[d][0])) || 8) {
-      s[d][2] ? ((s[d][2][0] = S(s[d][2][0])) || 9) && (s[d][2][1] = S(s[d][2][1])) : s[d][1] = S(s[d][1]);
-    }
-    for ((z = []) && 0 || (d = 0); d < s.length; d++) z[s[d][0]] = s[d];
-    if (l) {
-      for (d = 0; d < l.length; d++) l[d] = S(l[d]);
-    }
-    return ((s = z) && r || (B[o] = l) && r || (J = "{for(var " + I + "=" + (g || k ? m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = e(b + .1)) || A) && G) + "]" : n(p) + "||" + m[0](44) + (y++ % 4 == 0 ? "[" + m[4] : "[") + (((w[G = A()] = e(b + .1)) || A) && G) + "]") + a + ";;){" + Z(q, T++, e, g, k, s, I, B, R, 1 << C, 0) + "}}") && r || Y-- || 3) && J;
-  })) && r || (C = {}) && r || (Z = m[5])) && r || (((I = m[7]) || 1) && (S = m[8]) && r || (A = m[9]) || 10) && ((J = m[10]) || 7) && (P = m[11]) && 0 || J();
-}(function (r) {
-  for (var e = Math.pow, n = String.fromCharCode, t = [], f = 65; f < 91; f++) t[t.length] = f;
-  for (f = 97; f < 123; f++) t[t.length] = f;
-  for (f = 48; f < 58; f++) t[t.length] = f;
-  t[t.length] = 43;
-  t[t.length] = 47;
-  t[t.length] = 61;
-  t = n.apply(null, t);
-  for (var i = [], l = 0; l < t.length; l++) i[t.charCodeAt(l)] = l;
-  t = r.length;
-  l = 32;
-  var o,
-    h,
-    a,
-    u,
-    p,
-    g,
-    s = function (e) {
-      return i[r.charCodeAt(e)];
-    },
-    c = [],
-    v = 4,
-    d = 4,
-    A = 3,
-    C = "",
-    m = [],
-    S = {
-      v: s(0),
-      p: l,
-      i: 1
-    };
-  for (f = 0; 3 > f; f += 1) c[f] = f;
-  function j(r, n) {
-    for (h = 0, u = e(r, n), p = 1; p != u;) {
-      a = S.v & S.p;
-      S.p >>= 1;
-      0 == S.p && (S.p = l, S.v = s(S.i++));
-      h |= (a > 0 ? 1 : 0) * p;
-      p <<= 1;
+  } catch (_0x46c868) {
+    {
+      _0x2f6718[_0x303df6]("删除版本号，js会定期弹窗");
     }
   }
-  j(2, 2);
-  if (0 == h) {
-    j(2, 8);
-    g = n(h);
-  } else {
-    if (1 == h) {
-      j(2, 16);
-      g = n(h);
-    } else {
-      if (2 == h) {
-        return "";
-      }
-    }
-  }
-  for (c[3] = g, o = g, m.push(g);;) {
-    if (S.i > t) {
-      return "";
-    }
-    j(2, A);
-    var w = g = h;
-    if (0 == w) {
-      j(2, 8);
-      c[d++] = n(h);
-      g = d - 1;
-      v--;
-    } else {
-      if (1 == w) {
-        j(2, 16);
-        c[d++] = n(h);
-        g = d - 1;
-        v--;
-      } else {
-        if (2 == w) {
-          return m.join("");
-        }
-      }
-    }
-    0 == v && (v = e(2, A), A++);
-    if (c[g]) {
-      C = c[g];
-    } else {
-      if (g !== d) {
-        return null;
-      }
-      C = o + o.charAt(0);
-    }
-    m.push(C);
-    c[d++] = o + C.charAt(0);
-    o = C;
-    0 == --v && (v = e(2, A), A++);
-  }
-}("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")));
+})(window);
+encode_version = "jsjiami.com.v5";
