@@ -1,5 +1,4 @@
 
-//宇解自动注释
 var _0x1e2002 = function () {
   var _0x3eb644 = true;
   return function (_0x55265b, _0x403c48) {
