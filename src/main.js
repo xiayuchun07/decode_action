@@ -77,8 +77,8 @@ if (processedCode !== sourceCode) {
   time = new Date();
   const header = [
     ``,
-    "//宇解自动注释"
-  ].join('\n');
+    ""
+  ].join('');
 
   // Combine header and processed code
   const outputCode = header + '\n' + processedCode;
