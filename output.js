@@ -1,4 +1,4 @@
-//Mon May 12 2025 08:40:46 GMT+0000 (Coordinated Universal Time)
+
 //宇解自动注释
 var _0x1e2002 = function () {
   var _0x3eb644 = true;
