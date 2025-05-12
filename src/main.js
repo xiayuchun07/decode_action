@@ -76,7 +76,7 @@ for (const plugin of plugins) {
 if (processedCode !== sourceCode) {
   time = new Date();
   const header = [
-    `//${time}`,
+    ``,
     "//宇解自动注释"
   ].join('\n');
 
