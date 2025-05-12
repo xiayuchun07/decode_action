@@ -77,8 +77,7 @@ if (processedCode !== sourceCode) {
   time = new Date();
   const header = [
     `//${time}`,
-    "//你好",
-    "//你好"
+    "//宇解自动注释"
   ].join('\n');
 
   // Combine header and processed code
