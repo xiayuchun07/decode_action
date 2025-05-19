@@ -1,74 +1,198 @@
 
-var _0x48fe45 = function () {
-  var _0x5f4f5c = true;
-  return function (_0x2ff4f9, _0x41d1b6) {
-    {
-      var _0x4ef3ff = _0x5f4f5c ? function () {
-        {
-          if (_0x41d1b6) {
-            {
-              var _0x4222d7 = _0x41d1b6.apply(_0x2ff4f9, arguments);
-              _0x41d1b6 = null;
-              return _0x4222d7;
-            }
-          }
+(function () {
+  function _0x5b7618(_0x22ce57) {
+    _0x5b7618 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (_0xe9af68) {
+      return typeof _0xe9af68;
+    } : function (_0x17ac08) {
+      return _0x17ac08 && "function" == typeof Symbol && _0x17ac08.constructor === Symbol && _0x17ac08 !== Symbol.prototype ? "symbol" : typeof _0x17ac08;
+    };
+    return _0x5b7618(_0x22ce57);
+  }
+  function _0x4a1a88(_0x5e69e5, _0x2539cc) {
+    var _0xfdc665 = Object.keys(_0x5e69e5);
+    if (Object.getOwnPropertySymbols) {
+      var _0x579802 = Object.getOwnPropertySymbols(_0x5e69e5);
+      _0x2539cc && (_0x579802 = _0x579802.filter(function (_0x3686ba) {
+        return Object.getOwnPropertyDescriptor(_0x5e69e5, _0x3686ba).enumerable;
+      }));
+      _0xfdc665.push.apply(_0xfdc665, _0x579802);
+    }
+    return _0xfdc665;
+  }
+  function _0x1189f5(_0x163851) {
+    for (var _0x2bb5b7 = 1; _0x2bb5b7 < arguments.length; _0x2bb5b7++) {
+      var _0xb2b9a5 = null != arguments[_0x2bb5b7] ? arguments[_0x2bb5b7] : {};
+      _0x2bb5b7 % 2 ? _0x4a1a88(Object(_0xb2b9a5), true).forEach(function (_0x1579aa) {
+        _0x5c08c9(_0x163851, _0x1579aa, _0xb2b9a5[_0x1579aa]);
+      }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(_0x163851, Object.getOwnPropertyDescriptors(_0xb2b9a5)) : _0x4a1a88(Object(_0xb2b9a5)).forEach(function (_0x16b80a) {
+        Object.defineProperty(_0x163851, _0x16b80a, Object.getOwnPropertyDescriptor(_0xb2b9a5, _0x16b80a));
+      });
+    }
+    return _0x163851;
+  }
+  function _0x5c08c9(_0x529ed5, _0x39a439, _0x2e2f75) {
+    _0x39a439 = _0x53b9f1(_0x39a439);
+    _0x39a439 in _0x529ed5 ? Object.defineProperty(_0x529ed5, _0x39a439, {
+      value: _0x2e2f75,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : _0x529ed5[_0x39a439] = _0x2e2f75;
+    return _0x529ed5;
+  }
+  function _0x53b9f1(_0xe3f3cd) {
+    var _0xedb60b = _0x2caf0d(_0xe3f3cd, "string");
+    return "symbol" === _0x5b7618(_0xedb60b) ? _0xedb60b : String(_0xedb60b);
+  }
+  function _0x2caf0d(_0x454294, _0x111efe) {
+    if ("object" !== _0x5b7618(_0x454294) || null === _0x454294) {
+      return _0x454294;
+    }
+    var _0x4bc703 = _0x454294[Symbol.toPrimitive];
+    if (undefined !== _0x4bc703) {
+      var _0x1c412f = _0x4bc703.call(_0x454294, _0x111efe || "default");
+      if ("object" !== _0x5b7618(_0x1c412f)) {
+        return _0x1c412f;
+      }
+      throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return ("string" === _0x111efe ? String : Number)(_0x454294);
+  }
+  var _0x2d80ac = window.__NEPTUNE_IS_MY_WAIFU__.roomInitRes.data.uid;
+  var _0x362fe4 = function _0x2da374() {
+    var _0xbb5ff2 = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : 3;
+    var _0xcd5408 = document.querySelector(".ant-modal-confirm-btns button:nth-child(2)");
+    _0xcd5408 ? _0xcd5408.click() : _0xbb5ff2 > 0 && setTimeout(function () {
+      _0x2da374(_0xbb5ff2 - 1);
+    }, 1000);
+  };
+  var _0x1b1547 = function (_0x524673) {
+    if (console.log(_0x524673), "string" === typeof _0x524673 && (_0x524673 = JSON.parse(_0x524673)), _0x524673 = _0x524673.data, "INTERACT_WORD" == _0x524673.cmd) {
+      var _0x2646d2 = _0x524673.data.uname;
+      var _0x45225a = {
+        msgType: "join",
+        snsNick: _0x2646d2,
+        content: _0x2646d2 + "进入直播间",
+        commentId: +new Date(),
+        isFollow: false
+      };
+      return postMessage(_0x1189f5({
+        type: "comment"
+      }, _0x45225a), "*");
+    }
+    if ("DANMU_MSG" !== _0x524673.cmd) {
+      return false;
+    }
+    var _0x162f40 = _0x524673.info[0][15];
+    if (!_0x162f40) {
+      return false;
+    }
+    var _0x9bf615 = _0x162f40.user;
+    var _0x1acb80 = _0x9bf615.base.name;
+    var _0x25ecaa = _0x9bf615.uid;
+    var _0x13ecf6 = _0x524673.info[1];
+    var _0xb106da = +new Date();
+    var _0x3ac6d4 = "comment";
+    var _0x454956 = false;
+    if (_0x2d80ac == _0x25ecaa) {
+      console.log(_0x1acb80 + ":" + _0x13ecf6 + "----->主播自己的评论, 跳过");
+      return false;
+    }
+    var _0x11fc2e = {
+      msgType: _0x3ac6d4,
+      snsNick: _0x1acb80,
+      content: _0x13ecf6,
+      commentId: _0xb106da,
+      isFollow: _0x454956
+    };
+    postMessage(_0x1189f5({
+      type: "comment"
+    }, _0x11fc2e), "*");
+  };
+  var _0x2aaf7c = {
+    text: function (_0x45d480) {
+      var _0x4bef7e = document.querySelector("#control-panel-ctnr-box");
+      if (!_0x4bef7e) {
+        console.log(_0x45d480 + "------发送失败!");
+        return false;
+      }
+      var _0xb623cf = _0x4bef7e.querySelector("textarea");
+      _0xb623cf.value = _0x45d480;
+      var _0x5e15bb = new Event("input", {
+        bubbles: true
+      });
+      _0xb623cf.dispatchEvent(_0x5e15bb);
+      setTimeout(function () {
+        var _0x3b0291 = _0x4bef7e.querySelector("button");
+        _0x3b0291 && _0x3b0291.click();
+      }, 1500);
+    },
+    xiache: function (_0xa5f007) {
+      for (var _0x1a4677 = _0xa5f007.id, _0x58cc75 = document.querySelector("div[data-test-id=\"virtuoso-item-list\"]"), _0x3f5b54 = 0; _0x3f5b54 < _0x58cc75.childNodes.length; _0x3f5b54++) {
+        var _0x268709 = _0x58cc75.childNodes[_0x3f5b54];
+        var _0x449597 = _0x268709.querySelector("input").value;
+        if (_0x449597 == _0x1a4677) {
+          var _0x5cc4a4 = _0x268709.querySelectorAll("button")[1];
+          _0x5cc4a4 && _0x5cc4a4.click();
+          break;
         }
-      } : function () {};
-      _0x5f4f5c = false;
-      return _0x4ef3ff;
+      }
+    },
+    jiangjie: function (_0x270601) {
+      var _0x5e8abf;
+      var _0x4f5d4e;
+      var _0x39f341 = this;
+      var _0x58ba42 = _0x270601.id;
+      var _0x55a4e1 = _0x270601.maxTry;
+      var _0x15ff82 = undefined === _0x55a4e1 ? 5 : _0x55a4e1;
+      var _0x46b9d5 = document.querySelector("div[data-test-id=\"virtuoso-item-list\"]");
+      var _0x594edd = _0x46b9d5.childNodes.length;
+      var _0x35e93a = _0x46b9d5.childNodes[0];
+      var _0x5ac1a4 = _0x46b9d5.childNodes[_0x594edd - 1];
+      if (_0x5e8abf = _0x4f5d4e = 0, _0x35e93a && (_0x5e8abf = _0x35e93a.querySelector("input").value), _0x5ac1a4 && (_0x4f5d4e = _0x5ac1a4.querySelector("input").value), _0x15ff82 >= 0) {
+        if (--_0x15ff82, _0x58ba42 < _0x5e8abf) {
+          console.log("往上翻", _0x15ff82);
+          _0x46b9d5.parentNode.parentNode.scrollBy(0, -118 * (_0x5e8abf - _0x58ba42));
+          return requestAnimationFrame(function () {
+            _0x39f341.jiangjie({
+              id: _0x58ba42,
+              maxTry: _0x15ff82
+            });
+          });
+        }
+        if (_0x58ba42 > _0x4f5d4e) {
+          console.log("往下翻", _0x15ff82);
+          _0x46b9d5.parentNode.parentNode.scrollBy(0, 118 * (_0x58ba42 - _0x4f5d4e));
+          return requestAnimationFrame(function () {
+            _0x39f341.jiangjie({
+              id: _0x58ba42,
+              maxTry: _0x15ff82
+            });
+          });
+        }
+      } else {
+        console.log("已经尝试过5次寻找商品");
+      }
+      for (var _0x44cfb3 = 0; _0x44cfb3 < _0x46b9d5.childNodes.length; _0x44cfb3++) {
+        var _0x525674 = _0x46b9d5.childNodes[_0x44cfb3];
+        var _0xa400d1 = _0x525674.querySelector("input");
+        if (_0xa400d1 && (_0xa400d1 = _0xa400d1.value, _0xa400d1 == _0x58ba42)) {
+          var _0x4f10cc = _0x525674.querySelectorAll("button")[3];
+          _0x4f10cc && _0x4f10cc.click();
+          break;
+        }
+      }
+      _0x362fe4(5);
     }
   };
-}();
-var _0x5e2b73 = _0x48fe45(this, function () {
-  var _0x2a224e = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-  var _0x171f88 = function () {
-    {
-      var _0x334bac = new _0x2a224e.RegExp("^([^ ]+( +[^ ]+)+)+[^ ]}");
-      return !_0x334bac.test(_0x5e2b73);
+  window.onmessage = function (_0xe6fee5) {
+    if ("__MY_CMD__" == _0xe6fee5.data.type) {
+      var _0x287cfe = _0xe6fee5.data;
+      var _0x40e052 = _0x287cfe.cmd;
+      var _0x57c4ff = _0x287cfe.data;
+      _0x2aaf7c[_0x40e052] && _0x2aaf7c[_0x40e052](_0x57c4ff);
+    } else {
+      "__MY_KUAISHOU__" == _0xe6fee5.data.type && _0x1b1547(_0xe6fee5.data);
     }
   };
-  return _0x171f88();
-});
-_0x5e2b73();
-document.writeln("<!DOCTYPE html><html lang=\"zh-CN\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\"><title>王者炸水晶</title><style>*{margin:0;padding:0;color:#000;font-size:10px;font-family:Arial,sans-serif;-webkit-tap-highlight-color:transparent;outline:0}body{background:transparent;position:fixed;left:0;top:0;width:100%;height:100%;color:#000}*:not(input,checkbox,textarea){-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.popup_container{position:absolute;z-index:1000;left:50%;top:0}#H5AlertView{width:220px;height:150px;position:absolute;left:-110px;top:30px;text-align:center;zoom:1.0}#title-text{padding-top:0;font-size:23px;font-weight:600;color:#fff}#info-text{padding:5px;font-size:15px;color:#fff}#content-view{z-index:0;background:linear-gradient(45deg,#a8b4ff,#ffc5ad);position:relative;top:0;border-radius:16px;padding:5px;box-shadow:0 0 10px rgba(0,0,0,0.1),0 0 20px rgba(0,0,0,0.2),inset 0 0 20px rgba(0,0,0,0.2),inset 0 0 30px rgba(0,0,0,0.2)}.button-container{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0}.button{width:100%;height:35px;color:#fff;background-color:transparent;display:inline-block;cursor:pointer;text-align:center;text-decoration:none;outline:0;border:2px solid #ccf;border-radius:10px;padding:0 8px;margin:5px 0;font-size:17px;background-image:none}.button:active{border:2px dashed transparent;transform:translateY(2px)}</style></head><body><div class=\"popup_container\"><div id=\"H5AlertView\"><div id=\"content-view\"><div id=\"title-text\">铁板公益</div><div id=\"info-text\">BY TIEBAN<br>最新资讯请看官网tbnbb.top</div><div class=\"button-container\"><button class=\"button\" onclick=\"Draw1()\">加入QQ群</button><button class=\"button\" onclick=\"Draw2()\">作者信息</button><button class=\"button\" onclick=\"Draw3()\">使用说明</button><button class=\"button\" onclick=\"Draw4()\">敌方爆炸</button><button class=\"button\" onclick=\"Draw5()\">我方爆炸</button></div></div></div></div></body>");
-function hideMenu() {
-  document.querySelector("#H5AlertView").style.display = "none";
-  setWindowTouch(false);
-}
-window.alert = function (_0x3d62c9) {
-  var _0x2d324e = document.createElement("IFRAME");
-  _0x2d324e.style.display = "none";
-  _0x2d324e.setAttribute("src", "data:text/plain");
-  document.documentElement.appendChild(_0x2d324e);
-  window.frames[0].window.alert(_0x3d62c9);
-  _0x2d324e.parentNode.removeChild(_0x2d324e);
-};
-document.body.addEventListener("touchstart", function () {});
-setWindowDrag(90, 10, 250, 120);
-var iosScale = window.devicePixelRatio;
-var canvasDom = document.createElement("canvas");
-function Draw1() {
-  window.location.href = "mqqapi://card/show_pslcard?src_type=internal&version=1&uin=964225177&card_type=group&source=external";
-}
-function Draw2() {
-  alert("作者铁板   官网tbnbb.top");
-}
-function Draw3() {
-  alert("进入游戏后选择爆炸方式，点击一次后请耐心等待，请勿多次重复点击，以免造成闪退等情况");
-}
-function Draw4() {
-  var _0x4965c7;
-  h5gg.clearResults();
-  h5gg.searchNumber("21110623327027200", "I64", "0x100000000", "0x200000000");
-  2 <= h5gg.getResultsCount() && (_0x4965c7 = h5gg.getResults(2)[1].address, h5gg.setValue(_0x4965c7, "21110627548266486", "I64"), alert("修改成功"));
-}
-function Draw5() {
-  var _0x5b6a34;
-  h5gg.clearResults();
-  h5gg.searchNumber("21110623327027200", "I64", "0x100000000", "0x200000000");
-  1 <= h5gg.getResultsCount() && (_0x5b6a34 = h5gg.getResults(1)[0].address, h5gg.setValue(_0x5b6a34, "21110627548266486", "I64"), alert("修改成功"));
-}
-document.body.appendChild(canvasDom);
-canvasDom.style.height = "100%";
-canvasDom.style.width = "100%";
-document.writeln("</html>");
+})();
