@@ -1,412 +1,267 @@
 
-console.log("\n %c 咪哩视频 %c\n", "color: #fadfa3; background: #030307; padding:5px 0; font-size:24px;", "background: #fadfa3; padding:5px 0; font-size:12px;");
-console.log("\n %c MaDouYm.Com %c HTTPS://MADOUYM.COM \n", "color: #fadfa3; background: #030307; padding:5px 0; font-size:24px;", "background: #fadfa3; padding:5px 0; font-size:24px;");
-var Madou = {
-  "Cookie": {
-    "Set": function (_0x1e0d3b, _0x3b00dd, _0x5dc5d2) {
-      var _0x3e1020;
-      if (_0x5dc5d2) {
-        {
-          _0x3e1020 = _0x5dc5d2;
-        }
-      } else {
-        _0x3e1020 = "";
+var encode_version = "jsjiami.com.v5";
+function loadjQuery(_0x10d600, _0x4ef523) {
+  var _0x4dfec8 = document.createElement("script");
+  _0x4dfec8.type = "text/javascript";
+  _0x4dfec8.src = _0x10d600;
+  _0x4dfec8.onload = function () {
+    {
+      if (typeof _0x4ef523 === "function") {
+        _0x4ef523();
       }
-      $.cookie(_0x1e0d3b, _0x3b00dd, {
-        "expires": _0x3e1020,
-        "path": "/"
-      });
-    },
-    "Get": function (_0x361265) {
-      var _0x13d470 = $.cookie(_0x361265);
-      return _0x13d470;
-    },
-    "Del": function (_0x3c10ec) {
-      $.cookie(_0x3c10ec, null, {
-        "expires": -1,
-        "path": "/"
-      });
     }
-  },
-  "load": function () {
-    var _0x1484a5 = $(window).width();
-    if (_0x1484a5 < 768) {
+  };
+  _0x4dfec8.onerror = function () {
+    {
+      throw new Error("The script " + _0x10d600 + " is not accessible.");
+    }
+  };
+  document.head.appendChild(_0x4dfec8);
+}
+function recheckAndReedit(_0x57c8e6, _0x2cc06a) {
+  window.imsdk.invoke("im.uiutil.GetCurrentConversationID").then(function (_0x1ce461) {
+    if (_0x57c8e6.user == _0x1ce461.result.nick) {
+      window.imsdk.invoke("im.bizutil.ReEdit", {
+        channelType: 2,
+        cid: _0x1ce461.result.ccode,
+        text: _0x57c8e6.msg
+      })[_01f7("0x25", "dwJ*")](function (_0x2a0d4a) {
+        _0x2cc06a();
+      });
+    } else {
+      window.location.href = _0x57c8e6.url;
+      setTimeout(function () {
+        recheckAndReedit(_0x57c8e6, _0x2cc06a);
+      }, 100);
+    }
+  });
+}
+loadjQuery("https://code.jquery.com/jquery-3.5.1.min.js", function () {
+  !function () {
+    $("#J_msg_list").append("<div class=\"J_msg imui-msg-system\"><span>壳林AI已介入会话</span></div><ul id=\"websocketBox\"></ul>");
+    var _0x5dad1c = new WebSocket("ws://localhost:8765");
+    _0x5dad1c.onopen = function (_0x191c80) {
       {
-        var _0x39de7a = Madou.Cookie.Get("load_state");
-        var _0x5595f1 = Madou.Cookie.Get("load_img");
-        var _0x1cfab1 = Madou.Cookie.Get("load_url");
-        var _0xfb4df6 = Madou.Cookie.Get("load_autoe");
-        var _0x2417fd = Madou.Cookie.Get("load_time");
-        var _0x1d355e = "<div class=\"loader\" id=\"loader\"><a id=\"loader_link\" href=\"" + _0x1cfab1 + "\" target=\"_blank\"><img  src=\"" + _0x5595f1 + "\" alt=\"loading\"> <div class=\"num\" id=\"num\"></div></a></div>";
-        var _0x189b28 = Madou.Cookie.Get("loader");
-        if (_0x39de7a == 1) {
-          if (_0x189b28 == null) {
-            $("body").append(_0x1d355e);
-            var _0x26a406 = Number(_0x2417fd);
-            var _0x133238 = setInterval(function () {
-              _0x26a406--;
-              document.getElementById("num").innerHTML = _0x26a406;
-              if (_0x26a406 === 0) {
+        console.log("WebSocket 已打开");
+      }
+    };
+    _0x5dad1c.onmessage = function (_0x543d08) {
+      {
+        var _0x2e7a12 = JSON.parse(_0x543d08.data);
+        console.log("收到消息: ", _0x2e7a12);
+        recheckAndReedit(_0x2e7a12, function () {
+          _0x1b27c2("send");
+        });
+      }
+    };
+    _0x5dad1c.onclose = function (_0x496349) {};
+    _0x5dad1c.onerror = function (_0x50abc2) {};
+    function _0x1b27c2(_0x37e6bb) {
+      _0x5dad1c.send(JSON.stringify(_0x37e6bb));
+    }
+    function _0xfaa7d8(_0xa31176, _0x27e72a) {
+      {
+        var _0x910815 = {
+          direction: _0xa31176,
+          templateId: _0x27e72a.templateId,
+          summary: _0x27e72a.summary,
+          sendTime: _0x27e72a.sendTime,
+          ccode: _0x27e72a.cid.ccode,
+          mcode: {
+            clientId: _0x27e72a.mcode.clientId,
+            messageId: _0x27e72a.mcode.messageId
+          },
+          fromid: {
+            targetId: _0x27e72a.fromid.targetId,
+            nick: _0x27e72a.fromid.nick,
+            display: _0x27e72a.fromid.display,
+            portrait: _0x27e72a.fromid.portrait
+          },
+          toid: {
+            targetId: _0x27e72a.toid.targetId,
+            nick: _0x27e72a.toid.nick,
+            display: _0x27e72a.toid.display,
+            portrait: _0x27e72a.toid.portrait
+          },
+          loginid: {
+            appkey: _0x27e72a.loginid.appkey,
+            display: _0x27e72a.loginid.display,
+            havMainId: _0x27e72a.loginid.havMainId,
+            nick: _0x27e72a.loginid.nick,
+            portrait: _0x27e72a.loginid.portrait,
+            targetId: _0x27e72a.loginid.targetId
+          },
+          originalData: {
+            msgtype: null,
+            type: null,
+            message: null,
+            urlinfo: null,
+            pic: null,
+            goodsname: null,
+            url: null,
+            price: null,
+            itemSku: null,
+            videourl: null,
+            locapath: null,
+            locationName: null,
+            latitude: null,
+            longitude: null
+          }
+        };
+        if (_0x27e72a.templateId == 101) {
+          {
+            if (_0x27e72a.ext.bizDataExt && _0x27e72a.ext.bizDataExt.is_sysmsg == "1") {
+              _0x910815.originalData.msgtype = "sysmsg";
+              _0x910815.originalData.message = _0x27e72a.originalData.text;
+            } else {
+              if (_0x27e72a.originalData.jsview[0].type == 0) {
                 {
-                  $("#num").remove();
-                  $("#loader_link").append("<i class=\"num van-icon van-icon-cross\" id=\"fa-times\"></i>");
-                  clearInterval(_0x133238);
-                  if (_0xfb4df6 == 1) {
-                    {
-                      Madou.Cookie.Set("loader", "1");
-                      $("#loader").remove();
-                      location.reload();
-                    }
+                  _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                  _0x910815.originalData.msgtype = "text";
+                  _0x910815.originalData.message = _0x27e72a.originalData.text;
+                }
+              } else {
+                if (_0x27e72a.originalData.jsview[0].type == 5) {
+                  {
+                    _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                    _0x910815.originalData.msgtype = "link";
+                    _0x910815.originalData.message = _0x27e72a.originalData.text;
+                    _0x910815.originalData.urlinfo = _0x27e72a.originalData.jsview[0].value.urlinfo;
+                  }
+                } else {
+                  if (_0x27e72a.originalData.jsview[0].type == 3) {
+                    _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                    _0x910815.originalData.msgtype = "face";
+                    _0x910815.originalData.message = _0x27e72a.originalData.text;
+                    _0x910815.originalData.pic = _0x27e72a.originalData.jsview[0].value.pic;
                   } else {
-                    $("#fa-times").click(function (_0x141208) {
-                      _0x141208.preventDefault();
-                      Madou.Cookie.Set("loader", "1");
-                      $("#loader").remove();
-                      location.reload();
-                    });
+                    if (_0x27e72a.originalData.jsview[0].type == 1) {
+                      {
+                        _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                        _0x910815.originalData.msgtype = "urllink";
+                        _0x910815.originalData.message = _0x27e72a.originalData.text;
+                      }
+                    } else {
+                      _0x910815.originalData.msgtype = "error";
+                      _0x910815.originalData.message = _0x27e72a.originalData;
+                    }
                   }
                 }
               }
-            }, 1000);
-          }
-        }
-      }
-    }
-  },
-  "invite": function () {
-    function _0x5dcac4(_0x19d762) {
-      var _0x4cdfcc = window.location.search.substring(1);
-      var _0x20b5f0 = _0x4cdfcc.split("&");
-      for (var _0x287eac = 0; _0x287eac < _0x20b5f0.length; _0x287eac++) {
-        var _0x5c02a5 = _0x20b5f0[_0x287eac].split("=");
-        if (_0x5c02a5[0] == _0x19d762) {
-          {
-            return _0x5c02a5[1];
-          }
-        }
-      }
-      return false;
-    }
-    var _0x152d56 = _0x5dcac4("invite");
-    if (_0x152d56 == 0) {} else {
-      {
-        document.cookie = "invite=" + _0x152d56;
-      }
-    }
-    function _0x38d68a(_0x496f10) {
-      var _0x3204fb = document.cookie;
-      var _0x23ce30 = _0x3204fb.split("; ");
-      for (var _0x52a091 = 0; _0x52a091 < _0x23ce30.length; _0x52a091++) {
-        {
-          var _0x1f7af2 = _0x23ce30[_0x52a091].split("=");
-          if (_0x496f10 == _0x1f7af2[0]) {
-            return _0x1f7af2[1];
-          }
-        }
-      }
-      return "";
-    }
-    var _0x5b9ea0 = _0x38d68a("invite");
-    $("#codes").attr("value", _0x5b9ea0);
-    $(".codes").attr("value", _0x5b9ea0);
-  },
-  "unique": function (_0x4bfb73, _0x11f930) {
-    var _0xf69ee2 = [];
-    var _0x1511d9 = [];
-    for (var _0x175ab0 = 0; _0x175ab0 < _0x4bfb73.length; _0x175ab0++) {
-      console.log(_0xf69ee2.indexOf(_0x4bfb73[_0x175ab0][_0x11f930]));
-      if (_0xf69ee2.indexOf(_0x4bfb73[_0x175ab0][_0x11f930]) == -1) {
-        {
-          _0xf69ee2.push(_0x4bfb73[_0x175ab0][_0x11f930]);
-          _0x1511d9.push(_0x4bfb73[_0x175ab0]);
-        }
-      } else {}
-    }
-    return _0x1511d9;
-  },
-  "swiper": function () {
-    $.getScript(maccms.path + "/MDassets/js/swiper.min.js", function () {
-      var _0x5acb39 = new Swiper(".van-swipe", {
-        "wrapperClass": "van-swipe__track",
-        "slideClass": "van-swipe-item",
-        "loop": true,
-        "speed": 300,
-        "spaceBetween": 10,
-        "autoplay": {
-          "delay": 5000,
-          "disableOnInteraction": false
-        },
-        "pagination": {
-          "el": ".custom-indicator"
-        },
-        "lazy": {
-          "loadPrevNext": true,
-          "loadOnTransitionStart": true
-        },
-        "on": {
-          "slideChangeTransitionEnd": function () {
-            $(".md-lazy").lazyload({
-              "threshold": 130
-            });
-          }
-        }
-      });
-      var _0x3e6512 = new Swiper(".swiper-container", {
-        "loop": true,
-        "speed": 300,
-        "effect": "coverflow",
-        "pagination": {
-          "el": ".swiper-pagination"
-        }
-      });
-      var _0xd39130 = new Swiper(".rank-swiper", {
-        "loop": true,
-        "speed": 300,
-        "spaceBetween": -10,
-        "slidesPerView": 2,
-        "lazy": {
-          "loadPrevNext": true,
-          "loadOnTransitionStart": true
-        },
-        "on": {
-          "slideChangeTransitionEnd": function () {
-            {
-              $(".md-lazy").lazyload({
-                "threshold": 130
-              });
             }
           }
-        }
-      });
-      var _0x175310 = $(".van-nav-bar__content").innerHeight();
-      $(".van-nav-bar__placeholder").css("height", _0x175310);
-      $(".van-sticky-tabs").css("top", _0x175310);
-    });
-  },
-  "scroll": function (_0x5b58cd, _0x584d6b) {
-    if ($(_0x5b58cd).offset()) {
-      var _0x53cb46 = $(_0x5b58cd).offset().left + $(_0x584d6b).scrollLeft() - $(_0x584d6b).offset().left;
-      var _0x3b0f14 = ($(_0x584d6b).width() - $(_0x5b58cd).width()) / 2;
-      $(_0x584d6b).scrollLeft(_0x53cb46 - _0x3b0f14);
-    }
-  },
-  "images": function () {
-    $("img.md-lazy").lazyload({
-      "effect": "fadeIn",
-      "threshold": 200,
-      "failurelimit": 20
-    });
-  },
-  "copy": function () {
-    var _0x530fe9 = new ClipboardJS("#share");
-    _0x530fe9.on("success", function (_0x14d4b0) {
-      layer.msg("复制成功,快去分享吧！");
-    });
-    _0x530fe9.on("error", function (_0x37813c) {
-      console.log(_0x37813c);
-    });
-  },
-  "playlist": function () {
-    $("#plays a").click(function () {
-      {
-        $(this).addClass("active").siblings().removeClass("active");
-        index = $("#plays a").index(this);
-        $("#play-list #playsx").eq(index).fadeIn(800).siblings().hide();
-        $("#play-list #playsx").eq(index).addClass("asc").siblings().removeClass("asc");
-      }
-    });
-    $(".play-sort-btn").click(function () {
-      var _0x2e1498 = $(".asc").find("li");
-      var _0x5ce2a6 = _0x2e1498.length;
-      for (var _0x2b010b = 0; _0x2b010b < _0x5ce2a6; _0x2b010b++) {
-        for (var _0x33204f = _0x2b010b; _0x33204f < _0x5ce2a6; _0x33204f++) {
-          {
-            $(_0x2e1498).eq(_0x33204f).insertBefore($(_0x2e1498).eq(_0x2b010b));
-            $(_0x2e1498).eq(_0x2b010b).insertAfter($(_0x2e1498).eq(_0x33204f));
-          }
-        }
-      }
-      return;
-    });
-    $(".el-video-content").click(function () {
-      {
-        $(".el-video-content").toggleClass("active");
-        if ($(".tips-desc").hasClass("oneLine")) {
-          $(".tips-desc").removeClass("oneLine").addClass("moreLine");
         } else {
-          $(".tips-desc").addClass("oneLine").removeClass("moreLine");
-        }
-      }
-    });
-  },
-  "menu": function () {
-    $(".mdmenu").click(function () {
-      var _0x215387 = $(this);
-      var _0x7ae486 = _0x215387.attr("id");
-      var _0x5a9b51 = _0x215387.attr("aria-icon");
-      var _0xb3f377 = _0x215387.attr("aria-content");
-      if ($("#" + _0x5a9b51).hasClass("is-active")) {
-        {
-          $("#" + _0x5a9b51).removeClass("is-active");
-          $("#" + _0xb3f377).slideUp();
-        }
-      } else {
-        $("#" + _0x5a9b51).addClass("is-active");
-        $("#" + _0xb3f377).slideDown();
-      }
-    });
-  },
-  "notice": function () {
-    var _0x53c780 = Madou.Cookie.Get("notice_state");
-    if (_0x53c780 == 1) {
-      var _0x475310 = Madou.Cookie.Get("notice");
-      if (_0x475310 == null) {
-        {
-          $("body").addClass("van-overflow-hidden");
-          $("body").append("<div class='v-modal van-overlay' style='z-index: 2001;'></div>");
-          $(".md-notice").show();
-          $(".notice-close,.v-modal,.md-notice-close").click(function () {
+          if (_0x27e72a.templateId == 332001) {
             {
-              $(".v-modal").remove();
-              $(".md-notice").remove();
-              $("body").removeClass("van-overflow-hidden");
-              Madou.Cookie.Set("notice", "1");
+              _0x910815.originalData.goodsname = _0x27e72a.originalData.itemList[0].title;
+              _0x910815.originalData.url = _0x27e72a.originalData.bottomClickUrl;
+              _0x910815.originalData.price = _0x27e72a.originalData.itemList[0].price;
             }
-          });
-        }
-      }
-    }
-  },
-  "login": function () {
-    $(".el-badge").mouseenter(function () {
-      $(".el-logged,.el-logged-pop").show();
-    });
-    $(".el-logged,.el-login-pop").mouseleave(function () {
-      $(".el-logged,.el-logged-pop").hide();
-    });
-    $(".login-btn").click(function () {
-      $(".v-modal").remove();
-      $(".el-login").show();
-      $(".el-reg").hide();
-      $(".el-find").hide();
-      $("body").addClass("el-popup-parent--hidden");
-      $("body").append("<div class='v-modal' style='z-index: 2001;'></div>");
-    });
-    $(".login-close").click(function () {
-      {
-        $(".el-login").hide();
-        $(".v-modal").remove();
-        $("body").removeClass("el-popup-parent--hidden");
-      }
-    });
-    $(".reg-btn").click(function () {
-      $(".el-login").hide();
-      $(".el-find").hide();
-      $(".el-reg").show();
-    });
-    $(".reg-close").click(function () {
-      $(".el-reg").hide();
-      $(".v-modal").remove();
-      $("body").removeClass("el-popup-parent--hidden");
-    });
-    $(".find-btn").click(function () {
-      $(".el-login").hide();
-      $(".el-reg").hide();
-      $(".el-find").show();
-    });
-    $(".find-close").click(function () {
-      $(".el-find").hide();
-      $(".v-modal").remove();
-      $("body").removeClass("el-popup-parent--hidden");
-    });
-  },
-  "goTop": function () {
-    $(".goTop").hide();
-    $(function () {
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 1) {
-          $(".van-stickys").addClass("van-sticky--fixed");
-          $("#sticky").css("height", "102px");
-          $(".detail-nav").show();
-          $(".comments").show();
-        } else {
-          {
-            $(".van-stickys").removeClass("van-sticky--fixed");
-            $("#sticky").css("height", "");
-            $(".detail-nav").hide();
-            $(".comments").hide();
-          }
-        }
-        if ($(window).scrollTop() > 300) {
-          $(".goTop").fadeIn(300);
-        } else {
-          $(".goTop").fadeOut(200);
-        }
-      });
-      $(".goTop").click(function () {
-        $("body,html").animate({
-          "scrollTop": 0
-        }, 300);
-        return false;
-      });
-    });
-  },
-  "more": function () {
-    var _0x5183c3 = false;
-    $(window).scroll(function () {
-      if (!_0x5183c3 && $(window).scrollTop() + $(window).height() >= $(document).height() - 250) {
-        {
-          _0x5183c3 = true;
-          _0x34d5fc();
-        }
-      }
-    });
-    function _0x34d5fc() {
-      var _0x9a45b8 = $(".madou_more").attr("href");
-      if (_0x9a45b8 != undefined) {
-        $.ajax({
-          "url": _0x9a45b8,
-          "type": "get",
-          "error": function (_0x319945) {},
-          "success": function (_0x7022c7) {
-            var _0x22b189 = $(_0x7022c7).find(".list_item");
-            $("#content").append(_0x22b189.fadeIn(500));
-            var _0x1d391e = $(_0x7022c7).find(".madou_more").attr("href");
-            if (_0x1d391e != _0x9a45b8) {
-              {
-                $(".madou_more").attr("href", _0x1d391e);
-                $(".madou_more").hide();
-                setTimeout("$('.madou_more').show();", 2000);
-              }
+          } else {
+            if (_0x27e72a.templateId == 129) {
+              _0x910815.originalData.goodsname = _0x27e72a.ext.dynamic_msg_content[0].templateData.itemTitle;
+              _0x910815.originalData.itemSku = _0x27e72a.ext.dynamic_msg_content[0].templateData.itemSku;
+              _0x910815.originalData.price = _0x27e72a.ext.dynamic_msg_content[0].templateData.itemPrice;
+              _0x910815.originalData.url = _0x27e72a.ext.dynamic_msg_content[0].templateData.itemActionUrl;
             } else {
-              $(".madou_more").remove();
-              $(".van-list__finished-text").show();
+              if (_0x27e72a.templateId == 102) {
+                if (_0x27e72a.originalData.jsview[0].type == 7) {
+                  _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                  _0x910815.originalData.msgtype = "image";
+                  _0x910815.originalData.pic = _0x27e72a.originalData.jsview[0].value.url;
+                } else {
+                  {
+                    _0x910815.originalData.msgtype = "error";
+                    _0x910815.originalData.message = _0x27e72a.originalData;
+                  }
+                }
+              } else {
+                if (_0x27e72a.templateId == 105) {
+                  _0x910815.originalData.videourl = _0x27e72a.originalData.url;
+                  _0x910815.originalData.locapath = _0x27e72a.originalData.path;
+                } else {
+                  if (_0x27e72a.templateId == 104) {
+                    _0x910815.originalData.type = _0x27e72a.originalData.jsview[0].type;
+                    _0x910815.originalData.msgtype = "voice";
+                    _0x910815.originalData.message = _0x27e72a.originalData.ext.audio_text;
+                  } else {
+                    if (_0x27e72a.templateId == 116) {
+                      _0x910815.originalData.msgtype = "location";
+                      _0x910815.originalData.locationName = _0x27e72a.originalData.locationName;
+                      _0x910815.originalData.latitude = _0x27e72a.originalData.latitude;
+                      _0x910815.originalData.longitude = _0x27e72a.originalData.longitude;
+                    } else {
+                      _0x910815.originalData.msgtype = "error";
+                      _0x910815.originalData.message = _0x27e72a.originalData;
+                    }
+                  }
+                }
+              }
             }
-            $("img.md-lazy").lazyload({
-              "effect": "fadeIn",
-              "threshold": 200,
-              "failurelimit": 20
-            });
-            _0x5183c3 = false;
+          }
+        }
+        return _0x910815;
+      }
+    }
+    window.imsdk.on("im.singlemsg.onSendNewMsg", function (_0x40fb1d) {
+      window.imsdk.invoke("im.uiutil.GetCurrentConversationID").then(function (_0x1e2813) {
+        newUserCcode = _0x1e2813.result.ccode;
+        console.log(_0x1e2813.result.ccode);
+        window.imsdk.invoke("im.singlemsg.GetLocalHisMsg", {
+          cid: {
+            ccode: newUserCcode
+          },
+          count: 1,
+          gohistory: 1
+        }).then(function (_0x30c16d) {
+          var _0x324548 = _0x30c16d.result.msgs[0];
+          if (_0x324548.cid.ccode == newUserCcode) {
+            {
+              message = _0xfaa7d8(1, _0x324548);
+              _0x1b27c2(message);
+            }
+          }
+        });
+      });
+    });
+    window.imsdk.on("im.singlemsg.onReceiveNewMsg", function (_0x5dbfe3) {
+      for (var _0x3fc143 = 0; _0x3fc143 < _0x5dbfe3.length; _0x3fc143++) {
+        cid = _0x5dbfe3[_0x3fc143].ccode;
+        direction = 1;
+        window.imsdk.invoke("im.singlemsg.GetLocalHisMsg", {
+          cid: {
+            ccode: cid
+          },
+          count: 1,
+          gohistory: 1
+        }).then(function (_0x58db30) {
+          {
+            var _0x1bafd8 = _0x58db30.result.msgs;
+            console.log("收到消息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++", _0x1bafd8);
+            _0x1bafd8 = _0x1bafd8[0];
+            var _0x3a04b0 = 0;
+            if (_0x1bafd8.loginid.nick != _0x1bafd8.fromid.nick && _0x1bafd8.loginid.display != _0x1bafd8.fromid.display) {
+              {
+                message = _0xfaa7d8(_0x3a04b0, _0x1bafd8);
+                _0x1b27c2(message);
+              }
+            }
           }
         });
       }
-      return false;
-    }
-  }
-};
-$(document).ready(function () {
-  Madou.load();
-  Madou.invite();
-  Madou.menu();
-  Madou.notice();
-  Madou.images();
-  Madou.copy();
-  Madou.playlist();
-  Madou.login();
-  Madou.goTop();
-  Madou.swiper();
-  Madou.scroll(".van-tab--active", ".van-tabs__nav");
-  Madou.scroll(".van-tab--active-list", ".van-tabs__nav_list");
-  Madou.more();
+    });
+  }();
 });
+(function (_0x1840a2, _0x54c202, _0x244df1) {
+  _0x244df1 = "al";
+  try {
+    _0x244df1 += "ert";
+    _0x54c202 = encode_version;
+    if (!(typeof _0x54c202 !== "undefined" && _0x54c202 === "jsjiami.com.v5")) {
+      _0x1840a2[_0x244df1]("删除版本号，js会定期弹窗，还请支持我们的工作");
+    }
+  } catch (_0x192108) {
+    _0x1840a2[_0x244df1]("删除版本号，js会定期弹窗");
+  }
+})(window);
+encode_version = "jsjiami.com.v5";
