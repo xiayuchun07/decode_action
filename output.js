@@ -1,91 +1,86 @@
 
-function a0_0x4d8c() {
-  const _0x6d0a93 = ["abs", "1201130qyoxBM", "218187LuvGFU", "1898424xEAdtD", "800500YyxSAQ", "key", "321920HTmYUU", "length", "30885NSZxim", "exports", "push", "reLoseScore", "7304KzFsXP"];
-  a0_0x4d8c = function () {
-    return _0x6d0a93;
+const a0_0x52cd34 = a0_0x4fbb;
+function a0_0x4fbb(_0x48fa8a, _0x5acaa0) {
+  const _0x38fef2 = a0_0x437c();
+  a0_0x4fbb = function (_0x27bf34, _0x2677ab) {
+    _0x27bf34 = _0x27bf34 - 300;
+    let _0x5cffa8 = _0x38fef2[_0x27bf34];
+    return _0x5cffa8;
   };
-  return a0_0x4d8c();
+  return a0_0x4fbb(_0x48fa8a, _0x5acaa0);
 }
-function a0_0x4d47(_0x342457, _0xdbef1c) {
-  const _0x9b2649 = a0_0x4d8c();
-  a0_0x4d47 = function (_0x575ded, _0x490da9) {
-    _0x575ded = _0x575ded - 492;
-    let _0x464a2a = _0x9b2649[_0x575ded];
-    return _0x464a2a;
-  };
-  return a0_0x4d47(_0x342457, _0xdbef1c);
-}
-const a0_0x10deae = a0_0x4d47;
-(function (_0x234aa2, _0x533391) {
-  const _0x3b2434 = a0_0x4d47;
-  const _0x544af1 = _0x234aa2();
+(function (_0x638348, _0x105c9d) {
+  const _0x5803b0 = a0_0x4fbb;
+  const _0x5bf7f7 = _0x638348();
   while (true) {
     try {
-      const _0x3c36d8 = parseInt(_0x3b2434(494)) / 1 + -parseInt(_0x3b2434(500)) / 2 + -parseInt(_0x3b2434(503)) / 3 + parseInt(_0x3b2434(492)) / 4 + -parseInt(_0x3b2434(496)) / 5 + -parseInt(_0x3b2434(504)) / 6 + parseInt(_0x3b2434(502)) / 7;
-      if (_0x3c36d8 === _0x533391) {
+      const _0x407f62 = -parseInt(_0x5803b0(318)) / 1 * (-parseInt(_0x5803b0(305)) / 2) + -parseInt(_0x5803b0(322)) / 3 + -parseInt(_0x5803b0(314)) / 4 + -parseInt(_0x5803b0(300)) / 5 + -parseInt(_0x5803b0(307)) / 6 + parseInt(_0x5803b0(311)) / 7 * (-parseInt(_0x5803b0(321)) / 8) + parseInt(_0x5803b0(323)) / 9;
+      if (_0x407f62 === _0x105c9d) {
         break;
       } else {
-        _0x544af1.push(_0x544af1.shift());
+        _0x5bf7f7.push(_0x5bf7f7.shift());
       }
-    } catch (_0x1432c0) {
-      _0x544af1.push(_0x544af1.shift());
+    } catch (_0x290d86) {
+      _0x5bf7f7.push(_0x5bf7f7.shift());
     }
   }
-})(a0_0x4d8c, 294673);
-let services = module[a0_0x10deae(497)];
-services.reWinScore = function (_0x5c9b06, _0x5633e0, _0x3fd3c1, _0x42a12a) {
-  const _0xa9c95f = a0_0x10deae;
-  let _0x165484 = {
-    _0x5633e0: 0
+})(a0_0x437c, 204977);
+const moment = require("moment");
+function a0_0x437c() {
+  const _0x32a075 = ["isAfter", "limitScore", "exports", "isLocked", "87694WSiOpX", "endTime", "1766628bOxbHZ", "instance", "addUserSuper", "totalScore", "6097RsmljB", "add", "getInstance", "1082848FdXBaq", "getUserLimitScore", "unLock", "addUserLevel", "9rxutvX", "format", "getUserSuper", "248FcpiwI", "1091697nlBWYG", "10444878vXJIke", "getUserLevel", "1970690kgZTdO"];
+  a0_0x437c = function () {
+    return _0x32a075;
   };
-  let _0xe800a7 = [];
-  for (let _0xfde1db in _0x5c9b06) {
-    if (_0xfde1db != _0x5633e0) {
-      let _0x31e22e = _0x5c9b06[_0xfde1db];
-      _0x31e22e >= 0 ? (_0x165484[_0x5633e0] -= _0x31e22e, _0x165484[_0xfde1db] = _0x31e22e) : _0xe800a7[_0xa9c95f(498)](parseInt(_0xfde1db));
-    }
+  return a0_0x437c();
+}
+let redisKey = {};
+let userLevel = {};
+let superListArr = {};
+let limitScoreListArr = {};
+class redisService {
+  static [a0_0x52cd34(313)]() {
+    const _0x2a896e = a0_0x52cd34;
+    !redisService[_0x2a896e(308)] && (redisService.instance = new redisService());
+    return redisService[_0x2a896e(308)];
   }
-  let _0x17e4b8 = _0x3fd3c1 + Math[_0xa9c95f(501)](_0x165484[_0x5633e0]);
-  for (let _0x11a2c8 = 0; _0x11a2c8 < _0x42a12a[_0xa9c95f(495)]; _0x11a2c8++) {
-    let _0x1012c0 = _0x42a12a[_0x11a2c8].key;
-    if (_0xe800a7.includes(parseInt(_0x1012c0))) {
-      let _0x5bb142 = Math[_0xa9c95f(501)](_0x5c9b06[_0x1012c0]);
-      if (_0x17e4b8 > _0x5bb142) {
-        _0x165484[_0x1012c0] = -_0x5bb142;
-        _0x165484[_0x5633e0] += _0x5bb142;
-        _0x17e4b8 -= _0x5bb142;
-      } else {
-        _0x17e4b8 <= _0x5bb142 && (_0x165484[_0x1012c0] = -_0x17e4b8, _0x165484[_0x5633e0] += _0x17e4b8, _0x17e4b8 = 0);
-      }
-    }
+  [a0_0x52cd34(304)](_0x23448d, _0x4ed546 = 3) {
+    const _0x45ed67 = a0_0x52cd34;
+    return redisKey[_0x23448d] ? moment()[_0x45ed67(301)](redisKey[_0x23448d]) ? (delete redisKey[_0x23448d], redisKey[_0x23448d] = moment()[_0x45ed67(312)](_0x4ed546, "s"), false) : true : (redisKey[_0x23448d] = moment().add(_0x4ed546, "s"), false);
   }
-  return _0x165484;
-};
-services[a0_0x10deae(499)] = function (_0x2be42d, _0x3aedf0, _0x22f976, _0x5ba6ea) {
-  const _0x1311b3 = a0_0x10deae;
-  let _0x5768a0 = {
-    _0x3aedf0: 0
-  };
-  let _0x4487db = [];
-  for (let _0x3a31eb in _0x2be42d) {
-    if (_0x3a31eb != _0x3aedf0) {
-      let _0x4d83f0 = _0x2be42d[_0x3a31eb];
-      _0x4d83f0 < 0 ? (_0x4d83f0 = Math[_0x1311b3(501)](_0x4d83f0), _0x5768a0[_0x3aedf0] += _0x4d83f0, _0x5768a0[_0x3a31eb] = -_0x4d83f0) : _0x4487db[_0x1311b3(498)](parseInt(_0x3a31eb));
-    }
+  [a0_0x52cd34(316)](_0x1e4e83) {
+    redisKey[_0x1e4e83] && delete redisKey[_0x1e4e83];
   }
-  let _0x5bed7f = _0x22f976 + _0x5768a0[_0x3aedf0];
-  for (let _0x39c59b = 0; _0x39c59b < _0x5ba6ea.length; _0x39c59b++) {
-    let _0x3dea03 = _0x5ba6ea[_0x39c59b][_0x1311b3(493)];
-    if (_0x4487db.includes(parseInt(_0x3dea03))) {
-      let _0x2c4c01 = _0x2be42d[_0x3dea03];
-      if (_0x5bed7f > _0x2c4c01) {
-        _0x5768a0[_0x3dea03] = _0x2c4c01;
-        _0x5768a0[_0x3aedf0] -= _0x2c4c01;
-        _0x5bed7f -= _0x2c4c01;
-      } else {
-        _0x5bed7f <= _0x2c4c01 && (_0x5768a0[_0x3dea03] = _0x5bed7f, _0x5768a0[_0x3aedf0] -= _0x5bed7f, _0x5bed7f = 0);
-      }
-    }
+  [a0_0x52cd34(317)](_0x5a6f0f, _0x4b086c, _0x147965) {
+    userLevel[_0x5a6f0f + "-" + _0x4b086c] = _0x147965;
   }
-  return _0x5768a0;
-};
+  [a0_0x52cd34(324)](_0x15f64b, _0x4b2411) {
+    return userLevel[_0x15f64b + "-" + _0x4b2411];
+  }
+  [a0_0x52cd34(309)](_0x4d2505, _0x259ef2, _0x562e2b, _0x254d74) {
+    superListArr[_0x4d2505 + "-" + _0x259ef2] = {
+      superList: _0x562e2b,
+      endTime: _0x254d74
+    };
+  }
+  [a0_0x52cd34(320)](_0x2db951, _0x19ee50) {
+    const _0x3212d0 = a0_0x52cd34;
+    let _0x4050f8 = superListArr[_0x2db951 + "-" + _0x19ee50];
+    return _0x4050f8 && _0x4050f8[_0x3212d0(306)] > moment()[_0x3212d0(319)]("x") ? _0x4050f8.superList : null;
+  }
+  addUserLimitScore(_0x4d48c7, _0x481025, _0x46ae85, _0x2b4694, _0x1232b1) {
+    limitScoreListArr[_0x4d48c7 + "-" + _0x481025] = {
+      limitScore: _0x46ae85,
+      totalScore: _0x2b4694,
+      endTime: _0x1232b1
+    };
+  }
+  [a0_0x52cd34(315)](_0x2e3960, _0x2e75ba) {
+    const _0x523588 = a0_0x52cd34;
+    let _0x2f7a77 = limitScoreListArr[_0x2e3960 + "-" + _0x2e75ba];
+    return _0x2f7a77 && _0x2f7a77[_0x523588(306)] > moment()[_0x523588(319)]("x") ? {
+      limitScore: _0x2f7a77[_0x523588(302)],
+      totalScore: _0x2f7a77[_0x523588(310)]
+    } : null;
+  }
+}
+module[a0_0x52cd34(303)] = redisService.getInstance();
