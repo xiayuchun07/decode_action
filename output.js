@@ -1,237 +1,321 @@
 
-const plateApiUrl = "https://apphq.longhuvip.com/w1/api/index.php?Order=1&a=RealRankingInfo&st=30&apiv=w21&Type=1&c=ZhiShuRanking&PhoneOSNew=1&VerSion=5&ZSType=7&",
-  sonPlateApiUrl = "https://apphq.longhuvip.com/w1/api/index.php?a=SonPlate_Info&PhoneOSNew=2&Token=0&UserID=0&VerSion=5.12.0.1&c=ZhiShuRanking&apiv=w26&PlateID=";
-let platesList = [],
-  currentPlateId = null,
-  currentSubPlateId = null,
-  currentPlateName = "",
-  currentSubPlateName = "";
-async function fetchPlates() {
-  try {
+function toggleCollapse(_0x4a123a) {
+  const _0x2d7f1c = document.getElementById(_0x4a123a + "Details");
+  if (!_0x2d7f1c) {
     {
-      const _0x2f609a = await fetch(plateApiUrl),
-        _0x10ed1f = await _0x2f609a.json();
-      platesList = _0x10ed1f.list.slice(0, 30);
-      updatePlateTable();
-      if (platesList.length > 0) {
-        currentPlateId = platesList[0][0];
-        currentPlateName = platesList[0][1];
-        displayComponentStocks(currentPlateId);
-        setActivePlate(0);
-        for (let _0x224652 = 0; _0x224652 < Math.min(10, platesList.length); _0x224652++) {
-          calculateLimitUpCount(platesList[_0x224652][0], _0x224652, platesList[_0x224652][1]);
-        }
-      }
+      console.error("Content not found for ID: " + _0x4a123a + "Details");
+      return;
     }
-  } catch (_0x19262d) {
-    console.error("获取板块数据失败:", _0x19262d);
+  }
+  const _0x4c4adc = document.getElementById(_0x4a123a + "Arrow");
+  if (_0x2d7f1c.style.display === "block") {
+    _0x2d7f1c.style.display = "none";
+    if (_0x4c4adc) _0x4c4adc.innerHTML = "⬇";
+  } else {
+    {
+      _0x2d7f1c.style.display = "block";
+      if (_0x4c4adc) _0x4c4adc.innerHTML = "⬆";
+    }
   }
 }
-function updatePlateTable() {
-  const _0x59dbb2 = document.getElementById("plate-table-body");
-  _0x59dbb2.innerHTML = "";
-  platesList.forEach((_0x185a49, _0x21de1c) => {
-    const _0x17106d = _0x59dbb2.insertRow();
-    _0x17106d.dataset.plateId = _0x185a49[0];
-    const _0x4f23d1 = _0x17106d.insertCell(0),
-      _0x7a3ba9 = _0x17106d.insertCell(1),
-      _0x1b9c0a = _0x17106d.insertCell(2),
-      _0x512bd6 = _0x17106d.insertCell(3),
-      _0x4ae040 = _0x17106d.insertCell(4);
-    _0x4f23d1.innerText = _0x21de1c + 1;
-    _0x7a3ba9.innerText = _0x185a49[1];
-    _0x1b9c0a.innerText = _0x185a49[2];
-    _0x512bd6.innerText = parseFloat(_0x185a49[3]).toFixed(2);
-    _0x4ae040.innerText = " ";
-    const _0x28d77b = parseFloat(_0x185a49[3]);
-    if (_0x28d77b > 0) _0x512bd6.classList.add("positive-change");else _0x28d77b < 0 && _0x512bd6.classList.add("negative-change");
-    _0x17106d.onclick = async _0x817406 => {
-      _0x817406.stopPropagation();
-      setActivePlate(_0x21de1c);
-      currentPlateId = _0x185a49[0];
-      currentPlateName = _0x185a49[1];
-      currentSubPlateId = null;
-      currentSubPlateName = "";
-      await displayComponentStocks(currentPlateId);
-      await fetchSubPlates(currentPlateId, _0x17106d);
-      calculateLimitUpCount(currentPlateId, _0x21de1c, currentPlateName);
+(function () {
+  var _0x50774b = 1,
+    _0x2670fc = false,
+    _0x36dc16 = true,
+    _0x393318 = null;
+  window.handleThemeClick = function (_0x323ced, _0x49a7cc) {
+    _0x323ced.preventDefault();
+    _0x393318 = _0x49a7cc;
+    document.querySelectorAll("[data-theme-code]").forEach(_0x12938e => {
+      _0x12938e.classList.remove("border-blue-500");
+      _0x12938e.classList.add("border-gray-800");
+    });
+    const _0x57313e = _0x323ced.currentTarget;
+    _0x57313e.classList.remove("border-gray-800");
+    _0x57313e.classList.add("border-blue-500");
+    _0x765757(_0x49a7cc);
+  };
+  function _0x31fa54(_0x5148e0) {
+    var _0x240697 = new Date(_0x5148e0);
+    return _0x240697.getFullYear() + "-" + ("0" + (_0x240697.getMonth() + 1)).slice(-2) + "-" + ("0" + _0x240697.getDate()).slice(-2);
+  }
+  function _0x5ef1be(_0x3a6bd0) {
+    if (_0x3a6bd0 == null || isNaN(_0x3a6bd0)) return "-";
+    if (_0x3a6bd0 >= 100000000) {
+      return (_0x3a6bd0 / 100000000).toFixed(2) + "亿";
+    } else {
+      if (_0x3a6bd0 >= 10000) return (_0x3a6bd0 / 10000).toFixed(2) + "万";
+    }
+    return _0x3a6bd0.toFixed(2);
+  }
+  function _0x5e0c77(_0x5da57e) {
+    if (_0x5da57e == null || isNaN(_0x5da57e)) return "-";
+    var _0x4cc36e = Math.abs(_0x5da57e);
+    return _0x4cc36e >= 100000000 ? (_0x5da57e / 100000000).toFixed(2) + "亿" : (_0x5da57e / 10000).toFixed(2) + "万";
+  }
+  function _0x765757(_0x4301c9) {
+    document.getElementById("stockList").innerHTML = "<div class=\"text-gray-400 text-center\">加载中...</div>";
+    var _0x469c45 = {
+      "args": {
+        "themeCode": _0x4301c9,
+        "pageSize": 1000,
+        "pageNum": 1,
+        "sort": -1,
+        "sortField": "f3"
+      },
+      "client": "web",
+      "clientVersion": "8.3",
+      "clientType": "cfw",
+      "randomCode": "CZ7odv3YipURcVif",
+      "timestamp": Date.now()
     };
-  });
-}
-function setActivePlate(_0x4eed31) {
-  const _0x142eaa = document.querySelectorAll("#plate-table-body tr");
-  _0x142eaa.forEach((_0x3a51e1, _0xcf7742) => {
-    if (_0xcf7742 === _0x4eed31) {
-      _0x3a51e1.classList.add("active");
-    } else _0x3a51e1.classList.remove("active");
-  });
-}
-async function fetchSubPlates(_0x357657, _0x54e639) {
-  try {
-    const _0x1aecf5 = "" + sonPlateApiUrl + _0x357657,
-      _0x12b4a2 = await fetch(_0x1aecf5),
-      _0x3b175b = await _0x12b4a2.json(),
-      _0x249685 = _0x3b175b.List;
-    if (_0x249685 && _0x249685.length > 0) {
-      const _0x56b7e4 = document.getElementById("sub-plate-table-body");
-      _0x56b7e4.innerHTML = "";
-      _0x249685.forEach(_0x39f5a5 => {
-        {
-          const _0x10980b = _0x56b7e4.insertRow();
-          _0x10980b.dataset.plateId = _0x39f5a5[0];
-          _0x10980b.innerHTML = "  \n <td>" + _0x39f5a5[1] + "</td>  \n <td>" + _0x39f5a5[2] + "</td>  \n ";
-          _0x10980b.onclick = _0x13e0b2 => {
-            _0x13e0b2.stopPropagation();
-            currentSubPlateId = _0x39f5a5[0];
-            currentSubPlateName = _0x39f5a5[1];
-            displayComponentStocks(currentSubPlateId);
-            calculateLimitUpCount(currentSubPlateId, null, currentSubPlateName);
-          };
-        }
-      });
-      showSubPlateWindow();
-    }
-  } catch (_0x35dc71) {
-    console.error("获取子板块数据失败:", _0x35dc71);
+    return fetch("https://emcfgdata.eastmoney.com/api/themeInvest/getStockList", {
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://emrnweb.eastmoney.com",
+        "Referer": "https://emrnweb.eastmoney.com/"
+      },
+      "body": JSON.stringify(_0x469c45)
+    }).then(function (_0x21b32d) {
+      return _0x21b32d.json();
+    }).then(function (_0x21e418) {
+      _0x21e418.code === 0 && _0x21e418.data && _0x21e418.data.stockList && _0x1a86c9(_0x21e418.data.stockList, _0x21e418.data.statistic, _0x21e418.data.total);
+    }).catch(function (_0x31e526) {
+      console.error("Error:", _0x31e526);
+      document.getElementById("stockList").innerHTML = "<div class=\"text-red-500 text-center\">获取数据失败</div>";
+    });
   }
-}
-function showSubPlateWindow() {
-  const _0x13b761 = document.getElementById("sub-plate-window");
-  _0x13b761.style.display = "block";
-}
-async function displayComponentStocks(_0x165537) {
-  const _0xd9a80 = "https://apphq.longhuvip.com/w1/api/index.php?Order=1&st=60&a=ZhiShuStockList_W8&c=ZhiShuRanking&PhoneOSNew=1&apiv=W21&Type=6&PlateID=" + _0x165537;
-  let _0xb74aea = [],
-    _0x137a75 = 0,
-    _0x15a6bf = true;
-  try {
+  function _0x52c6d0(_0x5d70d6, _0x524d01, _0x540a43) {
     {
-      while (_0x15a6bf) {
-        const _0x45c333 = _0xd9a80 + "&Index=" + _0x137a75,
-          _0x280660 = await fetch(_0x45c333),
-          _0x407195 = await _0x280660.json(),
-          _0x1df754 = _0x407195.list || [];
-        _0x1df754.length > 0 ? (_0xb74aea = _0xb74aea.concat(_0x1df754), _0x137a75 += _0x1df754.length) : _0x15a6bf = false;
-      }
-      const _0x46a872 = document.getElementById("data-table-body");
-      _0x46a872.innerHTML = "";
-      const _0x4947d2 = document.getElementById("stock-count");
-      _0x4947d2.innerText = "(" + _0xb74aea.length + ")";
-      _0xb74aea.forEach(_0x171891 => {
-        const _0x272d80 = _0x46a872.insertRow();
-        _0x272d80.setAttribute("data-stock-code", _0x171891[0]);
-        const _0xdeebfc = _0x272d80.insertCell(0),
-          _0x3956d9 = _0x272d80.insertCell(1),
-          _0x528c17 = _0x272d80.insertCell(2),
-          _0x4ded96 = _0x272d80.insertCell(3),
-          _0x37cbf1 = _0x272d80.insertCell(4),
-          _0x482685 = _0x272d80.insertCell(5),
-          _0x245d64 = _0x171891[1] || "",
-          _0x40135f = "http://www.treeid/code_" + _0x171891[0];
-        _0xdeebfc.innerText = _0x245d64;
-        _0x3956d9.innerText = _0x171891[5] ? _0x171891[5].toFixed(2) : "";
-        _0x528c17.innerText = _0x171891[6] !== undefined ? _0x171891[6] ? _0x171891[6].toFixed(2) + "%" : "" : "";
-        _0x4ded96.innerText = _0x171891[4] || "";
-        _0x37cbf1.innerText = _0x171891[24] || "";
-        _0x482685.innerText = _0x171891[23] || "";
-        const _0x3ede25 = parseFloat(_0x171891[6]);
-        if (_0x3ede25 > 0) _0x528c17.classList.add("positive-change");else _0x3ede25 < 0 && _0x528c17.classList.add("negative-change");
-        _0x272d80.style.cursor = "pointer";
-        _0x272d80.addEventListener("click", () => {
-          window.location.href = _0x40135f;
-        });
-        _0x171891[23] && !_0x171891[23].includes("昨") && _0x482685.classList.add("highlight-limit-up");
+      _0x540a43 = _0x540a43 || 1;
+      var _0x5c099a = {
+        "args": _0x524d01 ? {} : {
+          "pageSize": 700,
+          "pageNum": _0x540a43,
+          "sort": -1
+        },
+        "client": "web",
+        "clientVersion": "8.3",
+        "clientType": "cfw",
+        "randomCode": _0x524d01 ? "qwRtDlKIulaJS88Y" : "QMvrYSV2BSS4uDmf",
+        "timestamp": Date.now()
+      };
+      return fetch(_0x5d70d6, {
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8",
+          "Accept": "application/json, text/plain, */*",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+          "Origin": "https://emrnweb.eastmoney.com",
+          "Referer": "https://emrnweb.eastmoney.com/"
+        },
+        "body": JSON.stringify(_0x5c099a)
+      }).then(function (_0x4a8390) {
+        return _0x4a8390.json();
+      }).then(function (_0x46ea26) {
+        if (_0x46ea26.code === 0) {
+          return _0x46ea26.data;
+        } else throw new Error(_0x46ea26.message);
+      }).catch(function (_0x3803bb) {
+        console.error("Error:", _0x3803bb);
+        return null;
       });
-      if (_0xb74aea.length === 0) {
-        {
-          const _0x5211e3 = _0x46a872.insertRow(),
-            _0x543eee = _0x5211e3.insertCell(0);
-          _0x543eee.colSpan = 6;
-          _0x543eee.innerText = "没有找到股票数据";
-        }
-      }
     }
-  } catch (_0x2f8a0a) {
-    console.error("获取股票数据失败:", _0x2f8a0a);
   }
-}
-document.getElementById("collectStocksBtn").onclick = function (_0x4cd903) {
-  _0x4cd903.preventDefault();
-  const _0x42b101 = document.querySelectorAll("#data-table-body tr");
-  let _0x21aa58 = [];
-  _0x42b101.forEach(_0x1e4d80 => {
-    const _0x3a1513 = _0x1e4d80.getAttribute("data-stock-code");
-    if (_0x3a1513) {
-      let _0x47176d;
-      if (_0x3a1513.startsWith("6")) _0x47176d = "1#" + _0x3a1513;else {
-        if (_0x3a1513.startsWith("0") || _0x3a1513.startsWith("3")) {
-          _0x47176d = "0#" + _0x3a1513;
-        } else (_0x3a1513.startsWith("4") || _0x3a1513.startsWith("8") || _0x3a1513.startsWith("9")) && (_0x47176d = "2#" + _0x3a1513);
-      }
-      _0x47176d && _0x21aa58.push(_0x47176d);
+  function _0x590783(_0x5067c1, _0x5eac1a = false) {
+    const _0x55f6b4 = document.getElementById("allThemes"),
+      _0x1debd5 = _0x5067c1.map(_0x18e05e => "  \n        <div class=\"bg-gray-900 rounded-lg p-3 border " + (_0x393318 === _0x18e05e.themeCode ? "border-blue-500" : "border-gray-800") + " cursor-pointer hover:bg-gray-800\"  \n             data-theme-code=\"" + _0x18e05e.themeCode + "\"  \n             onclick=\"handleThemeClick(event, '" + _0x18e05e.themeCode + "')\">  \n            <div class=\"flex justify-between items-center\">  \n                <div class=\"flex items-center gap-2\">  \n                    <span class=\"text-sm font-medium\" style=\"color: #FFA500\">" + _0x18e05e.themeName + "</span>  \n                    " + (_0x18e05e.fex3 > 0 ? "  \n                        <span class=\"px-2 py-0.5 bg-gray-800 rounded-full text-xs text-red-500\">  \n                            " + _0x18e05e.fex3 + "家涨停  \n                        </span>  \n                    " : "") + "  \n                </div>  \n                <span class=\"text-sm font-bold " + (_0x18e05e.bf3 >= 0 ? "text-red-500" : "text-green-500") + "\">  \n                    " + _0x18e05e.bf3 + "%  \n                </span>  \n            </div>  \n            <div class=\"flex justify-between items-center mt-2 text-xs text-gray-400\">  \n                <span>领涨：<span style=\"color: #FFA500\">" + (_0x18e05e.securityName || "-") + "</span></span>  \n                <span class=\"" + (_0x18e05e.f3 >= 0 ? "text-red-500" : "text-green-500") + "\">  \n                    " + (_0x18e05e.f3 !== undefined ? _0x18e05e.f3.toFixed(2) + "%" : "-") + "  \n                </span>  \n            </div>  \n        </div>  \n    ").join("");
+    if (_0x5eac1a) {
+      _0x55f6b4.innerHTML += _0x1debd5;
+    } else _0x55f6b4.innerHTML = _0x1debd5;
+    _0x2fb811();
+  }
+  function _0x2fb811() {
+    {
+      const _0xc6e31c = document.getElementById("allThemes"),
+        _0x1d8845 = Array.from(_0xc6e31c.children).filter(_0x319c2b => _0x319c2b.style.display !== "none"),
+        _0x538413 = document.getElementById("allThemesCount");
+      _0x538413 && (_0x538413.textContent = "(" + _0x1d8845.length + ")");
+      const _0x8f19e0 = document.getElementById("stockListCount");
+      _0x8f19e0 && (_0x8f19e0.textContent = "(" + document.getElementById("stockList").children.length + ")");
     }
-  });
-  if (_0x21aa58.length > 0) {
-    const _0x1eed91 = _0x21aa58.join("|"),
-      _0x312cb6 = "http://www.treeid/AddToBlock_" + _0x1eed91;
-    navigator.clipboard.writeText(_0x1eed91).then(() => {
-      alert("股票代码已复制到剪贴板。");
-      window.location.href = _0x312cb6;
-    }).catch(_0x54a8a6 => {
-      const _0x4b4f78 = document.createElement("textarea");
-      _0x4b4f78.value = _0x1eed91;
-      document.body.appendChild(_0x4b4f78);
-      _0x4b4f78.select();
-      try {
-        document.execCommand("copy");
-        window.location.href = _0x312cb6;
-      } catch (_0x201cef) {
-        alert("复制到剪贴板失败: " + _0x201cef);
-      }
-      document.body.removeChild(_0x4b4f78);
-    });
-  } else alert("没有可收集的股票。");
-};
-async function calculateLimitUpCount(_0x4bab1f, _0x4e6d0d, _0x45ff46) {
-  if (_0x4e6d0d === null) return;
-  const _0x515b9a = "https://apphq.longhuvip.com/w1/api/index.php?Order=1&st=60&a=ZhiShuStockList_W8&c=ZhiShuRanking&PhoneOSNew=1&apiv=W21&Type=6&PlateID=" + _0x4bab1f;
-  let _0x207710 = [],
-    _0x4a9043 = 0,
-    _0x16e16d = true;
-  try {
-    while (_0x16e16d) {
-      const _0x86194b = _0x515b9a + "&Index=" + _0x4a9043,
-        _0xc22ff8 = await fetch(_0x86194b),
-        _0x2b5c07 = await _0xc22ff8.json(),
-        _0x3d6ce3 = _0x2b5c07.list || [];
-      _0x3d6ce3.length > 0 ? (_0x207710 = _0x207710.concat(_0x3d6ce3), _0x4a9043 += _0x3d6ce3.length) : _0x16e16d = false;
+  }
+  window.filterThemes = function () {
+    {
+      const _0x2cad8e = document.getElementById("searchInput").value.toLowerCase(),
+        _0x5d6112 = document.querySelectorAll("#allThemes > div");
+      _0x5d6112.forEach(_0x3e7e94 => {
+        const _0x435ffb = _0x3e7e94.querySelector(".text-sm.font-medium").textContent.toLowerCase();
+        if (_0x435ffb.includes(_0x2cad8e)) {
+          _0x3e7e94.style.display = "";
+        } else _0x3e7e94.style.display = "none";
+      });
     }
-    let _0x59e8ce = 0;
-    _0x207710.forEach(_0x1327c5 => {
-      const _0x3e5a48 = _0x1327c5[1] || "",
-        _0x3fc500 = _0x1327c5[23] || "",
-        _0x36e71a = _0x1327c5[6] || 0;
-      if (_0x45ff46 === "北交所") {
-        _0x36e71a >= 29.9 && !_0x3e5a48.toLowerCase().includes("st") && _0x59e8ce++;
-      } else _0x3fc500 && !_0x3fc500.includes("昨") && !_0x3e5a48.toLowerCase().includes("st") && _0x59e8ce++;
-    });
-    const _0x396b22 = document.querySelectorAll("#plate-table-body tr");
-    if (_0x4e6d0d < 10 && _0x396b22[_0x4e6d0d]) {
+  };
+  function _0x29e3e1(_0x257f2e) {
+    const _0x4b6fb8 = _0x257f2e.map(_0x5d6c5e => "  \n        <div class=\"bg-gray-900 rounded-lg p-4 border border-gray-800 cursor-pointer hover:bg-gray-800\"   \n             data-theme-code=\"" + _0x5d6c5e.themeCode + "\"   \n             onclick=\"handleThemeClick(event, '" + _0x5d6c5e.themeCode + "')\">  \n            <div class=\"flex justify-between items-center mb-2\">  \n                <h3 class=\"text-sm font-bold\" style=\"color: #FFA500\">" + _0x5d6c5e.themeName + "</h3>  \n                <span class=\"text-sm font-bold " + (_0x5d6c5e.f3 >= 0 ? "text-red-500" : "text-green-500") + "\">  \n                    " + _0x5d6c5e.f3 + "% " + (_0x5d6c5e.f3 >= 0 ? "↑" : "↓") + "  \n                </span>  \n                <span id=\"today-" + _0x5d6c5e.themeCode + "Arrow\" class=\"collapse-arrow\" onclick=\"toggleCollapse('today-" + _0x5d6c5e.themeCode + "'); event.stopPropagation();\">⬇</span>  \n            </div>  \n            <div id=\"today-" + _0x5d6c5e.themeCode + "Details\" class=\"collapsible-content\" style=\"display: none;\">  \n                <p class=\"text-gray-400 text-xs mb-4\">" + (_0x5d6c5e.newsTitle || "暂无详细介绍") + "</p>  \n                <div class=\"grid grid-cols-2 gap-2\">  \n                    " + (_0x5d6c5e.stock && _0x5d6c5e.stock.length > 0 ? _0x5d6c5e.stock.map(_0xf68e01 => "  \n                        <div class=\"bg-gray-800 p-2 rounded\">  \n                            <div class=\"text-xs\" style=\"color: #FFA500\">" + _0xf68e01.name + "</div>  \n                            <div class=\"text-xs " + (_0xf68e01.f3 >= 0 ? "text-red-500" : "text-green-500") + "\">" + _0xf68e01.f3 + "%</div>  \n                        </div>  \n                    ").join("") : "<div class=\"text-gray-400\">无成分股数据</div>") + "  \n                </div>  \n            </div>  \n        </div>  \n    ").join("");
+    document.getElementById("todayHot").innerHTML = _0x4b6fb8;
+  }
+  function _0x10e3f8(_0x5954f9) {
+    const _0x157b7f = _0x5954f9.map(_0x479559 => {
       {
-        const _0x1932ac = _0x396b22[_0x4e6d0d].cells[4];
-        _0x1932ac.innerText = _0x59e8ce;
-        _0x59e8ce > 0 && _0x1932ac.classList.add("highlight-limit-up");
+        const _0x31bd78 = _0x479559.theme && _0x479559.theme[0],
+          _0x5bcdf7 = _0x31bd78 ? _0x31bd78.code : "";
+        return "  \n            <div class=\"bg-gray-900 rounded-lg p-4 border border-gray-800 cursor-pointer hover:bg-gray-800\"   \n                 data-theme-code=\"" + _0x5bcdf7 + "\"   \n                 onclick=\"handleThemeClick(event, '" + _0x5bcdf7 + "')\">  \n                <div class=\"flex justify-between items-center mb-2\">  \n                    <h3 class=\"text-sm font-bold\" style=\"color: #FFA500\">" + (_0x31bd78 ? _0x31bd78.name : "") + "</h3>  \n                    " + (_0x31bd78 ? "<span class=\"text-sm font-bold " + (_0x31bd78.f3 >= 0 ? "text-red-500" : "text-green-500") + "\">" + _0x31bd78.f3 + "% " + (_0x31bd78.f3 >= 0 ? "↑" : "↓") + "</span>" : "") + "  \n                    <span id=\"expected-" + _0x5bcdf7 + "Arrow\" class=\"collapse-arrow\" onclick=\"toggleCollapse('expected-" + _0x5bcdf7 + "'); event.stopPropagation();\">⬇</span>  \n                </div>  \n                <div id=\"expected-" + _0x5bcdf7 + "Details\" class=\"collapsible-content\" style=\"display: none;\">  \n                    <p class=\"text-gray-400 text-xs mb-4\">" + (_0x479559.summary || "暂无详细介绍") + "</p>  \n                    <div class=\"grid grid-cols-2 gap-2\">  \n                        " + _0x479559.theme.slice(1).map(_0x48715a => "  \n                            <div class=\"bg-gray-800 p-2 rounded\">  \n                                <div class=\"text-xs\" style=\"color: #FFA500\">" + _0x48715a.name + "</div>  \n                                <div class=\"text-xs " + (_0x48715a.f3 >= 0 ? "text-red-500" : "text-green-500") + "\">" + _0x48715a.f3 + "%</div>  \n                            </div>  \n                        ").join("") + "  \n                    </div>  \n                    <div class=\"text-gray-400 text-xs mt-2\">" + _0x31fa54(_0x479559.date) + "</div>  \n                </div>  \n            </div>";
       }
-    }
-  } catch (_0x48ac4c) {
-    console.error("获取股票数据失败:", _0x48ac4c);
+    }).join("");
+    document.getElementById("expectedHot").innerHTML = _0x157b7f;
   }
-}
-document.addEventListener("click", function (_0x582113) {
-  const _0x8554a5 = document.getElementById("sub-plate-window");
-  !_0x8554a5.contains(_0x582113.target) && !_0x582113.target.closest("#plate-table") && (_0x8554a5.style.display = "none");
-});
-document.querySelector("#sub-plate-window .close-btn").onclick = function () {
-  document.getElementById("sub-plate-window").style.display = "none";
-};
-fetchPlates();
+  function _0x1a86c9(_0x40a592, _0x458f58, _0x47ed8e) {
+    var _0x2db9bf = document.getElementById("stockListTitle");
+    _0x2db9bf && (_0x2db9bf.innerHTML = "成分股 <span class=\"text-red-500\">(" + (_0x47ed8e || _0x40a592.length) + ")</span>" + "<button id=\"collectStocksBtn\" " + "class=\"ml-4 px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 focus:outline-none\">" + "加入板块" + "</button>");
+    var _0x4178f9 = "<div class=\"flex text-sm mb-4\"><span>涨跌统计 <span style=\"color: #FF3B30\">" + (_0x458f58 && _0x458f58.f104 || 0) + "</span>/" + (_0x458f58 && _0x458f58.f106 || 0) + "/" + "<span class=\"text-green-500\">" + (_0x458f58 && _0x458f58.f105 || 0) + "</span>" + "</span>" + "<span style=\"margin-left: 32px;\">涨跌停 " + "<span style=\"color: #FF3B30\">" + (_0x458f58 && _0x458f58.fex3 || 0) + "</span>/" + "<span class=\"text-green-500\">" + (_0x458f58 && _0x458f58.fex4 || 0) + "</span>" + "</span>" + "<span style=\"margin-left: 32px;\">净流入 " + "<span class=\"" + ((_0x458f58 && _0x458f58.fex5 || 0) >= 0 ? "text-red-500" : "text-green-500") + "\">" + _0x5e0c77(_0x458f58 && _0x458f58.fex5) + "</span>" + "</span>" + "</div>",
+      _0x1f5908 = _0x40a592.filter(_0x3e87f3 => _0x3e87f3.label && !_0x3e87f3.label.includes("昨") && _0x3e87f3.f3 >= 9.9),
+      _0x14dbae = _0x40a592.filter(_0x57143c => !_0x57143c.label || _0x57143c.label.includes("昨") || _0x57143c.f3 < 9.9);
+    function _0x48767b(_0x4faf8b) {
+      return "<a href=\"http://www.treeid/code_" + _0x4faf8b.securityCode + "\" " + "class=\"block stock-item bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors duration-200\" style=\"padding: 3px; margin: 2px; border: 1px solid #222; cursor: pointer;\">" + "<div class=\"flex justify-between items-center\">" + "<div class=\"stock-name\">" + "<span class=\"text-base font-medium\" style=\"color: #FFA500; text-decoration: none;\">" + _0x4faf8b.securityName + "</span>" + (_0x4faf8b.label ? "<span class=\"text-xs text-red-500 ml-2\">" + _0x4faf8b.label + "</span>" : "") + "</div>" + "<div class=\"flex items-center gap-4\">" + "<span class=\"stock-value " + (_0x4faf8b.f3 > 0 ? "text-red-500" : _0x4faf8b.f3 < 0 ? "text-green-500" : "text-gray-400") + "\">" + (_0x4faf8b.f3 != null ? _0x4faf8b.f3.toFixed(2) + "%" : "-") + "</span>" + "<span class=\"stock-market-cap text-gray-400\">" + _0x5ef1be(_0x4faf8b.f21) + "</span>" + "<span class=\"stock-code\" style=\"display:none;\">" + _0x4faf8b.securityCode + "</span>" + (_0x4faf8b.keywordList?.["length"] ? "<span id=\"" + _0x4faf8b.securityCode + "Arrow\" class=\"text-gray-400 cursor-pointer\" " + "onclick=\"toggleCollapse('" + _0x4faf8b.securityCode + "')\">⬇</span>" : "") + "</div>" + "</div>" + (_0x4faf8b.keywordList?.["length"] ? "<div id=\"" + _0x4faf8b.securityCode + "Details\" class=\"collapsible-content\" style=\"display: none;\">" + _0x4faf8b.keywordList.map(_0x5a5ac5 => "<div class=\"mt-2 text-sm text-gray-400\">" + _0x5a5ac5.introduction + "</div>").join("") + "</div>" : "<div class=\"collapsible-content\" style=\"display: none;\"><p class=\"text-gray-400\">无详细信息</p></div>") + "</a>";
+    }
+    var _0x59f300 = document.getElementById("stockList");
+    _0x59f300 && (_0x59f300.innerHTML = _0x4178f9 + "<div class=\"space-y-4\"> " + "<div>" + "<div class=\"text-white mb-2\">涨停股票 (" + _0x1f5908.length + ")</div>" + _0x1f5908.map(_0x48767b).join("") + "</div>" + "<div>" + "<div class=\"text-white mb-2\">其他股票 (" + _0x14dbae.length + ")</div>" + _0x14dbae.map(_0x48767b).join("") + "</div>" + "</div>");
+    var _0x5e99b4 = document.getElementById("collectStocksBtn");
+    _0x5e99b4 && _0x5e99b4.addEventListener("click", function (_0x1ad1f0) {
+      {
+        _0x1ad1f0.preventDefault();
+        var _0x24ea19 = document.querySelectorAll(".stock-item"),
+          _0x2c7f92 = [];
+        _0x24ea19.forEach(function (_0x32985a) {
+          var _0x956d96 = _0x32985a.querySelector(".stock-code").textContent,
+            _0x8192a0 = _0x956d96.replace(/^(sz|sh)?/, ""),
+            _0x2bf740;
+          if (_0x8192a0.startsWith("6")) _0x2bf740 = "1#" + _0x8192a0;else {
+            if (_0x8192a0.startsWith("0") || _0x8192a0.startsWith("3")) _0x2bf740 = "0#" + _0x8192a0;else {
+              if (_0x8192a0.startsWith("4") || _0x8192a0.startsWith("8") || _0x8192a0.startsWith("9")) _0x2bf740 = "2#" + _0x8192a0;else {
+                return;
+              }
+            }
+          }
+          _0x2c7f92.push(_0x2bf740);
+        });
+        if (_0x2c7f92.length > 0) {
+          var _0x4a5551 = _0x2c7f92.join("|"),
+            _0x14ed66 = "http://www.treeid/AddToBlock_" + _0x4a5551;
+          navigator.clipboard.writeText(_0x4a5551).then(function () {
+            alert("股票代码已复制到剪贴板。");
+            window.location.href = _0x14ed66;
+          }).catch(function (_0x5a2e13) {
+            var _0x4407db = document.createElement("textarea");
+            _0x4407db.value = _0x4a5551;
+            document.body.appendChild(_0x4407db);
+            _0x4407db.select();
+            try {
+              document.execCommand("copy");
+              window.location.href = _0x14ed66;
+            } catch (_0x34c43e) {
+              alert("复制到剪贴板失败: " + _0x34c43e);
+            }
+            document.body.removeChild(_0x4407db);
+          });
+        } else alert("没有可收集的股票。");
+      }
+    });
+  }
+  function _0x3c002b(_0x96b8eb, _0x1ffb28) {
+    {
+      _0x96b8eb.preventDefault();
+      _0x393318 = _0x1ffb28;
+      document.querySelectorAll("[data-theme-code]").forEach(_0x2f2133 => {
+        _0x2f2133.classList.remove("border-blue-500");
+        _0x2f2133.classList.add("border-gray-800");
+      });
+      const _0x486ea0 = _0x96b8eb.currentTarget;
+      _0x486ea0.classList.remove("border-gray-800");
+      _0x486ea0.classList.add("border-blue-500");
+      _0x765757(_0x1ffb28);
+    }
+  }
+  function _0x5d19e3() {
+    if (_0x2670fc || !_0x36dc16) return;
+    _0x2670fc = true;
+    document.getElementById("loading").classList.remove("hidden");
+    _0x52c6d0("https://emcfgdata.eastmoney.com/api/themeInvest/getThemeList", false, _0x50774b).then(function (_0x209b0c) {
+      if (_0x209b0c && Array.isArray(_0x209b0c.list)) {
+        {
+          const _0x5c6a93 = _0x209b0c.list.map(_0x4a2d81 => ({
+            "themeCode": _0x4a2d81.themeCode || "",
+            "themeName": _0x4a2d81.themeName || "",
+            "fex3": _0x4a2d81.fex3 || 0,
+            "bf3": _0x4a2d81.bf3 || 0,
+            "securityName": _0x4a2d81.securityName || "-",
+            "f3": _0x4a2d81.f3 || 0
+          }));
+          _0x590783(_0x5c6a93, _0x50774b > 1);
+          _0x36dc16 = _0x50774b * 30 < (_0x209b0c.total || 0);
+          _0x50774b++;
+        }
+      } else console.error("Invalid data structure:", _0x209b0c);
+      _0x2670fc = false;
+      document.getElementById("loading").classList.add("hidden");
+    }).catch(function (_0x5c08e3) {
+      console.error("Load more themes error:", _0x5c08e3);
+      _0x2670fc = false;
+      document.getElementById("loading").classList.add("hidden");
+    });
+  }
+  function _0x48b011(_0x108943, _0x3ae32f) {
+    {
+      (function () {})();
+      var _0x5a2e75;
+      return function () {
+        var _0x4732e1 = this,
+          _0xa06097 = arguments,
+          _0x51ab34 = function () {
+            _0x5a2e75 = null;
+            _0x108943.apply(_0x4732e1, _0xa06097);
+          };
+        clearTimeout(_0x5a2e75);
+        _0x5a2e75 = setTimeout(_0x51ab34, _0x3ae32f);
+      };
+    }
+  }
+  var _0x297312 = _0x48b011(function () {
+    var _0x831ff1 = document.getElementById("allThemes");
+    if (_0x831ff1.scrollHeight - _0x831ff1.scrollTop <= _0x831ff1.clientHeight + 100) {
+      _0x5d19e3();
+    }
+  }, 200);
+  function _0x38ee6c() {
+    document.getElementById("todayHot").innerHTML = "<div class=\"text-gray-400 text-center\">加载中...</div>";
+    document.getElementById("expectedHot").innerHTML = "<div class=\"text-gray-400 text-center\">加载中...</div>";
+    document.getElementById("allThemes").innerHTML = "<div class=\"text-gray-400 text-center\">加载中...</div>";
+    Promise.all([_0x52c6d0("https://emcfgdata.eastmoney.com/api/themeInvest/getTodayChance", false), _0x52c6d0("https://emcfgdata.eastmoney.com/api/themeInvest/getExpectHot", true)]).then(function (_0x253b45) {
+      var _0x43cfb2 = _0x253b45[0],
+        _0x106a14 = _0x253b45[1];
+      _0x29e3e1(_0x43cfb2);
+      _0x10e3f8(_0x106a14);
+      _0x5d19e3();
+      if (_0x43cfb2 && _0x43cfb2.length > 0) {
+        _0x393318 = _0x43cfb2[0].themeCode;
+        setTimeout(function () {
+          var _0x1536fa = document.querySelector("[data-theme-code=\"" + _0x393318 + "\"]");
+          _0x1536fa && (_0x1536fa.classList.remove("border-gray-800"), _0x1536fa.classList.add("border-blue-500"));
+          _0x765757(_0x393318);
+        }, 100);
+      }
+      var _0x446622 = document.getElementById("allThemes");
+      if (_0x446622) {
+        _0x446622.addEventListener("scroll", _0x297312);
+      }
+    }).catch(function (_0x31b863) {
+      console.error("Initialize error:", _0x31b863);
+      document.getElementById("todayHot").innerHTML = "<div class=\"text-red-500 text-center\">加载失败</div>";
+      document.getElementById("expectedHot").innerHTML = "<div class=\"text-red-500 text-center\">加载失败</div>";
+      document.getElementById("allThemes").innerHTML = "<div class=\"text-red-500 text-center\">加载失败</div>";
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    _0x38ee6c();
+    document.querySelectorAll(".collapsible-content").forEach(_0x461c4e => _0x461c4e.style.display = "none");
+  });
+})();
