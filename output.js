@@ -1,52 +1,49 @@
 
-const a0_0x239366 = a0_0x4d3f;
-function a0_0x2795() {
-  const _0x28cabe = ["10846107mxwNYZ", "afterStartup", "17886aRDtFd", "7uUjAcb", "329TntRga", "loadParameter", "../../../services/configServices", "loadConfig", "afterStartAll", "4538796priAHU", "26484CuODJW", "pomelo-logger", "10PlpseY", "5071hAWYpo", "3642540PIKvTN", "../../../util/utils", "getLogger", "2332488ucshPQ", "2062pHbAws", "exports", "625CBeoiZ", "invokeCallback"];
-  a0_0x2795 = function () {
-    return _0x28cabe;
-  };
-  return a0_0x2795();
-}
-(function (_0x519599, _0x5e9337) {
-  const _0x11aa41 = a0_0x4d3f;
-  const _0xece684 = _0x519599();
+const a0_0x45be59 = a0_0x4ca0;
+(function (_0x4f3ce9, _0x2a90be) {
+  const _0x409e5e = a0_0x4ca0;
+  const _0x45af29 = _0x4f3ce9();
   while (true) {
     try {
-      const _0xd91380 = -parseInt(_0x11aa41(198)) / 1 * (-parseInt(_0x11aa41(190)) / 2) + -parseInt(_0x11aa41(186)) / 3 + parseInt(_0x11aa41(203)) / 4 + -parseInt(_0x11aa41(192)) / 5 * (-parseInt(_0x11aa41(196)) / 6) + parseInt(_0x11aa41(197)) / 7 * (parseInt(_0x11aa41(189)) / 8) + parseInt(_0x11aa41(194)) / 9 * (-parseInt(_0x11aa41(184)) / 10) + parseInt(_0x11aa41(185)) / 11 * (parseInt(_0x11aa41(182)) / 12);
-      if (_0xd91380 === _0x5e9337) {
+      const _0x1fa09c = parseInt(_0x409e5e(369)) / 1 + -parseInt(_0x409e5e(360)) / 2 * (-parseInt(_0x409e5e(366)) / 3) + parseInt(_0x409e5e(364)) / 4 + parseInt(_0x409e5e(361)) / 5 * (-parseInt(_0x409e5e(365)) / 6) + -parseInt(_0x409e5e(356)) / 7 + -parseInt(_0x409e5e(362)) / 8 * (-parseInt(_0x409e5e(355)) / 9) + -parseInt(_0x409e5e(357)) / 10;
+      if (_0x1fa09c === _0x2a90be) {
         break;
       } else {
-        _0xece684.push(_0xece684.shift());
+        _0x45af29.push(_0x45af29.shift());
       }
-    } catch (_0xe9bea4) {
-      _0xece684.push(_0xece684.shift());
+    } catch (_0x129638) {
+      _0x45af29.push(_0x45af29.shift());
     }
   }
-})(a0_0x2795, 736208);
-let domain = module[a0_0x239366(191)];
-let logger = require(a0_0x239366(183))[a0_0x239366(188)]("pomelo");
-let utils = require(a0_0x239366(187));
-let parameterServices = require(a0_0x239366(200));
-function a0_0x4d3f(_0x194cf6, _0x20c5f6) {
-  const _0x41a0f1 = a0_0x2795();
-  a0_0x4d3f = function (_0x1bd09e, _0x3b9acf) {
-    _0x1bd09e = _0x1bd09e - 182;
-    let _0x4b01a8 = _0x41a0f1[_0x1bd09e];
-    return _0x4b01a8;
+})(a0_0x5b3e, 509710);
+function a0_0x4ca0(_0xcade1e, _0x1f1d29) {
+  const _0x2383c1 = a0_0x5b3e();
+  a0_0x4ca0 = function (_0x2788fb, _0x1ce0bb) {
+    _0x2788fb = _0x2788fb - 355;
+    let _0x33dc4f = _0x2383c1[_0x2788fb];
+    return _0x33dc4f;
   };
-  return a0_0x4d3f(_0x194cf6, _0x20c5f6);
+  return a0_0x4ca0(_0xcade1e, _0x1f1d29);
 }
-domain[a0_0x239366(195)] = function (_0x1bc795) {
-  const _0x1e7472 = a0_0x239366;
-  utils[_0x1e7472(193)](_0x1bc795);
+let domain = require(a0_0x45be59(363));
+function a0_0x5b3e() {
+  const _0x26eafb = ["reloadParameterNotify", "catch", "290569HsHYTr", "then", "exports", "3495267HUiWBm", "3910263gYBPMy", "3637350zOSrIO", "app", "prototype", "1280luoRCx", "1046855SuOjYU", "8llCFPv", "../domain/lifecycleDomain", "166132lrCjlI", "6PuQwhS", "4317VozgBK"];
+  a0_0x5b3e = function () {
+    return _0x26eafb;
+  };
+  return a0_0x5b3e();
+}
+module[a0_0x45be59(371)] = function (_0x1af24b) {
+  return new remote(_0x1af24b);
 };
-domain[a0_0x239366(202)] = async function (_0x13be6f) {
-  const _0x427516 = a0_0x239366;
-  await domain.loadParameter();
-  utils[_0x427516(193)](_0x13be6f);
+let remote = function (_0x4268c5) {
+  const _0x25327b = a0_0x45be59;
+  this[_0x25327b(358)] = _0x4268c5;
 };
-domain[a0_0x239366(199)] = async function () {
-  const _0x547057 = a0_0x239366;
-  await parameterServices[_0x547057(201)]();
-  logger.debug("http load parameter finished");
+let pro = remote[a0_0x45be59(359)];
+pro[a0_0x45be59(367)] = function (_0x26f40d) {
+  const _0x12dc51 = a0_0x45be59;
+  domain.loadParameter()[_0x12dc51(370)](() => {
+    _0x26f40d();
+  })[_0x12dc51(368)](() => {});
 };
