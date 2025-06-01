@@ -1,92 +1,139 @@
 
-const a0_0x41a904 = a0_0x52f0;
-(function (_0x1f15d7, _0x7e4376) {
-  const _0xe017d2 = a0_0x52f0;
-  const _0x248c9b = _0x1f15d7();
+const a0_0x2ad6c2 = a0_0x41ed;
+function a0_0x41ed(_0x50274c, _0xe0f28) {
+  const _0x46d50e = a0_0x1ee2();
+  a0_0x41ed = function (_0x1ae6c1, _0x32cb9d) {
+    _0x1ae6c1 = _0x1ae6c1 - 430;
+    let _0xf5390f = _0x46d50e[_0x1ae6c1];
+    return _0xf5390f;
+  };
+  return a0_0x41ed(_0x50274c, _0xe0f28);
+}
+(function (_0x206cb2, _0x279396) {
+  const _0x109b29 = a0_0x41ed;
+  const _0x4679fa = _0x206cb2();
   while (true) {
     try {
-      const _0x313e0d = parseInt(_0xe017d2(159)) / 1 + -parseInt(_0xe017d2(173)) / 2 + -parseInt(_0xe017d2(139)) / 3 + parseInt(_0xe017d2(169)) / 4 + parseInt(_0xe017d2(160)) / 5 * (parseInt(_0xe017d2(142)) / 6) + parseInt(_0xe017d2(140)) / 7 * (-parseInt(_0xe017d2(151)) / 8) + -parseInt(_0xe017d2(158)) / 9 * (-parseInt(_0xe017d2(165)) / 10);
-      if (_0x313e0d === _0x7e4376) {
+      const _0x35da36 = parseInt(_0x109b29(457)) / 1 + parseInt(_0x109b29(431)) / 2 + parseInt(_0x109b29(446)) / 3 + -parseInt(_0x109b29(447)) / 4 * (parseInt(_0x109b29(475)) / 5) + parseInt(_0x109b29(432)) / 6 * (parseInt(_0x109b29(445)) / 7) + -parseInt(_0x109b29(467)) / 8 * (parseInt(_0x109b29(461)) / 9) + -parseInt(_0x109b29(474)) / 10;
+      if (_0x35da36 === _0x279396) {
         break;
       } else {
-        _0x248c9b.push(_0x248c9b.shift());
+        _0x4679fa.push(_0x4679fa.shift());
       }
-    } catch (_0x1a1ff9) {
-      _0x248c9b.push(_0x248c9b.shift());
+    } catch (_0x20d251) {
+      _0x4679fa.push(_0x4679fa.shift());
     }
   }
-})(a0_0x1693, 724714);
-let request = require("request");
-let code = require("../constant/code");
-let xml2js = require(a0_0x41a904(168));
-let service = module[a0_0x41a904(172)];
-function a0_0x52f0(_0x279cb1, _0xfee064) {
-  const _0x587322 = a0_0x1693();
-  a0_0x52f0 = function (_0x2658a5, _0x44a91) {
-    _0x2658a5 = _0x2658a5 - 139;
-    let _0x9ae290 = _0x587322[_0x2658a5];
-    return _0x9ae290;
-  };
-  return a0_0x52f0(_0x279cb1, _0xfee064);
+})(a0_0x1ee2, 693627);
+const moment = require("moment");
+let userDao = require(a0_0x2ad6c2(435));
+let logger = require("pomelo-logger")[a0_0x2ad6c2(466)](a0_0x2ad6c2(441));
+let pushAPI = require(a0_0x2ad6c2(480));
+class createRoomAgain {
+  static [a0_0x2ad6c2(481)]() {
+    const _0x1c3309 = a0_0x2ad6c2;
+    !createRoomAgain[_0x1c3309(438)] && (createRoomAgain[_0x1c3309(438)] = new createRoomAgain());
+    return createRoomAgain.instance;
+  }
+  constructor() {
+    const _0x381130 = a0_0x2ad6c2;
+    this.createRoomTimer = {};
+    this[_0x381130(440)] = {};
+    this[_0x381130(443)] = {};
+    this.curJoinUser = {};
+  }
+  async [a0_0x2ad6c2(453)](_0x4efb22, _0x5d5b87, _0x2bffbb, _0x21a80e, _0xfa931d) {
+    const _0x1426d8 = a0_0x2ad6c2;
+    logger[_0x1426d8(437)](_0x1426d8(451) + _0x5d5b87.uid + _0x1426d8(439) + _0x4efb22 + _0x1426d8(449) + _0x21a80e + " ");
+    if (!this[_0x1426d8(440)][_0x4efb22]) {
+      let _0x2cd7db = moment()[_0x1426d8(458)]("x");
+      let _0xb65f53 = moment()[_0x1426d8(473)](10, "s")[_0x1426d8(458)]("x");
+      let _0x1a67f6 = false;
+      let _0x5726ef = null;
+      let _0x4b32e6 = [];
+      let _0x1665f1 = null;
+      let _0x5c00a0 = [];
+      let _0x25a91b = true;
+      this[_0x1426d8(440)][_0x4efb22] = {
+        isJoined: _0x25a91b,
+        joinRoomID: _0x1665f1,
+        createTime: _0x2cd7db,
+        endTime: _0xb65f53,
+        union: _0x2bffbb,
+        gameRuleID: _0x21a80e,
+        gameRule: _0xfa931d,
+        isCreated: _0x1a67f6,
+        creatrUser: _0x5726ef,
+        joinUserList: _0x4b32e6,
+        pendingUserList: _0x5c00a0
+      };
+      this[_0x1426d8(443)][_0x4efb22] = setInterval(() => {
+        const _0x518134 = _0x1426d8;
+        !this.curJoinUser[_0x4efb22] && this[_0x518134(448)](_0x4efb22);
+      }, 200);
+    }
+    !this[_0x1426d8(440)][_0x4efb22][_0x1426d8(433)].find(_0x528c48 => _0x528c48[_0x1426d8(455)] == _0x5d5b87[_0x1426d8(455)]) && !this.createUserList[_0x4efb22].joinUserList.includes(_0x5d5b87.uid) && this[_0x1426d8(440)][_0x4efb22][_0x1426d8(433)][_0x1426d8(472)](_0x5d5b87);
+  }
+  async [a0_0x2ad6c2(448)](_0x463f51) {
+    const _0x210fc9 = a0_0x2ad6c2;
+    let _0xb29308 = this[_0x210fc9(440)][_0x463f51];
+    if (!_0xb29308) {
+      return;
+    }
+    _0xb29308 && moment().format("x") > _0xb29308[_0x210fc9(471)] && this.clearRoomData(_0x463f51);
+    let _0x229f0b = _0xb29308[_0x210fc9(456)];
+    if (_0xb29308 && _0x229f0b && _0xb29308[_0x210fc9(444)]) {
+      let _0x51c353 = _0xb29308[_0x210fc9(433)][_0x210fc9(459)]();
+      if (_0x51c353 && !_0xb29308[_0x210fc9(478)][_0x210fc9(482)](_0x51c353[_0x210fc9(455)])) {
+        this[_0x210fc9(462)][_0x463f51] = _0x51c353;
+        this.createUserList[_0x463f51][_0x210fc9(444)] = false;
+        if (_0xb29308[_0x210fc9(454)]) {
+          let _0x516171 = await _0x229f0b.joinRoom(_0xb29308[_0x210fc9(454)], _0x51c353);
+          _0x516171 == 0 ? (this[_0x210fc9(440)][_0x463f51].joinUserList.push(_0x51c353.uid), logger[_0x210fc9(437)](_0x210fc9(451) + _0x51c353.uid + _0x210fc9(450) + _0xb29308[_0x210fc9(454)] + _0x210fc9(436) + this[_0x210fc9(440)][_0x463f51][_0x210fc9(478)])) : (pushAPI[_0x210fc9(442)]({
+            uid: _0x51c353[_0x210fc9(455)],
+            code: _0x516171
+          }, [{
+            uid: _0x51c353[_0x210fc9(455)],
+            sid: _0x51c353[_0x210fc9(470)]
+          }]), logger[_0x210fc9(469)]("[createRoomAgain] uid = " + _0x51c353.uid + _0x210fc9(450) + _0xb29308.joinRoomID + _0x210fc9(434) + _0x516171 + " "));
+          this[_0x210fc9(440)][_0x463f51].isJoined = true;
+          this[_0x210fc9(462)][_0x463f51] = null;
+        } else {
+          let _0x1bd5df = await _0x229f0b[_0x210fc9(460)](_0xb29308[_0x210fc9(463)], _0xb29308[_0x210fc9(468)], _0x51c353);
+          if (_0x1bd5df == 0) {
+            let _0x51c18d = await userDao[_0x210fc9(479)](_0x51c353[_0x210fc9(455)]);
+            this[_0x210fc9(440)][_0x463f51].joinRoomID = _0x51c18d[_0x210fc9(430)];
+            this[_0x210fc9(440)][_0x463f51][_0x210fc9(478)][_0x210fc9(472)](_0x51c353[_0x210fc9(455)]);
+            logger[_0x210fc9(437)]("[createRoomAgain] uid = " + _0x51c353[_0x210fc9(455)] + _0x210fc9(464) + _0x463f51 + _0x210fc9(477) + _0xb29308[_0x210fc9(454)] + _0x210fc9(436) + this.createUserList[_0x463f51][_0x210fc9(478)]);
+          } else {
+            logger[_0x210fc9(437)](_0x210fc9(451) + _0x51c353[_0x210fc9(455)] + " create fail code = " + _0x1bd5df);
+            pushAPI[_0x210fc9(442)]({
+              uid: _0x51c353[_0x210fc9(455)],
+              code: _0x1bd5df
+            }, [{
+              uid: _0x51c353[_0x210fc9(455)],
+              sid: _0x51c353[_0x210fc9(470)]
+            }]);
+          }
+          this[_0x210fc9(440)][_0x463f51][_0x210fc9(444)] = true;
+          this[_0x210fc9(462)][_0x463f51] = null;
+        }
+      }
+    }
+  }
+  [a0_0x2ad6c2(465)](_0xd74ad3) {
+    const _0x4683c6 = a0_0x2ad6c2;
+    logger.info(_0x4683c6(452) + _0xd74ad3);
+    this[_0x4683c6(443)][_0xd74ad3] && (clearInterval(this[_0x4683c6(443)][_0xd74ad3]), delete this[_0x4683c6(443)][_0xd74ad3], this[_0x4683c6(443)][_0xd74ad3] = null);
+    delete this[_0x4683c6(440)][_0xd74ad3];
+    delete this[_0x4683c6(462)][_0xd74ad3];
+  }
 }
-service[a0_0x41a904(141)] = function (_0x5299ad) {
-  const _0x537971 = a0_0x41a904;
-  console[_0x537971(161)](_0x537971(150) + _0x5299ad);
-  return new Promise((_0xec5405, _0x202a23) => {
-    request(_0x5299ad, function (_0x2cc15e, _0x2d4b6f, _0x2dfad2) {
-      const _0x1ffdf0 = a0_0x52f0;
-      !!_0x2cc15e || _0x2d4b6f.statusCode !== 200 ? (console[_0x1ffdf0(155)](_0x1ffdf0(162) + _0x5299ad), _0x202a23(code[_0x1ffdf0(154)])) : (console[_0x1ffdf0(161)](_0x1ffdf0(157), _0x2dfad2), _0xec5405(_0x2dfad2));
-    });
-  });
-};
-service[a0_0x41a904(148)] = function (_0xe95c7f, _0x198cc9, _0x2209f3) {
-  const _0x584efe = a0_0x41a904;
-  console[_0x584efe(161)](_0x584efe(146), _0xe95c7f);
-  console[_0x584efe(161)](_0x584efe(153), _0x198cc9);
-  return new Promise((_0x3bd0ea, _0x265fa0) => {
-    const _0x371e24 = _0x584efe;
-    request({
-      url: _0xe95c7f,
-      method: "POST",
-      json: true,
-      headers: {
-        "CONTENT-TYPE": _0x371e24(175)
-      },
-      body: JSON[_0x371e24(164)](_0x198cc9)
-    }, function (_0xdcbbbc, _0x5f1d4f, _0x5e3377) {
-      const _0x1a82df = _0x371e24;
-      !!_0xdcbbbc || _0x5f1d4f.statusCode !== 200 ? (console[_0x1a82df(155)](_0x1a82df(144) + _0xe95c7f), _0x265fa0(code[_0x1a82df(154)])) : (console[_0x1a82df(161)](_0x1a82df(145), _0x5e3377), _0x3bd0ea(_0x5e3377));
-    });
-  });
-};
-service[a0_0x41a904(152)] = function (_0x984219, _0x5b2cef) {
-  return new Promise((_0x24af02, _0x26628b) => {
-    const _0x1f86f7 = a0_0x52f0;
-    let _0x465449 = new xml2js[_0x1f86f7(174)]();
-    let _0x2aef35 = _0x465449[_0x1f86f7(156)](JSON[_0x1f86f7(164)](_0x5b2cef));
-    console[_0x1f86f7(161)](_0x1f86f7(167), _0x984219);
-    console[_0x1f86f7(161)](_0x1f86f7(166), _0x5b2cef);
-    request({
-      url: _0x984219,
-      method: _0x1f86f7(143),
-      headers: {
-        "Content-Type": _0x1f86f7(149),
-        "Content-Length": _0x2aef35[_0x1f86f7(170)]
-      },
-      body: _0x2aef35
-    }, function (_0x26c1ec, _0x5ba089, _0x5105ed) {
-      const _0xc8edfa = _0x1f86f7;
-      let _0x17bfb6 = new xml2js[_0xc8edfa(171)]();
-      let _0x25f722 = _0x17bfb6.parseString(_0x5105ed);
-      console[_0xc8edfa(161)](_0x25f722);
-      !!_0x26c1ec || _0x5ba089[_0xc8edfa(163)] !== 200 ? (console[_0xc8edfa(155)](_0xc8edfa(144) + _0x984219, _0x5105ed), _0x26628b(code[_0xc8edfa(154)])) : (console[_0xc8edfa(161)](_0xc8edfa(147), _0x5105ed), _0x24af02(_0x5105ed));
-    });
-  });
-};
-function a0_0x1693() {
-  const _0x41658f = ["Parser", "exports", "835454LCZCLM", "Builder", "application/x-www-form-urlencoded", "2021463FQpCSK", "336rigtIy", "httpGet", "69708zWiFWA", "POST", "send http post request err:", "收到POST数据", "发送POST请求", "收到POSTxml数据", "httpPost", "text/xml; charset=utf-8", "发送GET请求", "181488LnKfuw", "httpPostXml", "POST参数", "FAIL", "error", "buildObject", "收到GET数据", "15246KPvgbA", "161285nkQmwh", "305VqAwXe", "log", "send http get request err:", "statusCode", "stringify", "8590pAgwOT", "POSTxml参数", "发送POSTxml请求", "xml2js", "2320244vTfKVA", "length"];
-  a0_0x1693 = function () {
-    return _0x41658f;
+function a0_0x1ee2() {
+  const _0x2b62d2 = ["includes", "roomID", "1790132utsZkY", "1698SQKjUh", "pendingUserList", " fail code = ", "../dao/userDao", " success userList = ", "info", "instance", " game Again roomID = ", "createUserList", "createagain", "joinGameAgainPush", "createRoomIntervalID", "isJoined", "13615pLUFpO", "3468810ukoveK", "1040gIifKw", "addUserToGame", " gameRuleID = ", " join roomID = ", "[createRoomAgain] uid = ", "[createRoomAgain] clear join again data roomID = ", "addUserList", "joinRoomID", "uid", "union", "1003876fuTKvs", "format", "shift", "createRoom", "4006440HOAfvM", "curJoinUser", "gameRuleID", " oldRoomID = ", "clearRoomData", "getLogger", "16SfEhil", "gameRule", "error", "frontendId", "endTime", "push", "add", "18020000RKWTya", "4225zleBQf", "exports", " create roomID = ", "joinUserList", "getUserDataByUid", "../API/pushAPI", "getInstance"];
+  a0_0x1ee2 = function () {
+    return _0x2b62d2;
   };
-  return a0_0x1693();
+  return a0_0x1ee2();
 }
+module[a0_0x2ad6c2(476)] = createRoomAgain;
