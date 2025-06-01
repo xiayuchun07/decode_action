@@ -1,52 +1,57 @@
 
-function a0_0x382b() {
-  const _0x54081e = ["../../../util/utils", "3mHwHPO", "debug", "loadConfig", "pomelo", "afterStartup", "6674450uFKDGi", "2051zvZyae", "398022zmYrkw", "4REgmyr", "../../../services/configServices", "getLogger", "14766gvlUJK", "181341DVgtzU", "afterStartAll", "22rhAYLr", "pomelo-logger", "2208714SeZzOC", "1059872xvgfVA", "exports", "loadParameter", "invokeCallback", "1144215bDSgQQ"];
-  a0_0x382b = function () {
-    return _0x54081e;
+const a0_0x5bdeb6 = a0_0x9986;
+function a0_0x9986(_0x492486, _0x41e909) {
+  const _0x50d5eb = a0_0x1110();
+  a0_0x9986 = function (_0x492ab5, _0x314d2d) {
+    _0x492ab5 = _0x492ab5 - 164;
+    let _0x5b0698 = _0x50d5eb[_0x492ab5];
+    return _0x5b0698;
   };
-  return a0_0x382b();
+  return a0_0x9986(_0x492486, _0x41e909);
 }
-function a0_0x448f(_0x29b79a, _0x50d2a7) {
-  const _0x524f72 = a0_0x382b();
-  a0_0x448f = function (_0x5eea5e, _0x53d9fe) {
-    _0x5eea5e = _0x5eea5e - 346;
-    let _0xa806ba = _0x524f72[_0x5eea5e];
-    return _0xa806ba;
-  };
-  return a0_0x448f(_0x29b79a, _0x50d2a7);
-}
-const a0_0xca2c0b = a0_0x448f;
-(function (_0xb8d6b8, _0x2f7dab) {
-  const _0x42eab9 = a0_0x448f;
-  const _0x56b93d = _0xb8d6b8();
+(function (_0x414cc7, _0x3d12d5) {
+  const _0x3434e5 = a0_0x9986;
+  const _0x5175b8 = _0x414cc7();
   while (true) {
     try {
-      const _0x1f5977 = parseInt(_0x42eab9(367)) / 1 * (-parseInt(_0x42eab9(351)) / 2) + parseInt(_0x42eab9(360)) / 3 * (parseInt(_0x42eab9(352)) / 4) + -parseInt(_0x42eab9(365)) / 5 + parseInt(_0x42eab9(355)) / 6 * (-parseInt(_0x42eab9(350)) / 7) + -parseInt(_0x42eab9(361)) / 8 + parseInt(_0x42eab9(356)) / 9 + -parseInt(_0x42eab9(349)) / 10 * (-parseInt(_0x42eab9(358)) / 11);
-      if (_0x1f5977 === _0x2f7dab) {
+      const _0x11cd79 = parseInt(_0x3434e5(176)) / 1 * (-parseInt(_0x3434e5(167)) / 2) + parseInt(_0x3434e5(179)) / 3 * (parseInt(_0x3434e5(183)) / 4) + -parseInt(_0x3434e5(175)) / 5 * (parseInt(_0x3434e5(186)) / 6) + -parseInt(_0x3434e5(177)) / 7 + parseInt(_0x3434e5(178)) / 8 + parseInt(_0x3434e5(182)) / 9 * (-parseInt(_0x3434e5(165)) / 10) + parseInt(_0x3434e5(168)) / 11;
+      if (_0x11cd79 === _0x3d12d5) {
         break;
       } else {
-        _0x56b93d.push(_0x56b93d.shift());
+        _0x5175b8.push(_0x5175b8.shift());
       }
-    } catch (_0x452033) {
-      _0x56b93d.push(_0x56b93d.shift());
+    } catch (_0x39f8bd) {
+      _0x5175b8.push(_0x5175b8.shift());
     }
   }
-})(a0_0x382b, 411844);
-let domain = module[a0_0xca2c0b(362)];
-let logger = require(a0_0xca2c0b(359))[a0_0xca2c0b(354)](a0_0xca2c0b(347));
-let utils = require(a0_0xca2c0b(366));
-let parameterServices = require(a0_0xca2c0b(353));
-domain[a0_0xca2c0b(348)] = function (_0x1705fb) {
-  const _0x4cb5bd = a0_0xca2c0b;
-  utils[_0x4cb5bd(364)](_0x1705fb);
+})(a0_0x1110, 894532);
+let authServices = require(a0_0x5bdeb6(164));
+let pomelo = require(a0_0x5bdeb6(185));
+let code = require("../../../constant/code");
+module.exports = function (_0x4e7f40, _0x5e7892) {
+  const _0x33ca81 = a0_0x5bdeb6;
+  _0x5e7892.post(_0x33ca81(189), async function (_0x223d02, _0x542def) {
+    const _0x29d40f = _0x33ca81;
+    _0x542def[_0x29d40f(170)](_0x29d40f(166), "*");
+    _0x542def[_0x29d40f(170)](_0x29d40f(184), "PUT, GET, POST, DELETE, OPTIONS");
+    _0x542def.header("Access-Control-Allow-Headers", _0x29d40f(171));
+    _0x542def.header(_0x29d40f(181), _0x29d40f(172));
+    try {
+      await authServices[_0x29d40f(169)](_0x223d02[_0x29d40f(188)][_0x29d40f(173)]);
+      _0x542def[_0x29d40f(180)](JSON[_0x29d40f(174)]({
+        code: code.OK
+      }));
+    } catch (_0x41aec3) {
+      _0x542def.end(JSON[_0x29d40f(174)]({
+        code: code[_0x29d40f(187)]
+      }));
+    }
+  });
 };
-domain[a0_0xca2c0b(357)] = async function (_0xd8724f) {
-  const _0x306276 = a0_0xca2c0b;
-  await domain.loadParameter();
-  utils[_0x306276(364)](_0xd8724f);
-};
-domain[a0_0xca2c0b(363)] = async function () {
-  const _0x39302a = a0_0xca2c0b;
-  await parameterServices[_0x39302a(346)]();
-  logger[_0x39302a(368)]("http load parameter finished");
-};
+function a0_0x1110() {
+  const _0xa0dce5 = ["body", "/getSMSCode", "../../../services/authServices", "30abVroA", "Access-Control-Allow-Origin", "142tFbUqj", "15533782Snajdh", "sendSmsAuthCode", "header", "X-Requested-With", "Content-Type", "phoneNumber", "stringify", "2863620IkvZrp", "5099vhtSkd", "7804405yZYAwL", "11949008qmRxkh", "52578oPTjdn", "end", "Access-Control-Allow-Headers", "2671398EiHPXU", "212OHeuPb", "Access-Control-Allow-Methods", "pomelo", "6BFvnAq", "SMS_SEND_FAILED"];
+  a0_0x1110 = function () {
+    return _0xa0dce5;
+  };
+  return a0_0x1110();
+}
