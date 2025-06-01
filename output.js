@@ -1,48 +1,51 @@
 
-function a0_0x539e() {
-  const _0x241643 = ["loadParameter", "reloadParameterNotify", "2653776NrpjJI", "895784heJgIf", "1ufGuMk", "then", "1120356MVwCHW", "catch", "8144505JvZODm", "967766ZSUYZC", "7AdKTuj", "exports", "2476368EZZecE", "37129320XibLiD"];
-  a0_0x539e = function () {
-    return _0x241643;
+function a0_0x1b70() {
+  const _0x136c0e = ["18347DvQvxl", "getTodayWinGoldCountRankRequest", "2412642RpcDtk", "278060yaFjfs", "prototype", "uid", "693746zYhSTG", "3239290inrFBm", "INVALID_UERS", "../../../constant/code", "437198JYmjah", "2622627jdmzAa", "296KaSjgN", "centerManager", "app", "5uDKsBU", "getRankListData", "3DwzFCZ", "exports"];
+  a0_0x1b70 = function () {
+    return _0x136c0e;
   };
-  return a0_0x539e();
+  return a0_0x1b70();
 }
-const a0_0x3ba1a0 = a0_0x503d;
-(function (_0x25c43c, _0x282b83) {
-  const _0x5f1820 = a0_0x503d;
-  const _0x5a075d = _0x25c43c();
+const a0_0x5d15e9 = a0_0x4474;
+(function (_0x5aed6c, _0x39f65d) {
+  const _0xabf5e6 = a0_0x4474;
+  const _0x3df669 = _0x5aed6c();
   while (true) {
     try {
-      const _0x1f3002 = -parseInt(_0x5f1820(221)) / 1 * (parseInt(_0x5f1820(212)) / 2) + -parseInt(_0x5f1820(215)) / 3 + parseInt(_0x5f1820(220)) / 4 + -parseInt(_0x5f1820(211)) / 5 + parseInt(_0x5f1820(209)) / 6 * (-parseInt(_0x5f1820(213)) / 7) + -parseInt(_0x5f1820(219)) / 8 + parseInt(_0x5f1820(216)) / 9;
-      if (_0x1f3002 === _0x282b83) {
+      const _0x5f16fc = parseInt(_0xabf5e6(315)) / 1 + -parseInt(_0xabf5e6(319)) / 2 * (-parseInt(_0xabf5e6(307)) / 3) + -parseInt(_0xabf5e6(312)) / 4 + parseInt(_0xabf5e6(305)) / 5 * (-parseInt(_0xabf5e6(311)) / 6) + -parseInt(_0xabf5e6(309)) / 7 * (parseInt(_0xabf5e6(321)) / 8) + -parseInt(_0xabf5e6(320)) / 9 + parseInt(_0xabf5e6(316)) / 10;
+      if (_0x5f16fc === _0x39f65d) {
         break;
       } else {
-        _0x5a075d.push(_0x5a075d.shift());
+        _0x3df669.push(_0x3df669.shift());
       }
-    } catch (_0xe57e5b) {
-      _0x5a075d.push(_0x5a075d.shift());
+    } catch (_0x6c4381) {
+      _0x3df669.push(_0x3df669.shift());
     }
   }
-})(a0_0x539e, 892738);
-let domain = require("../domain/lifecycleDomain");
-module[a0_0x3ba1a0(214)] = function (_0x4a8c64) {
-  return new remote(_0x4a8c64);
-};
-function a0_0x503d(_0x1d377d, _0x5553ee) {
-  const _0x2978d5 = a0_0x539e();
-  a0_0x503d = function (_0x10a9ff, _0x5d275b) {
-    _0x10a9ff = _0x10a9ff - 208;
-    let _0xda6972 = _0x2978d5[_0x10a9ff];
-    return _0xda6972;
+})(a0_0x1b70, 376272);
+let code = require(a0_0x5d15e9(318));
+function a0_0x4474(_0x4a7c14, _0x3b0c59) {
+  const _0x2f813e = a0_0x1b70();
+  a0_0x4474 = function (_0x28f7e6, _0xf5405b) {
+    _0x28f7e6 = _0x28f7e6 - 304;
+    let _0x1e56c4 = _0x2f813e[_0x28f7e6];
+    return _0x1e56c4;
   };
-  return a0_0x503d(_0x1d377d, _0x5553ee);
+  return a0_0x4474(_0x4a7c14, _0x3b0c59);
 }
-let remote = function (_0x4c81b7) {
-  this.app = _0x4c81b7;
+module[a0_0x5d15e9(308)] = function (_0x1cbf8d) {
+  return new Handler(_0x1cbf8d);
 };
-let pro = remote.prototype;
-pro[a0_0x3ba1a0(218)] = function (_0x1c58fc) {
-  const _0x2c00bb = a0_0x3ba1a0;
-  domain[_0x2c00bb(217)]()[_0x2c00bb(208)](() => {
-    _0x1c58fc();
-  })[_0x2c00bb(210)](() => {});
+let Handler = function (_0x59a2e8) {
+  const _0x32b711 = a0_0x5d15e9;
+  this[_0x32b711(304)] = _0x59a2e8;
+};
+Handler[a0_0x5d15e9(313)][a0_0x5d15e9(310)] = function (_0x28704a, _0x17b4db, _0x1bae48) {
+  const _0x51eed3 = a0_0x5d15e9;
+  !_0x17b4db[_0x51eed3(314)] ? _0x1bae48(null, {
+    code: code[_0x51eed3(317)]
+  }) : _0x1bae48(null, {
+    code: code.OK,
+    msg: this[_0x51eed3(304)][_0x51eed3(322)][_0x51eed3(306)](_0x28704a.startIndex, _0x28704a.count, _0x17b4db[_0x51eed3(314)])
+  });
 };
