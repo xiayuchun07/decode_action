@@ -1,69 +1,66 @@
 
-const a0_0x496720 = a0_0x5c13;
-function a0_0x5c13(_0x3d1cef, _0x928270) {
-  const _0x2f2d8a = a0_0x524e();
-  a0_0x5c13 = function (_0xcc7351, _0x1dfdd3) {
-    _0xcc7351 = _0xcc7351 - 134;
-    let _0x5536d2 = _0x2f2d8a[_0xcc7351];
-    return _0x5536d2;
-  };
-  return a0_0x5c13(_0x3d1cef, _0x928270);
-}
-(function (_0x49a26e, _0x318666) {
-  const _0x49181a = a0_0x5c13;
-  const _0x38ab = _0x49a26e();
+const a0_0x10e98a = a0_0x4030;
+(function (_0x558bf9, _0x5d4f43) {
+  const _0x1a8ee4 = a0_0x4030;
+  const _0x1ca752 = _0x558bf9();
   while (true) {
     try {
-      const _0x4d3bbd = -parseInt(_0x49181a(140)) / 1 * (-parseInt(_0x49181a(137)) / 2) + -parseInt(_0x49181a(147)) / 3 * (parseInt(_0x49181a(139)) / 4) + -parseInt(_0x49181a(146)) / 5 * (parseInt(_0x49181a(157)) / 6) + parseInt(_0x49181a(134)) / 7 * (parseInt(_0x49181a(162)) / 8) + -parseInt(_0x49181a(156)) / 9 + -parseInt(_0x49181a(143)) / 10 * (parseInt(_0x49181a(161)) / 11) + -parseInt(_0x49181a(149)) / 12 * (-parseInt(_0x49181a(158)) / 13);
-      if (_0x4d3bbd === _0x318666) {
+      const _0x1b81b7 = -parseInt(_0x1a8ee4(305)) / 1 * (-parseInt(_0x1a8ee4(301)) / 2) + parseInt(_0x1a8ee4(320)) / 3 * (-parseInt(_0x1a8ee4(319)) / 4) + -parseInt(_0x1a8ee4(321)) / 5 + -parseInt(_0x1a8ee4(326)) / 6 + parseInt(_0x1a8ee4(329)) / 7 * (parseInt(_0x1a8ee4(335)) / 8) + -parseInt(_0x1a8ee4(318)) / 9 + parseInt(_0x1a8ee4(313)) / 10 * (parseInt(_0x1a8ee4(309)) / 11);
+      if (_0x1b81b7 === _0x5d4f43) {
         break;
       } else {
-        _0x38ab.push(_0x38ab.shift());
+        _0x1ca752.push(_0x1ca752.shift());
       }
-    } catch (_0x5e9ace) {
-      _0x38ab.push(_0x38ab.shift());
+    } catch (_0x13588f) {
+      _0x1ca752.push(_0x1ca752.shift());
     }
   }
-})(a0_0x524e, 922926);
-function a0_0x524e() {
-  const _0x2b52e3 = ["curServer", "6739101RnDWJm", "1038RVnmHF", "26QDchNM", "---------game Server Start afterStartAll--------------", "./domain/lifecycleDomain", "11HWhMCE", "32WDJVtt", "pomelo", "1500268THQjLS", "after start all err:", "beforeStartup", "2239364ULqHkW", "exports", "4DZurms", "1KzFgKs", "../../dao/commonDao", "afterStartAll", "2807710lPqlqc", "ShutDown", "pomelo-logger", "16015PBwRHn", "1781139sQHPkM", "async", "6740040uTCoPU", "userModel", "beforeShutdown", "error", "updateAllData", "info"];
-  a0_0x524e = function () {
-    return _0x2b52e3;
+})(a0_0x2866, 881252);
+let domain = require(a0_0x10e98a(314));
+let userDao = require("../../../dao/userDao");
+let userInfoServices = require(a0_0x10e98a(310));
+let dispatch = require(a0_0x10e98a(330));
+let rpcAPI = require("../../../API/rpcAPI");
+let code = require(a0_0x10e98a(308));
+let logger = require(a0_0x10e98a(332))[a0_0x10e98a(312)]("robot");
+let robotServices = require(a0_0x10e98a(303));
+let commonDao = require(a0_0x10e98a(334));
+let unionManager = require(a0_0x10e98a(317));
+function a0_0x2866() {
+  const _0x32f26c = ["4acCoop", "4758111iqZgex", "359100pqLpLa", "exports", " errMsg = ", " RoomId = ", "game", "7837356yFBLTc", "error", "[robot] Join Game Fail RoomId = ", "77HEYxKy", "../../../util/dispatcher", " unionID = ", "pomelo-logger", "uid", "../../../dao/commonDao", "465736fmfhpA", "[robot] Join Game Success  robotUserID = ", " robotUserID =  ", "3443730TghELg", "app", "../../../services/robotServices", "getServersByType", "1bKyEEN", " Code = ", "joinRoom", "../../../constant/code", "616LIsACi", "../../../services/userInfoServices", "getRandomRobot", "getLogger", "363480syjRVM", "../domain/lifecycleDomain", "dispatch", "prototype", "../../game/domain/unionManager", "4971645ulhXhI"];
+  a0_0x2866 = function () {
+    return _0x32f26c;
   };
-  return a0_0x524e();
+  return a0_0x2866();
 }
-let logger = require(a0_0x496720(145)).getLogger(a0_0x496720(163));
-let async = require(a0_0x496720(148));
-let lifecycleDomain = require(a0_0x496720(160));
-let commonDao = require(a0_0x496720(141));
-module[a0_0x496720(138)][a0_0x496720(136)] = function (_0x29f00c, _0x788de1) {
-  const _0xe1ed0a = a0_0x496720;
-  logger[_0xe1ed0a(154)](_0x29f00c[_0xe1ed0a(155)].id, _0xe1ed0a(136));
-  _0x788de1();
+module[a0_0x10e98a(322)] = function (_0x30a645) {
+  return new remote(_0x30a645);
 };
-module.exports.afterStartup = function (_0x3cb564, _0x2654ec) {
-  const _0x4df349 = a0_0x496720;
-  logger[_0x4df349(154)](_0x3cb564[_0x4df349(155)].id, "afterStartup");
-  _0x2654ec();
+let remote = function (_0x3baaf2) {
+  const _0x5e491a = a0_0x10e98a;
+  this[_0x5e491a(302)] = _0x3baaf2;
 };
-module[a0_0x496720(138)][a0_0x496720(151)] = function (_0x519dae, _0x21143a) {
-  const _0x16dbde = a0_0x496720;
-  logger[_0x16dbde(154)](_0x519dae[_0x16dbde(155)].id, "beforeShutdown");
-  console.time(_0x16dbde(144) + _0x519dae[_0x16dbde(155)].id);
-  _0x21143a();
-};
-module[a0_0x496720(138)][a0_0x496720(142)] = async function (_0x19c60a) {
-  const _0x10f54c = a0_0x496720;
-  await lifecycleDomain[_0x10f54c(142)]().catch(function (_0x828189) {
-    const _0x239c9f = _0x10f54c;
-    !!_0x828189 && console[_0x239c9f(152)](_0x239c9f(135) + _0x828189);
-  });
-  await commonDao[_0x10f54c(153)](_0x10f54c(150), {
-    isRobot: true
-  }, {
-    roomID: "",
-    frontendId: ""
-  });
-  logger[_0x10f54c(154)](_0x10f54c(159));
-  logger[_0x10f54c(154)](_0x19c60a.curServer.id, "afterStartAll");
+let pro = remote[a0_0x10e98a(316)];
+function a0_0x4030(_0x592194, _0x2f935a) {
+  const _0x1b46c6 = a0_0x2866();
+  a0_0x4030 = function (_0x4b3142, _0x42bb6a) {
+    _0x4b3142 = _0x4b3142 - 299;
+    let _0x488602 = _0x1b46c6[_0x4b3142];
+    return _0x488602;
+  };
+  return a0_0x4030(_0x592194, _0x2f935a);
+}
+pro[a0_0x10e98a(311)] = async function (_0x2df16d, _0x398ad7, _0x2fe547) {
+  const _0x2d7e89 = a0_0x10e98a;
+  let _0x18e922 = await robotServices[_0x2d7e89(311)](_0x2df16d);
+  if (_0x18e922 && !!_0x398ad7) {
+    let _0x4558cb = dispatch[_0x2d7e89(315)](_0x398ad7, this[_0x2d7e89(302)][_0x2d7e89(304)](_0x2d7e89(325)));
+    let _0x3e34ac = await rpcAPI.isUserInRoom(_0x4558cb.id, _0x18e922[_0x2d7e89(333)], _0x398ad7);
+    if (!_0x3e34ac) {
+      let _0x541d41 = await rpcAPI[_0x2d7e89(307)](_0x4558cb.id, _0x18e922, _0x398ad7);
+      _0x541d41 == 0 ? logger.info(_0x2d7e89(299) + _0x18e922[_0x2d7e89(333)] + _0x2d7e89(324) + _0x398ad7 + " unionID = " + _0x2df16d + " ") : logger[_0x2d7e89(327)](_0x2d7e89(328) + _0x398ad7 + _0x2d7e89(331) + _0x2df16d + _0x2d7e89(306) + _0x541d41 + _0x2d7e89(323) + code[_0x541d41]);
+    } else {
+      logger.info("[robot] User In Room unionID = " + _0x2df16d + "  RoomId = " + _0x398ad7 + _0x2d7e89(300) + _0x18e922[_0x2d7e89(333)] + " ");
+    }
+  }
 };
