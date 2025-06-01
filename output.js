@@ -1,80 +1,98 @@
 
-const a0_0xfb4972 = a0_0xbf38;
-(function (_0x51bc34, _0x55bf46) {
-  const _0x541595 = a0_0xbf38;
-  const _0x3d8678 = _0x51bc34();
+function a0_0x43ed() {
+  const _0x3ab259 = ["23856ivrIUH", "findOneData", "8UlxTwk", "8673732DDRXHJ", "132", "getUserData", "156", "138", "679362tceIvO", "139", "3ZEHlaZ", "getRandomNickname", "../util/utils", "187", "152", "157", "getRandomNum", "158", "185", "exports", "159", "189", "createRobot", "136", "getRandomRobot", "1060676eAZKit", "135", "131", "328786jYxBWR", "userModel", "155", "188", "134", "../dao/userDao", "150", "137", "1728797nTxZmm", "getRobotList", "accountModel", "../dao/commonDao", "232620XTeVnF", "181", "151", "186"];
+  a0_0x43ed = function () {
+    return _0x3ab259;
+  };
+  return a0_0x43ed();
+}
+const a0_0x3ff08c = a0_0xf1d9;
+(function (_0x83d6d5, _0x407998) {
+  const _0x1a788f = a0_0xf1d9;
+  const _0x315fc5 = _0x83d6d5();
   while (true) {
     try {
-      const _0x2831e5 = parseInt(_0x541595(231)) / 1 + parseInt(_0x541595(207)) / 2 + parseInt(_0x541595(229)) / 3 + -parseInt(_0x541595(228)) / 4 * (parseInt(_0x541595(215)) / 5) + -parseInt(_0x541595(209)) / 6 + parseInt(_0x541595(238)) / 7 + parseInt(_0x541595(243)) / 8 * (-parseInt(_0x541595(217)) / 9);
-      if (_0x2831e5 === _0x55bf46) {
+      const _0x3c012d = parseInt(_0x1a788f(240)) / 1 * (-parseInt(_0x1a788f(258)) / 2) + -parseInt(_0x1a788f(230)) / 3 + -parseInt(_0x1a788f(255)) / 4 + -parseInt(_0x1a788f(226)) / 5 + -parseInt(_0x1a788f(238)) / 6 + -parseInt(_0x1a788f(222)) / 7 * (-parseInt(_0x1a788f(232)) / 8) + parseInt(_0x1a788f(233)) / 9;
+      if (_0x3c012d === _0x407998) {
         break;
       } else {
-        _0x3d8678.push(_0x3d8678.shift());
+        _0x315fc5.push(_0x315fc5.shift());
       }
-    } catch (_0x4ba965) {
-      _0x3d8678.push(_0x3d8678.shift());
+    } catch (_0x5be6ca) {
+      _0x315fc5.push(_0x315fc5.shift());
     }
   }
-})(a0_0xad67, 337695);
-function a0_0xad67() {
-  const _0x33555a = ["createData", "getLogger", "sendPurchaseItem", "config", "spreaderID", "get", "error", "668472VrrXWH", "891948JjPKxM", "pomelo-logger", "36746AUlYJn", "rechargeNum", "nickname", "now", "platformReturnOrderID", "./userInfoServices", "updateUserDataByUid", "4147542soOlAS", "catch", "popDialogContentPush err:", "../API/pushAPI", "app", "38744EbxViF", "updateUserDataNotify", "755634yuJqnW", "INVALID_UERS", "3635112HDtqhP", "../dao/commonDao", "$inc", "../constant/code", "../services/httpRequestServices", "frontendId", "5QavIVb", "popDialogContentPush", "360dlmnps", "pomelo", "getUserDataByUid", "gold"];
-  a0_0xad67 = function () {
-    return _0x33555a;
+})(a0_0x43ed, 284668);
+function a0_0xf1d9(_0x3357c0, _0x91b5dc) {
+  const _0x266dcb = a0_0x43ed();
+  a0_0xf1d9 = function (_0x27e80b, _0x4236a3) {
+    _0x27e80b = _0x27e80b - 220;
+    let _0x4ab76b = _0x266dcb[_0x27e80b];
+    return _0x4ab76b;
   };
-  return a0_0xad67();
+  return a0_0xf1d9(_0x3357c0, _0x91b5dc);
 }
-function a0_0xbf38(_0x20fefe, _0x5af331) {
-  const _0x526e92 = a0_0xad67();
-  a0_0xbf38 = function (_0x2bc115, _0x1b131a) {
-    _0x2bc115 = _0x2bc115 - 207;
-    let _0x284041 = _0x526e92[_0x2bc115];
-    return _0x284041;
-  };
-  return a0_0xbf38(_0x20fefe, _0x5af331);
-}
-let code = require(a0_0xfb4972(212));
-let dao = require(a0_0xfb4972(210));
-let userDao = require("../dao/userDao");
-let updateUserInfoServices = require(a0_0xfb4972(236));
-let pushAPI = require(a0_0xfb4972(241));
-let pomelo = require(a0_0xfb4972(218));
-let httpService = require(a0_0xfb4972(213));
-let rechargeLogger = require(a0_0xfb4972(230))[a0_0xfb4972(222)]("recharge");
-let service = module.exports;
-service[a0_0xfb4972(223)] = async function (_0x3f1c20, _0x5f4e15, _0xc3daba, _0x928a57) {
-  const _0x5cf095 = a0_0xfb4972;
-  let _0x29a4cd = await userDao[_0x5cf095(219)](_0x3f1c20);
-  if (!_0x29a4cd) {
-    throw new Error(code[_0x5cf095(208)]);
+let utils = require(a0_0x3ff08c(242));
+let commonDao = require(a0_0x3ff08c(225));
+let userDao = require(a0_0x3ff08c(263));
+let phoneTitleArr = [a0_0x3ff08c(262), a0_0x3ff08c(256), a0_0x3ff08c(253), a0_0x3ff08c(221), a0_0x3ff08c(237), a0_0x3ff08c(239), a0_0x3ff08c(220), a0_0x3ff08c(228), a0_0x3ff08c(245), a0_0x3ff08c(247), a0_0x3ff08c(250), a0_0x3ff08c(244), a0_0x3ff08c(253), a0_0x3ff08c(228), a0_0x3ff08c(236), a0_0x3ff08c(248), a0_0x3ff08c(227), "170", a0_0x3ff08c(229), a0_0x3ff08c(243), a0_0x3ff08c(261), "130", a0_0x3ff08c(257), a0_0x3ff08c(234), a0_0x3ff08c(260), "156", a0_0x3ff08c(251)];
+let services = module[a0_0x3ff08c(249)];
+services[a0_0x3ff08c(241)] = function () {
+  return phoneTitleArr[utils.getRandomNum(0, phoneTitleArr.length - 1)] + utils.getRandomNum(10000000, 99999999);
+};
+services[a0_0x3ff08c(223)] = async function (_0x5d8c5e) {
+  const _0x9f9402 = a0_0x3ff08c;
+  let _0x8121fe = await userDao[_0x9f9402(235)]({
+    unionID: _0x5d8c5e,
+    isRobot: true,
+    roomId: null
+  });
+  return _0x8121fe;
+};
+services[a0_0x3ff08c(254)] = async function (_0x3354e9) {
+  const _0x5e7b18 = a0_0x3ff08c;
+  let _0x1fe0c7 = await userDao[_0x5e7b18(235)]({
+    unionID: _0x3354e9,
+    isRobot: true,
+    roomId: null
+  });
+  return _0x1fe0c7;
+};
+services[a0_0x3ff08c(252)] = async function () {
+  const _0x1c0ce7 = a0_0x3ff08c;
+  let _0x3da4b3 = null;
+  let _0x2bceb3 = 1000;
+  let _0x4c54a8 = null;
+  while (_0x2bceb3 > 0) {
+    _0x3da4b3 = utils[_0x1c0ce7(246)](100000, 999999);
+    let _0x32e042 = await commonDao[_0x1c0ce7(231)](_0x1c0ce7(224), {
+      uid: _0x3da4b3
+    });
+    if (!_0x32e042) {
+      break;
+    }
+    _0x2bceb3--;
+    if (_0x2bceb3 <= 0) {
+      _0x3da4b3 = null;
+      break;
+    }
   }
-  let _0xea8c61 = parseInt(pomelo[_0x5cf095(242)][_0x5cf095(226)](_0x5cf095(224)).oneRMBToGold || "1");
-  let _0x3dcc01 = _0xea8c61 * _0x5f4e15;
-  let _0x490814 = {
-    uid: _0x29a4cd.uid,
-    nickname: _0x29a4cd[_0x5cf095(233)],
-    spreaderID: _0x29a4cd[_0x5cf095(225)],
-    rechargeMoney: _0x5f4e15,
-    goldCount: _0x3dcc01,
-    userOrderID: _0x928a57.userOrderID,
-    platformReturnOrderID: _0x928a57[_0x5cf095(235)],
-    platform: _0xc3daba,
-    createTime: Date[_0x5cf095(234)]()
-  };
-  await dao[_0x5cf095(221)]("rechargeRecordModel", _0x490814);
-  let _0xf2b5bc = {};
-  _0xf2b5bc[_0x5cf095(211)][_0x5cf095(220)] = _0x3dcc01;
-  _0xf2b5bc.$inc[_0x5cf095(232)] = _0x5f4e15;
-  let _0x571888 = await userDao[_0x5cf095(237)](_0x3f1c20, _0xf2b5bc);
-  !!_0x571888[_0x5cf095(214)] && (updateUserInfoServices[_0x5cf095(244)](_0x3f1c20, _0x571888[_0x5cf095(214)], {
-    gold: _0x571888.gold,
-    rechargeNum: _0x571888[_0x5cf095(232)]
-  }).catch(_0x3338cb => {}), pushAPI[_0x5cf095(216)]({
-    code: code.RECHARGE_SUCCESS
-  }, [{
-    uid: _0x3f1c20,
-    sid: _0x571888.frontendId
-  }])[_0x5cf095(239)](function (_0x362e77) {
-    const _0x2b4ed5 = _0x5cf095;
-    rechargeLogger[_0x2b4ed5(227)](_0x2b4ed5(240) + _0x362e77);
-  }));
+  if (_0x3da4b3) {
+    let _0x5f0b8b = this[_0x1c0ce7(241)]();
+    let _0x4dfb24 = {
+      syncLock: 0,
+      nickname: _0x5f0b8b,
+      uid: _0x3da4b3,
+      isRobot: true,
+      avatar: null,
+      roomID: null
+    };
+    _0x4c54a8 = await commonDao.findOneAndUpdateEx(_0x1c0ce7(259), {
+      uid: _0x3da4b3
+    }, _0x4dfb24, {
+      upsert: true,
+      new: true
+    });
+  }
+  return _0x4c54a8;
 };
