@@ -1,151 +1,146 @@
 
-const a0_0x1977fc = a0_0x3bed;
-(function (_0x29007a, _0x2ae134) {
-  const _0x89000d = a0_0x3bed;
-  const _0x514b34 = _0x29007a();
+const a0_0x4ce072 = a0_0x5dd1;
+function a0_0x5dd1(_0x5a37b9, _0x460a2e) {
+  const _0x18f481 = a0_0x4316();
+  a0_0x5dd1 = function (_0x5c5612, _0x58bdab) {
+    _0x5c5612 = _0x5c5612 - 154;
+    let _0x2fe2ca = _0x18f481[_0x5c5612];
+    return _0x2fe2ca;
+  };
+  return a0_0x5dd1(_0x5a37b9, _0x460a2e);
+}
+(function (_0x3f669b, _0x2028c9) {
+  const _0x915916 = a0_0x5dd1;
+  const _0x46cc1f = _0x3f669b();
   while (true) {
     try {
-      const _0x3076aa = parseInt(_0x89000d(268)) / 1 * (parseInt(_0x89000d(266)) / 2) + parseInt(_0x89000d(285)) / 3 * (-parseInt(_0x89000d(300)) / 4) + -parseInt(_0x89000d(264)) / 5 * (parseInt(_0x89000d(305)) / 6) + -parseInt(_0x89000d(301)) / 7 + parseInt(_0x89000d(279)) / 8 + parseInt(_0x89000d(269)) / 9 + -parseInt(_0x89000d(297)) / 10 * (-parseInt(_0x89000d(302)) / 11);
-      if (_0x3076aa === _0x2ae134) {
+      const _0x7c4cd6 = parseInt(_0x915916(180)) / 1 * (parseInt(_0x915916(188)) / 2) + parseInt(_0x915916(168)) / 3 * (-parseInt(_0x915916(171)) / 4) + parseInt(_0x915916(189)) / 5 * (-parseInt(_0x915916(173)) / 6) + parseInt(_0x915916(178)) / 7 + -parseInt(_0x915916(183)) / 8 + parseInt(_0x915916(181)) / 9 * (parseInt(_0x915916(170)) / 10) + parseInt(_0x915916(155)) / 11;
+      if (_0x7c4cd6 === _0x2028c9) {
         break;
       } else {
-        _0x514b34.push(_0x514b34.shift());
+        _0x46cc1f.push(_0x46cc1f.shift());
       }
-    } catch (_0x5e7880) {
-      _0x514b34.push(_0x514b34.shift());
+    } catch (_0x2ea23d) {
+      _0x46cc1f.push(_0x46cc1f.shift());
     }
   }
-})(a0_0x2c14, 947144);
-module[a0_0x1977fc(290)] = {};
-let exp = module[a0_0x1977fc(290)];
-let pomelo = require(a0_0x1977fc(286));
-exp[a0_0x1977fc(291)] = function () {
-  const _0x5adf52 = a0_0x1977fc;
-  let _0x5d981d = arguments[0].split(".");
-  let _0x1f6f67 = [];
-  for (let _0x15d3ac in arguments) {
-    if (_0x15d3ac === "0") {
-      continue;
-    }
-    arguments[_0x5adf52(267)](_0x15d3ac) && _0x1f6f67[_0x5adf52(296)](arguments[_0x15d3ac]);
-  }
-  pomelo[_0x5adf52(274)][_0x5adf52(291)][_0x5d981d[0]][_0x5d981d[1]][_0x5d981d[2]][_0x5adf52(298)][_0x5adf52(282)](null, _0x1f6f67);
-};
-exp[a0_0x1977fc(294)] = function (_0x4de535, _0x709e3a, _0x31e0ed) {
-  return new Promise((_0x33bb24, _0x5bc5ec) => {
-    const _0x5acc3e = a0_0x3bed;
-    pomelo[_0x5acc3e(274)][_0x5acc3e(291)].game[_0x5acc3e(284)][_0x5acc3e(294)][_0x5acc3e(298)](_0x4de535, _0x709e3a, _0x31e0ed, function (_0x4002b0, _0x58a0e5) {
-      !!_0x4002b0 ? _0x5bc5ec(_0x4002b0) : _0x33bb24(_0x58a0e5);
-    });
-  });
-};
-exp.joinWatch = function (_0x3b3760, _0x5e95b8, _0x12472f) {
-  return new Promise((_0x552fe9, _0x298e98) => {
-    const _0x966a69 = a0_0x3bed;
-    pomelo[_0x966a69(274)].rpc[_0x966a69(281)][_0x966a69(284)].joinWatch.toServer(_0x3b3760, _0x5e95b8, _0x12472f, function (_0x522a6a, _0x21fb1d) {
-      !!_0x522a6a ? _0x298e98(_0x522a6a) : _0x552fe9(_0x21fb1d);
-    });
-  });
-};
-exp.createRoom = function (_0x11d60d, _0x49f4a1, _0x502e43, _0x32270d) {
-  const _0x9648ec = a0_0x1977fc;
-  console.log(_0x9648ec(275), _0x11d60d, _0x49f4a1, _0x502e43, _0x32270d);
-  return new Promise((_0x1c0fb3, _0x57f617) => {
-    const _0x2eb436 = _0x9648ec;
-    pomelo.app.rpc[_0x2eb436(281)].roomRemote[_0x2eb436(278)][_0x2eb436(298)](_0x11d60d, _0x49f4a1, _0x502e43, _0x32270d, function (_0x889535, _0xb3864) {
-      !!_0x889535 ? _0x57f617(_0x889535) : _0x1c0fb3(_0xb3864);
-    });
-  });
-};
-exp[a0_0x1977fc(273)] = function (_0x5cfbf2, _0x44cb81, _0x2460e6) {
-  const _0x5842e4 = a0_0x1977fc;
-  pomelo.app.rpc[_0x5842e4(281)][_0x5842e4(284)].getMatchRoomList[_0x5842e4(298)](_0x5cfbf2, _0x44cb81, _0x2460e6);
-};
-exp[a0_0x1977fc(271)] = function (_0x27d458, _0x24cd2f, _0x22a113, _0x1598d0) {
-  const _0x5acd6e = a0_0x1977fc;
-  pomelo[_0x5acd6e(274)][_0x5acd6e(291)].game[_0x5acd6e(284)][_0x5acd6e(271)][_0x5acd6e(298)](_0x27d458, _0x24cd2f, _0x22a113, _0x1598d0);
-};
-exp[a0_0x1977fc(304)] = function (_0x743508, _0x41acef, _0xe61210, _0x4556a6, _0x850298) {
-  const _0x12b47a = a0_0x1977fc;
-  pomelo[_0x12b47a(274)][_0x12b47a(291)].game[_0x12b47a(284)][_0x12b47a(304)][_0x12b47a(298)](_0x41acef, _0xe61210, _0x4556a6, _0x850298);
-};
-exp[a0_0x1977fc(293)] = function (_0x5c2a5a, _0xa6ce73, _0x206a92) {
-  return new Promise(_0x885308 => {
-    const _0x2ddc15 = a0_0x3bed;
-    pomelo[_0x2ddc15(274)][_0x2ddc15(291)][_0x2ddc15(281)][_0x2ddc15(284)][_0x2ddc15(293)][_0x2ddc15(298)](_0x5c2a5a, _0xa6ce73, _0x206a92, function (_0x9a681b, _0x25c7a5) {
-      _0x885308(!!_0x25c7a5);
-    });
-  });
-};
-exp[a0_0x1977fc(288)] = function (_0x17a977, _0x438dbb) {
-  return new Promise((_0x222b5e, _0x1a012f) => {
-    const _0x11c60a = a0_0x3bed;
-    pomelo.app.rpc[_0x11c60a(281)][_0x11c60a(284)][_0x11c60a(288)][_0x11c60a(298)](_0x17a977, _0x438dbb, function (_0x570ce3, _0x278c9f) {
-      !!_0x570ce3 ? _0x1a012f(_0x570ce3) : _0x222b5e(_0x278c9f);
-    });
-  });
-};
-exp[a0_0x1977fc(280)] = function (_0x2fdfa4, _0x4a063e, _0x51e266) {
-  const _0x25c779 = a0_0x1977fc;
-  pomelo[_0x25c779(274)].rpc.game[_0x25c779(284)].getRoomGameDataByKind[_0x25c779(298)](_0x2fdfa4, _0x4a063e, _0x51e266);
-};
-exp[a0_0x1977fc(265)] = function (_0x17b072, _0x5089f2) {
-  return new Promise((_0x17025e, _0x233828) => {
-    const _0x2d3c77 = a0_0x3bed;
-    pomelo[_0x2d3c77(274)][_0x2d3c77(291)][_0x2d3c77(281)][_0x2d3c77(284)][_0x2d3c77(265)][_0x2d3c77(298)](_0x17b072, _0x5089f2, function (_0x4bb577, _0xafb26c) {
-      !!_0x4bb577 ? _0x233828(_0x4bb577) : _0x17025e(_0xafb26c);
-    });
-  });
-};
-exp[a0_0x1977fc(292)] = function (_0x34edd0, _0x57dc0f, _0xb1b9aa, _0x10c0ce, _0x167f31) {
-  const _0x524f2c = a0_0x1977fc;
-  pomelo[_0x524f2c(274)][_0x524f2c(291)][_0x524f2c(281)][_0x524f2c(284)][_0x524f2c(292)][_0x524f2c(298)](_0x57dc0f, _0xb1b9aa, _0x10c0ce, _0x167f31);
-};
-exp[a0_0x1977fc(287)] = function (_0x4b6e15, _0x17b952, _0x30cb1e, _0x2d07e3) {
-  const _0x3457a1 = a0_0x1977fc;
-  pomelo[_0x3457a1(274)].rpc[_0x3457a1(272)][_0x3457a1(289)][_0x3457a1(287)][_0x3457a1(298)](_0x4b6e15, _0x17b952, _0x30cb1e, _0x2d07e3);
-};
-exp.requestRobotNotify = function (_0x44d34d, _0x2e28e7, _0xb877cf, _0x14882c) {
-  const _0x4af874 = a0_0x1977fc;
-  pomelo.app[_0x4af874(291)][_0x4af874(270)][_0x4af874(299)].requestRobotNotify[_0x4af874(298)](_0x4af874(276), _0x44d34d, _0x2e28e7, _0xb877cf, _0x14882c);
-};
-exp.robotLeaveRoomNotify = function (_0x189b31, _0xa1168f) {
-  return new Promise((_0x29ce39, _0x278d7c) => {
-    const _0x5c2106 = a0_0x3bed;
-    pomelo[_0x5c2106(274)][_0x5c2106(291)][_0x5c2106(270)][_0x5c2106(299)][_0x5c2106(283)][_0x5c2106(298)](_0x5c2106(276), _0x189b31, _0xa1168f, function (_0x5a5395) {
-      !!_0x5a5395 ? _0x278d7c(_0x5a5395) : _0x29ce39();
-    });
-  });
-};
-exp[a0_0x1977fc(303)] = function (_0x2ebb27) {
-  return new Promise(_0x4bda19 => {
-    const _0x21b5e2 = a0_0x3bed;
-    pomelo[_0x21b5e2(274)].rpc.robot[_0x21b5e2(277)][_0x21b5e2(303)][_0x21b5e2(298)](_0x21b5e2(276), _0x2ebb27, function (_0x403c82, _0x50e036) {
-      !!_0x403c82 ? _0x4bda19(0.5) : _0x4bda19(_0x50e036);
-    });
-  });
-};
-exp[a0_0x1977fc(295)] = function (_0x23a036, _0x29fa0a) {
-  return new Promise((_0x1d6c18, _0x44f8af) => {
-    const _0x4f806d = a0_0x3bed;
-    pomelo.app.rpc[_0x4f806d(270)][_0x4f806d(277)][_0x4f806d(295)][_0x4f806d(298)](_0x4f806d(276), _0x23a036, _0x29fa0a, function (_0x14b476) {
-      !!_0x14b476 ? _0x44f8af(_0x14b476) : _0x1d6c18();
-    });
-  });
-};
-function a0_0x3bed(_0x69c11e, _0x236bb7) {
-  const _0x43c9a0 = a0_0x2c14();
-  a0_0x3bed = function (_0x4a1935, _0x365486) {
-    _0x4a1935 = _0x4a1935 - 264;
-    let _0x1f925a = _0x43c9a0[_0x4a1935];
-    return _0x1f925a;
+})(a0_0x4316, 411348);
+function a0_0x4316() {
+  const _0x543582 = ["61590IzhEKR", "93356UzGqSZ", "roomMessagePush", "1698oTYvtj", "KickUserPush", "JoinGameAgainPush", "ServerMessagePush", "stack", "3594227znQEOo", "../util/token", "990FOQlSw", "63QTNCse", "SelfEntryRoomPush", "3664472mpdxfG", "popDialogContentPush", "pomelo-logger", "pushMessageByUids", "error", "534qhnYHR", "1935nFtfqw", "get", "connector", "2508451achQlZ", "pushRouter", "updateUserInfoPush", "broadcastPush", "channelService", "PopDialogContentPush", "app", "selfEntryRoomPush", "getLogger", "exports", "gameInvitation", "createMsg", "pomelo", "9EJSyin", "broadcast"];
+  a0_0x4316 = function () {
+    return _0x543582;
   };
-  return a0_0x3bed(_0x69c11e, _0x236bb7);
+  return a0_0x4316();
 }
-function a0_0x2c14() {
-  const _0x529c7a = ["5190sCAidc", "toServer", "robotRemote", "1726668HhiZqe", "7849037syQHpV", "7348XIIFFt", "getCurRobotWinRate", "leaveRoom", "853074yHtygh", "20eKGRUY", "getRoomGameDataByRoomID", "6rQQelG", "hasOwnProperty", "392439SHclxg", "3522870FurwcI", "robot", "matchRoom", "hall", "getMatchRoomList", "app", "rpcAPI createRoom", "robot-1", "controllerRemote", "createRoom", "9227032nIMUVu", "getRoomGameDataByKind", "game", "apply", "robotLeaveRoomNotify", "roomRemote", "3ApKJLj", "pomelo", "recharge", "searchRoomByUid", "rechargeRemote", "exports", "rpc", "updateRoomUserInfo", "isUserInRoom", "joinRoom", "robotGoldChanged", "push"];
-  a0_0x2c14 = function () {
-    return _0x529c7a;
-  };
-  return a0_0x2c14();
-}
+let api = module[a0_0x4ce072(164)];
+let pomelo = require("pomelo");
+let logger = require(a0_0x4ce072(185))[a0_0x4ce072(163)](a0_0x4ce072(167));
+let token = require(a0_0x4ce072(179));
+api[a0_0x4ce072(172)] = function (_0x2750e8, _0x1633f3) {
+  return new Promise((_0x5168dd, _0x361f2a) => {
+    const _0x160f5b = a0_0x5dd1;
+    let _0x524fc3 = pomelo[_0x160f5b(161)].get(_0x160f5b(159));
+    _0x2750e8.pushRouter = "RoomMessagePush";
+    let _0x442dde = token.createMsg(_0x2750e8);
+    _0x524fc3[_0x160f5b(186)](_0x160f5b(176), _0x442dde, _0x1633f3, {}, function (_0x343e13) {
+      const _0x2312e1 = _0x160f5b;
+      !!_0x343e13 ? (logger[_0x2312e1(187)](_0x343e13[_0x2312e1(177)]), _0x361f2a(_0x343e13)) : _0x5168dd();
+    });
+  });
+};
+api.gameMessagePush = function (_0x5c2994, _0xbe0d7d) {
+  return new Promise((_0x4076e0, _0x4150ed) => {
+    const _0x3ed108 = a0_0x5dd1;
+    let _0x59647d = pomelo[_0x3ed108(161)].get(_0x3ed108(159));
+    _0x5c2994[_0x3ed108(156)] = "GameMessagePush";
+    let _0x1bfb6c = token.createMsg(_0x5c2994);
+    _0x59647d[_0x3ed108(186)](_0x3ed108(176), _0x1bfb6c, _0xbe0d7d, {}, function (_0x409d31) {
+      const _0x6dd78f = _0x3ed108;
+      !!_0x409d31 ? (logger[_0x6dd78f(187)](_0x409d31.stack), _0x4150ed(_0x409d31)) : _0x4076e0();
+    });
+  });
+};
+api[a0_0x4ce072(162)] = function (_0x21fd39, _0x57cb60) {
+  return new Promise((_0x529672, _0x310bd5) => {
+    const _0xe071d = a0_0x5dd1;
+    let _0x20a3ab = pomelo[_0xe071d(161)].get("channelService");
+    _0x21fd39.pushRouter = _0xe071d(182);
+    let _0x558ec1 = token[_0xe071d(166)](_0x21fd39);
+    _0x20a3ab.pushMessageByUids(_0xe071d(176), _0x558ec1, _0x57cb60, {}, function (_0x37f5c2) {
+      const _0x48ba5f = _0xe071d;
+      !!_0x37f5c2 ? (logger.error(_0x37f5c2[_0x48ba5f(177)]), _0x310bd5(_0x37f5c2)) : _0x529672();
+    });
+  });
+};
+api[a0_0x4ce072(157)] = function (_0x4c00f4, _0x3f57a4) {
+  return new Promise((_0x4ba9b5, _0x86092f) => {
+    const _0x325979 = a0_0x5dd1;
+    let _0x147c3d = pomelo[_0x325979(161)][_0x325979(190)](_0x325979(159));
+    _0x4c00f4[_0x325979(156)] = "UpdateUserInfoPush";
+    let _0x92123d = token[_0x325979(166)](_0x4c00f4);
+    _0x147c3d[_0x325979(186)](_0x325979(176), _0x92123d, _0x3f57a4, {}, function (_0x54b1ae) {
+      const _0x2adb89 = _0x325979;
+      !!_0x54b1ae ? (logger[_0x2adb89(187)](_0x54b1ae[_0x2adb89(177)]), _0x86092f(_0x54b1ae)) : _0x4ba9b5(true);
+    });
+  });
+};
+api.kickUserPush = function (_0x48555c, _0x1c0ee2) {
+  return new Promise((_0x2a3048, _0x5361d2) => {
+    const _0x4f9269 = a0_0x5dd1;
+    let _0x38e561 = pomelo[_0x4f9269(161)].get(_0x4f9269(159));
+    _0x48555c[_0x4f9269(156)] = _0x4f9269(174);
+    let _0x3c2e66 = token[_0x4f9269(166)](_0x48555c);
+    _0x38e561[_0x4f9269(186)](_0x4f9269(176), _0x3c2e66, _0x1c0ee2, {}, function (_0x24b25f) {
+      const _0x3c3ee6 = _0x4f9269;
+      !!_0x24b25f ? (logger[_0x3c3ee6(187)](_0x24b25f.stack), _0x5361d2(_0x24b25f)) : _0x2a3048(true);
+    });
+  });
+};
+api[a0_0x4ce072(165)] = function (_0x5ed26a, _0x4eb409) {
+  return new Promise((_0x59e87c, _0x348a32) => {
+    const _0x15ade3 = a0_0x5dd1;
+    let _0x584d1d = pomelo[_0x15ade3(161)][_0x15ade3(190)](_0x15ade3(159));
+    _0x5ed26a[_0x15ade3(156)] = "gameInvitation";
+    let _0x573dbf = token[_0x15ade3(166)](_0x5ed26a);
+    _0x584d1d[_0x15ade3(186)]("ServerMessagePush", _0x573dbf, _0x4eb409, {}, function (_0x2fefbf) {
+      const _0x519d27 = _0x15ade3;
+      !!_0x2fefbf ? (logger[_0x519d27(187)](_0x2fefbf[_0x519d27(177)]), _0x348a32(_0x2fefbf)) : _0x59e87c(true);
+    });
+  });
+};
+api.joinGameAgainPush = function (_0x3eb6c0, _0x7c896a) {
+  return new Promise((_0x2bd76d, _0x491c18) => {
+    const _0x253952 = a0_0x5dd1;
+    let _0x28f844 = pomelo.app[_0x253952(190)]("channelService");
+    _0x3eb6c0.pushRouter = _0x253952(175);
+    let _0x1c088f = token[_0x253952(166)](_0x3eb6c0);
+    _0x28f844.pushMessageByUids(_0x253952(176), _0x1c088f, _0x7c896a, {}, function (_0x3da540) {
+      const _0x3b4274 = _0x253952;
+      !!_0x3da540 ? (logger.error(_0x3da540[_0x3b4274(177)]), _0x491c18(_0x3da540)) : _0x2bd76d(true);
+    });
+  });
+};
+api[a0_0x4ce072(158)] = function (_0x429a68) {
+  return new Promise((_0x578cfd, _0x34999a) => {
+    const _0x396610 = a0_0x5dd1;
+    let _0x12add7 = pomelo[_0x396610(161)].get(_0x396610(159));
+    _0x429a68[_0x396610(156)] = "BroadcastPush";
+    let _0x1b0951 = token.createMsg(_0x429a68);
+    _0x12add7[_0x396610(169)](_0x396610(154), _0x396610(176), _0x1b0951, null, function (_0x3b47d1) {
+      const _0x4c4078 = _0x396610;
+      !!_0x3b47d1 ? (logger[_0x4c4078(187)](_0x3b47d1[_0x4c4078(177)]), _0x34999a(_0x3b47d1)) : _0x578cfd();
+    });
+  });
+};
+api[a0_0x4ce072(184)] = function (_0x19734b, _0x18b828) {
+  return new Promise((_0x512cde, _0x93292a) => {
+    const _0x1de73c = a0_0x5dd1;
+    let _0x484d00 = pomelo[_0x1de73c(161)][_0x1de73c(190)](_0x1de73c(159));
+    _0x19734b[_0x1de73c(156)] = _0x1de73c(160);
+    let _0x5674c2 = token[_0x1de73c(166)](_0x19734b);
+    _0x484d00[_0x1de73c(186)]("ServerMessagePush", _0x5674c2, _0x18b828, {}, function (_0x1c2f31) {
+      const _0x59063 = _0x1de73c;
+      !!_0x1c2f31 ? (logger[_0x59063(187)](_0x1c2f31[_0x59063(177)]), _0x93292a(_0x1c2f31)) : _0x512cde();
+    });
+  });
+};
