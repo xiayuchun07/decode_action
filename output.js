@@ -1,365 +1,326 @@
 
-function a0_0x5696() {
-  const _0x37b748 = ["MING4AN1", "QUANAN", "1805335blSWbu", "63KibicI", "697340eDZdEp", "slice", "6418308AoMZgt", "NIUNIU", "21BoutIi", "4XdiPMe", "16ByOwGr", "shift", "./gameLogic", "exports", "78LbEJVW", "39SXHusv", "2604110RvFUag", "onGameRobBank", "287TkNrvc", "length", "442046ykRxEV", "../../util/utils", "7JIwBHs", "9895390jYWsNJ", "setCardsType", "610XFhplu", "cardsType", "251244FqUxaA", "5528515pvQKhQ", "111132kuwaVR", "getNiuNumber", "push", "9fGrBzo", "1606760moAIcf", "3094720mTgkUM", "639336pBrOtw", "gameRule", "4505298vEbYDH", "6740dNCqPX", "MING3AN2", "15039EvFxwc", "MINGPAI", "./gameProto", "144609ZHlQLX", "9585VXyouX", "floor", "sendCardType", "11oCaVTd", "getRandomNum", "827208RIrqjz", "71258TnPrzz"];
-  a0_0x5696 = function () {
-    return _0x37b748;
-  };
-  return a0_0x5696();
-}
-const a0_0x3da501 = a0_0x5b5a;
-(function (_0xfb8195, _0x35cee7) {
-  const _0xe94933 = a0_0x5b5a;
-  const _0x3eb10b = _0xfb8195();
+const a0_0x1d12f5 = a0_0x337d;
+(function (_0x216cd, _0x53173a) {
+  const _0x8695c9 = a0_0x337d;
+  const _0x5ebf82 = _0x216cd();
   while (true) {
     try {
-      const _0x316ed3 = -parseInt(_0xe94933(451)) / 1 + parseInt(_0xe94933(435)) / 2 + parseInt(_0xe94933(423)) / 3 + parseInt(_0xe94933(440)) / 4 * (parseInt(_0xe94933(459)) / 5) + -parseInt(_0xe94933(417)) / 6 + parseInt(_0xe94933(433)) / 7 * (parseInt(_0xe94933(441)) / 8) + -parseInt(_0xe94933(412)) / 9 * (parseInt(_0xe94933(447)) / 10);
-      if (_0x316ed3 === _0x35cee7) {
+      const _0x87aa89 = parseInt(_0x8695c9(103)) / 1 + parseInt(_0x8695c9(147)) / 2 + -parseInt(_0x8695c9(158)) / 3 * (parseInt(_0x8695c9(143)) / 4) + parseInt(_0x8695c9(122)) / 5 * (-parseInt(_0x8695c9(151)) / 6) + -parseInt(_0x8695c9(159)) / 7 * (parseInt(_0x8695c9(102)) / 8) + -parseInt(_0x8695c9(134)) / 9 + parseInt(_0x8695c9(104)) / 10 * (parseInt(_0x8695c9(135)) / 11);
+      if (_0x87aa89 === _0x53173a) {
         break;
       } else {
-        _0x3eb10b.push(_0x3eb10b.shift());
+        _0x5ebf82.push(_0x5ebf82.shift());
       }
-    } catch (_0x2ed0ba) {
-      _0x3eb10b.push(_0x3eb10b.shift());
+    } catch (_0x1031b7) {
+      _0x5ebf82.push(_0x5ebf82.shift());
     }
   }
-})(a0_0x5696, 565046);
-function a0_0xd2c7(_0x4c7f0e, _0x2c0d90) {
-  const _0x54b44d = a0_0xa836();
-  a0_0xd2c7 = function (_0x30cff6, _0x1afbb8) {
-    _0x30cff6 = _0x30cff6 - 424;
-    let _0x517b2c = _0x54b44d[_0x30cff6];
-    return _0x517b2c;
-  };
-  return a0_0xd2c7(_0x4c7f0e, _0x2c0d90);
-}
-const a0_0x4d58f = a0_0xd2c7;
-(function (_0x4ffdb1, _0x2250bf) {
-  const _0x212a39 = a0_0x5b5a;
-  const _0x1e0c21 = a0_0xd2c7;
-  const _0x387dfc = _0x4ffdb1();
+})(a0_0x1dee, 313049);
+const a0_0x325e89 = a0_0x5a08;
+(function (_0xe9180c, _0x4769b4) {
+  const _0x697d6c = a0_0x337d;
+  const _0x2454d1 = a0_0x5a08;
+  const _0x52108e = _0xe9180c();
   while (true) {
     try {
-      const _0xd37320 = parseInt(_0x1e0c21(446)) / 1 + -parseInt(_0x1e0c21(440)) / 2 + -parseInt(_0x1e0c21(458)) / 3 + -parseInt(_0x1e0c21(444)) / 4 * (-parseInt(_0x1e0c21(443)) / 5) + -parseInt(_0x1e0c21(457)) / 6 * (-parseInt(_0x1e0c21(462)) / 7) + parseInt(_0x1e0c21(449)) / 8 + parseInt(_0x1e0c21(453)) / 9 * (-parseInt(_0x1e0c21(459)) / 10);
-      if (_0xd37320 === _0x2250bf) {
+      const _0x808d60 = parseInt(_0x2454d1(216)) / 1 * (-parseInt(_0x2454d1(245)) / 2) + parseInt(_0x2454d1(208)) / 3 + parseInt(_0x2454d1(210)) / 4 * (parseInt(_0x2454d1(232)) / 5) + -parseInt(_0x2454d1(229)) / 6 * (-parseInt(_0x2454d1(242)) / 7) + parseInt(_0x2454d1(236)) / 8 + parseInt(_0x2454d1(225)) / 9 + -parseInt(_0x2454d1(223)) / 10 * (parseInt(_0x2454d1(220)) / 11);
+      if (_0x808d60 === _0x4769b4) {
         break;
       } else {
-        _0x387dfc[_0x212a39(462)](_0x387dfc[_0x212a39(442)]());
+        _0x52108e[_0x697d6c(130)](_0x52108e[_0x697d6c(114)]());
       }
-    } catch (_0x2d7039) {
-      _0x387dfc[_0x212a39(462)](_0x387dfc[_0x212a39(442)]());
+    } catch (_0xfd6dad) {
+      _0x52108e[_0x697d6c(130)](_0x52108e.shift());
     }
   }
-})(a0_0xa836, 274017);
-const a0_0x1e6dc1 = a0_0xb9f6;
-function a0_0x328a() {
-  const _0x401cb0 = a0_0x5b5a;
-  const _0x1ec9b7 = a0_0xd2c7;
-  const _0x58cc16 = [_0x1ec9b7(461), _0x401cb0(431), _0x1ec9b7(452), _0x1ec9b7(436), _0x401cb0(448), _0x1ec9b7(427), _0x1ec9b7(424), _0x1ec9b7(465), _0x401cb0(434), _0x401cb0(439), _0x1ec9b7(430), _0x1ec9b7(439), _0x1ec9b7(463), _0x1ec9b7(435), _0x1ec9b7(425), _0x1ec9b7(447), _0x1ec9b7(464), _0x1ec9b7(454), _0x1ec9b7(437), _0x401cb0(425), _0x1ec9b7(429), _0x1ec9b7(445), _0x1ec9b7(455), _0x1ec9b7(434), _0x1ec9b7(441), _0x401cb0(436), _0x401cb0(444), _0x1ec9b7(448), _0x1ec9b7(426), _0x1ec9b7(431), _0x1ec9b7(451), _0x1ec9b7(442), _0x1ec9b7(428)];
-  a0_0x328a = function () {
-    return _0x58cc16;
+})(a0_0x2651, 388467);
+const a0_0x454096 = a0_0x22f7;
+function a0_0x337d(_0x3d2fab, _0x3f30db) {
+  const _0x3b2d9a = a0_0x1dee();
+  a0_0x337d = function (_0x240a04, _0x3d0725) {
+    _0x240a04 = _0x240a04 - 102;
+    let _0x5e9ddb = _0x3b2d9a[_0x240a04];
+    return _0x5e9ddb;
   };
-  return a0_0x328a();
+  return a0_0x337d(_0x3d2fab, _0x3f30db);
 }
-(function (_0x14999b, _0x4289f8) {
-  const _0x590466 = a0_0xd2c7;
-  const _0x5c9ad0 = a0_0xb9f6;
-  const _0x1d9806 = _0x14999b();
+function a0_0x5a08(_0x3b9b70, _0x3f8286) {
+  const _0x5a3b96 = a0_0x2651();
+  a0_0x5a08 = function (_0x4c7e10, _0x24122b) {
+    _0x4c7e10 = _0x4c7e10 - 192;
+    let _0x1f8033 = _0x5a3b96[_0x4c7e10];
+    return _0x1f8033;
+  };
+  return a0_0x5a08(_0x3b9b70, _0x3f8286);
+}
+function a0_0x1dee() {
+  const _0x34b49b = ["GAME_USER_SCORE_PUSH", "3609510ddSkVJ", "6twkDNP", "48PtUZXh", "gameRobBankPush", "gameReviewPush", "946615RNGgcW", "158OpgABz", "gameType", "SHOW_GUO_SCORE_PUSH", "GAME_BUREAU_PUSH", "GAME_REVIEW_PUSH", "3085445pdVZmR", "SHOW_CARDS_NOTIFY", "push", "gameQieGuoOperatePush", "cardType", "GAME_SET_TEST_CARDS_NOTIFY", "2106099gwbpgj", "33ivvpUI", "GAME_USER_POUR_SCORE_PUSH", "showCardsPush", "gameUserPourScore", "GAME_END_PUSH", "2229666Esnzri", "GAME_ROB_BANK_NOTIFY", "SHOW_CARDS_PUSH", "12EfctGb", "exports", "GAME_GET_TEST_CARDS_PUSH", "gameBankerPush", "696484OPOwnV", "gameEndPush", "216321vBSoKG", "GAME_REVIEW_NOTIFY", "12bdhuST", "gameGetTestCardsPush", "98ndyzkY", "gameResultPush", "1457504ulIAda", "GAME_QIE_GUO_OPERATE_PUSH", "gameStatusTm", "909yYcCdf", "7GBlngg", "4LQOzcf", "GAME_ROB_BANK_PUSH", "4861836fSciZR", "gameSetTestCardsPush", "showGuoScorePush", "5439awxeFc", "3747192VLASYp", "298713oJVurG", "2493530coWdUK", "gameDicesPush", "4977546fXRpEq", "3379761IkTzSg", "192XNbnUE", "GAME_DICES_PUSH", "GAME_GET_TEST_CARDS_NOTIFY", "GAME_RESULT_PUSH", "gameStatus", "70WVEJOi", "shift", "GAME_SEND_CARDS_PUSH"];
+  a0_0x1dee = function () {
+    return _0x34b49b;
+  };
+  return a0_0x1dee();
+}
+function a0_0x2651() {
+  const _0x4b1e55 = a0_0x337d;
+  const _0x55dec9 = [_0x4b1e55(131), "5494635UISDEa", "GAME_SET_TEST_CARDS_PUSH", _0x4b1e55(137), _0x4b1e55(144), _0x4b1e55(118), _0x4b1e55(126), _0x4b1e55(145), _0x4b1e55(117), _0x4b1e55(148), _0x4b1e55(116), "2022352bUbehc", _0x4b1e55(155), _0x4b1e55(105), "GAME_USER_SCORE_NOTIFY", _0x4b1e55(139), _0x4b1e55(163), _0x4b1e55(124), _0x4b1e55(106), _0x4b1e55(132), _0x4b1e55(162), _0x4b1e55(123), _0x4b1e55(111), _0x4b1e55(109), _0x4b1e55(154), _0x4b1e55(119), _0x4b1e55(110), _0x4b1e55(164), _0x4b1e55(161), _0x4b1e55(141), _0x4b1e55(115), _0x4b1e55(136), _0x4b1e55(150), _0x4b1e55(149), _0x4b1e55(157), _0x4b1e55(114), _0x4b1e55(153), _0x4b1e55(138), _0x4b1e55(140), _0x4b1e55(146), _0x4b1e55(160), "gameSendCardPush", "gameBureauPush", "GAME_BANKER_PUSH", _0x4b1e55(152), _0x4b1e55(112), _0x4b1e55(165), _0x4b1e55(130), _0x4b1e55(127), "userStatus", _0x4b1e55(107), _0x4b1e55(125), _0x4b1e55(120), _0x4b1e55(113)];
+  a0_0x2651 = function () {
+    return _0x55dec9;
+  };
+  return a0_0x2651();
+}
+function a0_0x22f7(_0x445a52, _0x5537c8) {
+  const _0x238114 = a0_0x50fa();
+  a0_0x22f7 = function (_0x56c4c5, _0x2a4c93) {
+    _0x56c4c5 = _0x56c4c5 - 412;
+    let _0x9872a = _0x238114[_0x56c4c5];
+    return _0x9872a;
+  };
+  return a0_0x22f7(_0x445a52, _0x5537c8);
+}
+(function (_0x1d67fb, _0x2d3a61) {
+  const _0x44d91e = a0_0x337d;
+  const _0x19f661 = a0_0x5a08;
+  const _0x335116 = a0_0x22f7;
+  const _0x4b8e10 = _0x1d67fb();
   while (true) {
     try {
-      const _0x321029 = -parseInt(_0x5c9ad0(231)) / 1 * (-parseInt(_0x5c9ad0(236)) / 2) + -parseInt(_0x5c9ad0(233)) / 3 * (-parseInt(_0x5c9ad0(235)) / 4) + -parseInt(_0x5c9ad0(209)) / 5 + parseInt(_0x5c9ad0(219)) / 6 * (parseInt(_0x5c9ad0(223)) / 7) + -parseInt(_0x5c9ad0(237)) / 8 * (parseInt(_0x5c9ad0(232)) / 9) + -parseInt(_0x5c9ad0(226)) / 10 * (parseInt(_0x5c9ad0(213)) / 11) + -parseInt(_0x5c9ad0(214)) / 12 * (-parseInt(_0x5c9ad0(220)) / 13);
-      if (_0x321029 === _0x4289f8) {
+      const _0x158a6b = parseInt(_0x335116(429)) / 1 * (-parseInt(_0x335116(448)) / 2) + parseInt(_0x335116(423)) / 3 * (parseInt(_0x335116(432)) / 4) + -parseInt(_0x335116(447)) / 5 + parseInt(_0x335116(433)) / 6 * (parseInt(_0x335116(419)) / 7) + parseInt(_0x335116(414)) / 8 + -parseInt(_0x335116(445)) / 9 + parseInt(_0x335116(427)) / 10;
+      if (_0x158a6b === _0x2d3a61) {
         break;
       } else {
-        _0x1d9806[_0x590466(438)](_0x1d9806[_0x590466(466)]());
+        _0x4b8e10[_0x19f661(217)](_0x4b8e10[_0x19f661(205)]());
       }
-    } catch (_0x353e5c) {
-      _0x1d9806[_0x590466(438)](_0x1d9806[_0x590466(466)]());
+    } catch (_0x349a01) {
+      _0x4b8e10[_0x44d91e(130)](_0x4b8e10[_0x19f661(205)]());
     }
   }
-})(a0_0x328a, 875309);
-let logic = module[a0_0x1e6dc1(217)];
-let gameLogic = require(a0_0x3da501(443));
-let utils = require(a0_0x1e6dc1(208));
-let gameProto = require(a0_0x4d58f(456));
-function a0_0xa836() {
-  const _0x21fb08 = a0_0x3da501;
-  const _0x4053d0 = [_0x21fb08(437), _0x21fb08(413), "length", _0x21fb08(414), _0x21fb08(462), _0x21fb08(460), _0x21fb08(429), "onGamePourScore", _0x21fb08(421), "1075coVygP", _0x21fb08(418), "getCardsType", _0x21fb08(430), _0x21fb08(457), "gameLogic", _0x21fb08(415), "floor", _0x21fb08(426), _0x21fb08(454), "53982PcGOZn", _0x21fb08(452), _0x21fb08(427), _0x21fb08(422), "3270372KYwYjh", _0x21fb08(420), _0x21fb08(456), _0x21fb08(436), _0x21fb08(419), _0x21fb08(453), _0x21fb08(445), _0x21fb08(438), _0x21fb08(424), _0x21fb08(442), _0x21fb08(416), "YOUNIU", _0x21fb08(458), _0x21fb08(432), _0x21fb08(449), _0x21fb08(461), _0x21fb08(428), _0x21fb08(446), _0x21fb08(431), _0x21fb08(455)];
-  a0_0xa836 = function () {
-    return _0x4053d0;
+})(a0_0x50fa, 447933);
+let proto = module[a0_0x454096(428)];
+proto[a0_0x454096(441)] = {
+  NONE: 0,
+  ABANDON: 1,
+  TIMEOUTABANDON: 2,
+  LOOK: 4,
+  LOSE: 8,
+  WIN: 16,
+  HE: 32
+};
+proto[a0_0x454096(426)] = {
+  NONE: 0,
+  ROB_BANK: 1,
+  SEND_CARDS: 2,
+  POUR_SCORE: 3,
+  SHOW_CARD: 4,
+  QIE_GUO: 5,
+  RESULT: 6
+};
+proto[a0_0x454096(446)] = {
+  NONE: 0,
+  ROB_BANK: 10,
+  SEND_CARDS: 7,
+  POUR_SCORE: 15,
+  SHOW_CARD: 15,
+  QIE_GUO: 10,
+  RESULT: 5
+};
+proto[a0_0x454096(421)] = {
+  ERROR: -1,
+  BISI: 0,
+  DIAN: 1,
+  ER_BA_GANG: 2,
+  DUI_ZI: 3,
+  SHUANG_TIAN_ZHI_ZUN: 4
+};
+proto[a0_0x325e89(241)] = {
+  QIANGZHUANG: 2,
+  LUNZHUANG: 1
+};
+proto[a0_0x454096(417)] = 601;
+proto[a0_0x325e89(209)] = function (_0x5e53b0, _0x2b4379) {
+  const _0x9e379c = a0_0x454096;
+  return {
+    type: this[_0x9e379c(417)],
+    data: {
+      uid: _0x5e53b0,
+      userList: _0x2b4379
+    }
   };
-  return a0_0xa836();
-}
-function a0_0x5b5a(_0x3331ad, _0x3c7fb5) {
-  const _0x41872a = a0_0x5696();
-  a0_0x5b5a = function (_0x5e0e96, _0x4d500e) {
-    _0x5e0e96 = _0x5e0e96 - 412;
-    let _0x11f82d = _0x41872a[_0x5e0e96];
-    return _0x11f82d;
+};
+proto[a0_0x325e89(199)] = 502;
+proto[a0_0x454096(444)] = 602;
+proto[a0_0x454096(450)] = function (_0x4136b3, _0x2433d1, _0x3820f8) {
+  const _0xf6b5c8 = a0_0x454096;
+  return {
+    type: this[_0xf6b5c8(444)],
+    data: {
+      uid: _0x4136b3,
+      chairID: _0x2433d1,
+      isRob: _0x3820f8
+    }
   };
-  return a0_0x5b5a(_0x3331ad, _0x3c7fb5);
-}
-function a0_0xb9f6(_0x14cfd0, _0x32cac2) {
-  const _0x15b60a = a0_0x328a();
-  a0_0xb9f6 = function (_0x3645ed, _0x4e3a31) {
-    _0x3645ed = _0x3645ed - 206;
-    let _0x33449d = _0x15b60a[_0x3645ed];
-    return _0x33449d;
+};
+proto[a0_0x454096(413)] = 603;
+proto[a0_0x325e89(211)] = function (_0x54df2a, _0x5147e2, _0x326c6f, _0x49adf1, _0x149aa9) {
+  const _0x312663 = a0_0x454096;
+  return {
+    type: this[_0x312663(413)],
+    data: {
+      handCards: _0x54df2a,
+      leftCount: _0x5147e2,
+      lastCards: _0x326c6f,
+      dice1: _0x49adf1,
+      dice2: _0x149aa9
+    }
   };
-  return a0_0xb9f6(_0x14cfd0, _0x32cac2);
+};
+proto.GAME_QIE_GUO_NOTIFY = 604;
+proto[a0_0x454096(436)] = 604;
+proto[a0_0x454096(437)] = function (_0x1dcee4, _0x3deb8e) {
+  const _0x44ec1a = a0_0x454096;
+  return {
+    type: this[_0x44ec1a(436)],
+    data: {
+      uid: _0x1dcee4,
+      tick: _0x3deb8e
+    }
+  };
+};
+proto[a0_0x454096(442)] = 605;
+proto.gameUserPourScorePush = function (_0x84b62a, _0x316f90, _0x2cbfe0, _0x41ad7c) {
+  const _0x3f67f6 = a0_0x454096;
+  return {
+    type: this[_0x3f67f6(442)],
+    data: {
+      bankerUid: _0x84b62a,
+      tick: _0x316f90,
+      minPourScore: _0x2cbfe0,
+      maxPourScore: _0x41ad7c
+    }
+  };
+};
+proto[a0_0x325e89(238)] = 513;
+proto[a0_0x454096(425)] = 613;
+proto[a0_0x454096(416)] = function (_0x511fba, _0x18bbea) {
+  const _0x3075d0 = a0_0x454096;
+  return {
+    type: this[_0x3075d0(425)],
+    data: {
+      uid: _0x511fba,
+      score: _0x18bbea
+    }
+  };
+};
+proto[a0_0x454096(440)] = 606;
+proto[a0_0x454096(418)] = function (_0xd8acb4, _0x4f90db, _0x4aa233) {
+  const _0x49799e = a0_0x325e89;
+  return {
+    type: this[_0x49799e(192)],
+    data: {
+      result: _0xd8acb4,
+      lastCards: _0x4f90db,
+      bankerUid: _0x4aa233
+    }
+  };
+};
+proto[a0_0x325e89(202)] = 507;
+proto[a0_0x454096(449)] = 607;
+proto[a0_0x1d12f5(121)] = function (_0x3c06ec) {
+  const _0x5cc7ae = a0_0x454096;
+  return {
+    type: this[_0x5cc7ae(449)],
+    data: {
+      list: _0x3c06ec
+    }
+  };
+};
+proto[a0_0x454096(435)] = 608;
+proto[a0_0x325e89(212)] = function (_0x255d46) {
+  const _0xb8b89f = a0_0x454096;
+  return {
+    type: this[_0xb8b89f(435)],
+    data: {
+      curBureau: _0x255d46
+    }
+  };
+};
+proto[a0_0x454096(443)] = 609;
+proto[a0_0x454096(424)] = function (_0x226561, _0x4f4511, _0x5a2fc6, _0x2577a, _0xc04e2e) {
+  const _0xd4352d = a0_0x454096;
+  let _0x129b84 = {
+    type: this[_0xd4352d(443)],
+    data: {
+      result: _0x226561,
+      winMost: _0x4f4511,
+      loseMost: _0x5a2fc6,
+      creater: _0x2577a,
+      plusInfo: _0xc04e2e
+    }
+  };
+  return _0x129b84;
+};
+proto[a0_0x325e89(193)] = 610;
+proto[a0_0x454096(412)] = function (_0x23a320, _0x253cda) {
+  const _0x4ac96f = a0_0x454096;
+  return {
+    type: this[_0x4ac96f(438)],
+    data: {
+      dice1: _0x23a320,
+      dice2: _0x253cda
+    }
+  };
+};
+proto[a0_0x454096(420)] = 611;
+proto[a0_0x454096(422)] = function (_0x3532b1) {
+  const _0x338fcd = a0_0x454096;
+  return {
+    type: this[_0x338fcd(420)],
+    data: {
+      score: _0x3532b1
+    }
+  };
+};
+proto[a0_0x1d12f5(129)] = 512;
+proto[a0_0x454096(415)] = 612;
+proto[a0_0x454096(434)] = function (_0x28eaa0, _0xd92be7, _0x5681c0 = null) {
+  const _0x553dab = a0_0x454096;
+  return {
+    type: this[_0x553dab(415)],
+    data: {
+      chairID: _0x28eaa0,
+      uid: _0x5681c0,
+      cardsList: _0xd92be7
+    }
+  };
+};
+proto[a0_0x1d12f5(133)] = 551;
+proto[a0_0x454096(431)] = 651;
+proto[a0_0x454096(439)] = function (_0x2b429e) {
+  const _0x5cb05e = a0_0x454096;
+  return {
+    type: this[_0x5cb05e(431)],
+    data: {
+      isSuccess: _0x2b429e
+    }
+  };
+};
+proto[a0_0x325e89(196)] = 552;
+proto[a0_0x325e89(231)] = 652;
+proto[a0_0x454096(430)] = function (_0x48b8ee, _0x4b7b67, _0x1a472c = []) {
+  return {
+    type: this.GAME_GET_TEST_CARDS_PUSH,
+    data: {
+      uid: _0x48b8ee,
+      allCardsData: _0x4b7b67,
+      testCards: _0x1a472c
+    }
+  };
+};
+function a0_0x50fa() {
+  const _0x343ff5 = a0_0x1d12f5;
+  const _0x44173a = a0_0x325e89;
+  const _0x35f4aa = [_0x44173a(235), _0x343ff5(142), _0x44173a(207), _0x44173a(213), _0x44173a(194), _0x44173a(203), _0x44173a(221), _0x44173a(243), _0x44173a(197), _0x343ff5(108), _0x44173a(233), _0x44173a(234), _0x44173a(215), "10960210WGfVWe", _0x44173a(228), "4333oFnqtA", _0x44173a(214), _0x44173a(226), "13844xrmKTt", _0x44173a(195), _0x44173a(227), _0x44173a(230), _0x343ff5(156), _0x44173a(224), _0x44173a(193), _0x44173a(240), _0x44173a(192), _0x44173a(219), _0x44173a(201), _0x44173a(239), _0x44173a(198), _0x44173a(244), _0x44173a(204), _0x343ff5(128), _0x44173a(206), _0x44173a(218), _0x44173a(222), _0x44173a(237), _0x44173a(200)];
+  a0_0x50fa = function () {
+    return _0x35f4aa;
+  };
+  return a0_0x50fa();
 }
-class aiLogic {
-  constructor(_0x1855d5, _0x572235, _0x640b74) {
-    const _0x54f1d4 = a0_0x3da501;
-    const _0x384f5e = a0_0x4d58f;
-    const _0x6c33e7 = a0_0x1e6dc1;
-    this[_0x54f1d4(416)] = _0x1855d5;
-    this[_0x6c33e7(218)] = new gameLogic(_0x1855d5);
-    this[_0x6c33e7(218)][_0x384f5e(433)](_0x572235, _0x640b74);
-  }
-  [a0_0x1e6dc1(228)](_0x5dc8ec, _0x1c1bef, _0xdc3c54) {
-    const _0x2e7830 = a0_0x3da501;
-    const _0x22f4d1 = a0_0x4d58f;
-    const _0x8b4891 = a0_0x1e6dc1;
-    if (_0xdc3c54 >= 0) {
-      return 4;
-    }
-    let _0x3b4ef3 = _0x5dc8ec[_0x22f4d1(460)]();
-    if (this[_0x8b4891(230)][_0x8b4891(221)] == gameProto[_0x8b4891(221)][_0x8b4891(229)]) {
-      let _0x2b0af8 = this[_0x8b4891(218)][_0x8b4891(212)](_0x3b4ef3);
-      let _0x4a87e3 = this[_0x8b4891(218)][_0x8b4891(211)](_0x3b4ef3);
-      if (_0x2b0af8 >= gameProto[_0x22f4d1(447)][_0x8b4891(238)] && _0x4a87e3 >= 8 || _0x2b0af8 >= gameProto[_0x8b4891(206)][_0x8b4891(207)]) {
-        return 4;
-      } else {
-        let _0x56965e = utils[_0x8b4891(234)](0, 2);
-        return _0x56965e;
-      }
-    } else {
-      if (this[_0x8b4891(230)][_0x8b4891(221)] == gameProto[_0x8b4891(221)][_0x22f4d1(461)]) {
-        _0x3b4ef3[3] = 0;
-        _0x3b4ef3[4] = 0;
-        let _0x21f87e = 0;
-        let _0x395db1 = 0;
-        for (let _0x1e2263 = 0; _0x1e2263 < _0x3b4ef3[_0x8b4891(227)] - 2; _0x1e2263++) {
-          let _0x5c4d4c = _0x3b4ef3[_0x1e2263] & 15;
-          if (_0x5c4d4c == (_0x1c1bef & 15)) {
-            return 4;
-          }
-        }
-        for (let _0x178c5b = 0; _0x178c5b < _0x3b4ef3[_0x8b4891(227)] - 2; _0x178c5b++) {
-          let _0x512c1a = _0x3b4ef3[_0x178c5b] & 15;
-          _0x512c1a <= 10 && (_0x21f87e += _0x512c1a, _0x395db1++);
-        }
-        if (_0x21f87e == 20 && _0x395db1 == 3) {
-          return 4;
-        }
-        let _0x51376d = this[_0x8b4891(218)][_0x8b4891(212)](_0x3b4ef3);
-        if (_0x51376d >= gameProto[_0x8b4891(206)][_0x8b4891(238)]) {
-          return 4;
-        }
-      } else {
-        if (this[_0x8b4891(230)][_0x8b4891(221)] == gameProto[_0x8b4891(221)][_0x8b4891(225)] || this[_0x8b4891(230)][_0x8b4891(221)] == gameProto[_0x22f4d1(451)][_0x8b4891(222)]) {
-          _0x3b4ef3[4] = 0;
-          let _0x1a08a3 = 0;
-          let _0x1b4f58 = 0;
-          for (let _0x1b68f9 = 0; _0x1b68f9 < _0x3b4ef3[_0x8b4891(227)] - 1; _0x1b68f9++) {
-            let _0x32db5c = _0x3b4ef3[_0x1b68f9] & 15;
-            if (_0x32db5c == (_0x1c1bef & 15)) {
-              return 4;
-            }
-          }
-          for (let _0x356ce6 = 0; _0x356ce6 < _0x3b4ef3[_0x2e7830(450)] - 1; _0x356ce6++) {
-            let _0x7d2e27 = _0x3b4ef3[_0x356ce6] & 15;
-            _0x7d2e27 <= 10 && (_0x1a08a3 += _0x7d2e27, _0x1b4f58++);
-          }
-          if (_0x1a08a3 == 20 && _0x1b4f58 == 4) {
-            for (let _0x434ab9 = 0; _0x434ab9 < _0x3b4ef3[_0x22f4d1(436)] - 1; _0x434ab9++) {
-              let _0x513667 = _0x3b4ef3[_0x22f4d1(460)]();
-              _0x1a08a3 = 0;
-              if (_0x513667[_0x434ab9] != 0) {
-                _0x513667[_0x434ab9] = 0;
-              } else {
-                break;
-              }
-              for (let _0x372d2a = 0; _0x372d2a < _0x3b4ef3[_0x8b4891(227)] - 1; _0x372d2a++) {
-                if (_0x434ab9 == _0x372d2a) {
-                  continue;
-                }
-                let _0x1e5bcc = _0x513667[_0x2e7830(436)]();
-                if (_0x1e5bcc[_0x372d2a] != 0) {
-                  _0x1e5bcc[_0x372d2a] = 0;
-                } else {
-                  break;
-                }
-                for (let _0x24d766 = 0; _0x24d766 < _0x3b4ef3[_0x8b4891(227)] - 1; _0x24d766++) {
-                  _0x513667[_0x24d766] != 0 && (_0x513667[_0x24d766] & 15) <= 10 && (_0x1a08a3 += _0x513667[_0x24d766] & 15);
-                }
-                if (_0x1a08a3 == 10) {
-                  return 4;
-                }
-              }
-            }
-          }
-          let _0x56774b = false;
-          for (let _0x323f5d = 0; _0x323f5d < _0x3b4ef3[_0x8b4891(227)] - 1; _0x323f5d++) {
-            let _0x402f09 = _0x3b4ef3.slice();
-            _0x1a08a3 = 0;
-            _0x402f09[_0x323f5d] = 0;
-            for (let _0x5d332a = 0; _0x5d332a < _0x3b4ef3[_0x8b4891(227)] - 1; _0x5d332a++) {
-              _0x402f09[_0x5d332a] != 0 && (_0x402f09[_0x5d332a] & 15) < 10 && (_0x1a08a3 += _0x402f09[_0x5d332a] & 15);
-            }
-            if (_0x1a08a3 % 10 == 0) {
-              _0x56774b = true;
-              break;
-            }
-          }
-          let _0x52808a = _0x3b4ef3[_0x8b4891(216)]();
-          let _0x3119bb = Math[_0x22f4d1(450)](_0x52808a[0] / 16);
-          let _0x1cc2ec = true;
-          for (let _0x5c50a2 = 1; _0x5c50a2 < _0x3b4ef3[_0x8b4891(227)] - 1; _0x5c50a2++) {
-            _0x3119bb != Math[_0x8b4891(210)](_0x52808a[_0x5c50a2] / 16) && (_0x1cc2ec = false);
-          }
-          if (_0x1cc2ec) {
-            return 4;
-          }
-          let _0x2faa77 = this[_0x8b4891(218)][_0x8b4891(212)](_0x3b4ef3);
-          let _0x4544bc = this[_0x8b4891(218)][_0x8b4891(211)](_0x3b4ef3);
-          if ((_0x2faa77 >= gameProto[_0x8b4891(206)][_0x8b4891(238)] && _0x4544bc >= 8 || _0x2faa77 >= gameProto[_0x8b4891(206)][_0x8b4891(207)]) && _0x56774b) {
-            return 4;
-          } else {
-            if (_0x56774b) {
-              return 4;
-            }
-          }
-        }
-      }
-    }
-    return 0;
-  }
-  [a0_0x1e6dc1(215)](_0x12d0fe, _0x19d518, _0x55caaa, _0x42c6e8, _0x4641a2) {
-    const _0x3e6336 = a0_0x3da501;
-    const _0x327a10 = a0_0x4d58f;
-    const _0x74b8d1 = a0_0x1e6dc1;
-    if (_0x4641a2 >= 0) {
-      return _0x42c6e8[_0x42c6e8[_0x327a10(436)] - 1] * 10;
-    }
-    let _0x402603 = _0x12d0fe[_0x74b8d1(216)]();
-    _0x19d518 >= 3 && (_0x19d518 = _0x42c6e8[_0x74b8d1(227)] - 1);
-    if (this[_0x327a10(424)][_0x327a10(451)] == gameProto[_0x74b8d1(221)][_0x74b8d1(229)]) {
-      let _0x1013d8 = this[_0x74b8d1(218)][_0x327a10(445)](_0x402603);
-      let _0x184545 = this[_0x74b8d1(218)][_0x74b8d1(211)](_0x402603);
-      if (_0x1013d8 >= gameProto[_0x74b8d1(206)][_0x327a10(425)] && _0x184545 >= 8 || _0x1013d8 >= gameProto[_0x327a10(447)][_0x74b8d1(207)]) {
-        return _0x42c6e8[_0x42c6e8[_0x74b8d1(227)] - 1] * 10;
-      } else {
-        let _0x310b21 = utils[_0x74b8d1(234)](0, _0x19d518);
-        return _0x42c6e8[_0x310b21] * 10;
-      }
-    } else {
-      if (this[_0x74b8d1(230)][_0x327a10(451)] == gameProto[_0x74b8d1(221)][_0x74b8d1(224)]) {
-        _0x402603[3] = 0;
-        _0x402603[4] = 0;
-        let _0x242d3b = 0;
-        let _0x2b6fbf = 0;
-        for (let _0x5bc1ee = 0; _0x5bc1ee < _0x402603[_0x74b8d1(227)] - 2; _0x5bc1ee++) {
-          let _0x4d4a08 = _0x402603[_0x5bc1ee] & 15;
-          if (_0x4d4a08 == (_0x55caaa & 15)) {
-            let _0x1b15d9 = utils[_0x327a10(430)](2, _0x19d518);
-            return _0x42c6e8[_0x1b15d9] * 10;
-          }
-        }
-        for (let _0x2c8c11 = 0; _0x2c8c11 < _0x402603[_0x74b8d1(227)] - 2; _0x2c8c11++) {
-          let _0x5e82c6 = _0x402603[_0x2c8c11] & 15;
-          _0x5e82c6 <= 10 && (_0x242d3b += _0x5e82c6, _0x2b6fbf++);
-        }
-        if (_0x242d3b == 20 && _0x2b6fbf == 3) {
-          let _0x4d6c56 = utils[_0x3e6336(428)](1, _0x19d518);
-          return _0x42c6e8[_0x4d6c56] * 10;
-        }
-        let _0x9137f5 = this[_0x74b8d1(218)][_0x74b8d1(212)](_0x402603);
-        if (_0x9137f5 >= gameProto[_0x74b8d1(206)][_0x74b8d1(238)]) {
-          let _0x4206d4 = utils[_0x327a10(430)](0, _0x19d518);
-          return _0x42c6e8[_0x4206d4] * 10;
-        }
-      } else {
-        if (this[_0x74b8d1(230)][_0x74b8d1(221)] == gameProto[_0x327a10(451)][_0x327a10(432)] || this[_0x74b8d1(230)][_0x74b8d1(221)] == gameProto[_0x327a10(451)][_0x327a10(442)]) {
-          _0x402603[4] = 0;
-          let _0x45cb7c = 0;
-          let _0x4b284a = 0;
-          for (let _0x43bee2 = 0; _0x43bee2 < _0x402603[_0x74b8d1(227)] - 1; _0x43bee2++) {
-            let _0x299aa9 = _0x402603[_0x43bee2] & 15;
-            if (_0x299aa9 == (_0x55caaa & 15)) {
-              let _0x2da3fc = utils[_0x74b8d1(234)](2, _0x19d518);
-              return _0x42c6e8[_0x2da3fc] * 10;
-            }
-          }
-          for (let _0x4cf654 = 0; _0x4cf654 < _0x402603[_0x74b8d1(227)] - 1; _0x4cf654++) {
-            let _0x5f3438 = _0x402603[_0x4cf654] & 15;
-            _0x5f3438 <= 10 && (_0x45cb7c += _0x5f3438, _0x4b284a++);
-          }
-          if (_0x45cb7c == 20 && _0x4b284a == 4) {
-            for (let _0x2687ad = 0; _0x2687ad < _0x402603[_0x74b8d1(227)] - 1; _0x2687ad++) {
-              let _0x146140 = _0x402603[_0x327a10(460)]();
-              _0x45cb7c = 0;
-              if (_0x146140[_0x2687ad] != 0) {
-                _0x146140[_0x2687ad] = 0;
-              } else {
-                break;
-              }
-              for (let _0x524193 = 0; _0x524193 < _0x402603[_0x74b8d1(227)] - 1; _0x524193++) {
-                if (_0x2687ad == _0x524193) {
-                  continue;
-                }
-                let _0x113c69 = _0x146140[_0x74b8d1(216)]();
-                if (_0x113c69[_0x524193] != 0) {
-                  _0x113c69[_0x524193] = 0;
-                } else {
-                  break;
-                }
-                for (let _0x433764 = 0; _0x433764 < _0x402603[_0x74b8d1(227)] - 1; _0x433764++) {
-                  _0x146140[_0x433764] != 0 && (_0x146140[_0x433764] & 15) <= 10 && (_0x45cb7c += _0x146140[_0x433764] & 15);
-                }
-                if (_0x45cb7c == 10) {
-                  let _0x5c0e3f = utils[_0x74b8d1(234)](1, _0x19d518);
-                  return _0x42c6e8[_0x5c0e3f] * 10;
-                }
-              }
-            }
-          }
-          let _0x5fee5c = false;
-          for (let _0x1c0ba6 = 0; _0x1c0ba6 < _0x402603[_0x74b8d1(227)] - 1; _0x1c0ba6++) {
-            let _0x1107e4 = _0x402603[_0x74b8d1(216)]();
-            _0x45cb7c = 0;
-            _0x1107e4[_0x1c0ba6] = 0;
-            for (let _0x59cfaf = 0; _0x59cfaf < _0x402603[_0x74b8d1(227)] - 1; _0x59cfaf++) {
-              _0x1107e4[_0x59cfaf] != 0 && (_0x1107e4[_0x59cfaf] & 15) <= 10 && (_0x45cb7c += _0x1107e4[_0x59cfaf] & 15);
-            }
-            if (_0x45cb7c % 10 == 0) {
-              _0x5fee5c = true;
-              break;
-            }
-          }
-          let _0x23e693 = this[_0x327a10(448)][_0x327a10(445)](_0x402603);
-          let _0x224ee6 = this[_0x74b8d1(218)][_0x74b8d1(211)](_0x402603);
-          if (_0x23e693 >= gameProto[_0x74b8d1(206)][_0x74b8d1(207)] && _0x5fee5c) {
-            return _0x42c6e8[_0x42c6e8[_0x74b8d1(227)] - 1] * 10;
-          } else {
-            if (_0x23e693 >= gameProto[_0x74b8d1(206)][_0x327a10(425)] && _0x224ee6 >= 8 && _0x5fee5c) {
-              let _0x8873a9 = utils[_0x74b8d1(234)](1, _0x19d518);
-              return _0x42c6e8[_0x8873a9] * 10;
-            } else {
-              if (_0x23e693 >= gameProto[_0x327a10(447)][_0x327a10(425)] && _0x224ee6 >= 6 && _0x5fee5c) {
-                let _0x412f0e = utils[_0x74b8d1(234)](0, _0x19d518);
-                return _0x42c6e8[_0x412f0e] * 10;
-              } else {
-                if (_0x23e693 >= gameProto[_0x74b8d1(206)][_0x74b8d1(238)] && _0x224ee6 >= 1 && _0x5fee5c) {
-                  return _0x42c6e8[0] * 10;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    return _0x42c6e8[0] * 10;
-  }
-}
-module[a0_0x3da501(444)] = aiLogic;
