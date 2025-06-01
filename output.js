@@ -1,98 +1,53 @@
 
-function a0_0x43ed() {
-  const _0x3ab259 = ["23856ivrIUH", "findOneData", "8UlxTwk", "8673732DDRXHJ", "132", "getUserData", "156", "138", "679362tceIvO", "139", "3ZEHlaZ", "getRandomNickname", "../util/utils", "187", "152", "157", "getRandomNum", "158", "185", "exports", "159", "189", "createRobot", "136", "getRandomRobot", "1060676eAZKit", "135", "131", "328786jYxBWR", "userModel", "155", "188", "134", "../dao/userDao", "150", "137", "1728797nTxZmm", "getRobotList", "accountModel", "../dao/commonDao", "232620XTeVnF", "181", "151", "186"];
-  a0_0x43ed = function () {
-    return _0x3ab259;
+function a0_0x4bd9(_0x33eb55, _0xf95e69) {
+  const _0x388f6f = a0_0x6e8d();
+  a0_0x4bd9 = function (_0x39ad6a, _0x35ba1a) {
+    _0x39ad6a = _0x39ad6a - 136;
+    let _0x1bf29d = _0x388f6f[_0x39ad6a];
+    return _0x1bf29d;
   };
-  return a0_0x43ed();
+  return a0_0x4bd9(_0x33eb55, _0xf95e69);
 }
-const a0_0x3ff08c = a0_0xf1d9;
-(function (_0x83d6d5, _0x407998) {
-  const _0x1a788f = a0_0xf1d9;
-  const _0x315fc5 = _0x83d6d5();
+const a0_0x11eb58 = a0_0x4bd9;
+(function (_0x53c3ac, _0x5c956c) {
+  const _0x1f2977 = a0_0x4bd9;
+  const _0x1b535c = _0x53c3ac();
   while (true) {
     try {
-      const _0x3c012d = parseInt(_0x1a788f(240)) / 1 * (-parseInt(_0x1a788f(258)) / 2) + -parseInt(_0x1a788f(230)) / 3 + -parseInt(_0x1a788f(255)) / 4 + -parseInt(_0x1a788f(226)) / 5 + -parseInt(_0x1a788f(238)) / 6 + -parseInt(_0x1a788f(222)) / 7 * (-parseInt(_0x1a788f(232)) / 8) + parseInt(_0x1a788f(233)) / 9;
-      if (_0x3c012d === _0x407998) {
+      const _0x5c9084 = parseInt(_0x1f2977(140)) / 1 * (-parseInt(_0x1f2977(136)) / 2) + -parseInt(_0x1f2977(143)) / 3 + parseInt(_0x1f2977(155)) / 4 + parseInt(_0x1f2977(147)) / 5 + parseInt(_0x1f2977(148)) / 6 * (parseInt(_0x1f2977(145)) / 7) + -parseInt(_0x1f2977(137)) / 8 * (parseInt(_0x1f2977(154)) / 9) + parseInt(_0x1f2977(138)) / 10;
+      if (_0x5c9084 === _0x5c956c) {
         break;
       } else {
-        _0x315fc5.push(_0x315fc5.shift());
+        _0x1b535c.push(_0x1b535c.shift());
       }
-    } catch (_0x5be6ca) {
-      _0x315fc5.push(_0x315fc5.shift());
+    } catch (_0x514d48) {
+      _0x1b535c.push(_0x1b535c.shift());
     }
   }
-})(a0_0x43ed, 284668);
-function a0_0xf1d9(_0x3357c0, _0x91b5dc) {
-  const _0x266dcb = a0_0x43ed();
-  a0_0xf1d9 = function (_0x27e80b, _0x4236a3) {
-    _0x27e80b = _0x27e80b - 220;
-    let _0x4ab76b = _0x266dcb[_0x27e80b];
-    return _0x4ab76b;
-  };
-  return a0_0xf1d9(_0x3357c0, _0x91b5dc);
+})(a0_0x6e8d, 208047);
+const enumeration = require(a0_0x11eb58(150));
+let commonDao = require(a0_0x11eb58(146));
+class logServices {
+  static [a0_0x11eb58(144)](_0x4a9ed9 = 0) {
+    const _0xe09471 = a0_0x11eb58;
+    let _0x196f46 = enumeration[_0xe09471(142)][_0x4a9ed9] || _0xe09471(153);
+    return require(_0xe09471(152)).getLogger(_0x196f46);
+  }
+  static async getLogByRuleID(_0x3a3912) {
+    const _0x2a5b4d = a0_0x11eb58;
+    let _0x5efa85 = await commonDao[_0x2a5b4d(139)](_0x2a5b4d(156), {
+      "roomRuleList._id": _0x3a3912
+    });
+    let _0x3e7dab = _0x5efa85 && _0x5efa85.roomRuleList && _0x5efa85.roomRuleList.find(_0x4fc9d3 => _0x4fc9d3[_0x2a5b4d(149)] == _0x3a3912);
+    let _0x346cc2 = _0x3e7dab && _0x3e7dab[_0x2a5b4d(141)];
+    return this[_0x2a5b4d(144)](_0x346cc2);
+  }
 }
-let utils = require(a0_0x3ff08c(242));
-let commonDao = require(a0_0x3ff08c(225));
-let userDao = require(a0_0x3ff08c(263));
-let phoneTitleArr = [a0_0x3ff08c(262), a0_0x3ff08c(256), a0_0x3ff08c(253), a0_0x3ff08c(221), a0_0x3ff08c(237), a0_0x3ff08c(239), a0_0x3ff08c(220), a0_0x3ff08c(228), a0_0x3ff08c(245), a0_0x3ff08c(247), a0_0x3ff08c(250), a0_0x3ff08c(244), a0_0x3ff08c(253), a0_0x3ff08c(228), a0_0x3ff08c(236), a0_0x3ff08c(248), a0_0x3ff08c(227), "170", a0_0x3ff08c(229), a0_0x3ff08c(243), a0_0x3ff08c(261), "130", a0_0x3ff08c(257), a0_0x3ff08c(234), a0_0x3ff08c(260), "156", a0_0x3ff08c(251)];
-let services = module[a0_0x3ff08c(249)];
-services[a0_0x3ff08c(241)] = function () {
-  return phoneTitleArr[utils.getRandomNum(0, phoneTitleArr.length - 1)] + utils.getRandomNum(10000000, 99999999);
-};
-services[a0_0x3ff08c(223)] = async function (_0x5d8c5e) {
-  const _0x9f9402 = a0_0x3ff08c;
-  let _0x8121fe = await userDao[_0x9f9402(235)]({
-    unionID: _0x5d8c5e,
-    isRobot: true,
-    roomId: null
-  });
-  return _0x8121fe;
-};
-services[a0_0x3ff08c(254)] = async function (_0x3354e9) {
-  const _0x5e7b18 = a0_0x3ff08c;
-  let _0x1fe0c7 = await userDao[_0x5e7b18(235)]({
-    unionID: _0x3354e9,
-    isRobot: true,
-    roomId: null
-  });
-  return _0x1fe0c7;
-};
-services[a0_0x3ff08c(252)] = async function () {
-  const _0x1c0ce7 = a0_0x3ff08c;
-  let _0x3da4b3 = null;
-  let _0x2bceb3 = 1000;
-  let _0x4c54a8 = null;
-  while (_0x2bceb3 > 0) {
-    _0x3da4b3 = utils[_0x1c0ce7(246)](100000, 999999);
-    let _0x32e042 = await commonDao[_0x1c0ce7(231)](_0x1c0ce7(224), {
-      uid: _0x3da4b3
-    });
-    if (!_0x32e042) {
-      break;
-    }
-    _0x2bceb3--;
-    if (_0x2bceb3 <= 0) {
-      _0x3da4b3 = null;
-      break;
-    }
-  }
-  if (_0x3da4b3) {
-    let _0x5f0b8b = this[_0x1c0ce7(241)]();
-    let _0x4dfb24 = {
-      syncLock: 0,
-      nickname: _0x5f0b8b,
-      uid: _0x3da4b3,
-      isRobot: true,
-      avatar: null,
-      roomID: null
-    };
-    _0x4c54a8 = await commonDao.findOneAndUpdateEx(_0x1c0ce7(259), {
-      uid: _0x3da4b3
-    }, _0x4dfb24, {
-      upsert: true,
-      new: true
-    });
-  }
-  return _0x4c54a8;
-};
+function a0_0x6e8d() {
+  const _0x3f8827 = ["1124770CIOpjD", "129678EKojYK", "_id", "../constant/enumeration", "exports", "pomelo-logger", "logic", "1631529OCCGaQ", "31252UxJDdx", "unionModel", "6622TnTPYf", "8omoQRP", "1437660kUhHFx", "findOneData", "64LvnBQa", "gameType", "gameLogType", "557844sRqzKY", "getLogByType", "133GZXKdJ", "../dao/commonDao"];
+  a0_0x6e8d = function () {
+    return _0x3f8827;
+  };
+  return a0_0x6e8d();
+}
+module[a0_0x11eb58(151)] = logServices;
