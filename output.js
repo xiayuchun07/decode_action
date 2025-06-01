@@ -1,67 +1,91 @@
 
-const a0_0x1c58df = a0_0x36aa;
-function a0_0x3780() {
-  const _0x39db12 = ["config", "get", "3602952QuOmzx", "12678SciFKm", "10iPFkud", "https://api.weixin.qq.com/sns/userinfo", "7798208pceGLX", "977898foSSux", "105jIRSID", "errcode", "secret", "./httpRequestServices", "1901582MMJfqN", "config wxData：: ", "exports", "34868HpnVUD", "1148AZgdDs", "appid", "log", "325c0a0bc89b5b84bc9dddf1f095090e", "3yfPLrJ", "wx8827f0ee82d59896", "26956083xYiOnQ", "https://api.weixin.qq.com/sns/oauth2/access_token"];
-  a0_0x3780 = function () {
-    return _0x39db12;
+function a0_0x4d8c() {
+  const _0x6d0a93 = ["abs", "1201130qyoxBM", "218187LuvGFU", "1898424xEAdtD", "800500YyxSAQ", "key", "321920HTmYUU", "length", "30885NSZxim", "exports", "push", "reLoseScore", "7304KzFsXP"];
+  a0_0x4d8c = function () {
+    return _0x6d0a93;
   };
-  return a0_0x3780();
+  return a0_0x4d8c();
 }
-function a0_0x36aa(_0x44e5e4, _0x24947b) {
-  const _0x258396 = a0_0x3780();
-  a0_0x36aa = function (_0x33c84e, _0x39b9da) {
-    _0x33c84e = _0x33c84e - 143;
-    let _0x42ebdf = _0x258396[_0x33c84e];
-    return _0x42ebdf;
+function a0_0x4d47(_0x342457, _0xdbef1c) {
+  const _0x9b2649 = a0_0x4d8c();
+  a0_0x4d47 = function (_0x575ded, _0x490da9) {
+    _0x575ded = _0x575ded - 492;
+    let _0x464a2a = _0x9b2649[_0x575ded];
+    return _0x464a2a;
   };
-  return a0_0x36aa(_0x44e5e4, _0x24947b);
+  return a0_0x4d47(_0x342457, _0xdbef1c);
 }
-(function (_0xb53398, _0x594dc8) {
-  const _0xa21022 = a0_0x36aa;
-  const _0x221cd1 = _0xb53398();
+const a0_0x10deae = a0_0x4d47;
+(function (_0x234aa2, _0x533391) {
+  const _0x3b2434 = a0_0x4d47;
+  const _0x544af1 = _0x234aa2();
   while (true) {
     try {
-      const _0x5c03ae = parseInt(_0xa21022(144)) / 1 + parseInt(_0xa21022(149)) / 2 * (-parseInt(_0xa21022(157)) / 3) + parseInt(_0xa21022(152)) / 4 * (-parseInt(_0xa21022(145)) / 5) + -parseInt(_0xa21022(164)) / 6 * (parseInt(_0xa21022(153)) / 7) + -parseInt(_0xa21022(143)) / 8 + -parseInt(_0xa21022(163)) / 9 * (parseInt(_0xa21022(165)) / 10) + parseInt(_0xa21022(159)) / 11;
-      if (_0x5c03ae === _0x594dc8) {
+      const _0x3c36d8 = parseInt(_0x3b2434(494)) / 1 + -parseInt(_0x3b2434(500)) / 2 + -parseInt(_0x3b2434(503)) / 3 + parseInt(_0x3b2434(492)) / 4 + -parseInt(_0x3b2434(496)) / 5 + -parseInt(_0x3b2434(504)) / 6 + parseInt(_0x3b2434(502)) / 7;
+      if (_0x3c36d8 === _0x533391) {
         break;
       } else {
-        _0x221cd1.push(_0x221cd1.shift());
+        _0x544af1.push(_0x544af1.shift());
       }
-    } catch (_0x5072f9) {
-      _0x221cd1.push(_0x221cd1.shift());
+    } catch (_0x1432c0) {
+      _0x544af1.push(_0x544af1.shift());
     }
   }
-})(a0_0x3780, 572967);
-let httpService = require(a0_0x1c58df(148));
-let WeiXinUtil = {
-  isInit: false,
-  config: {
-    appid: a0_0x1c58df(158),
-    secret: a0_0x1c58df(156)
-  },
-  getAccessToken: async function (_0x2624ce) {
-    const _0x3bfa7b = a0_0x1c58df;
-    let _0xe5ddb8 = {
-      appid: this.config.appid,
-      secret: this.config[_0x3bfa7b(147)],
-      code: _0x2624ce,
-      grant_type: "authorization_code"
-    };
-    console[_0x3bfa7b(155)](_0x3bfa7b(150), _0xe5ddb8);
-    let _0x402daf = await httpService[_0x3bfa7b(162)](_0x3bfa7b(160), _0xe5ddb8);
-    return _0x402daf;
-  },
-  async getStateInfo(_0x44c66e) {
-    const _0x47b2a9 = a0_0x1c58df;
-    let _0x47e02d = await this.getAccessToken(_0x44c66e);
-    if (_0x47e02d[_0x47b2a9(146)]) {
-      return _0x47e02d;
+})(a0_0x4d8c, 294673);
+let services = module[a0_0x10deae(497)];
+services.reWinScore = function (_0x5c9b06, _0x5633e0, _0x3fd3c1, _0x42a12a) {
+  const _0xa9c95f = a0_0x10deae;
+  let _0x165484 = {
+    _0x5633e0: 0
+  };
+  let _0xe800a7 = [];
+  for (let _0xfde1db in _0x5c9b06) {
+    if (_0xfde1db != _0x5633e0) {
+      let _0x31e22e = _0x5c9b06[_0xfde1db];
+      _0x31e22e >= 0 ? (_0x165484[_0x5633e0] -= _0x31e22e, _0x165484[_0xfde1db] = _0x31e22e) : _0xe800a7[_0xa9c95f(498)](parseInt(_0xfde1db));
     }
-    let _0x1fd9b2 = {
-      access_token: _0x47e02d.access_token,
-      openid: this[_0x47b2a9(161)][_0x47b2a9(154)]
-    };
-    return await httpService[_0x47b2a9(162)](_0x47b2a9(166), _0x1fd9b2);
   }
+  let _0x17e4b8 = _0x3fd3c1 + Math[_0xa9c95f(501)](_0x165484[_0x5633e0]);
+  for (let _0x11a2c8 = 0; _0x11a2c8 < _0x42a12a[_0xa9c95f(495)]; _0x11a2c8++) {
+    let _0x1012c0 = _0x42a12a[_0x11a2c8].key;
+    if (_0xe800a7.includes(parseInt(_0x1012c0))) {
+      let _0x5bb142 = Math[_0xa9c95f(501)](_0x5c9b06[_0x1012c0]);
+      if (_0x17e4b8 > _0x5bb142) {
+        _0x165484[_0x1012c0] = -_0x5bb142;
+        _0x165484[_0x5633e0] += _0x5bb142;
+        _0x17e4b8 -= _0x5bb142;
+      } else {
+        _0x17e4b8 <= _0x5bb142 && (_0x165484[_0x1012c0] = -_0x17e4b8, _0x165484[_0x5633e0] += _0x17e4b8, _0x17e4b8 = 0);
+      }
+    }
+  }
+  return _0x165484;
 };
-module[a0_0x1c58df(151)] = WeiXinUtil;
+services[a0_0x10deae(499)] = function (_0x2be42d, _0x3aedf0, _0x22f976, _0x5ba6ea) {
+  const _0x1311b3 = a0_0x10deae;
+  let _0x5768a0 = {
+    _0x3aedf0: 0
+  };
+  let _0x4487db = [];
+  for (let _0x3a31eb in _0x2be42d) {
+    if (_0x3a31eb != _0x3aedf0) {
+      let _0x4d83f0 = _0x2be42d[_0x3a31eb];
+      _0x4d83f0 < 0 ? (_0x4d83f0 = Math[_0x1311b3(501)](_0x4d83f0), _0x5768a0[_0x3aedf0] += _0x4d83f0, _0x5768a0[_0x3a31eb] = -_0x4d83f0) : _0x4487db[_0x1311b3(498)](parseInt(_0x3a31eb));
+    }
+  }
+  let _0x5bed7f = _0x22f976 + _0x5768a0[_0x3aedf0];
+  for (let _0x39c59b = 0; _0x39c59b < _0x5ba6ea.length; _0x39c59b++) {
+    let _0x3dea03 = _0x5ba6ea[_0x39c59b][_0x1311b3(493)];
+    if (_0x4487db.includes(parseInt(_0x3dea03))) {
+      let _0x2c4c01 = _0x2be42d[_0x3dea03];
+      if (_0x5bed7f > _0x2c4c01) {
+        _0x5768a0[_0x3dea03] = _0x2c4c01;
+        _0x5768a0[_0x3aedf0] -= _0x2c4c01;
+        _0x5bed7f -= _0x2c4c01;
+      } else {
+        _0x5bed7f <= _0x2c4c01 && (_0x5768a0[_0x3dea03] = _0x5bed7f, _0x5768a0[_0x3aedf0] -= _0x5bed7f, _0x5bed7f = 0);
+      }
+    }
+  }
+  return _0x5768a0;
+};
