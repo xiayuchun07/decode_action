@@ -1,45 +1,50 @@
 
-const a0_0x1ddf0f = a0_0x2ba8;
-function a0_0x4d81() {
-  const _0x3d5121 = ["exports", "../../../util/utils", "pomelo-logger", "31491oFTjXW", "9942312KueKDw", "pomelo", "18GCpVLA", "2607812tqkpAg", "3155580vdJeMZ", "async", "../../../constant/code", "1688267HqHCYZ", "../../../services/userInfoServices", "487732ZNQyvU", "1758324YBRKaZ", "../../../API/rpcAPI", "init", "../../../services/roomServices", "1072eBepku", "../../../util/dispatcher", "11blcrSN", "1oQMpYP", "getLogger", "5OnUCBc"];
-  a0_0x4d81 = function () {
-    return _0x3d5121;
+function a0_0x1dc7() {
+  const _0x3e9b0d = ["pomelo-logger", "invokeCallback", "2718633IZkpdS", "9lbpmbb", "416350rrWcMT", "loadParameter", "9335672DsZttQ", "12bNHADL", "21OmeqmR", "exports", "debug", "2vxKvNz", "pomelo", "15601168OePUSc", "1204955SUvgEW", "972560MryTzi", "1160106aCzvKA", "getLogger", "hall load parameter finished", "loadConfig"];
+  a0_0x1dc7 = function () {
+    return _0x3e9b0d;
   };
-  return a0_0x4d81();
+  return a0_0x1dc7();
 }
-(function (_0x235437, _0x2f85b7) {
-  const _0x5788ba = a0_0x2ba8;
-  const _0x4b6e54 = _0x235437();
+const a0_0x184352 = a0_0x10bf;
+(function (_0x352239, _0x25e5b7) {
+  const _0x540949 = a0_0x10bf;
+  const _0xef63fd = _0x352239();
   while (true) {
     try {
-      const _0x3a20b9 = -parseInt(_0x5788ba(262)) / 1 * (parseInt(_0x5788ba(254)) / 2) + parseInt(_0x5788ba(255)) / 3 + parseInt(_0x5788ba(272)) / 4 * (-parseInt(_0x5788ba(264)) / 5) + -parseInt(_0x5788ba(271)) / 6 * (-parseInt(_0x5788ba(276)) / 7) + parseInt(_0x5788ba(259)) / 8 * (parseInt(_0x5788ba(268)) / 9) + parseInt(_0x5788ba(273)) / 10 + -parseInt(_0x5788ba(261)) / 11 * (parseInt(_0x5788ba(269)) / 12);
-      if (_0x3a20b9 === _0x2f85b7) {
+      const _0x29e2f9 = parseInt(_0x540949(364)) / 1 + -parseInt(_0x540949(360)) / 2 * (-parseInt(_0x540949(371)) / 3) + -parseInt(_0x540949(376)) / 4 * (-parseInt(_0x540949(363)) / 5) + parseInt(_0x540949(365)) / 6 * (parseInt(_0x540949(377)) / 7) + -parseInt(_0x540949(375)) / 8 + parseInt(_0x540949(372)) / 9 * (parseInt(_0x540949(373)) / 10) + -parseInt(_0x540949(362)) / 11;
+      if (_0x29e2f9 === _0x25e5b7) {
         break;
       } else {
-        _0x4b6e54.push(_0x4b6e54.shift());
+        _0xef63fd.push(_0xef63fd.shift());
       }
-    } catch (_0x2e932a) {
-      _0x4b6e54.push(_0x4b6e54.shift());
+    } catch (_0x5a8806) {
+      _0xef63fd.push(_0xef63fd.shift());
     }
   }
-})(a0_0x4d81, 369730);
-let domain = module[a0_0x1ddf0f(265)];
-let pomelo = require(a0_0x1ddf0f(270));
-let logger = require(a0_0x1ddf0f(267))[a0_0x1ddf0f(263)](a0_0x1ddf0f(270));
-let async = require(a0_0x1ddf0f(274));
-let rpcAPI = require(a0_0x1ddf0f(256));
-let userInfoServices = require(a0_0x1ddf0f(253));
-let roomServices = require(a0_0x1ddf0f(258));
-let utils = require(a0_0x1ddf0f(266));
-let dispatch = require(a0_0x1ddf0f(260));
-let code = require(a0_0x1ddf0f(275));
-function a0_0x2ba8(_0x43db6f, _0xefe0bb) {
-  const _0xf1ae0 = a0_0x4d81();
-  a0_0x2ba8 = function (_0x5b80da, _0x474097) {
-    _0x5b80da = _0x5b80da - 253;
-    let _0x406671 = _0xf1ae0[_0x5b80da];
-    return _0x406671;
+})(a0_0x1dc7, 638185);
+let domain = module[a0_0x184352(378)];
+let pomelo = require(a0_0x184352(361));
+let logger = require(a0_0x184352(369))[a0_0x184352(366)]("pomelo");
+let utils = require("../../../util/utils");
+let parameterServices = require("../../../services/configServices");
+let async = require("async");
+function a0_0x10bf(_0x4959e3, _0x36efab) {
+  const _0x57b2e5 = a0_0x1dc7();
+  a0_0x10bf = function (_0x511047, _0x11b372) {
+    _0x511047 = _0x511047 - 360;
+    let _0x238660 = _0x57b2e5[_0x511047];
+    return _0x238660;
   };
-  return a0_0x2ba8(_0x43db6f, _0xefe0bb);
+  return a0_0x10bf(_0x4959e3, _0x36efab);
 }
-domain[a0_0x1ddf0f(257)] = function () {};
+domain.afterStartAll = async function (_0x316a1c) {
+  const _0x4126cd = a0_0x184352;
+  await domain[_0x4126cd(374)]();
+  utils[_0x4126cd(370)](_0x316a1c);
+};
+domain[a0_0x184352(374)] = async function () {
+  const _0x5d5774 = a0_0x184352;
+  await parameterServices[_0x5d5774(368)]();
+  logger[_0x5d5774(379)](_0x5d5774(367));
+};
