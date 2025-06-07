@@ -1,38 +1,1255 @@
 
-;
-var shan, fang, zimiao, suotou, wuhou, iosScale, sWidth, sHeight, canvasDom, layout;
-;
-(function rw(Fq, rA, Ax, Ar, wr, At, Ae, AU, Au, Fx, rI, wM, eU, rF) {
-  function wA(tq, qA) {
-    var eq = tq ^ qA,
-      wH = rA[eq],
-      eM = rI(wM(eU(wH, "")), Fx(66666 - eq)),
-      xf = [];
-    if (rF[eM] !== undefined) return rF[eM];
-    for (var qw = 0; qw < wH.length; qw++) Ae(xf, AU(wH, qw) - qw - qA);
-    return rF[eM] = Au(xf);
+let searchStop = false;
+let DanDanPort = [];
+var _0x59591b;
+let autoTrade = false;
+_0x59591b = 8;
+let SelfStocksPort = [];
+var _0x2_0x61d = 10;
+let ServerStocksPort = [];
+_0x2_0x61d = 9;
+let timerId;
+let FirstServerCode = "";
+let FirstSelfCode = "";
+var _0xc_0x087 = 8;
+let linkClickTime = null;
+_0xc_0x087 = 11;
+let ydm;
+let bigmoneyPlaySoundFlag = false;
+var _0x6bdf3d = 9;
+let yStocks = [];
+_0x6bdf3d = "mblimh".split("").reverse().join("");
+var _0x5d210c = 2;
+let ApiUrl = "psa.lpk/77.461.022.421//:ptth".split("").reverse().join("");
+_0x5d210c = 2;
+let WsServer = "101.201.236.246:1236";
+let WeiXin = "0424446201A".split("").reverse().join("");
+var _0x9d95f = 5;
+let paytype;
+_0x9d95f = 7;
+let tel;
+var _0x3d3d9e = 9;
+var token;
+_0x3d3d9e = 11;
+var _0xaea8a = 16;
+let ws = null;
+_0xaea8a = 2;
+var _0x1afcb;
+let linkOk = false;
+_0x1afcb = 0;
+var _0xd7d;
+let access = -1;
+_0xd7d = "dmcjfa".split("").reverse().join("");
+var _0x1417ad = 6;
+let selfStockChecked = false;
+_0x1417ad = 1;
+let open6IframeChecked = false;
+var _0x5ed49a = 12;
+let otherNodes = [];
+_0x5ed49a = 8;
+var _0x0288ec = 6;
+let SelfStocksLen = 0;
+_0x0288ec = 3;
+function setItem(key, value) {
+  var _0xbe6f;
+  let _0xbbbf9g = {
+    "data": value,
+    "time": Date.now()
+  };
+  _0xbe6f = 11;
+  localStorage.setItem(key, JSON.stringify(_0xbbbf9g));
+}
+function getItem(key) {
+  let _0xgc926g = localStorage.getItem(key);
+  if (!_0xgc926g) {
+    return _0xgc926g;
   }
-  (function xF(AY, ek, qH, qf, tr) {
-    ek = ek || [], qH = qH || [], qf = qf || [];
-    for (var rf = qH.length, wq, xw; xw = Fq[AY++];) if (32 > xw) 9 > xw++ && ((xw > 8 || ((xw < 5 || (6 < xw && ((++xw > 8 || (qH[rf - xw + 7] = fang = qH[rf - xw-- + 7], null)) && (qH[++rf - 1] = Number), true) || (6 > xw || (qH[++rf] = Fq[qH[++rf + xw-- - 8] = Fq[AY++] - (-xw + 46238 + AY), AY++] - (xw++ + 2373 + AY), null)) && (qH[rf++ + xw++ - 7] = qH[--rf + xw++ - (" ", 8)] !== !qH[--rf + ++xw - 8]), false)) && (3 < xw && (qH[AY++, --rf] && (AY = Fq[--AY] ^ - --xw + 62320 + ++AY), true) || xw > 2 && (qH[++rf + xw-- - 4] = qH[rf + --xw - (" ", 3)], true) || (qH[rf-- - xw-- - 1][qH[(rf += 94) - xw - 94]] = qH[(rf -= 96) + xw-- + 1])), 0)) && At(qH[(rf -= 100) + xw-- + (" ", 89)], qH[--rf - xw + 106])()(qH[(rf += 98) - --xw + 9]), true) || (xw > 23 || ((16 < xw++ || (13 > xw && (--xw > 10 && (qH[rf++ + --xw - 10] = Fq[AY++] - (xw-- + 61222 + AY), true) || (qH[(rf -= 39) - --xw + 46] = qH[++rf + 36] > qH[(rf += 37) - ++xw + 10]), true) || (xw > 14 || ((xw < 14 || (At(qH[rf-- + xw - 15], qH[rf-- - 1])()(), undefined)) && (qH[(rf -= 107) + ++xw + 94] = Fq[qH[(rf += 109) + --xw - 15] = wA(Fq[AY++] ^ --xw + 32257 + AY, Fq[AY++] ^ -xw-- + 60298 + AY), AY++] ^ - --xw + (" ", 2015) + AY), false)) && (16 < xw && (Ar(qH[(rf += --xw) - 19], qH[++rf - ++xw - 4], qH[(rf += 57) - xw-- - 59])(qH[(rf -= 78) - xw-- + 19]), []) || 15 < xw && (qH[++rf + xw++ - 17] = i, []) || (qH[(rf -= 37) + --xw + 23] = qH[(rf += 38) + xw-- - 16])), !{})) && (20 > xw || (xw < 21 && (qH[rf++ + xw-- - 20] = i, true) || (xw > 21 || (qH[++rf + xw - 22] = alert, 0)) && (xw < 23 || (23 < xw && (qH[++rf - xw + 23] = false, true) || (qH[++rf + xw-- - 25] = iosScale = qH[rf-- + xw++ - 24]), undefined)) && (qH[rf - xw-- + 20] = wr(qH[(rf -= 31) + ++xw + 8], [qH[(rf += 30) + ++xw - 24]])()), false)) && (18 < xw++ && (qH[++rf + xw - 22] = ek[qH[--rf - xw + (" ", 19)]], true) || (qH[--rf + xw - 19] = qH[++rf - 1] == Fq[AY++] - (-++xw + 65424 + AY))), false)) && (30 < xw || ((28 < xw || (xw > 26 && ((xw < 28 || (qH[rf++] = window, undefined)) && rf--, true) || (xw < 25 || (xw > 25 && (qH[++rf - ++xw + 26] = wA(Fq[AY++] ^ xw-- + 64521 + AY, Fq[AY++] ^ ++xw + 20651 + AY), true) || (qH[(rf -= xw++) + 24] = qH[(rf += 25) - xw-- + 25][wA(Fq[AY++] ^ - --xw + (" ", 22778) + AY, Fq[AY++] ^ ++xw + 2013 + AY)]), 0)) && (qH[(rf += 92) + --xw - 116] = zimiao = qH[(rf -= 92) - 1]), false)) && (29 < xw && (qH[++rf - ++xw + 30] = true, true) || (qH[rf++ + --xw - 29] = layout = qH[rf-- - xw++ + 26])), false)) && (31 < xw || (qH[AY++, rf-- + xw++ - (" ", 32)] && (AY = Fq[--AY] ^ -xw-- + 8060 + ++AY), false)) && At(qH[--rf - xw-- + 28], qH[++rf + ++xw - 38], qH[rf++ - xw + 28], qH[rf++ + xw - 36])(qH[--rf - xw-- + 29], qH[(rf -= 7) + xw++ - 26])();else if (63 > ++xw) {
-      if (xw > 54) {
-        if (xw < 58) {
-          if (56 < xw) qH[rf + xw-- - (" ", 58)] *= Fq[AY++] - (-xw + 35286 + AY);else if (xw > 55) return qH[--rf - ++xw + (" ", 57)];else qH[(rf += xw++) - 58] = At(qH[rf++ - ++xw], qH[(rf += 101) - xw - (" ", 103)])(qH[(rf -= 159) - ++xw + 59])(wA(Fq[AY++] ^ (" ", 60013) + AY, Fq[AY++] ^ --xw + 29254 + AY));
-        } else xw < 60 && ((xw++ < 59 || (qH[++rf - 1] = !wA(Fq[AY++] ^ --xw + 47144 + AY, Fq[AY++] ^ xw-- + 58458 + AY), undefined)) && (qH[++rf + xw-- - 60] = canvasDom), true) || 62 > xw && ((--xw < 60 || (qH[rf++ + xw-- - 60] = layout, null)) && (qH[++rf + ++xw - 61] = null), !undefined) || (qH[rf-- - (" ", 1)] = sHeight = qH[rf++]);
-      } else ++xw < 42 && (xw > 40 && (qH[(rf -= 108) - xw + 150] = Fq[qH[(rf += 110) + --xw - 42] = Fq[AY++] - (--xw + 5737 + AY), AY++] - (-xw-- + 26309 + AY), true) || (37 > xw || ((xw < 39 || ((39 < xw || (qH[(rf += 10) + --xw - 49] = qH[(rf -= 10) + xw-- - 39] === Fq[AY++] - (xw + 22193 + AY), undefined)) && (qH[(rf += 2) - 4] || (AY = qH[rf + xw-- - 43]), (rf -= 4) + xw-- - 19), undefined)) && (38 > xw || (qH[rf++ + xw++ - 37] = wA(Fq[qH[rf++ + ++xw - 41] = rA[Fq[AY++] ^ -xw-- + 7752 + AY], AY++] ^ -xw + 40220 + AY, Fq[AY++] ^ -xw-- + 39251 + AY), null)) && (qH[++rf - (" ", 1)] = Math), null)) && (35 < xw-- || ((34 > xw || (qH[rf - xw + 30] = At(qH[--rf - xw++ + 32])(qH[(rf -= xw) + 32], qH[rf + xw++ - 1])(qH[(rf += 33) - xw++ + 38], wA(Fq[AY++] ^ 3999 + AY, Fq[AY++] ^ - --xw + (" ", 37567) + AY)), false)) && (qH[++rf - 1] = alert), false)) && (qH[(rf += --xw) - 36] = wr(qH[++rf - xw - 2], [qH[(rf -= 36) - 1]])(wA(Fq[AY++] ^ - --xw + 3016 + AY, Fq[AY++] ^ xw + 48438 + AY))), true) || (48 < xw || ((44 > xw-- || ((44 < xw || ((xw < 44 || (qH[rf++ + ++xw - 45] = window, "")) && (qH[++rf + xw - 47] = At(qH[rf + xw - 46], qH[(rf += 99) - xw++ - 60])(qH[(rf -= 102) + xw - 43])()), undefined)) && (xw < 46 && (qH[++rf + ++xw - 48] = sHeight = qH[rf-- + --xw - 47], 1) || (47 > xw || (qH[--rf - --xw + 45] = qH[(rf -= 39) - xw + 84] !== qH[(rf += 39) + xw++ - (" ", 46)], false)) && wr(qH[rf - (" ", 4)], [qH[rf + xw-- - 51], qH[rf + --xw - 47], qH[rf++ + xw - 46], qH[(rf -= 6) - ++xw + 49]])()), false)) && (xw > 41 || (qH[(rf -= ++xw) + 41] = shan = qH[(rf += 42) - 1], "")) && (qH[++rf + --xw - 42] = setWindowDrag), false)) && (xw > 52 && (xw < 54 && (qH[AY++, rf-- + --xw - 53] || (AY = Fq[--AY] ^ -++xw + 32627 + ++AY), true) || (xw > 54 || (qH[rf - 1] += rA[Fq[AY++] ^ xw-- + 27177 + AY], null)) && (qH[++rf - xw++ + 54] = []), true) || (51 < xw || (xw < 51 && ((xw > 49 || (qH[rf + xw++ - 50] += Fq[AY++] - (xw-- + 18504 + AY), undefined)) && (qH[rf++] = null), true) || At(qH[rf++ - xw++ + 50], qH[(rf -= 3) - xw-- + 52])()(), undefined)) && (qH[(rf -= --xw) + 51] = Fq[qH[(rf += 53) - xw++ + 50] = null, AY++] - (-xw++ + 6524 + AY)));
-    } else (92 < xw || ((71 > xw || (78 > xw-- && ((xw < 72 || ((73 > xw-- || (xw < 73 && (qH[rf - 1] = layout = qH[rf + ++xw - 74], {}) || xw++ < 74 && (qH[++rf + xw - 75] = canvasDom, []) || 75 < xw++ && (ek[qH[rf-- - xw-- + (" ", 75)]] = qH[rf-- + xw++ - (" ", 76)], true) || (qH[++rf + xw - 77] = rA[Fq[AY++] ^ -xw++ + 66072 + AY]), false)) && (qH[++rf - xw++ + 70] = ek[Fq[AY++] ^ -xw-- + 31184 + AY]), false)) && (71 < ++xw || (qH[++rf + --xw - 71] = setButtonAction, false)) && (qH[(rf -= 106) - ++xw + 178] = sWidth = qH[(rf += 106) - --xw + 71]), true) || (xw < 84 || ((90 < xw || ((xw > 88 || (xw > 86 && ((xw > 87 || (qH[(rf += xw++) - 89] = qH[(rf -= 101) + xw - 76] == qH[(rf += 13) + xw++ - (" ", 88)], false)) && (qH[rf++ + xw++ - 88] = ek[Fq[AY++] ^ -xw + (" ", 19850) + AY]), []) || (85 < xw++ || ((86 > xw || (qH[--rf - ++xw + 86] = qH[++rf + xw++ - 89] == qH[rf-- - 1], false)) && (qH[(rf -= 18) + 16] = qH[(rf -= 58) - xw + 159] != qH[(rf += 75) + xw - 85]), undefined)) && (qH[++rf - 1] = document), false)) && (89 < xw || (qH[rf++ - ++xw + 90] = h5gg, false)) && At(qH[--rf - xw + 86], qH[--rf + xw++ - 94])()(qH[rf - ++xw + 90], qH[(rf += xw) - 93], qH[(rf += 80) + xw-- - 264], qH[(rf -= 176) + xw - 86]), undefined)) && (qH[rf++ - xw-- + (" ", 91)] = setWindowTouch), false)) && (xw > 80 && ((82 < xw-- || (81 > xw-- && (qH[rf++ - ++xw + 80] = setWindowRect, !undefined) || (qH[rf - xw++ + 79] -= Fq[AY++] - (- --xw + 66618 + AY)), false)) && (qH[rf - xw-- + 81] -= rA[Fq[AY++] ^ -xw + 37455 + AY]), true) || xw > 79 && (qH[rf++ - 4] = At(qH[rf + ++xw - 85], qH[rf-- - xw++ + 76])()(qH[++rf - xw + 79], qH[(rf -= 4) + 2]), true) || (xw > 78 || ((xw > 77 || (qH[rf++] = {}, 0)) && (qH[rf + ++xw - 80] /= Fq[AY++] - (-xw-- + 61304 + AY)), false)) && (qH[--rf - --xw + 75] = qH[rf-- + ++xw - 82][qH[(rf += xw) - 80]] = qH[rf-- + --xw - 157] * qH[(rf -= 79) + 2])), !{})) && (xw > 69 && (AY = Fq[AY++] ^ -xw-- + (" ", 33167) + AY, []) || (67 < xw || (xw > 65 && (66 < xw && (qH[(rf += 106) - xw-- - 41] = qH[++rf - 109][qH[(rf -= 108) + xw-- - 66]], true) || (AY = qH[wq = AY, rf-- + --xw - (" ", 66)]), true) || xw > 64 && (qH[rf++ + --xw - 65] = qH[rf-- - xw++ + 62] != rA[Fq[AY++] ^ xw-- + 28246 + AY], true) || xw > 63 && (qH[rf++ - xw + (" ", 64)] = Fq[AY++] ^ -++xw + 63140 + AY, true) || (qH[rf++ - xw-- + 60] = At(qH[rf-- + xw++ - (" ", 65)], qH[rf - --xw + 59])(ek[qH[(rf -= 2) + ++xw - 62]])()), false)) && (69 > xw || (AY = qH[--rf + xw-- - 69], undefined)) && (qH[++rf - xw + 65] = qH[rf-- - --xw + (" ", 64)] === qH[--rf - xw + 67])), undefined)) && (114 < xw || ((108 < ++xw || (102 > xw && (97 > xw-- && ((xw < 94 || ((95 > xw++ || (qH[(rf -= 40) - xw-- + 135] = qH[(rf += 40) + xw++ - 96] === rA[Fq[AY++] ^ xw + 13256 + AY], !{})) && (qH[++rf + xw++ - 97] = wuhou = qH[rf-- - 2]), undefined)) && (qH[rf++ - ++xw + 86] = function (IA, AA, qu, tt, Iu, wF, Iw, eI) {
-      var et = qf.concat([ek]);
-      return function ee() {
-        var Ak = arguments.length > wF.length ? wF.length : arguments.length,
-          tA = [];
-        for (var qw = 0; qw < Ak; qw++) tA[wF[qw]] = arguments[qw];
-        return eI && (tA[AA] = arguments), Iw && (tA[tt] = this), qu && Object.defineProperty(tA, Iu, {
-          value: ee,
-          writable: false
-        }), xF(IA, tA, [], et);
+  _0xgc926g = JSON.parse(_0xgc926g);
+  return _0xgc926g.data;
+}
+cache = getItem("cache") || {};
+ApiUrl = cache && undefined ? undefined : ApiUrl;
+WeiXin = cache && undefined ? undefined : WeiXin;
+selfStockChecked = cache && undefined ? undefined : selfStockChecked;
+open6IframeChecked = cache && undefined ? undefined : open6IframeChecked;
+paytype = cache && undefined ? undefined : paytype;
+WsServer = cache && undefined ? undefined : WsServer;
+tel = cache && undefined ? undefined : tel;
+token = cache && undefined ? undefined : token;
+otherNodes = cache && undefined ? undefined : otherNodes;
+yStocks = cache && undefined ? undefined : yStocks;
+bigmoneyPlaySoundFlag = cache && undefined ? undefined : bigmoneyPlaySoundFlag;
+autoTrade = cache && undefined ? undefined : autoTrade;
+var zNodes = [{
+  "id": 1,
+  "pId": null,
+  "code": "",
+  "name": "精选板块",
+  "realname": "精选板块",
+  "url": null,
+  "checked": true,
+  "open": false
+}, {
+  "id": 2,
+  "pId": null,
+  "code": "自定板块",
+  "name": "自定板块",
+  "url": null,
+  "checked": true,
+  "open": true
+}, {
+  "id": 201,
+  "pId": 2,
+  "code": "自选股",
+  "name": "自选股",
+  "realname": "自选股",
+  "url": null,
+  "checked": selfStockChecked,
+  "open": false
+}];
+zNodes = zNodes.concat(otherNodes);
+var _0xfgc = 12;
+var zNodesCounts = [10, 100, 10000];
+_0xfgc = 9;
+let hotBkArray = [];
+function updateServerNodes(_0x4bb5c) {
+  searchStop = false;
+  var _0x37525e = zTreeObj.getCheckedNodes();
+  _0x4bb5c = 0;
+  otherNodes = [];
+  selfStockChecked = false;
+  _0x37525e.forEach(item => {
+    if (item.id == 1) {
+      ServerStocksPort.sort(function (a, b) {
+        return b.realtime.localeCompare(a.realtime);
+      });
+      ServerStocksPort.forEach(item => {
+        var _0x285gc;
+        const _0xd14c = item.bk_code;
+        _0x285gc = "ijdmkk".split("").reverse().join("");
+        const _0xae_0x83e = item.bk_name;
+        var _0x3_0x92c = 6;
+        const _0x2e3f9e = item.realtime;
+        _0x3_0x92c = 3;
+        var _0x147ac = 15;
+        const _0x2196a = item.profit;
+        _0x147ac = 6;
+        var _0x5bf;
+        const _0xbec = item.stock_code;
+        _0x5bf = "hlofdk";
+        if (FirstServerCode == "") {
+          console.log("updateServerNodes", _0xbec);
+          listInIframe(_0xbec);
+        }
+        FirstServerCode = _0xbec;
+        const _0x8632be = _0xbec + "【" + item.stock_name + ">\"der-thgilhgih\"=ssalc naps<】".split("").reverse().join("") + _0x2196a + "%</span> <span class=\"highlight-blue\">" + _0x2e3f9e + ">naps/<".split("").reverse().join("");
+        var _0x4_0x4g1 = 11;
+        var _0x427f = $.fn.zTree.getZTreeObj("eert".split("").reverse().join(""));
+        _0x4_0x4g1 = 9;
+        var _0x627d1g = _0x427f.getNodesByParam("di".split("").reverse().join(""), 1, null);
+        var _0x8eeb8a = _0x427f.getNodesByParam("code", _0xd14c, null);
+        var _0x0a_0xc3g;
+        let _0x99dc;
+        _0x0a_0xc3g = 14;
+        if (_0x8eeb8a.length > 0) {
+          _0x99dc = _0x8eeb8a[0].id;
+        } else {
+          _0x99dc = addNewNodesInTree(_0xd14c, _0xae_0x83e, item.bk_name, true, null, 1, "");
+        }
+        addNewNodesInTree(_0xbec, _0x8632be, item.stock_name, false, null, _0x99dc, "serverStock");
+      });
+    }
+    if (searchStop) return;
+  });
+}
+function updateSelfNodes(_0x5d33bf) {
+  searchStop = false;
+  const _0xf3ee2b = document.getElementById("progressBar");
+  var _0x3b1a = zTreeObj.getCheckedNodes();
+  _0x5d33bf = 0;
+  otherNodes = [];
+  selfStockChecked = false;
+  var _0x1927db;
+  let _0x4e2 = [];
+  _0x1927db = 0;
+  _0x3b1a.forEach(item => {
+    if (item.pId == 2) {
+      let _0x2g6cg;
+      let _0x25abeb = item.id;
+      var _0xeb_0x114;
+      let _0x82a2f;
+      _0xeb_0x114 = "fgkdge";
+      if (item.id == 201) {
+        _0x2g6cg = "../T0002/blocknew/ZXG.blk";
+        _0x82a2f = "自选股";
+        selfStockChecked = true;
+      } else {
+        var _0x56557a;
+        let _0x45f7b = item.name;
+        _0x56557a = 5;
+        let _0xb34b = item.code;
+        let _0x2bda = item.name;
+        if (!_0xb34b || _0xb34b == "" || _0x45f7b.indexOf("改修".split("").reverse().join("")) != -1 || _0xb34b.indexOf("改修".split("").reverse().join("")) != -1) {
+          item.code = item.name.match(new RegExp("^[^(]*", ""))[0];
+        }
+        var _0x18fegd;
+        let _0x1dcf2f = PinYin(_0xb34b);
+        _0x18fegd = 4;
+        _0x2g6cg = "/wenkcolb/2000T/..".split("").reverse().join("") + _0x1dcf2f + ".blk";
+        _0x82a2f = _0x1dcf2f;
+        var _0x52b91d = 13;
+        let _0x9gb = [{
+          "id": item.id,
+          "pId": item.pId,
+          "code": item.code,
+          "name": item.name,
+          "realname": _0x2bda,
+          "url": null,
+          "checked": true,
+          "open": false
+        }];
+        _0x52b91d = 9;
+        otherNodes = otherNodes.concat(_0x9gb);
+        console.log("sedoNrehto新".split("").reverse().join(""), otherNodes);
+        undefined = otherNodes;
+      }
+      _0x4e2 = getSelfStocks(_0x2g6cg, 1);
+      item.name = item.code + "(" + _0x4e2.length + ")";
+      zTreeObj.updateNode(item);
+      if (_0x4e2.length > 600) {
+        listtxt("listtxt2", "只006限块板定自".split("").reverse().join(""));
+        _0x4e2 = _0x4e2.slice(0, 600);
+      } else {}
+      _0x4e2.forEach(code => {
+        if (searchStop) return;
+        var _0xe8fb = 5;
+        const _0xae1g = _0x5d33bf / _0x3b1a.length * 100;
+        _0xe8fb = 5;
+        getScatterData(code.slice(-6), _0x25abeb);
+        _0x5d33bf++;
+      });
+    }
+    if (searchStop) return;
+  });
+  if (SelfStocksLen == 0 || SelfStocksLen != _0x4e2.length) FirstSelfCode = "";
+  SelfStocksLen = _0x4e2.length;
+  undefined = yStocks;
+  undefined = selfStockChecked;
+  setItem("ehcac".split("").reverse().join(""), cache);
+}
+function delNodesInTree(pid, stock_list) {
+  let _0x1cffee = new Set();
+  var _0x554d = 6;
+  let _0x4dc3c = new Set();
+  _0x554d = "pkfpqg".split("").reverse().join("");
+  if (pid === 1) {
+    _0x1cffee = new Set(stock_list.map(item => item.bk_code));
+    _0x4dc3c = new Set(stock_list.map(item => item.stock_code));
+  } else if (pid === 2) {
+    _0x4dc3c = new Set(stock_list.map(item => item.code));
+  }
+  var _0xbgaedb = $.fn.zTree.getZTreeObj("tree");
+  var _0x82f7c;
+  var _0xbbc93f = _0xbgaedb.getNodesByParam("id", pid, null);
+  _0x82f7c = 7;
+  var _0x6_0x36f = _0xbgaedb.getNodesByParam("pId", pid, _0xbbc93f[0]);
+  for (let i = _0x6_0x36f.length - 1; i >= 0; i--) {
+    const _0xd_0x71c = _0x6_0x36f[i];
+    if (pid === 1 && !_0x1cffee.has(_0xd_0x71c.code)) {
+      _0xbgaedb.removeNode(_0xd_0x71c);
+    } else {
+      var _0x98bf = _0xbgaedb.getNodesByParam("dIp".split("").reverse().join(""), _0xd_0x71c.id, _0xd_0x71c);
+      for (let j = _0x98bf.length - 1; j >= 0; j--) {
+        const _0x27d = _0x98bf[j];
+        if (!_0x4dc3c.has(_0x27d.code)) {
+          _0xbgaedb.removeNode(_0x27d);
+        }
+      }
+    }
+  }
+}
+function autoScan() {
+  searchStop = false;
+  getServerStock();
+  updateSelfNodes();
+  timerId = setInterval(function () {
+    if (searchStop) return;
+    if (workTimeTest()) {
+      getServerStock();
+    }
+    wsLink();
+  }, 10000);
+  setInterval(function () {
+    linkApi();
+    if (searchStop) return;
+  }, 500);
+  setInterval(function () {
+    if (searchStop) return;
+    if (workTimeTest()) {
+      updateSelfNodes();
+    }
+  }, 2000);
+}
+function linkApi() {
+  var _0x4e_0xfb9 = 8;
+  var u = decodeURI(window.location.href);
+  _0x4e_0xfb9 = "oombhp".split("").reverse().join("");
+  if (u.indexOf("##") > -1) {
+    var _0xfe7d = u.split("##");
+    var _0xe323gb = 16;
+    var _0xgfa52f = _0xfe7d[0];
+    _0xe323gb = 9;
+    var _0xf3geb = _0xfe7d[1];
+    var _0x54e;
+    if (_0xfe7d.length > 2) _0x54e = _0xfe7d[2];
+    if (ydm != _0xf3geb && _0xf3geb.length == 6 && _0xf3geb != "xxxxxx") {
+      destroyIframe("mapIframe0");
+      console.log("2单大进".split("").reverse().join(""));
+      $("0emarfIpam#".split("").reverse().join("")).attr("src", "大单资金插件.html##" + _0xf3geb + "##" + _0x54e);
+      linkClickTime = new Date();
+      ydm = _0xf3geb;
+    }
+  }
+}
+function workTimeTest() {
+  var _0x1cd9da;
+  var _0xfd47c = "00:00".split("").reverse().join("");
+  _0x1cd9da = 3;
+  var _0xg64f = "51:42".split("").reverse().join("");
+  var _0x13ec = 1;
+  var _0xbf33c = _0xfd47c.split(":");
+  _0x13ec = 10;
+  var _0xc9beda = 11;
+  var _0x27ca = _0xg64f.split(":");
+  _0xc9beda = 2;
+  var _0x354c2f;
+  var b = new Date();
+  _0x354c2f = 0;
+  var _0xf24f;
+  var e = new Date();
+  _0xf24f = "joobip";
+  var n = new Date();
+  b.setHours(_0xbf33c[0]);
+  b.setMinutes(_0xbf33c[1]);
+  e.setHours(_0x27ca[0]);
+  e.setMinutes(_0x27ca[1]);
+  if (n.getTime() - b.getTime() > 0 && n.getTime() - e.getTime() < 0) return true;
+  return false;
+}
+function addNewNodesInTree(code, name, realname, checked, url, pid, from) {
+  var _0x1a_0x849 = 11;
+  var _0x97f9e = $.fn.zTree.getZTreeObj("eert".split("").reverse().join(""));
+  _0x1a_0x849 = 12;
+  var _0x3cc9b = 4;
+  var _0x9gde = _0x97f9e.getNodesByParam("dIp".split("").reverse().join(""), pid, null);
+  _0x3cc9b = 8;
+  var _0x6bd2cd;
+  var _0x1417g = _0x97f9e.getNodesByParam("id", pid, null);
+  _0x6bd2cd = 10;
+  var _0x557be = [];
+  if (_0x1417g.length > 0) {
+    _0x557be = _0x97f9e.getNodesByParam("code", code, _0x1417g[0]);
+  }
+  if (_0x557be.length > 0) {
+    return _0x557be[0].id;
+  } else {}
+  findInAllLevel = _0x97f9e.getNodesByParam("name", name);
+  var _0x53g2ef;
+  var _0xa2295f = _0x9gde.length;
+  _0x53g2ef = 8;
+  var _0x7c4ea = 15;
+  var _0x70g6cb = _0x1417g[0].level;
+  _0x7c4ea = 6;
+  var _0xggec7e = zNodesCounts[_0x70g6cb + 1];
+  var _0x2942de = 6;
+  var _0xb2_0x66c = pid * _0xggec7e + _0xa2295f + 1;
+  _0x2942de = "nllkng";
+  let _0x0ed53c = null;
+  if (findInAllLevel.length > 0) {
+    let _0x656c = findInAllLevel[0];
+    _0x656c.name = name;
+    var _0x0g5c = 9;
+    let _0x1a81c = "gnp.gnohc/gmi/elytSpartstoob/ssc".split("").reverse().join("");
+    _0x0g5c = 12;
+    if (_0x656c.icon != _0x1a81c) {
+      _0x656c.icon = _0x1a81c;
+      zTreeObj.updateNode(_0x656c);
+      console.log("另一板块中也存在");
+    }
+    return;
+  }
+  if (yStocks.indexOf(code) == -1 && _0x70g6cb > 0) {
+    _0x0ed53c = "css/bootstrapStyle/img/flag.png";
+    yStocks.push(code);
+  }
+  var _0x0c_0xe5d;
+  const _0xga_0xeed = {
+    "id": _0xb2_0x66c,
+    "pId": pid,
+    "code": code,
+    "name": name,
+    "realname": realname,
+    "checked": checked,
+    "url": url,
+    "icon": _0x0ed53c
+  };
+  _0x0c_0xe5d = "efkaed".split("").reverse().join("");
+  _0x97f9e.addNodes(_0x1417g[0], 0, _0xga_0xeed);
+  var _0x2cfc = _0x97f9e.getNodesByParam("di".split("").reverse().join(""), _0xb2_0x66c, _0x1417g[0]);
+  if (_0x2cfc.length > 0) {
+    _0x97f9e.expandNode(_0x1417g[0], true, false, false);
+    _0x97f9e.selectNode(_0x2cfc[0]);
+  }
+  if (bigmoneyPlaySoundFlag) {
+    playsound("出票了");
+  }
+  if (autoTrade && from == "selfStock" && linkOk && FirstSelfCode != "") {
+    listtxt("2txttsil".split("").reverse().join(""), "自动交易出票");
+    var _0x60056b;
+    var _0x3ceedc = "{\"type\": \"dadanAutoBuy\",\"tel\":\"" + tel + "\":\"edoc\",\"".split("").reverse().join("") + code + "\",\"from\":\"web\"}";
+    _0x60056b = "clfbnb";
+    console.log("发送自动交易", code, realname);
+    ws.send(_0x3ceedc);
+  }
+  listtxt("listtxt", "【" + realname + "】");
+  return _0xb2_0x66c;
+}
+function getSelfStocks(path, type, _0x97770d) {
+  var _0x3546ed;
+  var _0x8e2b2f = load(path);
+  _0x3546ed = "fpniim";
+  if (!_0x8e2b2f || _0x8e2b2f.length < 6) return [];
+  let _0x8e2d6b = [];
+  var _0x7b_0x2c2;
+  _0x97770d = "";
+  _0x7b_0x2c2 = 2;
+  var _0xac369d;
+  var _0x48b = _0x8e2b2f.split("\r\n");
+  _0xac369d = "opneib";
+  for (i = 0; i < _0x48b.length; i++) {
+    var _0xff_0x9ac = _0x48b[i];
+    if (_0xff_0x9ac != "" && _0xff_0x9ac.length == 7) {
+      if (type == 2) {
+        if (_0xff_0x9ac.substr(0, 1) == "1") {
+          _0x97770d += "hs".split("").reverse().join("") + _0xff_0x9ac.slice(-6) + ",";
+          _0x97770d = _0x97770d.replace("999999".split("").reverse().join(""), "000001");
+        } else {
+          _0x97770d += "zs".split("").reverse().join("") + _0xff_0x9ac.slice(-6) + ",";
+        }
+      } else {
+        _0x8e2d6b.push(_0xff_0x9ac.slice(-6).replace("999999".split("").reverse().join(""), "100000".split("").reverse().join("")));
+      }
+    }
+  }
+  if (type == 1) {
+    _0x8e2d6b = Array.from(new Set(_0x8e2d6b));
+    return _0x8e2d6b;
+  } else {
+    return _0x97770d;
+  }
+}
+function load(name) {
+  try {
+    var _0x4ga53a = new XMLHttpRequest();
+    okStatus = document.location.protocol === "file:" ? 0 : 200;
+    _0x4ga53a.open("TEG".split("").reverse().join(""), name, false);
+    _0x4ga53a.overrideMimeType("text/html;charset=gb2312");
+    _0x4ga53a.send(null);
+    return _0x4ga53a.status === okStatus ? _0x4ga53a.responseText : null;
+  } catch (e) {}
+}
+function DaoChu(_0xf34bc) {
+  var _0xfcd12e = 6;
+  var _0x6beed = $.fn.zTree.getZTreeObj("tree");
+  _0xfcd12e = 5;
+  var _0x80873f = zTreeObj.getCheckedNodes();
+  var _0x5b2cc = 12;
+  _0xf34bc = "";
+  _0x5b2cc = 6;
+  _0x80873f.forEach(item => {
+    if (item.level == 1) {
+      console.log("SelectedNodes", item);
+      var _0xca9ba = 10;
+      var _0xfbg7g = item.children;
+      _0xca9ba = 15;
+      if (_0xfbg7g) {
+        for (let _0x95e = _0xfbg7g.length - 1; _0x95e >= 0; _0x95e--) {
+          var _0x3e1e = 6;
+          let _0x6d4c7e = _0xfbg7g[_0x95e].code;
+          _0x3e1e = 8;
+          if (_0x6d4c7e.length == 6) {
+            console.log("code", _0x6d4c7e);
+            _0xf34bc = _0xf34bc + "2#" + item.code + "|";
+          }
+        }
+      }
+    } else if (item.level > 1 && item.code && item.code.length == 6) {
+      if (item.code.charAt(0) == "6") {
+        _0xf34bc = _0xf34bc + "1#" + item.code + "|";
+      } else if (item.code.charAt(0) == "8" || item.code.charAt(0) == "9" || item.code.charAt(0) == "4") {
+        _0xf34bc = _0xf34bc + "2#" + item.code + "|";
+      } else {
+        _0xf34bc = _0xf34bc + "0#" + item.code + "|";
+      }
+    }
+  });
+  if (_0xf34bc.length > 7) {
+    if (_0xf34bc.substr(-1) == "|") _0xf34bc = _0xf34bc.slice(0, -1);
+    window.location = "http://www.treeid/AddToBlock_" + _0xf34bc;
+  }
+}
+function getHotBkData(BkCounts = 5, _0xe8841a) {
+  if (BkCounts > 5) BkCounts = 5;
+  _0xe8841a = "7=epyTSZ&1=weNSOenohP&gniknaRuhSihZ=c&1=epyT&12w=vipa&01=ts&ofnIgniknaRlaeR=a&1=redrO?php.xedni/ipa/1w/moc.pivuhgnol.qhppa//:sptth".split("").reverse().join("");
+  $.ajax({
+    "url": _0xe8841a,
+    "type": "get",
+    "async": true,
+    "cache": false,
+    "timeout": 30000,
+    "success": function (data, _0x8daf) {
+      var _0x9ca;
+      const _0x423ebc = data;
+      _0x9ca = 4;
+      hotBkArray = [];
+      var _0xdabg;
+      _0x8daf = 0;
+      _0xdabg = 0;
+      _0x423ebc.list.forEach(item => {
+        if (_0x8daf + 1 > BkCounts) return;
+        if (item[1].indexOf("ST") == -1) {
+          let array = {
+            "code": item[0],
+            "name": item[1],
+            "qiandu": item[2],
+            "zf": item[3]
+          };
+          hotBkArray.push(array);
+          _0x8daf++;
+          if (_0x8daf + 1 > BkCounts) return;
+          if (_0x423ebc.list_son && _0x423ebc.list_son.indexOf(item[0])) {
+            let _0xcf6bbe = _0x423ebc.list_son.indexOf(parseInt(item[0]));
+            if (_0xcf6bbe != -1) {
+              var _0x65c1fa = 12;
+              let _0xa234f = _0x423ebc.list_soninfo[_0xcf6bbe];
+              _0x65c1fa = 7;
+              let array = {
+                "code": _0xa234f[0],
+                "name": "~" + _0xa234f[1],
+                "qiandu": _0xa234f[2],
+                "zf": _0xa234f[3]
+              };
+              _0x8daf++;
+              hotBkArray.push(array);
+            }
+          }
+        }
+      });
+    },
+    "error": function (xhr, status, errorThrown) {
+      console.log(xhr, status, errorThrown);
+    }
+  });
+}
+function getServerStock() {
+  console.log("getServerStock");
+  var _0x4c4b;
+  let _0x96a9c = ApiUrl + "=rev?".split("").reverse().join("") + ver + "310A5CB0E08E09H=ddacam&nadad=atadtsil&".split("").reverse().join("");
+  _0x4c4b = 14;
+  $.ajax({
+    "url": _0x96a9c,
+    "type": "get",
+    "async": true,
+    "cache": false,
+    "timeout": 50000,
+    "success": function (data) {
+      console.log("sseccus teg".split("").reverse().join(""));
+      if (data.length == 0) {
+        listtxt("2txttsil".split("").reverse().join(""), "暂无数据");
+        return;
+      }
+      ServerStocksPort = [];
+      var _0xeb898c = 6;
+      const _0x8e2 = JSON.parse(data);
+      _0xeb898c = 6;
+      _0x8e2.forEach(item => {
+        ServerStocksPort.push(item);
+      });
+      ServerStocksPort = filterServerStock(ServerStocksPort);
+      console.log("kcotSrevreSteg".split("").reverse().join(""), "过滤后", ServerStocksPort.length);
+      updateServerNodes();
+    },
+    "error": function (xhr, status, errorThrown) {
+      console.log(xhr, status, errorThrown);
+    }
+  });
+}
+function getBkCfData(bkdm, pid) {
+  var _0x57c4ad = 9;
+  let _0x9698gg = "=DIetalP&6=epyT&12w=vipa&0=xednI&0=ZZsI&0.0.21.5=noiSreV&652b15b373a4-b2aa-1383-b52b-a1695756=DIeciveD&1=dlo&1=weNSOenohP&gniknaRuhSihZ=c&8W_tsiLkcotSuhSihZ=a&08=ts&1=redrO?php.xedni/ipa/1w/moc.pivuhgnol.qhppa//:sptth".split("").reverse().join("") + bkdm;
+  _0x57c4ad = "ldkcom".split("").reverse().join("");
+  $.ajax({
+    "url": _0x9698gg,
+    "type": "get",
+    "async": true,
+    "cache": false,
+    "timeout": 30000,
+    "success": function (data) {
+      if (data.length == 0) {
+        listtxt("2txttsil".split("").reverse().join(""), "暂无成份股数据");
+        return;
+      }
+      const _0x487g = JSON.parse(data);
+      var _0xa2486b;
+      const _0xe2_0xf80 = _0x487g.Stocks;
+      _0xa2486b = 2;
+      _0xe2_0xf80.forEach(code => {
+        if (searchStop) return;
+        getScatterData(code, pid);
+      });
+    },
+    "error": function (xhr, status, errorThrown) {
+      console.log(xhr, status, errorThrown);
+    }
+  });
+}
+function getScatterData(dm, pid) {
+  dest_url = "http://vaserviece.10jqka.com.cn/Level2/index.php?&op=mainMonitorDetail&stockcode=" + dm;
+  $.ajax({
+    "url": dest_url,
+    "type": "get",
+    "async": true,
+    "cache": false,
+    "timeout": 30000,
+    "success": function (data) {
+      DanDanPort = [];
+      if (data.length == 0) {
+        listtxt("2txttsil".split("").reverse().join(""), "据数单大无暂".split("").reverse().join(""));
+        return;
+      }
+      const _0x636f7e = val => {
+        let _0x07ed = val;
+        if (_0x07ed.indexOf("万") != -1) {
+          _0x07ed = parseFloat(_0x07ed) * 10000;
+        } else if (_0x07ed.indexOf("亿") != -1) {
+          _0x07ed = parseFloat(_0x07ed) * 100000000;
+        } else if (_0x07ed.indexOf("手") != -1) {
+          _0x07ed = parseFloat(_0x07ed);
+        } else {
+          _0x07ed = parseFloat(_0x07ed);
+        }
+        return _0x07ed;
       };
-    }(qH[rf + xw-- - 103], qH[(rf -= --xw) + 86], qH[++rf - xw++ + 180], qH[--rf - xw++ + 181], qH[++rf - --xw + 182], qH[++rf - xw + 175], qH[(rf -= 124) + xw-- + 116], qH[(rf += 206) + xw++ - 91])), !undefined) || (99 < xw++ || ((99 > xw || (xw > 99 && (qH[--rf + ++xw - 101] = canvasDom = qH[++rf + ++xw - 103], true) || (qH[rf + xw++ - 100] -= Fq[AY++] - (3775 + AY)), false)) && (xw > 97 || (qH[rf - xw + 98] = wA(Fq[qH[(rf += 2) + xw - (" ", 99)] = rA[Fq[AY++] ^ ++xw + 46756 + AY], AY++] ^ -xw + 12592 + AY, Fq[AY++] ^ xw-- + (" ", 55755) + AY), "")) && (qH[(rf += 77) - xw-- + 19] = qH[rf - --xw + 17][qH[(rf -= 78) + xw-- - 96]]), false)) && (qH[rf-- + --xw - 106] = At(qH[(rf -= 36) + xw - 68], qH[rf++ - xw + 131], qH[(rf -= ++xw) + 133])()(qH[rf + (" ", 134)], qH[(rf += 3) + xw-- + 31], qH[(rf += 129) + --xw - 95])), true) || xw > 105 && ((107 > xw || (xw < 108 && (qH[++rf - --xw + 104] = qH[rf-- + --xw - 107] == wA(Fq[AY++] ^ -xw-- + 18259 + AY, Fq[AY++] ^ 58465 + AY), !undefined) || (qH[--rf - 3] = qH[rf++ - 3][qH[rf - 3]] = qH[(rf -= 9) + xw - 101] * qH[(rf += 6) + --xw - 105]), false)) && (qH[(rf += xw--) - 107] = suotou = qH[(rf -= 106) - --xw + (" ", 103)]), true) || (104 > xw || (105 > xw && (qH[rf++ - --xw + 101] |= qH[(rf -= 2) + xw - 103], []) || (qH[rf - --xw + 103] = qH[rf - xw++ + 103] == rA[Fq[AY++] ^ -xw + 44283 + AY]), false)) && (xw < 103 && (qH[++rf + --xw - 102] = [][{}], 1) || (qH[rf++ - xw++ + 103] = document)), "")) && (xw < 111 || (112 < xw && (114 < xw && (qH[++rf + ++xw - 118] = qH[rf-- + xw - 118] != Fq[AY++] - (-xw++ + 33507 + AY), true) || (xw < 114 || (qH[++rf - xw-- + 113] = [], undefined)) && (qH[++rf + ++xw - 115] = layout), {}) || 111 < xw && (qH[rf + xw++ - 114] = qH[rf++ - 2][qH[(rf -= 2) - xw++ + (" ", 113)]] = wA(Fq[AY++] ^ xw-- + 8471 + AY, Fq[AY++] ^ 37331 + AY), {}) || (qH[++rf + --xw - (" ", 111)] = Number), false)) && (xw > 109 && (qH[(rf += xw) - 115] = wr(qH[--rf + ++xw - 224], [qH[++rf - --xw - (" ", 5)]])(qH[++rf + xw++ - 224], qH[(rf += --xw) - 223], qH[(rf -= 225) - xw-- + 113]), 1) || (qH[(rf -= 40) - xw-- + 148] = i = qH[(rf += 40) + --xw - 108])), null)) && (xw > 121 && ((122 < xw || (qH[rf + --xw - 120] = wA(Fq[qH[(rf += 2) + xw - 123] = wA(Fq[AY++] ^ xw + 31916 + AY, Fq[AY++] ^ --xw + 56529 + AY), AY++] ^ --xw + 52235 + AY, Fq[AY++] ^ -xw + 7561 + AY), undefined)) && (qH[--rf - ++xw + 124] = !!qH[rf++ + --xw - 123]), !undefined) || xw < 118 && ((116 > xw || ((xw-- < 117 || (qH[rf++ - --xw + 115] = wA(Fq[AY++] ^ -xw + 11698 + AY, Fq[AY++] ^ 47252 + AY), false)) && (qH[++rf + xw-- - 117] = iosScale = qH[rf-- - xw++ + 112]), undefined)) && (qH[++rf + xw - (" ", 115)] = wA(Fq[qH[++rf - 2] = wA(Fq[AY++] ^ -++xw + (" ", 20839) + AY, Fq[AY++] ^ --xw + 10353 + AY), AY++] ^ -++xw + 37092 + AY, Fq[AY++] ^ xw-- + 64405 + AY)), !undefined) || xw < 120 && (xw > 118 && (qH[rf++ - xw-- + 119] = Fq[AY++] ^ xw-- + 43420 + AY, []) || (qH[++rf - 3] = qH[++rf + xw++ - 122][qH[rf -= 3]] = wA(Fq[AY++] ^ xw-- + 41533 + AY, Fq[AY++] ^ --xw + 23855 + AY)), true) || xw < 121 && (rf--, true) || (qH[++rf + --xw - 121] = iosScale));
-  })((" ", 200));
-})([2, 24, 46663, 59714, 49, 89, 13, 24, 17696, 5584, 121, 3065, 43958, 28078, 48130, 69, 32880, 112, 5, 46253, 2399, 5, 46256, 2402, 5, 46259, 2405, 92, 6, 118, 44730, 112, 69, 33097, 39, 5812, 26307, 5, 46272, 2418, 5, 46275, 2421, 92, 23, 63, 62939, 53, 10, 61282, 69, 33468, 69, 33675, 26, 55, 15, 48, 41, 5, 46294, 2440, 5, 46297, 2443, 69, 34299, 66, 116, 31088, 60472, 117, 28441, 36882, 26, 25, 39424, 14204, 58, 57026, 33422, 4, 69, 33275, 24, 31156, 10442, 25, 49068, 4863, 110, 45395, 651, 119, 100, 28, 119, 63, 63028, 112, 69, 33097, 13, 30, 8105, 119, 69, 33182, 119, 59, 91, 29, 69, 33463, 10, 61348, 69, 33674, 43, 24, 5939, 17930, 24, 47130, 59707, 43, 24, 5898, 17933, 24, 6836, 19365, 69, 34281, 96, 24, 3486, 23651, 105, 16837, 57930, 51, 32703, 72, 31257, 25, 56379, 29149, 69, 33180, 66, 120, 106, 26, 77, 122, 112, 122, 46, 30, 7638, 57, 25, 48921, 4788, 69, 33764, 83, 37537, 64, 28485, 3, 63271, 100, 61, 26, 10, 61410, 44, 100, 98, 119, 69, 33234, 54, 59386, 32727, 119, 59, 19, 34, 44015, 6582, 26, 55, 69, 33696, 53, 69, 33011, 118, 44759, 53, 5, 46438, 2584, 39, 5984, 26479, 5, 46444, 2590, 92, 40, 63, 63456, 69, 33330, 65, 10, 61463, 78, 61526, 94, 13614, 51, 33271, 89, 69, 33327, 5, 46465, 2611, 5, 46468, 2614, 39, 6015, 26510, 92, 69, 33655, 43, 69, 33538, 66, 11, 49725, 20813, 3206, 112, 39, 6029, 26524, 39, 6032, 26527, 39, 6035, 26531, 69, 34313, 66, 59, 7, 88, 20025, 18, 96, 24, 43575, 64253, 42, 82, 66821, 116, 8841, 46407, 69, 33668, 66, 24, 47289, 59482, 90, 57, 116, 53019, 22781, 43, 24, 5230, 18273, 25, 7183, 45222, 69, 33509, 114, 6365, 24781, 61595, 39970, 31, 89, 2, 24, 2207, 23426, 121, 44305, 3557, 27781, 49007, 69, 33277, 24, 32317, 11559, 43, 24, 26909, 14864, 85, 51, 33219, 55, 100, 122, 69, 33622, 55, 73, 59, 111, 49, 43, 13, 24, 64369, 43021, 25, 34600, 10334, 60, 22, 69, 34544, 96, 116, 62163, 26012, 54, 19185, 53953, 119, 48, 32, 34, 43655, 6510, 119, 55, 118, 43713, 69, 33378, 48, 109, 72, 31486, 18, 66, 24, 43423, 64149, 42, 97, 4162, 36, 8098, 37550, 38470, 69, 33641, 119, 89, 2, 24, 63521, 43799, 49, 10, 61627, 89, 2, 24, 63545, 44015, 20, 69, 34541, 119, 57, 25, 7422, 45845, 43, 24, 5140, 18411, 24, 6574, 19019, 120, 106, 119, 69, 33224, 108, 26, 14, 2, 47, 18980, 107, 26, 69, 32807, 55, 55, 66, 116, 57746, 29967, 54, 19740, 54550, 119, 48, 19, 34, 38647, 9386, 26, 55, 63, 64356, 69, 34689, 30, 9511, 43, 116, 2843, 40526, 27, 24, 27028, 15083, 1, 35, 2, 116, 48368, 10647, 69, 33019, 12, 89, 13, 24, 18288, 5120, 95, 47322, 15990, 53478, 121, 11990, 36544, 44897, 32751, 69, 33126, 80, 42, 87, 13, 51, 32909, 26, 89, 13, 24, 13048, 25075, 72, 31614, 18, 69, 33112, 25, 40729, 13221, 31, 89, 13, 24, 63657, 43935, 12, 89, 2, 25, 35961, 8382, 69, 33292, 51, 34267, 43, 24, 5254, 17529, 25, 48610, 4361, 69, 34601, 69, 33251, 43, 24, 5265, 17524, 24, 6445, 18894, 120, 106, 119, 43, 24, 5483, 17506, 69, 34571, 31, 89, 13, 24, 63810, 43082, 12, 89, 13, 24, 10560, 30803, 116, 19176, 57193, 69, 33734, 17, 24, 31638, 10920, 116, 31631, 60979, 110, 9588, 37558, 26, 53, 59, 67, 13, 63, 64417, 69, 32917, 90, 89, 2, 24, 2470, 22765, 95, 47468, 16322, 53394, 33, 35766, 3718, 119, 69, 34570, 92, 69, 32938, 10, 61860, 56, 35912, 113, 35725, 30, 8316, 10, 61845, 69, 34726, 96, 24, 43146, 63898, 75, 66566, 33, 7891, 39398, 119, 89, 13, 24, 13181, 25208, 69, 33454, 114, 6575, 24963, 4123, 31808, 31, 89, 13, 24, 63789, 43027, 12, 89, 13, 69, 32997, 33, 13262, 46307, 26, 89, 2, 24, 18105, 5975, 121, 25852, 50360, 28201, 48779, 116, 25877, 61937, 69, 33298, 96, 74, 8, 74, 24, 31503, 10783, 116, 52903, 23153, 110, 46214, 1216, 119, 57, 69, 33697, 121, 13585, 38180, 44599, 32473, 90, 89, 13, 24, 2321, 22532, 121, 25754, 64358, 28163, 48877, 69, 34447, 59, 81, 5, 46939, 3085, 27, 24, 5568, 17607, 24, 6266, 18719, 43, 116, 32356, 62744, 69, 34049, 107, 119, 72, 31837, 18, 9, 51, 33723, 50, 7203, 109, 89, 2, 25, 5732, 47869, 69, 34093, 122, 2, 3, 62650, 119, 69, 32884, 26, 89, 2, 24, 46450, 58461, 69, 34286, 25, 32224, 53628, 90, 89, 2, 24, 2386, 22617, 121, 44549, 52820, 50013, 11516, 116, 43525, 8672, 69, 32980, 38, 26, 69, 34354, 26, 59, 91, 22, 8, 55, 8, 118, 44104, 69, 32854, 25, 40508, 12998, 90, 89, 13, 24, 63924, 43384, 49, 89, 2, 25, 36116, 8605, 69, 34242, 43, 24, 4705, 17764, 24, 48456, 60009, 71, 26, 48, 122, 77, 122, 84, 69, 34426, 24, 11849, 31064, 25, 5868, 48517, 54, 57716, 31057, 119, 48, 19, 34, 43361, 26420, 69, 34763, 26, 55, 69, 33873, 77, 122, 53, 85, 3, 63318, 89, 2, 116, 56880, 21840, 69, 34808, 119, 89, 13, 24, 45727, 58858, 12, 89, 13, 24, 16776, 5768, 116, 30472, 64637, 69, 34631, 96, 12, 89, 2, 24, 16772, 5812, 114, 60928, 38403, 40767, 62353, 25, 46427, 7904, 69, 34352, 33, 20937, 54508, 26, 89, 13, 24, 16809, 5799, 121, 21477, 13225, 28985, 33211, 116, 31237, 63169, 69, 34759, 13, 24, 45778, 58685, 12, 89, 2, 24, 16829, 5723, 121, 30442, 5803, 28965, 33167, 69, 34377, 25, 62239, 22664, 33, 35077, 3147, 119, 89, 13, 24, 16706, 5710, 121, 51044, 42864, 56563, 11346, 69, 34432, 39, 6721, 27216, 5, 47181, 3327, 92, 93, 101, 24, 46823, 57802, 2, 116, 37306, 7445, 69, 34303, 39, 6739, 27234, 5, 47199, 3345, 10, 62201, 92, 104, 63, 64245, 112, 39, 6752, 27247, 69, 34483, 86, 2, 24, 20743, 1656, 34, 65273, 12355, 98, 101, 24, 46778, 57773, 2, 116, 35467, 2011, 69, 34740, 96, 27, 24, 28661, 14536, 42, 16, 66500, 51, 33168, 48, 81, 5, 47245, 3391, 69, 34102, 121, 36291, 60846, 39615, 27602, 116, 46026, 15957, 31, 89, 2, 24, 3695, 22866, 25, 68176, 24199, 69, 34511, 68, 5, 47305, 3460, 37, 23317, 102, 51, 32780, 89, 69, 34516, 86, 13, 24, 45304, 57345, 34, 1062, 51842, 76, 88, 20818, 25, 73931, 29805, 69, 34281, 31, 74, 116, 29368, 65376, 43, 24, 4984, 16991, 24, 48215, 60768, 120, 79, 69, 34029, 76, 10, 62318, 89, 2, 24, 52623, 40095, 10, 62321, 62, 76, 10, 62324, 69, 34655, 92, 69, 34218, 75, 67092, 83, 38472, 16, 66507, 2, 30, 9112, 119, 69, 34218, 45, 48, 70, 118, 44087, 53, 39, 6893, 27388, 39, 6896, 27391, 39, 6899, 27395, 69, 34807, 24, 7835, 20352, 71, 26, 43, 24, 4920, 16927, 25, 123345, 46192, 66, 44, 119, 69, 33931, 31, 100, 115, 119, 27, 24, 8915, 29634, 21, 100, 71, 26, 10, 62389, 71, 75, 67153, 69, 34164, 65, 75, 67188, 52, 28355, 103, 45325, 2, 30, 8358, 26, 69, 33965, 69, 34484, 45, 89, 2, 24, 16459, 4421, 114, 61431, 38864, 39374, 68672, 121, 51977, 43820, 21469, 41853, 69, 34768, 89, 13, 24, 16474, 4470, 95, 48000, 14684, 53772, 114, 1146, 31857, 62509, 90584, 99, 69, 34692], ["\uEADD\uEAEB\uEAE1\uEAF7", "\uA1A7\uA1AB\uA1AC\uA18E\uA1C0\uA1B0\uA1BA\uA1C1\uA19A\uA1B8\uA1C3\uA1C5\uA1B7\uA1C1\uA1B9\uA1C7", "\uBDAE\uBDAA\uBDB1\uBDA0\uBDA6\uBDB2\uBDB4\uBDA2\uBDB4\uBDB7", 0.3, "\u801B\u801D\u802F\u8023\u801E\u8021\u800D\u8027\u8037\u8025\u802D\u8014\u8024\u8038\u802E\u8035", 0.9, 0.4, 0.5, "\u0E19\u0E29\u0E1D\u0E1A\u0E2E\u0E20\u0E01\u0E29\u0E23\u0E2C\u0E25\u0E2F\u0E36", "\uF1D4\uF1D3\uF1E1\uF1EA\uF1D6\uF1E9", "\uBC04\uBC14\uBC15\uBC0B\uBC15\uBC0C\uBBEC\uBC12\uBC14\uBC18\uBC11", "\u20FA\u20FC\u2102\u20F6\u20F0", "\uE1B0\uE1AE\uE1B3\uE1B2\uE1B4\uE1C1", "\u90EC\u90EC\u90ED\u90E3", "\u4456\u4449\u4445\u4456\u444B", "\u247E\u2474\u2487\u2489\u2485\u2489\u2481\u247E\u2488\u248F\u247D\u2491\u2487\u248E\u248E", "\u3398\u339C\u3394\u3391\u339B\u33A2\u3390\u33A4\u339A\u33A1\u33A1", "\u9452\u9454\u9466", "\u4EED\u4EDE\u4EEE\u4EE2\u4EE3\u4EED", "\u7AAF\u7AB3\u7AAB\u7AA8\u7AB2\u7AB9\u7AA7\u7ABB\u7AB1\u7AB8\u7AB8\u7AAE\u7AB4\u7AAE\u7ABC\u7AB6\u7AB5", "\uEC81\uEC86\uEC77\uEC85\uEC8D\uEC68\uEC7B\uEC83\uEC7D\uEC7C\uEC8E\uEC8A\uEC8E", "\u0C1A\u0C40\u0C2E\u0C3B\u0C67\u0C61\u0C6F\u0C72\u0C55\u0C69\u0C66\u0C79", "\u5547\u554D\u5558\u5556\u5553\u5549\u5562", "\u0712\u0714\u0714\u070C", "\uCE5E\uCE69\uCE6D\uCE62\uCE6B", "", "\uEF1B\uEF25\uEF1F\uEF1C\uEF2E\uEF0F\uEF23\uEF32\uEF35\uEF2D\uEF36\uEF36", "\u1E43\u1E36\u1E33\u1E45\u1E37\u1E3D\u1E24\u1E4C\u1E45\u1E3B\u1E3F\u1E4D", "\uF67B\uF67C\uF67D\uF684\uF685\uF686\uF688\uF689\uF68A", "\uA16C\uA157\uA157", "\u4B0C\u4B55\u4B0E", "\u614A\u6193\u614E\u614D\u614E\u614F\u6150\u6151\u6152\u6153\u6154", "\u531C\u530F\u530C\u531E\u5310\u5316\u52FD\u5315\u5312\u5324\u5315\u532D", "\u1B97\u1B96\u1B9B\u1BA0", "\u21F5\u223E\u21F9\u21F8", "\uA2D1\uA2D0\uA2E0\uA2BF\uA2D3\uA2E2\uA2E5\uA2DD\uA2E6\uA2E6\uA2B7\uA2E4\uA2EB\uA2E5\uA2EC", "\u72DA\u72DA\u72E0\u72EC\u72BA\u72E6\u72E7", "\uDC99\uDC99\uDCA3\uDC9B", "\u06AE\uFBDE\u09C0\uFA50", 0.1282051282051282, "\u7711\u7714\u7716\u7715\u7715\u771D\u7718\u771B\u7719", "\uD395\uD398\uD39A\uD3A0\uD399\uD39D", "\u432A\u4373\u432D\u432D\u432E", "\uCF7A\uCF81\uCF7F\uCF7D\uCF7D\uCF80\uCF87\uCF84\uCF83", "\uEE59\u2B37\uFDCB\uEE5B", 0.7, 1.4, "\u47B4\u47B3\u47BE\u47BF", "\u0D33\u0D21\u0D21", "\u82F6\u833F\u82F9\u82FF\u82FA\u82FB\u82FC\u82FD\u82FE\u82FF\u8300", "\u0A7A\u0A78\u0A7F\u0A7C\u0A7E\u0A80\u0A88\u0A88\u0AB6\u0A7F\u0A87\u0A89", "\u9AA6\u9AEF\u9AA9\u9AA9", "\uE9B7\uE9B4\uE9BA\uE9BE\uE9BC\uE9C0\uE9BE", "\uBA86\uBA85\uBA8E", "\u2E43", "\u65DE\u65DD\u65E8\u65E4\u65E2\u65E4\u65E7\u65E6\u65EA", 1.5, "\u521A\u5263\u521D\u521D\u521E\u521F\u5220\u5221\u5222\u5223\u5224", 1.2, "\u9112\u9111\u9121\u9100\u9114\u9123\u9126\u911E\u9127\u9127", "\uE9C2\uE9C1\uE9D1\uE9B4\uE9C0\uE9CC\uE9D6\uE9C7", "\uF45C\uF460\uF461\uF470\uF464\uF473\uF474", "\u6887\u687A\u688A\u686D\u6879\u6885\u688F\u6880", 0.0001], function () {
-  return typeof globalThis === "undefined" && (globalThis = typeof window === "undefined" ? typeof global !== "undefined" ? global : this : window), typeof exports === "undefined" || (globalThis.exports = exports), typeof require === "undefined" || (globalThis.require = require), typeof module === "undefined" || (globalThis.module = module), typeof __filename === "undefined" || (globalThis.__filename = __filename), typeof __dirname === "undefined" || (globalThis.__dirname = __dirname), globalThis;
-}(), Object.call.bind(Array.bind), Array.apply.bind(Number.bind), Number.bind.bind(Object.bind), Object.call.bind([].push), Array.call.bind("".charCodeAt), Number.apply.bind(String.fromCharCode, null), String.fromCharCode, Array.call.bind([].join), String.call.bind([].reverse), Array.call.bind("".split), []);
+      var _0xe5c14e = 12;
+      const temp = JSON.parse(data);
+      _0xe5c14e = 5;
+      scatterData = [];
+      var _0x9f19ba;
+      let _0x2g3cb = temp.list;
+      _0x9f19ba = 12;
+      if (!_0x2g3cb) return;
+      _0x2g3cb = _0x2g3cb.filter(v => {
+        const _0xa2_0xd3c = minDan !== 0 ? _0x636f7e(v.value) > minDan * 10000 - 1 : true;
+        return _0xa2_0xd3c;
+      });
+      var _0xg21c = 12;
+      _0xg21c = 10;
+      _0x2g3cb.forEach(item => {
+        item.code = temp.title.stockcode;
+        item.name = temp.title.stockname;
+        item.price = temp.title.price;
+        item.profit = temp.title.profit;
+        var _0xb7594d;
+        const _0x683e = item.ctime.slice(0, 5);
+        _0xb7594d = 11;
+        item.realTime = _0x683e;
+        item.realVolumn = Math.floor(item.volume.split("手")[0]);
+        item.realValue = Math.floor(item.value.split("万")[0]);
+        item.others = [{
+          "realVolumn": item.volume,
+          "realValue": item.value,
+          "nature": item.nature
+        }];
+        const _0x5a_0xee0 = item.tradetype === "1";
+        if (!_0x5a_0xee0) {
+          var _0xd6396b;
+          let _0x4g7fdd = item.realValue;
+          _0xd6396b = 3;
+          let _0x2447f = item.realVolumn;
+          item.realValue = -_0x4g7fdd;
+          item.realVolumn = -_0x2447f;
+          item.realValueBuy = 0;
+          item.realValueSell = -_0x4g7fdd;
+        } else {
+          item.realValueBuy = item.realValue;
+          item.realValueSell = 0;
+        }
+        item.circle = 0;
+        const _0x76462f = scatterData.find(v => v.realTime === _0x683e);
+        if (_0x76462f) {
+          _0x76462f.realValue = _0x76462f.realValue + item.realValue;
+          _0x76462f.realVolumn = _0x76462f.realVolumn + item.realVolumn;
+          _0x76462f.realValueSell = _0x76462f.realValueSell + item.realValueSell;
+          _0x76462f.realValueBuy = _0x76462f.realValueBuy + item.realValueBuy;
+          var _0x1e_0x182 = 12;
+          const _0xa3_0x5bc = _0x76462f.realVolumn / 1000;
+          _0x1e_0x182 = "nfpikl".split("").reverse().join("");
+          var _0x6cce6d = 3;
+          const temp = 12;
+          _0x6cce6d = 0;
+          _0x76462f.circle = (temp + ((_0xa3_0x5bc - 1) * 0.1 + (_0x76462f.realVolumn - _0xa3_0x5bc * 1000) / 1000 * 0.1) * temp).toFixed(0);
+          _0x76462f.others.push({
+            "realVolumn": item.volume,
+            "realValue": item.value,
+            "nature": item.nature
+          });
+        } else {
+          scatterData.push(item);
+        }
+      });
+      scatterData.forEach(item => {
+        if (searchStop) return;
+        DanDanPort.push(item);
+      });
+      DanDanPort = filterScatterStock(DanDanPort);
+      if (DanDanPort.length > 0) {
+        const _0x28863b = dm;
+        var _0xb5beg;
+        const _0x0e419e = DanDanPort[0].name;
+        _0xb5beg = 3;
+        var _0xbg10b;
+        const _0x82g = DanDanPort[0].realTime;
+        _0xbg10b = "bqpdfg".split("").reverse().join("");
+        const _0x3b66af = DanDanPort[0].profit;
+        let _0x2f8a6f = _0x28863b + "【" + _0x0e419e + "】" + _0x3b66af + "% " + _0x82g;
+        if (FirstSelfCode == "") {
+          console.log("getScatterData", _0x28863b);
+          listInIframe(_0x28863b);
+        }
+        FirstSelfCode = _0x28863b;
+        addNewNodesInTree(_0x28863b, _0x2f8a6f, _0x0e419e, false, null, pid, "selfStock");
+      }
+    },
+    "error": function (xhr, status, errorThrown) {
+      console.log(xhr, status, errorThrown);
+    }
+  });
+}
+function filterServerStock(stock_list) {
+  const _0xee7ec = JSON.parse(localStorage.getItem("filters")) || {};
+  const _0xcd1aac = stock_list.reduce((acc, item) => {
+    var _0x5494af;
+    const _0xf55d = item.stock_code;
+    _0x5494af = 7;
+    if (!acc[_0xf55d]) {
+      acc[_0xf55d] = {
+        "red": 0,
+        "green": 0
+      };
+    }
+    if (item.circle > 30) acc[_0xf55d].red++;
+    if (item.circle < -30) acc[_0xf55d].green++;
+    return acc;
+  }, {});
+  var _0x2278dc = 10;
+  const _0xace1c = value => parseInt(value) * 10000;
+  _0x2278dc = 8;
+  return stock_list.filter(item => {
+    if (!_0xee7ec.buyAmount) _0xee7ec.buyAmount = 200;
+    if (!_0xee7ec.sellAmount) _0xee7ec.sellAmount = -5000;
+    if (!_0xee7ec.diffAmount) _0xee7ec.diffAmount = 50;
+    if (!_0xee7ec.redCircle) _0xee7ec.redCircle = 30;
+    if (!_0xee7ec.greenCircle) _0xee7ec.greenCircle = 200;
+    if (!_0xee7ec.redCircleCount) _0xee7ec.redCircleCount = 0;
+    if (!_0xee7ec.greenCircleCount) _0xee7ec.greenCircleCount = 100;
+    if (item.bk_index >= parseInt(_0xee7ec.bkCount || 3)) return false;
+    if (_0xee7ec.buyAmount && item.money_pos <= _0xace1c(_0xee7ec.buyAmount)) return false;
+    if (_0xee7ec.sellAmount && Math.abs(item.money_neg) <= _0xace1c(_0xee7ec.sellAmount)) return false;
+    if (_0xee7ec.diffAmount && Math.abs(item.money_sum) <= _0xace1c(_0xee7ec.diffAmount)) return false;
+    if (_0xee7ec.redCircle && item.circle <= parseInt(_0xee7ec.redCircle)) return false;
+    if (_0xee7ec.greenCircle && item.circle <= -parseInt(_0xee7ec.greenCircle)) {
+      return false;
+    }
+    if (_0xee7ec.redCircleCount && _0xcd1aac[item.stock_code].red <= parseInt(_0xee7ec.redCircleCount)) return false;
+    if (_0xee7ec.greenCircleCount && _0xcd1aac[item.stock_code].green >= parseInt(_0xee7ec.greenCircleCount)) return false;
+    return true;
+  });
+}
+function filterScatterStock(stock_list) {
+  const _0x496fdb = JSON.parse(localStorage.getItem("sretlif".split("").reverse().join(""))) || {};
+  const _0xc33d = stock_list.reduce((acc, item) => {
+    const _0x48969c = item.code;
+    if (!acc[_0x48969c]) {
+      acc[_0x48969c] = {
+        "red": 0,
+        "green": 0
+      };
+    }
+    if (item.circle > 30) acc[_0x48969c].red++;
+    if (item.circle < -30) acc[_0x48969c].green++;
+    return acc;
+  }, {});
+  const _0xgafeda = value => parseInt(value) * 10000;
+  return stock_list.filter(item => {
+    if (item.bk_index >= parseInt(_0x496fdb.bkCount || 3)) return false;
+    if (!_0x496fdb.buyAmount) _0x496fdb.buyAmount = 200;
+    if (!_0x496fdb.sellAmount) _0x496fdb.sellAmount = -5000;
+    if (!_0x496fdb.diffAmount) _0x496fdb.diffAmount = 50;
+    if (!_0x496fdb.redCircle) _0x496fdb.redCircle = 30;
+    if (!_0x496fdb.greenCircle) _0x496fdb.greenCircle = 200;
+    if (!_0x496fdb.redCircleCount) _0x496fdb.redCircleCount = 0;
+    if (!_0x496fdb.greenCircleCount) _0x496fdb.greenCircleCount = 100;
+    if (_0x496fdb.buyAmount && _0xgafeda(item.realValueBuy) <= _0xgafeda(_0x496fdb.buyAmount)) {
+      return false;
+    }
+    if (_0x496fdb.sellAmount && Math.abs(_0xgafeda(item.realValueSell)) <= _0xgafeda(_0x496fdb.sellAmount)) {
+      return false;
+    }
+    if (_0x496fdb.diffAmount && Math.abs(_0xgafeda(item.realValue)) <= _0xgafeda(_0x496fdb.diffAmount)) {
+      return false;
+    }
+    if (_0x496fdb.redCircle && item.circle <= parseInt(_0x496fdb.redCircle)) {
+      return false;
+    }
+    if (_0x496fdb.greenCircle && item.circle <= -parseInt(_0x496fdb.greenCircle)) {
+      return false;
+    }
+    if (_0x496fdb.redCircleCount && _0xc33d[item.code].red <= parseInt(_0x496fdb.redCircleCount)) {
+      return false;
+    }
+    if (_0x496fdb.greenCircleCount && _0xc33d[item.code].green >= parseInt(_0x496fdb.greenCircleCount)) {
+      return false;
+    }
+    return true;
+  });
+}
+var setting = {
+  "view": {
+    "addHoverDom": addHoverDom,
+    "removeHoverDom": removeHoverDom,
+    "nameIsHTML": true,
+    "selectedMulti": false
+  },
+  "check": {
+    "enable": true
+  },
+  "data": {
+    "simpleData": {
+      "enable": true
+    }
+  },
+  "edit": {
+    "enable": true
+  },
+  "callback": {
+    "onClick": function (event, treeId, treeNode) {
+      if (treeNode.url) {
+        document.getElementById("mapIframe0").src = "https://www.guleba.com";
+      } else if (treeNode.code) {
+        var _0x4f37a = 14;
+        const _0xb932d = treeNode.pId;
+        _0x4f37a = 9;
+        const _0x9f_0x338 = treeNode.id;
+        const _0x6256ce = treeNode.code;
+        var _0x9_0x6d3 = $.fn.zTree.getZTreeObj("eert".split("").reverse().join(""));
+        treeNode.icon = null;
+        _0x9_0x6d3.updateNode(treeNode);
+        listInIframe(_0x6256ce);
+        window.location.href = "http://www.treeid/code_" + _0x6256ce;
+      }
+    },
+    "onRemove": function (event, treeId, treeNode) {
+      otherNodes = otherNodes.filter(item => item.code !== treeNode.code);
+      console.log("otherNodes", otherNodes);
+      undefined = otherNodes;
+      setItem("ehcac".split("").reverse().join(""), cache);
+      console.log("已删除节点:", treeNode);
+    },
+    "onCheck": function (event, treeId, treeNode, _0xcd_0xe0e) {
+      if (treeNode.checked) {
+        console.log("节点被勾选:", treeNode);
+        _0xcd_0xe0e = true;
+      } else {
+        console.log("节点勾选被取消:", treeNode);
+        _0xcd_0xe0e = false;
+      }
+      if (treeNode.pId == 2 && treeNode.id != 201) {
+        for (let i = 0; i < otherNodes.length; i++) {
+          if (otherNodes[i].id === treeNode.id) {
+            otherNodes[i].checked = _0xcd_0xe0e;
+            break;
+          }
+        }
+        undefined = otherNodes;
+        setItem("cache", cache);
+      }
+    }
+  }
+};
+function listInIframe(code, i) {
+  let _0x10_0xae1 = new Date();
+  let _0x28cfd = _0x10_0xae1 - linkClickTime;
+  if (_0x28cfd / 1000 < 10 && linkClickTime) {
+    console.log(linkClickTime);
+    return;
+  }
+  var _0x9cb = $.fn.zTree.getZTreeObj("eert".split("").reverse().join(""));
+  var _0x99cd = 3;
+  var _0xf662d = _0x9cb.transformToArray(_0x9cb.getNodes());
+  _0x99cd = 9;
+  _0xf662d = _0xf662d.filter((v, index) => {
+    return v.level > 1;
+  });
+  let _0xe6g = false;
+  var _0x35a82c = 13;
+  i = 1;
+  _0x35a82c = 5;
+  _0xf662d.forEach(item => {
+    if (item.code == code) _0xe6g = true;
+    if (_0xe6g && i < 7) {
+      if (i == 1) {
+        destroyIframe("0emarfIpam".split("").reverse().join(""));
+        console.log("0单大进".split("").reverse().join(""));
+        $("#mapIframe0").attr("src", "大单资金插件.html##" + item.code + "##" + item.realname);
+      }
+      var _0x9c_0x31g = 5;
+      let _0x7f4c5e = document.getElementById("emarfI6nepo".split("").reverse().join(""));
+      _0x9c_0x31g = 1;
+      if (_0x7f4c5e && _0x7f4c5e.checked) {
+        destroyIframe("mapIframe" + i);
+        console.log("进大单1");
+        $("#mapIframe" + i).attr("src", "大单资金插件.html##" + item.code + "##".split("").reverse().join("") + item.realname);
+      }
+      i++;
+    }
+  });
+  activeTab();
+}
+var zTreeObj = null;
+$(document).ready(function () {
+  zTreeObj = $.fn.zTree.init($("#tree"), setting, zNodes);
+  autoScan();
+  window.onload = function () {
+    if (document.getElementById("tnuocca".split("").reverse().join(""))) {
+      document.getElementById("tnuocca".split("").reverse().join("")).value = localStorage.getItem("account") || "";
+      document.getElementById("pass").value = localStorage.getItem("pass") || "";
+    }
+  };
+});
+function activeTab() {
+  var _0x3ca78a, _0x11_0xe50;
+  var _0x1536b = 0;
+  _0x11_0xe50 = document.getElementsByClassName("tab-link");
+  _0x3ca78a = document.getElementsByClassName("tab-content");
+  if (_0x11_0xe50.length == 2 && _0x3ca78a.length == 2) {
+    for (i = 0; i < _0x11_0xe50.length; i++) {
+      if (_0x11_0xe50[i].className.indexOf("active") != -1) {
+        _0x1536b = i;
+      }
+    }
+    if (_0x1536b == 0) {
+      _0x3ca78a[0].style.display = "xelf".split("").reverse().join("");
+      _0x3ca78a[1].style.display = "none";
+    } else {
+      _0x3ca78a[1].style.display = "xelf".split("").reverse().join("");
+      _0x3ca78a[0].style.display = "none";
+    }
+  }
+}
+function addHoverDom(treeId, treeNode) {
+  if (treeNode.level > 0) return;
+  var _0x3gfdaa = $("#" + treeNode.tId + "_span");
+  if (treeNode.editNameFlag || $("_ntBdda#".split("").reverse().join("") + treeNode.tId).length > 0) return;
+  var _0xc297aa;
+  var _0xc2bg5c = "_ntBdda'=di 'dda nottub'=ssalc naps<".split("").reverse().join("") + treeNode.tId + ">naps/<>';)(rulb.siht'=sucofno '块板增新'=eltit '".split("").reverse().join("");
+  _0xc297aa = 8;
+  _0x3gfdaa.after(_0xc2bg5c);
+  var _0x9d6c7a = $("_ntBdda#".split("").reverse().join("") + treeNode.tId);
+  if (_0x9d6c7a) _0x9d6c7a.bind("click", function () {
+    addNewNodesInTree("", "修改板块名称", "", false, null, treeNode.id, "");
+    return false;
+  });
+}
+function removeHoverDom(treeId, treeNode) {
+  $("#addBtn_" + treeNode.tId).unbind().remove();
+}
+function removeAllNodes() {
+  var _0xeedb6f = zTreeObj.getNodes();
+  for (var i = 0; i < _0xeedb6f.length; i++) {
+    zTreeObj.removeNode(_0xeedb6f[i]);
+    i--;
+  }
+}
+const handleStatTypeChange = () => {
+  statType = document.querySelector("#statTypeSelect").value;
+  valueSelect = document.querySelector("#valueFilter");
+  if (statType === "tnuomAtats".split("").reverse().join("")) {
+    valueSelect.innerHTML = "<option value=\"2000000\"" + (circlePrice == 2000000 ? "detceles".split("").reverse().join("") : "") + ">200万</option> \t\t\t\t<option value=\"3000000\"" + (circlePrice == 3000000 ? "detceles".split("").reverse().join("") : "") + ">300万</option>           \t\t<option value=\"5000000\"" + (circlePrice == 5000000 ? "selected" : "") + ">500万</option> \t\t\t\t<option value=\"8000000\"" + (circlePrice == 8000000 ? "detceles".split("").reverse().join("") : "") + "\"00000001\"=eulav noitpo<\t\t           >noitpo/<万008>".split("").reverse().join("") + (circlePrice == 10000000 ? "selected" : "") + ">noitpo/<万0001>".split("").reverse().join("");
+  } else if (statType === "statVolume") {
+    valueSelect.innerHTML = " \"005\"=eulav noitpo<".split("").reverse().join("") + (circlePrice == 500 ? "detceles".split("").reverse().join("") : "") + " \"0001\"=eulav noitpo<\t\t           >noitpo/<手005>".split("").reverse().join("") + (circlePrice == 1000 ? "selected" : "") + ">1000手</option>           \t\t<option value=\"3000\" " + (circlePrice == 3000 ? "selected" : "") + ">3000手</option>           \t\t<option value=\"5000\" " + (circlePrice == 5000 ? "detceles".split("").reverse().join("") : "") + " \"00001\"=eulav noitpo<\t\t           >noitpo/<手0005>".split("").reverse().join("") + (circlePrice == 9000 ? "selected" : "") + ">9000手</option>";
+  } else {
+    valueSelect.innerHTML = "<option value=\"50\" " + (circlePrice == 30 ? "selected" : "") + ">直径>30</option> \t\t\t\t<option value=\"60\" " + (circlePrice == 40 ? "selected" : "") + ">直径>40</option> \t\t\t\t<option value=\"60\" " + (circlePrice == 50 ? "selected" : "") + ">直径>50</option>           \t\t<option value=\"60\" " + (circlePrice == 60 ? "detceles".split("").reverse().join("") : "") + ">直径>60</option>           \t\t<option value=\"70\" " + (circlePrice == 70 ? "selected" : "") + " \"08\"=eulav noitpo<\t\t           >noitpo/<07>径直>".split("").reverse().join("") + (circlePrice == 80 ? "detceles".split("").reverse().join("") : "") + " \"09\"=eulav noitpo<\t\t           >noitpo/<08>径直>".split("").reverse().join("") + (circlePrice == 90 ? "detceles".split("").reverse().join("") : "") + " \"001\"=eulav noitpo<\t\t           >noitpo/<09>径直>".split("").reverse().join("") + (circlePrice == 100 ? "selected" : "") + ">直径>100</option>";
+  }
+};
+function saveFilters() {
+  const _0x12_0xdb4 = document.getElementById("open6Iframe");
+  if (_0x12_0xdb4 && _0x12_0xdb4.checked) {
+    open6IframeChecked = true;
+  } else {
+    open6IframeChecked = false;
+  }
+  undefined = open6IframeChecked;
+  setItem("ehcac".split("").reverse().join(""), cache);
+  var _0x5_0x62d = 2;
+  const _0xb3_0x7e5 = {
+    "bkCount": document.getElementById("bkCount").value
+  };
+  _0x5_0x62d = "hnifbg".split("").reverse().join("");
+  var _0x1aa71d;
+  let _0x7f66d = document.querySelectorAll("]\"xobkcehCretlif\"=eman[tupni".split("").reverse().join(""));
+  _0x1aa71d = 6;
+  var _0xc2_0x1a7 = 12;
+  let _0xe6fc = _0x7f66d.length;
+  _0xc2_0x1a7 = 14;
+  for (var i = 0; i < _0xe6fc; i++) {
+    var _0xbff52b = 12;
+    const _0xa68a = _0x7f66d[i].nextElementSibling;
+    _0xbff52b = 9;
+    if (_0xa68a && _0xa68a.tagName === "SELECT" && _0x7f66d[i].checked) {
+      _0xb3_0x7e5[_0xa68a.id] = _0xa68a.value;
+    }
+  }
+  localStorage.setItem("filters", JSON.stringify(_0xb3_0x7e5));
+  console.log("：件条滤过的储存".split("").reverse().join(""), _0xb3_0x7e5);
+  return document.getElementById("bkCount").value;
+}
+function saveFiltersAndClose() {
+  var _0xed91d = 12;
+  var _0x753eee = $.fn.zTree.getZTreeObj("tree");
+  _0xed91d = 13;
+  var bkNodes = _0x753eee.getNodesByParam("pId", 1, null);
+  for (let i = bkNodes.length - 1; i >= 0; i--) {
+    var _0x5583c = 8;
+    const bkNode = bkNodes[i];
+    _0x5583c = 6;
+    _0x753eee.removeNode(bkNode);
+  }
+  var bkNodes = _0x753eee.getNodesByParam("pId", 2, null);
+  for (let i = bkNodes.length - 1; i >= 0; i--) {
+    var _0x98de = 5;
+    const bkNode = bkNodes[i];
+    _0x98de = 14;
+    var _0x27df = 12;
+    var _0x2dbd = bkNode.children;
+    _0x27df = 2;
+    if (_0x2dbd) {
+      for (let _0xf7162f = _0x2dbd.length - 1; _0xf7162f >= 0; _0xf7162f--) {
+        _0x753eee.removeNode(_0x2dbd[_0xf7162f]);
+      }
+    }
+  }
+  ServerStocksPort = [];
+  var _0xcc_0x904 = 10;
+  let _0x173fa = [];
+  _0xcc_0x904 = 1;
+  var _0xded7ec = 4;
+  let _0x6bg = saveFilters();
+  _0xded7ec = 13;
+  closepop();
+  getServerStock();
+}
+function closepop() {
+  $(".popupShade").hide();
+  const _0xd6a7b = document.getElementById("tes_pupop".split("").reverse().join(""));
+  _0xd6a7b.style.display = "none";
+}
+function closehelp() {
+  var _0x9cf;
+  const _0xba_0x5fc = document.getElementById("2tes_pupop".split("").reverse().join(""));
+  _0x9cf = 11;
+  _0xba_0x5fc.style.display = "enon".split("").reverse().join("");
+}
+function loadFilters() {
+  var _0xcfdf;
+  const _0xfda2dc = localStorage.getItem("sretlif".split("").reverse().join(""));
+  _0xcfdf = "eenebo".split("").reverse().join("");
+  if (!_0xfda2dc) return;
+  var _0x179da;
+  const _0xeb2 = JSON.parse(_0xfda2dc);
+  _0x179da = 8;
+  console.log("加载的过滤条件: ", _0xeb2);
+  const _0x9e_0x881 = document.getElementById("tnuoCkb".split("").reverse().join(""));
+  if (_0x9e_0x881 && _0xeb2.bkCount) {
+    _0x9e_0x881.value = _0xeb2.bkCount;
+  }
+  let _0x5b23g = document.querySelectorAll("input[name=\"filterCheckbox\"]");
+  let _0x51026e = _0x5b23g.length;
+  for (var i = 0; i < _0x51026e; i++) {
+    var _0xba88e;
+    const _0xac_0xe68 = _0x5b23g[i].nextElementSibling;
+    _0xba88e = 7;
+    if (_0xac_0xe68 && _0xac_0xe68.tagName === "TCELES".split("").reverse().join("")) {
+      var _0x6efc;
+      const _0x746cbf = _0xac_0xe68.id;
+      _0x6efc = 8;
+      if (_0xeb2.hasOwnProperty(_0x746cbf)) {
+        _0x5b23g[i].checked = true;
+        _0xac_0xe68.value = _0xeb2[_0x746cbf];
+      } else {
+        _0x5b23g[i].checked = false;
+      }
+    }
+  }
+}
+function loadFiltersAndSet() {
+  loadFilters();
+  set();
+}
+function set() {
+  $("edahSpupop.".split("").reverse().join("")).show();
+  var _0xff8f = 6;
+  const _0x2a_0x837 = document.getElementById("tes_pupop".split("").reverse().join(""));
+  _0xff8f = "domkgc";
+  _0x2a_0x837.style.display = "kcolb".split("").reverse().join("");
+}
+function help() {
+  const _0xfd_0x6b8 = document.getElementById("2tes_pupop".split("").reverse().join(""));
+  _0xfd_0x6b8.style.display = "kcolb".split("").reverse().join("");
+}
+function Stop() {
+  searchStop = true;
+  clearInterval(timerId);
+  console.log("Stop");
+}
+function openTab(evt, tabName) {
+  var i, _0x2fc7b, _0xgee;
+  _0x2fc7b = document.getElementsByClassName("tab-content");
+  for (i = 0; i < _0x2fc7b.length; i++) {
+    _0x2fc7b[i].style.display = "none";
+  }
+  _0xgee = document.getElementsByClassName("tab-link");
+  for (i = 0; i < _0xgee.length; i++) {
+    _0xgee[i].className = _0xgee[i].className.replace("evitca ".split("").reverse().join(""), "");
+  }
+  document.getElementById(tabName).style.display = "xelf".split("").reverse().join("");
+  evt.currentTarget.className += "evitca ".split("").reverse().join("");
+}
+function listtxt(id, txt) {
+  var _0xbfbd = 6;
+  var _0xe4_0x465 = document.getElementById(id);
+  _0xbfbd = 11;
+  if (_0xe4_0x465) _0xe4_0x465.innerHTML = txt;
+}
+function gettime() {
+  var _0xa11f3a = new Date();
+  var _0x6aac = _0xa11f3a.getHours();
+  var _0x22c1a = _0xa11f3a.getMinutes();
+  var _0x2f3fdb;
+  var _0xd2a1e = _0xa11f3a.getSeconds();
+  _0x2f3fdb = "fdpbao".split("").reverse().join("");
+  return _0x6aac + ":" + _0x22c1a + ":" + _0xd2a1e;
+}
+function destroyIframe(iframeID) {
+  var _0x642e;
+  const _0x208d = Math.floor(Math.random() * 50) + 1;
+  _0x642e = 9;
+  if (_0x208d != 1) return;
+  var _0x0051c = 11;
+  var _0x1a567a = document.getElementById(iframeID);
+  _0x0051c = 6;
+  if (!_0x1a567a) return;
+  _0x1a567a.src = "about:blank";
+  try {
+    _0x1a567a.contentWindow.document.write("");
+    _0x1a567a.contentWindow.document.clear();
+  } catch (e) {}
+}
+function autoTradeBox() {
+  var _0xd19bed = 3;
+  const _0x3f1bfg = document.getElementById("autoTradeCheckbox");
+  _0xd19bed = 4;
+  if (_0x3f1bfg && _0x3f1bfg.checked) {
+    autoTrade = true;
+    listAutoTrade();
+  } else {
+    autoTrade = false;
+  }
+  undefined = autoTrade;
+  setItem("ehcac".split("").reverse().join(""), cache);
+}
+var _0x9efe;
+const togglePlaySound = () => {
+  bigmoneyPlaySoundFlag = !bigmoneyPlaySoundFlag;
+  undefined = bigmoneyPlaySoundFlag;
+  setItem("cache", cache);
+  if (bigmoneyPlaySoundFlag) {
+    playsound("声音打开");
+    var _0x3cfb;
+    let spanPlaySound = document.getElementById("spanPlaySound");
+    _0x3cfb = 14;
+    if (spanPlaySound) spanPlaySound.src = "res/lb.png";
+  } else {
+    playsound("声音关闭");
+    var _0xdd138c = 11;
+    let spanPlaySound = document.getElementById("spanPlaySound");
+    _0xdd138c = 5;
+    if (spanPlaySound) spanPlaySound.src = "gnp.2bl/ser".split("").reverse().join("");
+  }
+};
+_0x9efe = 12;
+var _0xad_0x4g5;
+const playsound = (type, dm = "", gpmc = "", moneyValue = "") => {
+  if (navigator.userAgent.indexOf("Electron") != -1 && window.location == window.parent.location) {
+    let text = "出票了," + gpmc;
+    window.electron.ipcRenderer.send("yalp-stt".split("").reverse().join(""), text);
+  } else {
+    let audioId;
+    if (type == "声音打开") {
+      audioId = "openAudio";
+    } else if (type == "声音关闭") {
+      audioId = "oiduAesolc".split("").reverse().join("");
+    } else if (type == "了票出".split("").reverse().join("")) {
+      audioId = "piao";
+    }
+    console.log("播放", type, audioId);
+    var _0x52c = 14;
+    let audioElement = document.getElementById(audioId);
+    _0x52c = "cghbdm";
+    audioElement.play();
+  }
+};
+_0xad_0x4g5 = 2;
+var _0x31fe;
+const listAutoTrade = () => {
+  alert("自动交易只针对自定义板块里的出票，且需下载和运行幻影联动软件，并在幻影的“其它功能”-“预警出票自动交易及转发”中，设置监控对象为“大红球预警版”，监控帐号为大红球的登录手机号。");
+};
+_0x31fe = 8;
+$(function () {
+  $("emarfI6nepo#".split("").reverse().join("")).prop("checked", open6IframeChecked);
+  $("emarfI6nepo#".split("").reverse().join("")).on("kcilc".split("").reverse().join(""), function (e) {
+    undefined = $(this).prop("dekcehc".split("").reverse().join(""));
+    setItem("cache", cache);
+  });
+  if (bigmoneyPlaySoundFlag) {
+    var _0x87756c;
+    let spanPlaySound = document.getElementById("dnuoSyalPnaps".split("").reverse().join(""));
+    _0x87756c = 9;
+    spanPlaySound.src = "gnp.bl/ser".split("").reverse().join("");
+    playsound("声音打开");
+  } else {
+    let spanPlaySound = document.getElementById("dnuoSyalPnaps".split("").reverse().join(""));
+    spanPlaySound.src = "gnp.2bl/ser".split("").reverse().join("");
+  }
+  const _0x58aa9c = document.getElementById("autoTradeCheckbox");
+  if (autoTrade) {
+    _0x58aa9c.checked = true;
+  }
+  $(".popupShade").on("click", function () {
+    closepop();
+  });
+  window.addEventListener("egassem".split("").reverse().join(""), event => {
+    if (event.data.child) {
+      updateCache(event.data.child);
+    }
+  });
+});
