@@ -1,302 +1,452 @@
 
-(function () {
-  'use strict';
-
-  const _0x19eb0b = document.createElement("button");
-  _0x19eb0b.textContent = "商城";
-  _0x19eb0b.style.backgroundColor = "rgba(128, 128, 128, 0.5)";
-  _0x19eb0b.style.background = "#ffcfe9";
-  _0x19eb0b.style.color = "white";
-  _0x19eb0b.style.border = "none";
-  _0x19eb0b.style.zIndex = "9999";
-  _0x19eb0b.style.borderRadius = "20px";
-  _0x19eb0b.style.padding = "5px 10px";
-  _0x19eb0b.style.position = "fixed";
-  _0x19eb0b.style.top = "20px";
-  _0x19eb0b.style.left = "20px";
-  _0x19eb0b.style.select = "none";
-  _0x19eb0b.style.cursor = "pointer";
-  document.body.appendChild(_0x19eb0b);
-  const _0x33910d = document.createElement("div");
-  _0x33910d.style.position = "fixed";
-  _0x33910d.style.top = "50px";
-  _0x33910d.style.left = "20px";
-  _0x33910d.style.backgroundColor = "#ddd";
-  _0x33910d.style.border = "1px solid #ffcfe9";
-  _0x33910d.style.display = "none";
-  _0x33910d.style.zIndex = "9998";
-  document.body.appendChild(_0x33910d);
-  const _0x4e584c = (_0xeac538, _0x2e3414) => {
+(function () {})();
+var _0x3e3cd6 = "",
+  _0x10e004 = "",
+  _0x4b49b1 = false,
+  _0x2fdaa4,
+  _0x4704c6 = 0;
+let _0x16d7ea = new Int16Array();
+let _0xee15f5 = "stopped";
+const _0x51529e = document.querySelector("#btnButtonCall"),
+  _0x589a2c = "url(./images/phone_call.png)",
+  _0x158c88 = "url(./images/phone_down.png)",
+  _0x46141d = new WebSocketConnectMethod({
+    "msgHandle": _0x2f940a,
+    "stateHandle": _0xb9513b
+  });
+let _0x47705c = false;
+var _0x1b59a1 = Recorder({
+  "type": "pcm",
+  "bitRate": 16,
+  "sampleRate": 16000,
+  "audioTrackSet": {
+    "echoCancellation": true,
+    "noiseSuppression": true,
+    "autoGainControl": true
+  },
+  "bufferSize": 4096,
+  "onProcess": _0x2b2a89
+});
+const _0x2d77b0 = ["小幸运", "小。幸运"];
+function _0x4adfcd(_0x513cec) {
+  videoElement.muted = _0x513cec;
+  console.log("音频和视频已" + (_0x513cec ? "静音" : "取消静音"));
+}
+$(document).ready(function () {
+  start();
+  _0x347bd7();
+  _0x4adfcd(false);
+  _0x51529e.style.backgroundImage = _0x589a2c;
+  _0x51529e.addEventListener("click", function (_0xb36473) {
+    _0x51529e.style.backgroundImage.includes("phone_call") ? (_0x4adfcd(false), show_click_message = false, _0x51529e.style.backgroundImage = _0x158c88, _0x5ab044()) : (_0x51529e.style.backgroundImage = _0x589a2c, _0x3f2e38(), _0x4adfcd(true));
+  });
+});
+function _0x5ab044() {
+  if (_0xee15f5 !== "stopped") {
     {
-      const _0x4674ba = document.createElement("div");
-      _0x4674ba.textContent = _0xeac538;
-      _0x4674ba.style.padding = "10px";
-      _0x4674ba.style.cursor = "pointer";
-      _0x4674ba.style.border = "1px solid #ffcfe9";
-      _0x4674ba.style.margin = "2px";
-      _0x4674ba.style.backgroundColor = "rgba(128, 128, 128, 0.5)";
-      _0x4674ba.style.background = "#ffcfe9";
-      _0x4674ba.style.color = "white";
-      _0x4674ba.style.borderRadius = "20px";
-      _0x4674ba.style.select = "none";
-      _0x4674ba.onclick = _0x2e3414;
-      _0x33910d.appendChild(_0x4674ba);
-      return _0x4674ba;
+      console.log("录音当前状态: " + _0xee15f5 + ", 等待1秒后重试");
+      _0x18f5e7(() => _0x5ab044(), 1000);
+      return;
     }
+  }
+  try {
+    _0xee15f5 = "starting";
+    const _0x586b23 = _0x415e3e();
+    if (_0x586b23 === 1) {
+      _0x462ef3();
+      console.log("录音开始成功");
+    } else console.log("录音启动失败"), _0x3f2e38();
+  } catch (_0x2f165a) {
+    console.error("录音启动出错:", _0x2f165a);
+    _0x3f2e38();
+  }
+}
+function _0x2f940a(_0x3485e9) {
+  const _0x416264 = JSON.parse(_0x3485e9.data),
+    _0x21a65d = String(_0x416264.text);
+  console.log("--------------------org_text: " + _0x21a65d);
+  const _0x4add5c = _0x2d77b0.some(_0x569dd5 => _0x21a65d.includes(_0x569dd5));
+  if (!_0x4add5c) return;
+  const _0x2cc702 = _0x416264.mode,
+    _0xbe06b = _0x416264.is_final;
+  switch (_0x2cc702) {
+    case "2pass-offline":
+      const _0x565a9f = _0x21a65d.replace(/ +/g, "");
+      _0x10e004 += _0x565a9f + "\n";
+      _0x3e3cd6 = _0x10e004;
+      _0x1989c0(_0x21a65d);
+      console.log("==================2pass-offline: " + _0x21a65d);
+      break;
+    case "offline":
+      break;
+    default:
+      _0x3e3cd6 += _0x21a65d;
+  }
+}
+function _0xb9513b(_0x58bc8c) {
+  if (_0x58bc8c === 0) _0x4b49b1 && _0x33f2f0();else {
+    if (_0x58bc8c === 1) {} else {
+      if (_0x58bc8c === 2) {
+        _0x3f2e38();
+        alert("连接地址" + document.getElementById("wssip").value + "失败,请检查asr地址和端口。或试试界面上手动授权，再连接。");
+      }
+    }
+  }
+}
+function _0x33f2f0() {
+  _0x16d7ea = new Uint8Array(_0x2fdaa4);
+  var _0x5372a2 = 960;
+  while (_0x16d7ea.length >= _0x5372a2) {
+    sendBuf = _0x16d7ea.slice(0, _0x5372a2);
+    _0x4704c6 = _0x4704c6 + _0x16d7ea.length;
+    _0x16d7ea = _0x16d7ea.slice(_0x5372a2, _0x16d7ea.length);
+    _0x46141d.wsSend(sendBuf);
+  }
+  _0x3f2e38();
+}
+function _0x18f5e7(_0x45ce60, _0x270430) {
+  setTimeout(() => {
+    _0x45ce60();
+  }, _0x270430);
+}
+function _0x462ef3() {
+  _0x1b59a1.open(function () {
+    try {
+      _0x1b59a1.start();
+      _0xee15f5 = "recording";
+      console.log("录音已开始");
+    } catch (_0x553b21) {
+      console.error("录音启动失败:", _0x553b21);
+      _0x3f2e38();
+    }
+  }, function (_0x4413c5) {
+    console.error("录音设备打开失败:", _0x4413c5);
+    _0x3f2e38();
+  });
+}
+function _0x415e3e() {
+  if (_0xee15f5 !== "starting") {
+    console.log("录音状态错误: " + _0xee15f5);
+    return 0;
+  }
+  _0x32443c();
+  const _0x1bc28e = _0x46141d.wsStart();
+  if (_0x1bc28e === 1) {
+    _0x47705c = true;
+    return 1;
+  } else return console.log("WebSocket连接失败"), 0;
+}
+function _0x3f2e38() {
+  if (_0xee15f5 === "stopped") {
+    console.log("录音已经停止");
+    return;
+  }
+  try {
+    _0x47705c = false;
+    _0x1b59a1.stop();
+    console.log("录音已停止");
+  } catch (_0xbbf64a) {
+    console.error("停止录音时出错:", _0xbbf64a);
+  } finally {
+    _0xee15f5 = "stopped";
+    _0x47705c = false;
+  }
+}
+function _0x32443c() {
+  _0x3e3cd6 = "";
+  _0x10e004 = "";
+}
+function _0x2b2a89(_0x560002, _0x1532d6, _0x597ef0, _0x1caecc, _0xf0d43b, _0x57c5a6) {
+  if (!_0x47705c) return;
+  const _0x309f32 = _0x560002[_0x560002.length - 1],
+    _0x3c570d = [_0x309f32],
+    _0x1327b3 = Recorder.SampleData(_0x3c570d, _0x1caecc, 16000).data;
+  _0x16d7ea = new Int16Array([..._0x16d7ea, ..._0x1327b3]);
+  const _0x5d61e2 = 960;
+  while (_0x16d7ea.length >= _0x5d61e2) {
+    const _0x174abb = _0x16d7ea.slice(0, _0x5d61e2);
+    _0x46141d.wsSend(_0x174abb);
+    _0x16d7ea = _0x16d7ea.slice(_0x5d61e2);
+  }
+}
+function _0x46d2b5() {
+  var _0x543896 = {
+    "阿里巴巴": 20,
+    "钱心怡": 40
   };
-  _0x19eb0b.onclick = () => {
-    _0x33910d.style.display = _0x33910d.style.display === "none" ? "block" : "none";
-  };
-  const _0x51e3a3 = () => {
-    if (!document.fullscreenElement) {
+  return JSON.stringify(_0x543896);
+}
+function _0x979c93() {
+  return "2pass";
+}
+function _0xc6d0a3() {
+  return true;
+}
+async function _0x466d95() {
+  var _0x1845f0 = $("#message").val();
+  console.log("Sending: " + _0x1845f0);
+  console.log("sessionid: ", document.getElementById("sessionid").value);
+  const _0x11d549 = document.getElementById("btnSubmit"),
+    _0x1555ee = _0x11d549.textContent;
+  _0x11d549.textContent = "分析中...";
+  _0x11d549.classList.add("analyzing");
+  _0x11d549.disabled = true;
+  try {
+    if (userStream && userCamera && userCamera.videoWidth && userCamera.videoHeight) {
+      console.log("摄像头已启动，进行视觉识别");
+      const _0x4d34fd = await _0x1989c0(_0x1845f0);
+    } else console.log("摄像头未启动，直接发送消息"), _0x162b19(_0x1845f0);
+    $("#message").val("");
+  } catch (_0x2c70ae) {
+    console.error("处理消息时出错:", _0x2c70ae);
+    _0x162b19(_0x1845f0);
+    $("#message").val("");
+  } finally {
+    _0x11d549.textContent = _0x1555ee;
+    _0x11d549.classList.remove("analyzing");
+    _0x11d549.disabled = false;
+  }
+}
+async function _0x1989c0(_0x43097f) {
+  return new Promise(async (_0x4d4e71, _0xfd6227) => {
+    if (!userStream || !userCamera.videoWidth || !userCamera.videoHeight) {
       {
-        if (document.documentElement.requestFullscreen) {
-          document.documentElement.requestFullscreen();
+        _0x162b19(_0x43097f);
+        console.log("摄像头未开启，跳过视觉识别");
+        _0x4d4e71(null);
+        return;
+      }
+    }
+    let _0x436e15 = _0x43097f;
+    _0x2d77b0.forEach(_0x22a97d => {
+      _0x436e15 = _0x436e15.replace(new RegExp(_0x22a97d, "g"), "");
+    });
+    addChatMessage(_0x436e15, "right", false, "text");
+    const _0x45cb0 = document.createElement("canvas"),
+      _0x547a1b = _0x45cb0.getContext("2d");
+    _0x45cb0.width = userCamera.videoWidth;
+    _0x45cb0.height = userCamera.videoHeight;
+    _0x547a1b.drawImage(userCamera, 0, 0, _0x45cb0.width, _0x45cb0.height);
+    const _0x9a9a3f = _0x45cb0.toDataURL("image/jpeg", 0.8);
+    fetch("/human", {
+      "body": JSON.stringify({
+        "interrupt": true,
+        "type": "vision",
+        "image": _0x9a9a3f,
+        "text": _0x436e15,
+        "sessionid": document.getElementById("sessionid").value
+      }),
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "POST"
+    }).then(_0x2c0b71 => _0x2c0b71.json()).then(_0x427fce => {
+      {
+        if (_0x427fce.code === 0 && _0x427fce.data) {
+          if (_0x427fce.type == "text") addChatMessage(_0x427fce.data, "left", false, "szr");else {
+            if (_0x427fce.type == "video") showMediaInTechPlayerHandler(_0x427fce);else {
+              if (_0x427fce.type == "music") addBackgroundMusic(_0x427fce);else {
+                addChatMessage(_0x427fce.data, "left", false, "szr");
+              }
+            }
+          }
+          _0x4d4e71(_0x427fce.data);
         } else {
-          if (document.documentElement.mozRequestFullScreen) document.documentElement.mozRequestFullScreen();else {
-            if (document.documentElement.webkitRequestFullscreen) document.documentElement.webkitRequestFullscreen();else document.documentElement.msRequestFullscreen && document.documentElement.msRequestFullscreen();
-          }
+          addChatMessage("消息发送失败，请重试", "left", false, "szr");
+          _0x4d4e71(null);
         }
       }
-    } else {
-      if (document.exitFullscreen) document.exitFullscreen();else {
-        if (document.mozCancelFullScreen) document.mozCancelFullScreen();else {
-          if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-          } else document.msExitFullscreen && document.msExitFullscreen();
-        }
-      }
-    }
-  };
-  _0x4e584c("商城开关", function () {
-    _0x44c9c8 = !_0x44c9c8;
-    this.innerText = _0x44c9c8 ? "商城开启" : "商城关闭";
-    if (_0x44c9c8) console.log("拦截器已开启");else {
-      console.log("拦截器已关闭");
-    }
+    }).catch(_0x5de066 => {
+      console.error("请求发生错误:", _0x5de066);
+      addChatMessage("网络错误，或数字人未开启，请检查连接", "left", false, "szr");
+      _0x4d4e71(null);
+    });
   });
-  _0x4e584c("退出菜单", () => {
-    _0x33910d.style.display = "none";
+}
+function _0x162b19(_0x163d17) {
+  let _0x48633e = _0x163d17;
+  _0x2d77b0.forEach(_0x418242 => {
+    _0x48633e = _0x48633e.replace(new RegExp(_0x418242, "g"), "");
   });
-  _0x4e584c("屏蔽按钮", () => {
-    _0x19eb0b.style.display = "none";
-  });
-  function _0x2f9d37() {
-    {
-      const _0x2a9e8a = new Date(),
-        _0x2e0f3c = _0x2a9e8a.getFullYear().toString(),
-        _0x46d1a5 = _0xb1b8dd(_0x2a9e8a.getMonth() + 1),
-        _0x5d40f5 = _0xb1b8dd(_0x2a9e8a.getDate()),
-        _0x4c9a5c = _0xb1b8dd(_0x2a9e8a.getHours()),
-        _0x41b3f5 = _0xb1b8dd(_0x2a9e8a.getMinutes()),
-        _0x4a3d72 = _0xb1b8dd(_0x2a9e8a.getSeconds()),
-        _0x1e7a9f = _0xb1b8dd(_0x2a9e8a.getMilliseconds(), 4);
-      return "" + _0x2e0f3c + _0x46d1a5 + _0x5d40f5 + _0x4c9a5c + _0x41b3f5 + _0x4a3d72 + _0x1e7a9f;
-    }
-  }
-  function _0xb1b8dd(_0x3bebdc, _0x48b2e1 = 2) {
-    let _0x4bf1b8 = _0x3bebdc.toString();
-    while (_0x4bf1b8.length < _0x48b2e1) {
-      _0x4bf1b8 = "0" + _0x4bf1b8;
-    }
-    return _0x4bf1b8;
-  }
-  let _0x44c9c8 = false;
-  const _0x39c4a3 = [];
-  _0x39c4a3.push({
-    "match": _0x33dfe4 => _0x33dfe4.includes("/createBuyOrder"),
-    "modify": (_0x379c90, _0x1cfe1c) => {
-      const _0x131fd1 = new URLSearchParams(_0x1cfe1c.split("?")[1]),
-        _0x168de0 = _0x131fd1.get("goods_id"),
-        _0x400647 = _0x131fd1.get("buy_num"),
-        _0x389186 = _0x2f9d37(),
-        _0x42d30a = {
-          "goods_id": _0x168de0,
-          "order_id": "${orderId}",
-          "buy_num": _0x400647
-        },
-        _0x4f73f0 = {
-          "status": 1,
-          "msg": "successful",
-          "data": _0x42d30a
-        };
-      return JSON.stringify(_0x4f73f0);
-    }
-  });
-  const _0x572c24 = XMLHttpRequest.prototype.open;
-  XMLHttpRequest.prototype.open = function (_0x48cedf, _0x26d186, _0x554d62 = true, _0x5e6b3e = null, _0x35d484 = null) {
-    {
-      this._url = _0x26d186;
-      if (!_0x44c9c8) return _0x572c24.call(this, _0x48cedf, _0x26d186, _0x554d62, _0x5e6b3e, _0x35d484);
-      _0x572c24.apply(this, arguments);
-      this.addEventListener("readystatechange", () => {
-        if (this.readyState === 4 && this.status === 200) {
-          let _0x57fb40 = this.responseText;
-          _0x39c4a3.forEach(_0x492fa1 => {
-            {
-              if (_0x492fa1.match(this._url)) try {
-                _0x57fb40 = _0x492fa1.modify(_0x57fb40, this._url);
-                console.log("拦截成功: " + this._url);
-              } catch (_0x16214f) {
-                console.error("拦截失败: " + this._url, _0x16214f);
-              }
-            }
-          });
-          const _0x148fe4 = {
-            "value": _0x57fb40,
-            "writable": true
-          };
-          Object.defineProperty(this, "responseText", _0x148fe4);
-          typeof this.onload === "function" && this.onload();
-        }
-      });
-      let _0x18b0fa = _0x26d186;
-      if (_0x26d186.includes("/get_goods_list")) {
-        {
-          const _0x3bc6e1 = new URL(_0x26d186),
-            _0x66aef6 = new URLSearchParams(_0x3bc6e1.search),
-            _0x19429e = getUserData(),
-            _0x295d35 = _0x19429e && _0x19429e.vip_level;
-          if (!_0x295d35) {
-            {
-              const _0x601cd6 = _0x66aef6.get("token");
-              (!_0x601cd6 || _0x601cd6 === "") && _0x66aef6.set("token", "c25a7a3cdf7a49e41d96950437a9b17d");
-            }
-          }
-          _0x66aef6.set("gindex", "1675940");
-          _0x3bc6e1.search = _0x66aef6.toString();
-          _0x18b0fa = _0x3bc6e1.toString();
-          console.log("请求URL修改成功: " + _0x18b0fa);
-        }
-      }
-      return _0x572c24.call(this, _0x48cedf, _0x18b0fa, _0x554d62, _0x5e6b3e, _0x35d484);
-    }
-  };
-  const _0x5005bd = _0x5b0168 => {
-      return _0x5b0168.includes("createBuyOrder");
+  addChatMessage(_0x48633e, "right", false, "text");
+  fetch("/human", {
+    "body": JSON.stringify({
+      "text": _0x48633e,
+      "type": "chat",
+      "interrupt": true,
+      "sessionid": parseInt(document.getElementById("sessionid").value)
+    }),
+    "headers": {
+      "Content-Type": "application/json"
     },
-    _0x4efbaf = (_0x492420, _0x5f5482, _0x12a453) => {
-      return {
-        "status": 1,
-        "msg": "successful",
-        "data": {
-          "goods_id": _0x5f5482,
-          "order_id": "${djhsj}",
-          "buy_num": parseInt(_0x12a453, 10)
-        }
-      };
-    },
-    _0xc7dc1d = () => {
+    "method": "POST",
+    "cache": "no-store"
+  }).then(_0x340aa5 => _0x340aa5.json()).then(_0x3605eb => {
+    console.log("Received chat response:", _0x3605eb);
+    if (_0x3605eb.code === 0 && _0x3605eb.data) {
       {
-        const _0x2861f1 = document.createElement;
-        document.createElement = function (_0x521241, ..._0x25a949) {
-          const _0x4e489e = _0x2861f1.call(this, _0x521241, ..._0x25a949);
-          _0x521241.toLowerCase() === "script" && Object.defineProperty(_0x4e489e, "src", {
-            "set"(_0x1a3dd4) {
-              if (_0x5005bd(_0x1a3dd4)) {
-                console.log("拦截到 JSONP 请求:", _0x1a3dd4);
-                const _0x586453 = new URL(_0x1a3dd4).searchParams,
-                  _0x509cf8 = _0x586453.get("goods_id"),
-                  _0xcdf2f7 = _0x586453.get("buy_num"),
-                  _0x340ff4 = _0x586453.get("jsonCallBack"),
-                  _0x4ce2d6 = _0x2f9d37();
-                if (_0x509cf8 && _0xcdf2f7 && _0x340ff4) {
-                  const _0x112188 = window[_0x340ff4];
-                  window[_0x340ff4] = function (_0x9e9b58) {
-                    const _0xf0c867 = _0x4efbaf(_0x9e9b58, _0x509cf8, _0xcdf2f7);
-                    typeof _0x112188 === "function" && _0x112188(_0xf0c867);
-                  };
-                } else console.error("缺少必要的参数: goods_id, buy_num, jsonCallBack");
-              }
-              return _0x4e489e.setAttribute("src", _0x1a3dd4);
-            },
-            "get"() {
-              return _0x4e489e.getAttribute("src");
-            }
-          });
-          return _0x4e489e;
-        };
+        if (_0x3605eb.type == "text") addChatMessage(_0x3605eb.data, "left", false, "szr");else {
+          if (_0x3605eb.type == "video") showMediaInTechPlayerHandler(_0x3605eb);else _0x3605eb.type == "music" ? addBackgroundMusic(_0x3605eb) : addChatMessage(_0x3605eb.data, "left", false, "szr");
+        }
       }
-    };
-  _0xc7dc1d();
-})();
-(function () {
-  'use strict';
-
-  const _0x2aa975 = window.document.createElement("button");
-  _0x2aa975.textContent = "累充";
-  _0x2aa975.style.position = "fixed";
-  _0x2aa975.style.background = "#ffffff";
-  _0x2aa975.style.top = "03px";
-  _0x2aa975.style.right = "10px";
-  _0x2aa975.style.borderRadius = "0px";
-  _0x2aa975.style.zIndex = "9999";
-  _0x2aa975.addEventListener("click", _0x15e447);
-  window.document.body.appendChild(_0x2aa975);
-  const _0x31f52a = window.document.createElement("div");
-  _0x31f52a.style.display = "none";
-  _0x31f52a.style.position = "fixed";
-  _0x31f52a.style.top = "3.60px";
-  _0x31f52a.style.left = "80px";
-  _0x31f52a.style.transform = "translate(-0%, -0%)";
-  _0x31f52a.style.width = "200px";
-  _0x31f52a.style.backgroundColor = "ffffff";
-  _0x31f52a.style.padding = "10px";
-  _0x31f52a.style.borderRadius = "0px";
-  _0x31f52a.style.zIndex = "9999";
-  const _0x2040bb = {
-      "label": "累充",
-      "action": _0x20359c
-    },
-    _0x465d68 = {
-      "label": "全屏",
-      "action": _0x44861d
-    },
-    _0x5e2b59 = [_0x2040bb, _0x465d68];
-  _0x5e2b59.forEach(_0x508d05 => {
-    const _0x10328c = window.document.createElement("button");
-    _0x10328c.textContent = _0x508d05.label;
-    _0x10328c.addEventListener("click", _0x508d05.action);
-    _0x31f52a.appendChild(_0x10328c);
+    } else addChatMessage("消息发送失败，请重试", "left", false, "szr");
+  }).catch(_0x16bf2a => {
+    console.error("请求发生错误:", _0x16bf2a);
+    addChatMessage("网络错误，或数字人未开启，请检查连接", "left", false, "szr");
   });
-  const _0x13d3da = window.document.createElement("button");
-  _0x13d3da.textContent = "退出";
-  _0x13d3da.addEventListener("click", _0x57ab9c);
-  _0x31f52a.appendChild(_0x13d3da);
-  window.document.body.appendChild(_0x31f52a);
-  function _0x15e447() {
-    _0x31f52a.style.display = "block";
-  }
-  function _0x57ab9c() {
-    _0x31f52a.style.display = "none";
-  }
-  function _0x20359c() {
-    {
-      const _0x50a27f = prompt("请填写需要的鲜花数量大小");
-      if (_0x50a27f) {
-        var _0x4e4352 = getUserData();
-        ["totalFlower", "freshFlower", "wildFlower", "tempFlower", "realFlower", "haveFlower"].forEach(function (_0x142170) {
-          _0x4e4352[_0x142170] = _0x50a27f;
-        });
-        累充 = 鲜花数量("填写鲜花数值");
-      }
-    }
-  }
-  function _0x44861d() {
-    if (!window.document.fullscreenElement && !window.document.mozFullScreenElement && !window.document.webkitFullscreenElement && !window.document.msFullscreenElement) {
-      {
-        if (window.document.documentElement.requestFullscreen) window.document.documentElement.requestFullscreen();else {
-          if (window.document.documentElement.msRequestFullscreen) window.document.documentElement.msRequestFullscreen();else {
-            if (window.document.documentElement.mozRequestFullScreen) window.document.documentElement.mozRequestFullScreen();else window.document.documentElement.webkitRequestFullscreen && window.document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+}
+function _0x3c08da() {
+  fetch("/is_speaking", {
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": JSON.stringify({
+      "sessionid": parseInt(document.getElementById("sessionid").value)
+    }),
+    "cache": "no-store"
+  }).then(_0xff8520 => _0xff8520.json()).then(_0x46c3a2 => {
+    if (_0x46c3a2.code === 0) {
+      console.log("当前说话状态:", _0x46c3a2.data);
+      if (_0x46c3a2.data === true) _0xee15f5 === "recording" && (console.log("说话中，暂停录音"), _0x47705c = false);else {
+        if (_0x46c3a2.data === false) {
+          {
+            if (_0xee15f5 === "recording" && !_0x47705c) {
+              console.log("已停止说话，恢复录音");
+              _0x47705c = true;
+            }
           }
         }
       }
-    } else {
-      if (window.document.exitFullscreen) window.document.exitFullscreen();else {
-        if (window.document.msExitFullscreen) window.document.msExitFullscreen();else {
-          if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();else window.document.webkitExitFullscreen && window.document.webkitExitFullscreen();
-        }
-      }
+    }
+  }).catch(_0x34350f => console.error("检查说话状态出错:", _0x34350f));
+}
+function _0x347bd7() {
+  setInterval(_0x3c08da, 1000);
+}
+function _0x79f144(_0x19da4c) {
+  let _0x3c3c82 = false,
+    _0x48b3e0 = 0,
+    _0x194e85 = 0,
+    _0x126ca0 = 0,
+    _0xfc69f8 = 0;
+  _0x19da4c.style.position = "fixed";
+  _0x19da4c.style.cursor = "move";
+  _0x19da4c.style.zIndex = "1000";
+  function _0x3b3824(_0x3eaca5) {
+    const _0x477332 = _0x3eaca5.target;
+    if (_0x477332.tagName === "BUTTON" || _0x477332.tagName === "TEXTAREA" || _0x477332.tagName === "INPUT") return;
+    const _0x24adbe = _0x477332.closest(".input-box");
+    if (_0x24adbe) return;
+    _0x3eaca5.preventDefault();
+    _0x3c3c82 = true;
+    _0x19da4c.classList.add("dragging");
+    const _0x4063b0 = _0x19da4c.getBoundingClientRect();
+    _0x126ca0 = _0x4063b0.left;
+    _0xfc69f8 = _0x4063b0.top;
+    _0x3eaca5.type === "touchstart" ? (_0x48b3e0 = _0x3eaca5.touches[0].clientX, _0x194e85 = _0x3eaca5.touches[0].clientY) : (_0x48b3e0 = _0x3eaca5.clientX, _0x194e85 = _0x3eaca5.clientY);
+    document.body.style.userSelect = "none";
+  }
+  function _0x4c5770(_0x22c6f5) {
+    {
+      if (!_0x3c3c82) return;
+      _0x3c3c82 = false;
+      _0x19da4c.classList.remove("dragging");
+      document.body.style.userSelect = "";
     }
   }
-})();
+  function _0x1845a3(_0x54c4ec) {
+    if (!_0x3c3c82) return;
+    _0x54c4ec.preventDefault();
+    let _0x4f73e5, _0xd28e42;
+    _0x54c4ec.type === "touchmove" ? (_0x4f73e5 = _0x54c4ec.touches[0].clientX, _0xd28e42 = _0x54c4ec.touches[0].clientY) : (_0x4f73e5 = _0x54c4ec.clientX, _0xd28e42 = _0x54c4ec.clientY);
+    const _0x3a9061 = _0x4f73e5 - _0x48b3e0,
+      _0x231710 = _0xd28e42 - _0x194e85;
+    let _0x574a9d = _0x126ca0 + _0x3a9061,
+      _0x46e6a5 = _0xfc69f8 + _0x231710;
+    const _0x1a1977 = _0x19da4c.getBoundingClientRect(),
+      _0x85eb8e = _0x1a1977.width,
+      _0x3e8b67 = _0x1a1977.height;
+    _0x574a9d < 0 && (_0x574a9d = 0);
+    if (_0x574a9d + _0x85eb8e > window.innerWidth) {
+      _0x574a9d = window.innerWidth - _0x85eb8e;
+    }
+    _0x46e6a5 < 0 && (_0x46e6a5 = 0);
+    _0x46e6a5 + _0x3e8b67 > window.innerHeight && (_0x46e6a5 = window.innerHeight - _0x3e8b67);
+    _0x19da4c.style.left = _0x574a9d + "px";
+    _0x19da4c.style.top = _0x46e6a5 + "px";
+  }
+  _0x19da4c.addEventListener("mousedown", _0x3b3824);
+  _0x19da4c.addEventListener("touchstart", _0x3b3824);
+  document.addEventListener("mousemove", _0x1845a3, {
+    "passive": false
+  });
+  document.addEventListener("touchmove", _0x1845a3, {
+    "passive": false
+  });
+  document.addEventListener("mouseup", _0x4c5770);
+  document.addEventListener("touchend", _0x4c5770);
+  _0x19da4c.addEventListener("dblclick", function () {
+    {
+      const _0x1ed96d = _0x19da4c.getBoundingClientRect(),
+        _0xaf4f56 = (window.innerWidth - _0x1ed96d.width) / 2,
+        _0x2dd598 = (window.innerHeight - _0x1ed96d.height) / 2;
+      _0x19da4c.style.left = _0xaf4f56 + "px";
+      _0x19da4c.style.top = _0x2dd598 + "px";
+      _0x19da4c.style.transform = "none";
+    }
+  });
+}
+function _0x5cd8c3() {
+  const _0x148768 = document.getElementById("video"),
+    _0x50080a = document.getElementById("videoBox");
+  _0x148768.addEventListener("loadedmetadata", function () {
+    console.log("视频元数据已加载");
+    console.log("视频原始尺寸:", _0x148768.videoWidth, "x", _0x148768.videoHeight);
+    const _0xd30773 = _0x148768.videoWidth,
+      _0xb71cf0 = _0x148768.videoHeight;
+    if (_0xd30773 > 0 && _0xb71cf0 > 0) {
+      const _0x1a747c = Math.min(window.innerWidth * 0.8, 800),
+        _0xf8eaf = Math.min(window.innerHeight * 0.8, 700),
+        _0x5abe25 = _0x1a747c / _0xd30773,
+        _0x1d259c = _0xf8eaf / _0xb71cf0,
+        _0x11a064 = Math.min(_0x5abe25, _0x1d259c, 1),
+        _0x5921c1 = Math.round(_0xd30773 * _0x11a064),
+        _0x56348c = Math.round(_0xb71cf0 * _0x11a064),
+        _0x125d64 = 70,
+        _0x71493f = _0x56348c + _0x125d64;
+      console.log("适配后的尺寸:", _0x5921c1, "x", _0x71493f);
+      _0x50080a.style.width = _0x5921c1 + "px";
+      _0x50080a.style.height = _0x71493f + "px";
+      if (!_0x50080a.style.left || !_0x50080a.style.top) {
+        const _0x4017e6 = (window.innerWidth - _0x5921c1) / 2,
+          _0xb4692a = (window.innerHeight - _0x71493f) / 2;
+        _0x50080a.style.left = Math.max(0, _0x4017e6) + "px";
+        _0x50080a.style.top = Math.max(0, _0xb4692a) + "px";
+        console.log("video-box位置已调整为居中:", _0x4017e6, _0xb4692a);
+      }
+    }
+  });
+  _0x148768.addEventListener("resize", function () {
+    console.log("视频尺寸发生变化，重新适配");
+    _0x148768.videoWidth > 0 && _0x148768.videoHeight > 0 && _0x148768.dispatchEvent(new Event("loadedmetadata"));
+  });
+  window.addEventListener("resize", function () {
+    console.log("窗口大小发生变化，重新适配");
+    const _0x2eb180 = document.getElementById("videoBox");
+    if (_0x2eb180 && _0x2eb180.style.left && _0x2eb180.style.top) {
+      const _0x1851e7 = _0x2eb180.getBoundingClientRect();
+      let _0x21e8cd = parseInt(_0x2eb180.style.left),
+        _0xe1a217 = parseInt(_0x2eb180.style.top);
+      _0x21e8cd + _0x1851e7.width > window.innerWidth && (_0x21e8cd = window.innerWidth - _0x1851e7.width);
+      if (_0xe1a217 + _0x1851e7.height > window.innerHeight) {
+        _0xe1a217 = window.innerHeight - _0x1851e7.height;
+      }
+      if (_0x21e8cd < 0) _0x21e8cd = 0;
+      if (_0xe1a217 < 0) _0xe1a217 = 0;
+      _0x2eb180.style.left = _0x21e8cd + "px";
+      _0x2eb180.style.top = _0xe1a217 + "px";
+    }
+    _0x148768.videoWidth > 0 && _0x148768.videoHeight > 0 && _0x148768.dispatchEvent(new Event("loadedmetadata"));
+  });
+}
